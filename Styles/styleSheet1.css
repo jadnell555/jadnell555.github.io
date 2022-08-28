@@ -1,0 +1,74 @@
+body {
+    font-family: Verdana;
+    padding: 2%;
+    width: 90%;
+    text-size-adjust: auto;
+}
+
+h1 {
+    font-style: italic;
+    font-family: 'Times New Roman';
+    color: darkgoldenrod;
+    text-size-adjust: auto;
+}
+
+h2 {
+    color: darkgoldenrod;
+    text-size-adjust: auto;
+}
+
+
+h5 {
+    font-family: cursive;
+    color: darkgoldenrod;
+    text-size-adjust: auto;
+}
+
+p.desc {
+    text-align: justify;
+    text-size-adjust: auto;
+}
+
+
+ul {
+    padding-left: 75px;
+    list-style-type: square;
+    text-size-adjust: auto;
+}
+
+ol {
+    padding-left: 80px;
+    padding-right: 75px;
+}
+
+table {
+    width: 80%;
+    text-size-adjust: auto;
+}
+
+table.one {
+    width: 25%;
+    text-size-adjust: auto;
+}
+
+th {
+    padding: .5cm;
+    text-size-adjust: auto;
+}
+
+div {
+    position: static;
+    text-size-adjust: auto;
+}
+
+sub {
+    color: darkgoldenrod;
+}
+
+hr {
+    width: 95%;
+}
+
+a {
+    color: darkgoldenrod;
+}
