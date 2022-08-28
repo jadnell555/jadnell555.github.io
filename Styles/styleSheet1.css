@@ -1,13 +1,13 @@
 body {
     font-family: Verdana;
     padding: 2%;
-    width: 90%;
+    width: 95%;
     text-size-adjust: auto;
 }
 
 h1 {
     font-style: italic;
-    font-family: 'Times New Roman';
+    font-family: 'Verdana';
     color: darkgoldenrod;
     text-size-adjust: auto;
 }
@@ -42,8 +42,9 @@ ol {
 }
 
 table {
-    width: 80%;
+    width: 100%;
     text-size-adjust: auto;
+    font-size: x-large;
 }
 
 table.one {
