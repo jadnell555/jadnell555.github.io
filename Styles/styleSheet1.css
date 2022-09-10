@@ -3,11 +3,29 @@ body {
     padding: 2%;
     width: 95%;
     text-size-adjust: auto;
+    min-width: 360px;
+    max-width: 2880px;
+    min-height: 800px;
+    max-height: 1800px;
+}
+
+#navbar {   
+    padding: 5px;
+}
+
+header {
+    background-color: darkgoldenrod;
+    margin: -35px;
+}
+
+.button {
+    text-decoration: none;
+    padding: 30px;
 }
 
 h1 {
     font-style: italic;
-    font-family: 'Verdana';
+    font-family: Verdana;
     color: darkgoldenrod;
     text-size-adjust: auto;
 }
@@ -19,7 +37,6 @@ h2 {
 
 
 h5 {
-    font-family: cursive;
     color: darkgoldenrod;
     text-size-adjust: auto;
 }
@@ -54,11 +71,6 @@ table.one {
 
 th {
     padding: .5cm;
-    text-size-adjust: auto;
-}
-
-div {
-    position: static;
     text-size-adjust: auto;
 }
 

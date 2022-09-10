@@ -3,6 +3,24 @@ body {
     padding: 2%;
     width: 95%;
     text-size-adjust: auto;
+    min-width: 360px;
+    max-width: 2880px;
+    min-height: 800px;
+    max-height: 1800px;
+}
+
+#navbar {   
+    padding: 5px;
+}
+
+header {
+    background-color: darkslateblue;
+    margin: -35px;
+}
+
+.button {
+    text-decoration: none;
+    padding: 30px;
 }
 
 h1 {
