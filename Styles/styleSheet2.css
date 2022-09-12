@@ -9,8 +9,35 @@ body {
     max-height: 1800px;
 }
 
-#navbar {   
+#quizBody {
+    background-color: darkslateblue;
+    color: aliceblue;
+    padding: 2%;
+    width: 95%;
+    text-size-adjust: auto;
+    min-width: 360px;
+    max-width: 2880px;
+    min-height: 800px;
+    max-height: 1800px;
+}
+
+#quizTitle {
+    font-family: Haettenschweiler;
+    font-size: 40px;
+    font-weight: 200;
+    color: aliceblue;
+}
+
+#univInfo {
+    line-height: 12px;
+}
+
+#navbar {
     padding: 5px;
+}
+
+#myPic {
+    border-radius: 2%;
 }
 
 header {
@@ -21,6 +48,32 @@ header {
 .button {
     text-decoration: none;
     padding: 30px;
+}
+
+#submitButtonQuiz {
+    border-radius: 10px;
+    width: 75px;
+    height: 35px;
+    border-color: aliceblue;
+    font-family: Haettenschweiler;
+    font-weight: 25;
+    font-size: 20px;
+    color: grey;
+}
+
+.questions {
+    padding: 10px;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+#submit{
+    color: aliceblue;
+}
+
+#quizOl {
+    text-align: center;
+    list-style-position: inside;
 }
 
 h1 {
@@ -52,7 +105,6 @@ p.desc {
     text-align: justify;
     text-size-adjust: auto;
 }
-
 
 ul {
     padding-left: 75px;
@@ -87,19 +139,14 @@ th {
     text-size-adjust: auto;
 }
 
-div {
-    position: static;
-    text-size-adjust: auto;
-}
-
-sub {
-    color: darkslateblue;
-}
-
 hr {
     width: 95%;
 }
 
 a {
     color: gray;
+}
+
+#social{
+    color: aliceblue
 }
