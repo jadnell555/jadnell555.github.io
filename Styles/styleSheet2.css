@@ -28,6 +28,29 @@ body {
     color: aliceblue;
 }
 
+
+
+#animationTitle {
+    font-family: Haettenschweiler;
+    font-size: 40px;
+    font-weight: 200;
+    color: darkslateblue;
+    margin: 30px;
+}
+
+#animationCreator {
+    font-family: 'Trebuchet MS';
+    font-weight: 200;
+    color: darkslateblue;
+}
+
+#animationSpace {
+    width: 750px;
+    height: 750px;
+    background-color: grey;
+    box-shadow: 2px 2px 3px #111111;
+}
+
 #univInfo {
     line-height: 12px;
 }
