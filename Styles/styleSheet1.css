@@ -1,67 +1,36 @@
 body {
+    background-image: "Images/BackgroundImage.jpg";
     font-family: Verdana;
-    padding: 2%;
     width: 95%;
     text-size-adjust: auto;
     min-width: 360px;
     max-width: 2880px;
     min-height: 800px;
     max-height: 1800px;
-}
-
-#quizBody {
-    background-color: darkgoldenrod;
-    color: aliceblue;
-    padding: 2%;
-    width: 95%;
-    text-size-adjust: auto;
-    min-width: 360px;
-    max-width: 2880px;
-    min-height: 800px;
-    max-height: 1800px;
-}
-
-#quizTitle {
-    font-family: Haettenschweiler;
-    font-size: 40px;
-    font-weight: 200;
-}
-
-#animationTitle {
-    font-family: Haettenschweiler;
-    font-size: 40px;
-    font-weight: 200;
-    color: darkgoldenrod;
-    margin: 30px;
-}
-
-#animationCreator {
-    font-family: 'Trebuchet MS';
-    font-weight: 200;
-    color: darkgoldenrod;
-}
-
-#animationSpace {
-    width: 750px;
-    height: 750px;
-    box-shadow: 2px 2px 3px #111111;
-}
+}   
 
 #univInfo {
     line-height: 12px;
-}
-
-#navbar {
-    padding: 5px;
-}
+} 
 
 #myPic {
     border-radius: 2%;
 }
 
-header {
-    background-color: darkgoldenrod;
-    margin: -35px;
+#navBar {
+    background-color: #252525;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    box-shadow: 2px 2px 3px #111111;
+    width: 500px;
+    height: 50px;
+    overflow: clip;
 }
 
 .button {
@@ -78,16 +47,6 @@ header {
     font-weight: 25;
     font-size: 20px;
     color: grey;
-}
-
-.questions {
-    padding: 10px;
-    font-size: 16px;
-}
-
-#quizOl {
-    text-align: center;
-    list-style-position: inside;
 }
 
 h1 {
