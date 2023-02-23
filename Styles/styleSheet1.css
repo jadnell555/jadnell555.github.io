@@ -1,5 +1,3 @@
-
-
 body {
     background-image: "Images/BackgroundImage.jpg";
     font-family: Verdana;
@@ -9,15 +7,25 @@ body {
     max-width: 2880px;
     min-height: 800px;
     max-height: 1800px;
-}   
+}
 
 #univInfo {
     line-height: 12px;
-} 
+}
 
 #myPic {
-    border-radius: 2%;
+    border-radius: 200px;
 }
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+h3:hover{
+    color: green;
+}
+
 /*
 #navBar {
     background-color: #252525;
@@ -34,20 +42,31 @@ body {
     height: 75px;
 }
 */
-#navBar{
+#navBar {
     position: sticky;
     top: 10px;
     width: 75px;
-    height: 75px;
+    height: 65px;
     margin-left: 50px;
+    border-radius: 20px;
+    top: 10px;
+    box-shadow: 2px 2px 3px #111111;
+    background-color: green;
 }
 
-h6{
+
+h6 {
     text-align: center;
 }
 
-.dropdown-item{
+.dropdown-item {
     margin: auto;
+
+}
+
+.dropdown-content{
+    background-color: transparent;
+
 }
 
 .button {
@@ -55,15 +74,12 @@ h6{
     padding: 30px;
 }
 
-#submitButtonQuiz {
+#card{
+    background: #252525;
     border-radius: 10px;
-    width: 75px;
-    height: 35px;
-    border-color: aliceblue;
-    font-family: Haettenschweiler;
-    font-weight: 25;
-    font-size: 20px;
-    color: grey;
+    box-shadow: 2px 2px 3px #111111;
+    padding: 20px;
+    margin: 20px;
 }
 
 h1 {
@@ -88,8 +104,7 @@ p.desc {
     text-size-adjust: auto;
 }
 
-
-ul {
+#lists{
     padding-left: 75px;
     list-style-type: square;
     text-size-adjust: auto;
@@ -98,6 +113,10 @@ ul {
 ol {
     padding-left: 80px;
     padding-right: 75px;
+}
+
+li{
+    text-align: left;
 }
 
 table {
