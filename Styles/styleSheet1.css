@@ -1,3 +1,5 @@
+
+
 body {
     background-image: "Images/BackgroundImage.jpg";
     font-family: Verdana;
@@ -16,7 +18,7 @@ body {
 #myPic {
     border-radius: 2%;
 }
-
+/*
 #navBar {
     background-color: #252525;
     margin: auto;
@@ -28,9 +30,24 @@ body {
     left: 10px;
     right: 10px;
     box-shadow: 2px 2px 3px #111111;
-    width: 500px;
-    height: 50px;
-    overflow: clip;
+    width: 75px;
+    height: 75px;
+}
+*/
+#navBar{
+    position: sticky;
+    top: 10px;
+    width: 75px;
+    height: 75px;
+    margin-left: 50px;
+}
+
+h6{
+    text-align: center;
+}
+
+.dropdown-item{
+    margin: auto;
 }
 
 .button {
