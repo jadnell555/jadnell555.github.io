@@ -1,5 +1,5 @@
 body {
-    background-image: "Images/BackgroundImage.jpg";
+    background-image: linear-gradient(to bottom right, #FF8473,#FFF9D2);
     font-family: Verdana;
     width: 95%;
     text-size-adjust: auto;
@@ -7,6 +7,7 @@ body {
     max-width: 2880px;
     min-height: 800px;
     max-height: 1800px;
+    
 }
 
 #univInfo {
@@ -15,6 +16,7 @@ body {
 
 #myPic {
     border-radius: 200px;
+    box-shadow: 2px 2px 3px #111111;
 }
 
 p{
@@ -23,7 +25,7 @@ p{
 }
 
 h3:hover{
-    color: green;
+    color: #FF8473;
 }
 
 /*
@@ -44,16 +46,20 @@ h3:hover{
 */
 #navBar {
     position: sticky;
+    z-index: 1100;
     top: 10px;
     width: 75px;
     height: 65px;
-    margin-left: 50px;
+    margin-left: 30px;
     border-radius: 20px;
     top: 10px;
     box-shadow: 2px 2px 3px #111111;
-    background-color: green;
+    background-color: #FFF9D2;
 }
 
+footer{
+    margin-bottom: 20px;
+}
 
 h6 {
     text-align: center;
@@ -64,22 +70,19 @@ h6 {
 
 }
 
-.dropdown-content{
-    background-color: transparent;
-
-}
 
 .button {
     text-decoration: none;
     padding: 30px;
 }
 
-#card{
-    background: #252525;
+.infoCard{
+    background-color: #fff9d2;
     border-radius: 10px;
     box-shadow: 2px 2px 3px #111111;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
+    
 }
 
 h1 {
@@ -90,7 +93,6 @@ h1 {
 }
 
 h2 {
-    color: darkgoldenrod;
     text-size-adjust: auto;
 }
 
@@ -115,6 +117,10 @@ ol {
     padding-right: 75px;
 }
 
+#link{
+    color: #FF8473;
+}
+
 li{
     text-align: left;
 }
@@ -135,10 +141,3 @@ th {
     text-size-adjust: auto;
 }
 
-hr {
-    width: 95%;
-}
-
-a {
-    color: darkgoldenrod;
-}
