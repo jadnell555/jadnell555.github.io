@@ -1,49 +1,17 @@
 body {
-    background-image: linear-gradient(to bottom right, #FF8473,#FFF9D2);
+    background-image: linear-gradient(to bottom right, #FF8473, #FFF9D2);
     font-family: Verdana;
     width: 95%;
     text-size-adjust: auto;
-    min-width: 360px;
-    max-width: 2880px;
-    min-height: 800px;
-    max-height: 1800px;
     
+    min-width: 360px;
+    min-height: 486px;
+    
+    max-width: 3024px;
+    max-height: 1964px;
+    margin-right: 20px;
 }
 
-#univInfo {
-    line-height: 12px;
-}
-
-#myPic {
-    border-radius: 200px;
-    box-shadow: 2px 2px 3px #111111;
-}
-
-p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
-}
-
-h3:hover{
-    color: #FF8473;
-}
-
-/*
-#navBar {
-    background-color: #252525;
-    margin: auto;
-    padding: 10px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    position: sticky;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    box-shadow: 2px 2px 3px #111111;
-    width: 75px;
-    height: 75px;
-}
-*/
 #navBar {
     position: sticky;
     z-index: 1100;
@@ -57,87 +25,52 @@ h3:hover{
     background-color: #FFF9D2;
 }
 
-footer{
-    margin-bottom: 20px;
-}
-
 h6 {
     text-align: center;
 }
 
-.dropdown-item {
-    margin: auto;
-
+#greeting {
+    margin-top: -50px;
 }
 
-
-.button {
-    text-decoration: none;
-    padding: 30px;
+#myPic {
+    border-radius: 200px;
+    box-shadow: 2px 2px 3px #111111;
 }
 
-.infoCard{
+.infoCard {
     background-color: #fff9d2;
     border-radius: 10px;
     box-shadow: 2px 2px 3px #111111;
     padding: 10px;
     margin: 10px;
-    
 }
 
-h1 {
-    font-style: italic;
-    font-family: Verdana;
-    color: darkgoldenrod;
-    text-size-adjust: auto;
+h3:hover {
+    color: #FF8473;
 }
 
-h2 {
-    text-size-adjust: auto;
-}
-
-h5 {
-    color: darkgoldenrod;
-    text-size-adjust: auto;
-}
-
-p.desc {
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
     text-align: justify;
-    text-size-adjust: auto;
+    text-indent: 2em;
 }
 
-#lists{
+#lists {
     padding-left: 75px;
     list-style-type: square;
     text-size-adjust: auto;
 }
 
-ol {
-    padding-left: 80px;
-    padding-right: 75px;
-}
-
-#link{
-    color: #FF8473;
-}
-
-li{
+li {
     text-align: left;
 }
 
-table {
-    width: 100%;
-    text-size-adjust: auto;
-    font-size: x-large;
+#link {
+    color: #FF8473;
 }
 
-table.one {
-    width: 25%;
-    text-size-adjust: auto;
+footer {
+    margin-bottom: 20px;
 }
-
-th {
-    padding: .5cm;
-    text-size-adjust: auto;
-}
-

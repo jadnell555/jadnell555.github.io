@@ -15,11 +15,11 @@
 </head>
 
 <body>
-    <header>
-    </header>
+    <header></header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
     <div id="navBar">
         <div class="dropdown-center">
             <button class="btn" id="menuButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,58 +40,19 @@
                     </a></li>
             </ul>
         </div>
-        <!--
-        <div class="container text-center">
-            <div class="row align-items-start">
-                <div class="col">
-                    <a class="button" href="index.html"><img src="Images/aboutMe.png" title="About Me" width="50px"
-                            height="50px" alt="Where is my button?">
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="button" href="aboutMe2.html"><img src="Images/otherStyleSheet.png"
-                            title="Change Style Sheet" width="50px" height="50px" alt="Where is my button?">
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="button" href="progLanguagesPage.html"><img src="Images/programmingLanguages.png"
-                            title="Programming Languages" width="55px" height="55px" alt="Where is my button?">
-                    </a>
-                </div>
-                <div class="col"> <a class="button" href="projectsPage.html">
-                        <img src="Images/projects.png" title="Projects" width="50px" height="50px"
-                            alt="Where is my button?">
-                    </a></div>
-            </div>
-        </div>
-        
-        <center>
-            <a class="button" href="index.html"><img src="Images/aboutMe.png" title="About Me" width="50px"
-                    height="50px" alt="Where is my button?">
-            </a>
-
-            <a class="button" href="aboutMe2.html"><img src="Images/otherStyleSheet.png" title="Change Style Sheet"
-                    width="50px" height="50px" alt="Where is my button?">
-            </a>
-
-            <a class="button" href="progLanguagesPage.html"><img src="Images/programmingLanguages.png"
-                    title="Programming Languages" width="55px" height="55px" alt="Where is my button?">
-            </a>
-
-            <a class="button" href="projectsPage.html">
-                <img src="Images/projects.png" title="Projects" width="50px" height="50px" alt="Where is my button?">
-            </a>
-        </center>
--->
     </div>
-    <h2>
-        <center> Hello, </center>
-    </h2>
 
-    <h1>
-        <center> my name is Jadnell H. Reyes Pérez </center>
-    </h1>
+    <div id="greeting">
+        <h2>
+            <center> Hello, </center>
+        </h2>
+        <h1>
+            <center> my name is Jadnell H. Reyes Pérez </center>
+        </h1>
+    </div>
+
     <br>
+
     <div class="container text-center">
         <div class="row">
             <div class="col">
@@ -114,7 +75,7 @@
                         <p>
                             I'm a Puerto Rican Senior Computer Engineering Student, from the Polytechnic University
                             of Puerto Rico.
-                            I have 22 years old looking to improve my knowledge and skills with experience.
+                            I have 22 years old looking to improve my knowledge and skills with real life experience.
                         </p>
                     </div>
                 </div>
@@ -125,7 +86,8 @@
                             <center> Contact: </center>
                         </h3>
                         <ul class="lists">
-                            <li> <b><i>Phone Number:</i></b> <a id="link" href="tel:787-605-5895"> (787) 605-5895 </a> </li>
+                            <li> <b><i>Phone Number:</i></b> <a id="link" href="tel:787-605-5895"> (787) 605-5895 </a>
+                            </li>
                             <li> <b><i>Email:</i></b> <a id="link" href="mailto: jadnellReyes@gmail.com">
                                     jadnellReyes@gmail.com</a>
                             </li>
@@ -146,25 +108,39 @@
 
             <div id="socialMediaBar">
                 <br>
-                <center>
-                    <a class="button" href="https://www.instagram.com/j_dnell/"><img src="Images/instagram.png"
-                            title="Instagram" width="40px" height="40px" alt="Where is my button?">
-                    </a>
 
-                    <a class="button" href="https://www.twitter.com/jadnellReyes"><img src="Images/twitter.png"
-                            title="Twitter" width="40px" height="40px" alt="Where is my button?">
-                    </a>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col">
+                            <div class="container">
+                                <a class="button" href="https://www.instagram.com/j_dnell/"><img
+                                        src="Images/instagram.png" title="Instagram" width="40px" height="40px"
+                                        alt="Where is my button?">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="container">
+                                <a class="button" href="https://www.twitter.com/jadnellReyes"><img
+                                        src="Images/twitter.png" title="Twitter" width="40px" height="40px"
+                                        alt="Where is my button?">
+                                </a>
+                            </div>
+                        </div>
 
-                    <a class="button" href="https://paypal.me/jadnell">
-                        <img src="Images/paypal.png" title="PayPal" width="40px" height="40px"
-                            alt="Where is my button?">
-                    </a>
-
-                    <a class="button" href="https://github.com/jadnell555"><img src="Images/github.png" title="GitHub"
-                            width="40px" height="40px" alt="Where is my button?">
-                    </a>
-
-                </center>
+                        <div class="col">
+                            <div class="container">
+                                <a class="button" href="https://github.com/jadnell555"><img src="Images/github.png"
+                                        title="GitHub" width="40px" height="40px" alt="Where is my button?">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
