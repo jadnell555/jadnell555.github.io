@@ -20,27 +20,45 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
-    <div id="navBar">
-        <div class="dropdown-center">
-            <button class="btn " id="menuButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="Images/hamburgerMenu.png" title="Menu" width="50px" height="50px" alt="Menu Button">
-            </button>
-            <ul class="dropdown-menu">
-                <h6 class="dropdown-header"> About Me </h6>
-                <li><a class="dropdown-item" href="index.html"><img src="Images/aboutMe.png" title="About Me"
-                            width="50px" height="50px" alt="Where is my button?"></a></li>
-                <h6 class="dropdown-header"> Programming Languages </h6>
-                <li><a class="dropdown-item" href="progLanguagesPage.html"><img src="Images/programmingLanguages.png"
-                            title="Programming Languages" width="50px" height="50px" alt="Where is my button?">
-                    </a></li>
-                <h6 class="dropdown-header"> Projects </h6>
-                <li><a class="dropdown-item" href="projectsPage.html">
-                        <img src="Images/projects.png" title="Projects" width="50px" height="50px"
-                            alt="Where is my button?">
-                    </a></li>
+    <div class="navBar">
+        <div class="menu">
+            <div id="selectMenu">
+                <button id="menuButton" type="button"> <img src="Images/hamburgerMenu.png" title="Menu" width="50px"
+                        height="50px" alt="Menu Button"> </button>
+            </div>
+
+            <ul id="menuButtonsList" class="hide">
+                <li class="options"><button class="menuButtons"" type=" button"
+                        onclick="window.location.href='index.html';"> <img src="Images/aboutMe.png" title="About Me"
+                            width="50px" height="50px" alt="About Me Button"> </li>
+                <li class="options"><button class="menuButtons"" type=" button"
+                        onclick="window.location.href='progLanguagesPage.html';"> <img
+                            src="Images/programmingLanguages.png" title="Programming Languages" width="50px"
+                            height="50px" alt="Programming Languages Button"></li>
+                <li class="options"><button class="menuButtons"" type=" button"
+                        onclick="window.location.href='projectsPage.html';"> <img src="Images/projects.png"
+                            title="Projects" width="50px" height="50px" alt="Projects Button"></li>
             </ul>
+
         </div>
+
     </div>
+
+    <script>
+        var selectMenu = document.getElementById("selectMenu");
+        var menuButtonsList = document.getElementById("menuButtonsList");
+
+        selectMenu.onclick = function () {
+            menuButtonsList.classList.toggle("hide");
+        } // end function
+
+        for (Option of options) {
+            Option.onclick = function () {
+                menuButtonsList.classList.toggle("hide");
+            } // end function
+        } // end for
+    </script>
+
     <div id="greeting">
         <h2>
             <center> Hello, </center>
