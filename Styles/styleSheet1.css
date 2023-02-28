@@ -1,12 +1,12 @@
 body {
-    background-image: linear-gradient(to bottom right, #FF8473, #FFF9D2);
+    background-image: linear-gradient(to bottom left, #FF8473, #FFF9D2);
     font-family: Verdana;
     width: 95%;
     text-size-adjust: auto;
-    
+
     min-width: 360px;
     min-height: 486px;
-    
+
     max-width: 3024px;
     max-height: 1964px;
     margin-right: 20px;
@@ -16,13 +16,36 @@ body {
     position: sticky;
     z-index: 1100;
     top: 10px;
-    width: 75px;
-    height: 65px;
-    margin-left: 30px;
+    width: 74px;
+    height: 63px;
+    margin-left: 70px;
     border-radius: 20px;
     top: 10px;
     box-shadow: 2px 2px 3px #111111;
     background-color: #FFF9D2;
+}
+
+.dropdown-center{
+    border: none;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
+
+
+.dropdown-header{
+    color: #FF8473;
+}
+
+.btn{
+    border: none;
+}
+
+#menuButton {
+    margin: auto;
+    border-radius: 20px;
 }
 
 h6 {
