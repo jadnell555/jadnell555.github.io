@@ -5,7 +5,7 @@ body {
     text-size-adjust: auto;
     padding: 0;
     margin: 0;
-    
+
     min-width: 360px;
     min-height: 486px;
 
@@ -22,7 +22,7 @@ body {
     margin-left: 30px;
     border-radius: 20px;
     top: 10px;
-    box-shadow: 2px 2px 3px #111111;
+    box-shadow: 2px 2px 3px #252525;
     background-color: #FFF9D2;
 }
 
@@ -54,7 +54,7 @@ body {
 
 .menuButtons {
     background-color: #FFF9D2;
-    box-shadow: 2px 2px 3px #111111;
+    box-shadow: 2px 2px 3px #252525;
 
     width: 65px;
     height: 65px;
@@ -71,9 +71,10 @@ h6 {
     margin-top: -20px;
 }
 
-#myPic {
+.mainPictures {
     border-radius: 200px;
     box-shadow: 2px 2px 3px #111111;
+    margin: 20px;
 }
 
 .infoCard {
@@ -82,10 +83,14 @@ h6 {
     box-shadow: 2px 2px 3px #111111;
     padding: 10px;
     margin: 10px;
+    width: 100%;
 }
 
-h3:hover {
+#contact,
+#summary {
     color: #FF8473;
+    text-shadow: 2px 2px 5px #FF8473;
+    font-style: oblique;
 }
 
 p {
@@ -95,10 +100,85 @@ p {
     text-indent: 2em;
 }
 
-#lists {
-    padding-left: 75px;
-    list-style-type: square;
-    text-size-adjust: auto;
+.formButtons {
+    background-color: #FF8473;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px #111111;
+    color: #fff9d2;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+::placeholder {
+    padding: 5px;
+    margin: 10px;
+    color: #fff9d2;
+}
+
+#firstName {
+    margin: 5px;
+    padding: 10px;
+    width: 39%;
+    box-sizing: border-box;
+}
+
+#lastName {
+    margin: 5px;
+    padding: 10px;
+    width: 38%;
+    box-sizing: border-box;
+}
+
+#email {
+    margin: 5px;
+    padding: 10px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+textarea {
+    margin: 5px;
+    padding: 12px 20px;
+    width: 80%;
+    height: 150px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.formButtons::-webkit-scrollbar {
+    width: 15px;
+}
+
+.formButtons::-webkit-scrollbar-track {
+    height: 50%;
+    background: #FF8473;
+    margin-right: 10px;
+    border: 2px solid #252525;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.formButtons::-webkit-scrollbar-button{
+    background-color: #FFF9D2;
+    border-radius: 30px;
+    visibility: hidden;
+}
+
+.formButtons::-webkit-scrollbar-thumb {
+    background-color: #FFF9D2;
+    border-radius: 30px;
+    width: 90%;
+    border: 2px solid #252525;
+}
+
+#submitButton:hover {
+    background-color: #252525;
+    box-shadow: 2px 2px 3px #FF8473;
+
 }
 
 li {
