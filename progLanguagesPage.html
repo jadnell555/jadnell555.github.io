@@ -4,198 +4,117 @@
 <HTML xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title> Jadnell Reyes' Website </title>
-    <link href="Styles/styleSheet1.css" type="text/css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <link href="Styles/styleSheet1.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta name="description" content="This webpage contains information about Jadnell Reyes, 
+    a Puerto Rican Computer Engineering Student">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Jadnell Reyes' Portfolio </title>
 </head>
 
 <body>
-    <header>
-        <static div id="navbar">
-            <center>
-                <a class="button" href="index.html"><img src="Images/aboutMe.png" title="About Me" width="50px"
-                        height="50px" alt="Where is my button?">
-                </a>
+    <header></header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 
-                <a class="button" href="progLanguagesPage2.html"><img src="Images/otherStyleSheet.png"
-                        title="Change Style Sheet" width="50px" height="50px" alt="Where is my button?">
-                </a>
 
-                <a class="button" href="progLanguagesPage.html"><img src="Images/programmingLanguages.png"
-                        title="Programming Languages" width="55px" height="55px" alt="Where is my button?">
-                </a>
-
-                <a class="button" href="projectsPage.html">
-                    <img src="Images/projects.png" title="Projects" width="50px" height="50px"
-                        alt="Where is my button?">
-                </a>
-
-                <a class="button" href="javascriptPreQuiz.html"><img src="Images/page.png" title="JavaScript Pre-Quiz"
-                        width="50px" height="50px" alt="Where is my button?">
-                </a>
-
-                <a class="button" href="animation.html"><img src="Images/animation.png" title="Adobe Animate Animation"
-                        width="50px" height="50px" alt="Where is my button?">
-                </a>
-
-                <a class="button" href="https://github.com/jadnell555/jadnell555.github.io/blob/main/textbooks_HW4.zip"><img src="Images/xml.png" title="Book List XML Document" width="50px"
-                        height="50px" alt="Where is my button?">
-                </a>
-            </center>
+    <!-- One Button Navigation Bar-->
+    <div class="navBar">
+        <div class="menu">
+            <div id="selectMenu">
+                <button id="menuButton" type="button"> <img src="Images/hamburgerMenu.png" title="Menu" width="50px"
+                        height="50px" alt="Menu Button"> </button>
             </div>
-    </header>
+
+            <ul id="menuButtonsList" class="hide">
+                <li class="options"><button class="menuButtons"" type=" button"
+                        onclick="window.location.href='index.html';"> <img src="Images/aboutMe.png" title="About Me"
+                            width="50px" height="50px" alt="About Me Button"> </li>
+                <li class="options"><button class="menuButtons"" type=" button" 
+                        onclick="window.location.href='progLanguagesPage.html';"> <img
+                            src="Images/programmingLanguages.png" title="Programming Languages" width="50px"
+                            height="50px" alt="Programming Languages Button"></li>
+                <li class="options"><button class="menuButtons"" type=" button"
+                        onclick="window.location.href='projectsPage.html';"> <img src="Images/projects.png"
+                            title="Projects" width="50px" height="50px" alt="Projects Button"></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Script for Navigation Bar Operation Onclick -->
+    <script>
+        var selectMenu = document.getElementById("selectMenu");
+        var menuButtonsList = document.getElementById("menuButtonsList");
+
+        selectMenu.onclick = function () {
+            menuButtonsList.classList.toggle("hide");
+        } // end function
+
+        for (Option of options) {
+            Option.onclick = function () {
+                menuButtonsList.classList.toggle("hide");
+            } // end function
+        } // end for
+    </script>
+
 
     <br><br>
 
     <h2>
-        <center>Programming Languages Learned: </center>
+        <center>Programming Languages: </center>
     </h2>
-    <h5>
-        <center>(Up to August, 2022)</center>
-    </h5>
-    <hr width="90%">
-    <br>
-    <br>
-    <br>
-    <center>
-        <table>
-            <thead>
-                <th><i> Language Logo: </i></th>
-                <th><i> Language Name: </i></th>
-                <th><i> Proficiency: </i></th>
-            </thead>
 
-            <tr>
-                <td>
-                    <center> <img src="Images/c++.png" title="C++" width="100px" height="100px" alt="C++ Logo"></a>
-                    </center>
-                </td>
-                <td>
-                    <center> C++ </center>
-                </td>
-                <td>
-                    <center> ●●●●○ </center>
-                </td>
-            </tr>
+    <h2>
+        <center>Software: </center>
+    </h2>
 
-            <tr>
-                <td>
-                    <center> <img src="Images/python.png" title="Python" width="100px" height="100px"
-                            alt="Python Logo"></a>
-                    </center>
-                </td>
-                <td>
-                    <center>Python</center>
-                </td>
-                <td>
-                    <center> ●●●○○ </center>
-                </td>
-            </tr>
+    <!-- Social Media Bar (Footer) -->
+    <div class="container">
+        <footer>
+            <br>
+            <h4>
+                <center> Social Media: </center>
+            </h4>
 
-            <tr>
-                <td>
-                    <center> <img src="Images/matlab.png" title="MATLAB" width="150px" height=125px"
-                            alt="MATLAB Logo"></a>
-                    </center>
-                </td>
-                <td>
-                    <center>MATLAB</center>
-                </td>
-                <td>
-                    <center> ●●○○○ </center>
-                </td>
-            </tr>
+            <div id="socialMediaBar">
+                <br>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <div class="container">
+                                <a type="button" href="https://www.instagram.com/j_dnll/"><img
+                                        src="Images/instagram.png" title="Instagram" width="40px" height="40px"
+                                        alt="Instagram Button">
+                                </a>
+                                <h6> Instagram </h6>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="container">
+                                <a type="button" href="https://www.twitter.com/jadnellReyes"><img
+                                        src="Images/twitter.png" title="Twitter" width="40px" height="40px"
+                                        alt="Twitter Button">
+                                </a>
+                                <h6> Twitter </h6>
+                            </div>
+                        </div>
 
-            <tr>
-                <td>
-                    <center> <img src="Images/html.png" title="HTML5" width="100px" height="100px" alt="HTML5 Logo"></a>
-                    </center>
-                </td>
-                <td>
-                    <center>HTML</center>
-                </td>
-                <td>
-                    <center> ●●●○○ </center>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <center> <img src="Images/css.png" title="CSS3" width="100px" height="100px" alt="CSS3 Logo"></a>
-                    </center>
-                </td>
-                <td>
-                    <center>CSS</center>
-                </td>
-                <td>
-                    <center> ●●○○○ </center>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <center> <img src="Images/dart.png" title="Dart" width="100px" height="100px" alt="Dart Logo"></a>
-                    </center>
-                </td>
-                <td>
-                    <center>Dart</center>
-                </td>
-                <td>
-                    <center> ●●○○○ </center>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <center> <img src="Images/vhdl.png" title="VHDL" width="100px" height="100px" alt="VHDL Logo"></a>
-                    </center>
-                </td>
-                <td>
-                    <center>VHDL</center>
-                </td>
-                <td>
-                    <center> ●○○○○ </center>
-                </td>
-            </tr>
-        </table>
-    </center>
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <hr width="90%">
-
-    <footer>
-        <h4>
-            <center> Social Media: </center>
-        </h4>
-
-        <static div id="socialMediaBar">
-            <center>
-                <a class="button" href="https://www.instagram.com/j_dnell/"><img src="Images/instagram.png"
-                        title="About Me" width="50px" height="50px" alt="Where is my button?">
-                </a>
-
-                <a class="button" href="https://www.facebook.com/jadnell"><img src="Images/facebook.png"
-                        title="Change Style Sheet" width="50px" height="50px" alt="Where is my button?">
-                </a>
-
-                <a class="button" href="https://github.com/jadnell555"><img src="Images/github.png"
-                        title="Programming Languages" width="50px" height="50px" alt="Where is my button?">
-                </a>
-
-                <a class="button" href="https://paypal.me/jadnell">
-                    <img src="Images/paypal.png" title="Projects" width="50px" height="50px" alt="Where is my button?">
-                </a>
-
-                <a class="button" href="https://discord.com/channels/@harshGhost.error"><img src="Images/discord.png"
-                        title="JavaScript Pre-Quiz" width="50px" height="50px" alt="Where is my button?">
-                </a>
-            </center>
+                        <div class="col">
+                            <div class="container">
+                                <a type="button" href="https://github.com/jadnell555"><img src="Images/github.png"
+                                        title="GitHub" width="40px" height="40px" alt="GitHub Button">
+                                </a>
+                                <h6> GitHub </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </HTML>
