@@ -67,11 +67,6 @@ body {
     border-radius: 20px;
 }
 
-h6 {
-    text-align: center;
-    font-size: 6px;
-}
-
 #greeting {
     margin-top: -20px;
 }
@@ -94,13 +89,16 @@ h2 {
     background-color: #fff9d2;
     border-radius: 10px;
     box-shadow: 2px 2px 3px #111111;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
     width: 100%;
 }
 
 #contact,
-#summary {
+#summary,
+#frontEnd,
+#objectOriented,
+#other {
     color: #FF8473;
     text-shadow: 2px 2px 5px #FF8473;
     font-style: oblique;
@@ -174,7 +172,7 @@ textarea {
     background: #FF8473;
     border: 2px solid #252525;
     border-radius: 30px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -184,7 +182,7 @@ textarea {
     border-radius: 30px;
     width: 90%;
     border: 2px solid #252525;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 #submitButton:hover {
@@ -203,4 +201,33 @@ li {
 
 footer {
     margin-bottom: 20px;
+}
+
+/* Programming Languages Page*/
+
+.progLangCube {
+    background-color: #FF8473;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 3px #111111;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.progLangCube:hover{
+    box-shadow: 2px 2px 3px #FF8473;
+}
+
+.progLangName, .softwareName, .techName{
+    margin: auto;
+    font-size: 10px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.progLangIcon{
+    z-index: 1100;
+    overflow: clip;
 }
