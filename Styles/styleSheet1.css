@@ -213,7 +213,7 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Programming Languages Page*/
+/* PROGRAMMING LANGUAGES PAGE */
 
 .progLangCube {
     background-color: #FF8473;
@@ -245,7 +245,7 @@ footer {
     overflow: clip;
 }
 
-/* PROCECTS PAGE*/
+/* PROJECTS PAGE*/
 
 #projectContainer {
     display: flex;
@@ -271,6 +271,12 @@ footer {
     box-shadow: 2px 2px 3px #111111;
     margin: 20px;
     background-color: #252525;
+}
+
+.sourceCode {
+    border-radius: 200px;
+    box-shadow: 2px 2px 3px #252525;
+    background-color: #FF8473;
 }
 
 .projectTitle {
