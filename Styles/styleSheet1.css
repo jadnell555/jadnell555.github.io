@@ -213,8 +213,7 @@ footer {
     margin-bottom: 20px;
 }
 
-/* PROGRAMMING LANGUAGES PAGE */
-
+/* TECH STACK PAGE */
 .progLangCube {
     background-color: #FF8473;
     width: 100px;
@@ -235,6 +234,7 @@ footer {
 .softwareName,
 .techName {
     margin: auto;
+    padding-bottom: 2px;
     font-size: 10px;
     font-style: oblique;
     font-weight: bold;
@@ -246,7 +246,6 @@ footer {
 }
 
 /* PROJECTS PAGE*/
-
 #projectContainer {
     display: flex;
     overflow-x: scroll;
