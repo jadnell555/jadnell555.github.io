@@ -21,6 +21,14 @@ body {
     max-height: 1964px;
 }
 
+.space3px{
+    padding: 3px;
+}
+
+.space5px{
+    padding: 5px;
+}
+
 .navBar {
     position: sticky;
     z-index: 1100;
