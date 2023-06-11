@@ -1,0 +1,175 @@
+body {
+    font-family: Verdana;
+    padding: 2%;
+    width: 95%;
+    text-size-adjust: auto;
+    min-width: 360px;
+    max-width: 2880px;
+    min-height: 800px;
+    max-height: 1800px;
+}
+
+#quizBody {
+    background-color: darkslateblue;
+    color: aliceblue;
+    padding: 2%;
+    width: 95%;
+    text-size-adjust: auto;
+    min-width: 360px;
+    max-width: 2880px;
+    min-height: 800px;
+    max-height: 1800px;
+}
+
+#quizTitle {
+    font-family: Haettenschweiler;
+    font-size: 40px;
+    font-weight: 200;
+    color: aliceblue;
+}
+
+
+
+#animationTitle {
+    font-family: Haettenschweiler;
+    font-size: 40px;
+    font-weight: 200;
+    color: darkslateblue;
+    margin: 30px;
+}
+
+#animationCreator {
+    font-family: 'Trebuchet MS';
+    font-weight: 200;
+    color: darkslateblue;
+}
+
+#animationSpace {
+    width: 750px;
+    height: 750px;
+    background-color: grey;
+    box-shadow: 2px 2px 3px #111111;
+}
+
+#univInfo {
+    line-height: 12px;
+}
+
+#navbar {
+    padding: 5px;
+}
+
+#myPic {
+    border-radius: 2%;
+}
+
+header {
+    background-color: darkslateblue;
+    margin: -35px;
+}
+
+.button {
+    text-decoration: none;
+    padding: 30px;
+}
+
+#submitButtonQuiz {
+    border-radius: 10px;
+    width: 75px;
+    height: 35px;
+    border-color: aliceblue;
+    font-family: Haettenschweiler;
+    font-weight: 25;
+    font-size: 20px;
+    color: grey;
+}
+
+.questions {
+    padding: 10px;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+#submit{
+    color: aliceblue;
+}
+
+#quizOl {
+    text-align: center;
+    list-style-position: inside;
+}
+
+h1 {
+    font-style: italic;
+    font-family: cursive;
+    color: darkslateblue;
+    text-size-adjust: auto;
+}
+
+h2 {
+    color: darkslateblue;
+    text-size-adjust: auto;
+}
+
+h3 {
+    color: darkslateblue;
+}
+
+h4 {
+    color: darkslateblue;
+}
+
+h5 {
+    color: darkslateblue;
+    text-size-adjust: auto;
+}
+
+p.desc {
+    text-align: justify;
+    text-size-adjust: auto;
+}
+
+ul {
+    padding-left: 75px;
+    list-style-type: circle;
+    text-size-adjust: auto;
+    color: darkslateblue;
+    ;
+}
+
+ol {
+    padding-left: 80px;
+    padding-right: 75px;
+    color: darkslateblue;
+}
+
+table {
+    width: 100%;
+    text-size-adjust: auto;
+    font-size: x-large;
+    color: darkslateblue;
+    background-color: lightgrey;
+}
+
+table.one {
+    width: 25%;
+    text-size-adjust: auto;
+    background-color: white;
+}
+
+th {
+    padding: .5cm;
+    text-size-adjust: auto;
+}
+
+hr {
+    width: 95%;
+}
+
+a {
+    color: gray;
+}
+
+#social{
+    color: aliceblue
+}
