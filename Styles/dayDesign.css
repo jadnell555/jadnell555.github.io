@@ -59,13 +59,18 @@ body {
 }
 
 .options {
-    padding-bottom: 28px;
     cursor: pointer;
     box-sizing: border-box;
 }
 
 .hide {
     visibility: hidden;
+}
+
+.menuButtonsTitle{
+    margin-top: 5px;
+    text-align: center;
+    font-size: small;
 }
 
 .menuButtons {
