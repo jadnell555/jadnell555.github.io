@@ -42,12 +42,8 @@ body {
     background-color: #FFF9D2;
 }
 
-#menuButton {
-    margin: auto;
-    border: none;
-    padding: 7px 0px 0px 7px;
-    border-radius: 20px;
-    background-color: transparent;
+#menuButton:hover{
+    background-color: #f7eeb1;
 }
 
 #menuButtonsList {
@@ -71,6 +67,7 @@ body {
     margin-top: 5px;
     text-align: center;
     font-size: small;
+    color: #111111;
 }
 
 .menuButtons {
@@ -82,6 +79,10 @@ body {
 
     border: none;
     border-radius: 20px;
+}
+
+.menuButtons:hover{
+    background-color: #FF8473;
 }
 
 #greeting {
