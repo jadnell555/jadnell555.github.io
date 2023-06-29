@@ -1,10 +1,16 @@
-html {
+html{
     background-image: linear-gradient(to bottom left, #FF8473, #FFF9D2);
 }
 
-* {
+*{
     box-sizing: border-box;
 }
+
+*:focus, *:active{
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
 
 body {
     background-image: linear-gradient(to bottom left, #FF8473, #FFF9D2);
@@ -38,12 +44,21 @@ body {
     margin-left: 30px;
     border-radius: 20px;
     top: 10px;
-    box-shadow: 2px 2px 3px #252525;
-    background-color: #FFF9D2;
 }
 
-#menuButton:hover{
-    background-color: #f7eeb1;
+button {
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: #FF8473;
+    box-shadow: 0px 10px 15px #FF8473;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+button:active{
+    transform: translateY(-1px);
 }
 
 #menuButtonsList {
@@ -60,6 +75,8 @@ body {
 }
 
 .hide {
+    opacity: 0;
+    transition: 0.3s ease;
     visibility: hidden;
 }
 
@@ -68,6 +85,7 @@ body {
     text-align: center;
     font-size: small;
     color: #111111;
+    transition: 0.3s ease;
 }
 
 .menuButtons {
@@ -79,10 +97,6 @@ body {
 
     border: none;
     border-radius: 20px;
-}
-
-.menuButtons:hover{
-    background-color: #FF8473;
 }
 
 #greeting {
@@ -139,41 +153,42 @@ p {
     color: #fff9d2;
     padding: 10px;
     margin: 5px;
-    box-sizing: border-box;
     resize: none;
 }
 
 .formButtons:focus {
-    outline: none;
     box-shadow: 2px 2px 3px #FF8473;
+}
+
+.formButtons:active{
+    padding: 10px;
+    margin: 5px;
+    resize: none; 
 }
 
 ::placeholder {
     padding: 5px;
     margin: 10px;
     color: #fff9d2;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 #firstName {
     margin: 5px;
     padding: 10px;
     width: 39%;
-    box-sizing: border-box;
 }
 
 #lastName {
     margin: 5px;
     padding: 10px;
     width: 38%;
-    box-sizing: border-box;
 }
 
 #email {
     margin: 5px;
     padding: 10px;
     width: 80%;
-    box-sizing: border-box;
 }
 
 textarea {
@@ -228,6 +243,10 @@ footer {
 }
 
 /* TECH STACK PAGE */
+.techStackContainer{
+    margin-left: 30px;
+}
+
 .progLangCube {
     background-color: #FF8473;
     width: 100px;
@@ -237,7 +256,6 @@ footer {
     margin: auto;
     margin-top: 25px;
     border-radius: 20px;
-    box-sizing: border-box;
 }
 
 .progLangCube:hover {
