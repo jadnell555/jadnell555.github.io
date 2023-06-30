@@ -1,12 +1,13 @@
-html{
+html {
     background-image: linear-gradient(to bottom left, #FF8473, #FFF9D2);
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-*:focus, *:active{
+*:focus,
+*:active {
     outline: none !important;
     -webkit-tap-highlight-color: transparent;
 }
@@ -27,11 +28,11 @@ body {
     max-height: 1964px;
 }
 
-.space3px{
+.space3px {
     padding: 3px;
 }
 
-.space5px{
+.space5px {
     padding: 5px;
 }
 
@@ -50,14 +51,14 @@ button {
     transition: 0.3s ease;
 }
 
-button:hover{
+button:hover {
     background-color: #FF8473;
     box-shadow: 0px 10px 15px #FF8473;
     color: #ffffff;
     transform: translateY(-5px);
 }
 
-button:active{
+button:active {
     transform: translateY(-1px);
 }
 
@@ -80,7 +81,7 @@ button:active{
     visibility: hidden;
 }
 
-.menuButtonsTitle{
+.menuButtonsTitle {
     margin-top: 5px;
     text-align: center;
     font-size: small;
@@ -160,10 +161,10 @@ p {
     box-shadow: 2px 2px 3px #FF8473;
 }
 
-.formButtons:active{
+.formButtons:active {
     padding: 10px;
     margin: 5px;
-    resize: none; 
+    resize: none;
 }
 
 ::placeholder {
@@ -242,8 +243,35 @@ footer {
     margin-bottom: 20px;
 }
 
-/* TECH STACK PAGE */
+.socialMediaButton{
+    background-color: #fff9d2;
+    box-shadow: 2px 2px 3px #252525;
 
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 20px;
+}
+
+.socialMediaTitles {
+    padding: 5px;
+}
+
+/*
+.socialMediaContainer {
+    background-color: #FFF9D2;
+    box-shadow: 2px 2px 3px #252525;
+
+    width: 65px;
+    height: 65px;
+
+    border: none;
+    border-radius: 20px;
+}
+*/
+
+/* TECH STACK PAGE */
 .progLangCube {
     background-color: #FF8473;
     width: 100px;
@@ -253,10 +281,18 @@ footer {
     margin: auto;
     margin-top: 25px;
     border-radius: 20px;
+    transition: 0.3s ease;
 }
 
 .progLangCube:hover {
-    box-shadow: 2px 2px 3px #FF8473;
+    background-color: #FF8473;
+    box-shadow: 0px 10px 15px #FF8473;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.progLangCube:active {
+    transform: translateY(-1px);
 }
 
 .progLangName,
@@ -279,11 +315,19 @@ footer {
     display: flex;
     overflow-x: scroll;
     padding: 24px;
-    width:90%;
+    width: 90%;
     scroll-snap-type: x mandatory;
     scroll-padding: 24px;
     border-radius: 20px;
     gap: 12px;
+}
+
+.projectButton,
+.sourceCodeButton {
+    border-radius: 150px;
+    box-shadow: 2px 2px 3px #252525;
+    border: none;
+    background-color: #252525;
 }
 
 #projectContainer,
@@ -294,19 +338,14 @@ footer {
     scroll-snap-align: start;
 }
 
+/*
 .projectLang {
     border-radius: 200px;
     box-shadow: 2px 2px 3px #111111;
     margin: 20px;
     background-color: #252525;
 }
-
-.sourceCode {
-    border-radius: 200px;
-    box-shadow: 2px 2px 3px #252525;
-    background-color: #252525;
-}
-
+*/
 .projectTitle {
     color: #fff9d2;
     background-color: #252525;
