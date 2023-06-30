@@ -124,7 +124,7 @@ h2 {
     border-radius: 10px;
     box-shadow: 2px 2px 3px #111111;
     padding: 20px;
-    margin: auto;
+    margin: 20px;
     width: 100%;
 }
 
@@ -258,18 +258,6 @@ footer {
     padding: 5px;
 }
 
-/*
-.socialMediaContainer {
-    background-color: #FFF9D2;
-    box-shadow: 2px 2px 3px #252525;
-
-    width: 65px;
-    height: 65px;
-
-    border: none;
-    border-radius: 20px;
-}
-*/
 
 /* TECH STACK PAGE */
 .progLangCube {
@@ -324,8 +312,9 @@ footer {
 
 .projectButton,
 .sourceCodeButton {
-    border-radius: 150px;
+    border-radius: 200px;
     box-shadow: 2px 2px 3px #252525;
+    padding: 3px;
     border: none;
     background-color: #252525;
 }
@@ -338,14 +327,6 @@ footer {
     scroll-snap-align: start;
 }
 
-/*
-.projectLang {
-    border-radius: 200px;
-    box-shadow: 2px 2px 3px #111111;
-    margin: 20px;
-    background-color: #252525;
-}
-*/
 .projectTitle {
     color: #fff9d2;
     background-color: #252525;
