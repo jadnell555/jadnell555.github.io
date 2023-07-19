@@ -13,18 +13,11 @@ body {
     background-image: linear-gradient(to bottom left, #FF8473, #FFF9D2);
     font-family: Verdana;
     width: 95%;
+    min-height: 100vh;
     text-size-adjust: auto;
-    padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
-.space3px {
-    padding: 3px;
-}
-
-.space5px {
-    padding: 5px;
-}
 
 .navBar {
     position: sticky;
@@ -233,7 +226,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.socialMediaButton{
+.socialMediaButton {
     background-color: #fff9d2;
     box-shadow: 2px 2px 3px #252525;
 
@@ -250,6 +243,15 @@ footer {
 
 
 /* TECH STACK PAGE */
+.techStackCard {
+    background-color: #fff9d2;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #111111;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
 .progLangCube {
     background-color: #FF8473;
     width: 100px;
@@ -262,14 +264,16 @@ footer {
     transition: 0.3s ease;
 }
 
-.progLangCube:hover, .projectTitle:hover {
+.progLangCube:hover,
+.projectTitle:hover {
     background-color: #FF8473;
     box-shadow: 0px 10px 15px #FF8473;
     color: #fff9d2;
     transform: translateY(-5px);
 }
 
-.progLangCube:active, .projectTitle:active {
+.progLangCube:active,
+.projectTitle:active {
     transform: translateY(-1px);
 }
 
@@ -329,9 +333,9 @@ footer {
     transition: 0.3s ease;
 }
 
-.projectDescription{
+.projectDescription {
     padding: 5px;
-    margin: 5px; 
+    margin: 5px;
 }
 
 #imageContainer {
@@ -344,6 +348,7 @@ footer {
     border-radius: 20px;
     gap: 10px;
 }
+
 /*
 #imageContainer,
 .imageCard {
