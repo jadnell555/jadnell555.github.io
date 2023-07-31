@@ -8,6 +8,7 @@
     <link href="Styles/dayDesign.css" type="text/css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <meta name="description" content="This webpage contains information about Jadnell Reyes, 
     a Puerto Rican Computer Engineering Student">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,6 +54,7 @@
     <script>
         var selectMenu = document.getElementById("selectMenu");
         var menuButtonsList = document.getElementById("menuButtonsList");
+        
 
         selectMenu.onclick = function () {
             menuButtonsList.classList.toggle("hide");
@@ -64,6 +66,8 @@
             } // end function
         } // end for 
     </script>
+
+
 
     <br>
 
@@ -80,13 +84,16 @@
                             height="75px" alt="HTML Logo">
                     </div>
                 </div>
+
                 <div class="col">
-                    <div class="progLangCube">
+                    <button type="button" id="techStackButton" class="progLangCube">
                         <h6 class="progLangName"> CSS </h6>
                         <img class="progLangIcon" src="Images/Tech Stack/css.svg" title="CSS" width="75px" height="75px"
                             alt="CSS Logo">
-                    </div>
+                    </button>
+                    <span id="techStackInfoRightSide" class="hide"> Test </span>
                 </div>
+
                 <div class="col">
                     <div class="progLangCube">
                         <h6 class="progLangName"> JavaScript </h6>
@@ -270,6 +277,17 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        var techStackButton = document.getElementById("techStackButton");
+        var techStackInfo = document.getElementById("techStackInfoRightSide");
+        
+        techStackButton.onclick = function () {
+            techStackInfo.classList.toggle("hide");
+        }
+    
+    </script>
+
 </body>
 
 </HTML>

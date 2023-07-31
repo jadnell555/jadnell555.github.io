@@ -49,6 +49,7 @@ button:active {
   align-items: left;
   justify-content: left;
   padding-top: 28px;
+  transition: 0.3s ease;
 }
 
 .options {
@@ -260,6 +261,29 @@ footer {
   margin-top: 25px;
   border-radius: 20px;
   transition: 0.3s ease;
+  border: none;
+}
+
+#techStackInfoRightSide {
+  position: absolute;
+  font-size: 10px;
+  width: 25%;
+  min-width: 200px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff9d2;
+  box-shadow: 2px 2px 3px #111111;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  left: 50%;
+  top: 33.3%;
+}
+
+#techStackInfoRightSide:hover {
+  transform: translateY(-5px);
+}
+
+.techStackInfoLeftSide {
 }
 
 .progLangCube:hover,
