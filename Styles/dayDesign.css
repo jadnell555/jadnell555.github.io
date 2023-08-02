@@ -264,6 +264,21 @@ footer {
   border: none;
 }
 
+.definitions {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.definitions b {
+  text-decoration: underline;
+}
+
+.defSource {
+  color: #ff8473;
+  position: relative;
+  float: right;
+}
+
 #HTMLInfo,
 #CSSInfo,
 #JSInfo,
@@ -282,11 +297,12 @@ footer {
 #FlutterInfo,
 #DjangoInfo {
   position: absolute;
-  font-size: 10px;
   width: 25%;
   min-width: 200px;
-  padding: 1rem;
-  margin: 1rem;
+  max-width: 500px;
+  max-height: 500px;
+  padding: 25px;
+  margin: 25px;
   background-color: #fff9d2;
   box-shadow: 2px 2px 3px #111111;
   border-radius: 50px;
