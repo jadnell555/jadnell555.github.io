@@ -264,7 +264,23 @@ footer {
   border: none;
 }
 
-#techStackInfoRightSide {
+#HTMLInfo,
+#CSSInfo,
+#JSInfo,
+#PythonInfo,
+#CPPInfo,
+#DartInfo,
+#SQLInfo,
+#VSCODEInfo,
+#AndroidStudioInfo,
+#VSInfo,
+#VirtualBoxInfo,
+#RaspberryPiInfo,
+#MATLABInfo,
+#GitHubInfo,
+#JupyterInfo,
+#FlutterInfo,
+#DjangoInfo {
   position: absolute;
   font-size: 10px;
   width: 25%;
@@ -275,15 +291,78 @@ footer {
   box-shadow: 2px 2px 3px #111111;
   border-radius: 50px;
   transition: 0.3s ease;
+}
+
+#HTMLInfo {
+  right: 50%;
+}
+#CSSInfo {
   left: 50%;
-  top: 33.3%;
+}
+#JSInfo {
+  left: 50%;
+}
+#PythonInfo {
+  right: 50%;
+}
+#CPPInfo {
+  left: 50%;
+}
+#DartInfo {
+  left: 50%;
+}
+#SQLInfo {
+  left: 50%;
+}
+#VSCODEInfo {
+  right: 50%;
+}
+#AndroidStudioInfo {
+  left: 50%;
+}
+#VSInfo {
+  left: 50%;
+}
+#VirtualBoxInfo {
+  right: 50%;
+}
+#RaspberryPiInfo {
+  left: 50%;
+}
+#MATLABInfo {
+  left: 50%;
+}
+#GitHubInfo {
+  right: 50%;
+}
+#JupyterInfo {
+  left: 50%;
+}
+#FlutterInfo {
+  left: 50%;
+}
+#DjangoInfo {
+  left: 50%;
 }
 
-#techStackInfoRightSide:hover {
+#HTMLInfo:hover,
+#CSSInfo:hover,
+#JSInfo:hover,
+#PythonInfo:hover,
+#CPPInfo:hover,
+#DartInfo:hover,
+#SQLInfo:hover,
+#VSCODEInfo:hover,
+#AndroidStudioInfo:hover,
+#VSInfo:hover,
+#VirtualBoxInfo:hover,
+#RaspberryPiInfo:hover,
+#MATLABInfo:hover,
+#GitHubInfo:hover,
+#JupyterInfo:hover,
+#FlutterInfo:hover,
+#DjangoInfo:hover {
   transform: translateY(-5px);
-}
-
-.techStackInfoLeftSide {
 }
 
 .progLangCube:hover,
