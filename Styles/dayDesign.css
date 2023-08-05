@@ -17,6 +17,9 @@ body {
   margin: 0 auto;
   position: relative;
 }
+.blur {
+  filter: blur(10px);
+}
 
 .navBar {
   position: sticky;
