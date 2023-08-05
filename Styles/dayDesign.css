@@ -380,9 +380,8 @@ footer {
 .projectCard {
   background-color: #fff9d2;
   box-shadow: 2px 2px 3px #111111;
-  margin: auto;
-  min-width: 300px;
-  width: 100%;
+  margin: 20px;
+  width: 95%;
 }
 
 .projectButton,
