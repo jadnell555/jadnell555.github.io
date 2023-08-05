@@ -380,8 +380,16 @@ footer {
 .projectCard {
   background-color: #fff9d2;
   box-shadow: 2px 2px 3px #111111;
-  margin: 20px;
-  width: 95%;
+  margin: 24px;
+  width: 100%;
+}
+
+#projectContainer,
+.projectCard {
+  flex: 0 0 100%;
+  padding: 24px;
+  border-radius: 20px;
+  scroll-snap-align: start;
 }
 
 .projectButton,
@@ -391,14 +399,6 @@ footer {
   padding: 3px;
   border: none;
   background-color: #252525;
-}
-
-#projectContainer,
-.projectCard {
-  flex: 0 0 100%;
-  padding: 24px;
-  border-radius: 20px;
-  scroll-snap-align: start;
 }
 
 .projectTitle {
@@ -413,8 +413,8 @@ footer {
 }
 
 .projectDescription {
-  padding: 5px;
-  margin: 5px;
+  padding: 10px;
+  margin: 10px;
 }
 
 /* Image Slideshow */
