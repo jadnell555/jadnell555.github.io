@@ -1,629 +1,720 @@
 <?xml version = "1.0"?>
-<!DOCTYPE HTML PUBLIC "-//w3c//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-<HTML xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <link href="Styles/dayDesign.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="This webpage contains information about Jadnell Reyes, 
+    a Puerto Rican Computer Engineering Student"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jadnell Reyes' Portfolio</title>
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <link href="Styles/dayDesign.css" type="text/css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <meta name="description" content="This webpage contains information about Jadnell Reyes, 
-    a Puerto Rican Computer Engineering Student">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Jadnell Reyes' Portfolio </title>
-</head>
-
-<body>
+  <body>
     <header></header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- One Button Navigation Bar-->
     <div class="navBar">
-        <div class="menu">
-            <div id="selectMenu" class="show">
-                <button id="menuButton" class="menuButtons" type="button"> <img src="Images/Icons/hamburgerMenu.svg"
-                        title="Menu" width="50px" height="50px" alt="Menu Button"> </button>
-            </div>
-
-            <ul id="menuButtonsList" class="hide">
-
-                <li class="options"><button class="menuButtons"" type=" button"
-                        onclick="window.location.href='index.html';"> <img src="Images/Icons/aboutMe.svg"
-                            title="About Me" width="50px" height="50px" alt="About Me Button"> </li>
-                <h6 class="menuButtonsTitle">About Me</h6>
-
-                <li class="options"><button class="menuButtons"" type=" button"
-                        onclick="window.location.href='techStackPage.html';"> <img
-                            src="Images/Icons/programmingLanguages.svg" title="Tech Stack" width="50px" height="50px"
-                            alt="Tech Stack Button"></li>
-                <h6 class="menuButtonsTitle">Tech Stack</h6>
-                <li class="options"><button class="menuButtons"" type=" button"
-                        onclick="window.location.href='projectsPage.html';"> <img src="Images/Icons/layers.svg"
-                            title="Projects" width="50px" height="50px" alt="Projects Button"></li>
-                <h6 class="menuButtonsTitle">Projects</h6>
-            </ul>
+      <div class="menu">
+        <div id="selectMenu" class="show">
+          <button id="menuButton" class="menuButtons" type="button">
+            <img
+              src="Images/Icons/hamburgerMenu.svg"
+              title="Menu"
+              width="50px"
+              height="50px"
+              alt="Menu Button"
+            />
+          </button>
         </div>
+
+        <ul id="menuButtonsList" class="hide">
+          <li class="options">
+            <button class="menuButtons"" type=" button"
+            onclick="window.location.href='index.html';">
+            <img
+              src="Images/Icons/aboutMe.svg"
+              title="About Me"
+              width="50px"
+              height="50px"
+              alt="About Me Button"
+            />
+          </li>
+          <h6 class="menuButtonsTitle">About Me</h6>
+
+          <li class="options">
+            <button class="menuButtons"" type=" button"
+            onclick="window.location.href='techStackPage.html';">
+            <img
+              src="Images/Icons/programmingLanguages.svg"
+              title="Tech Stack"
+              width="50px"
+              height="50px"
+              alt="Tech Stack Button"
+            />
+          </li>
+          <h6 class="menuButtonsTitle">Tech Stack</h6>
+          <li class="options">
+            <button class="menuButtons"" type=" button"
+            onclick="window.location.href='projectsPage.html';">
+            <img
+              src="Images/Icons/layers.svg"
+              title="Projects"
+              width="50px"
+              height="50px"
+              alt="Projects Button"
+            />
+          </li>
+          <h6 class="menuButtonsTitle">Projects</h6>
+        </ul>
+      </div>
     </div>
 
-    <!-- Script for Navigation Bar Operation Onclick -->
-    <script>
-        var selectMenu = document.getElementById("selectMenu");
-        var menuButtonsList = document.getElementById("menuButtonsList");
-        var options = document.getElementsByClassName("options");
+    <script src="scripts/navBar.js"></script>
 
-        selectMenu.onclick = function () {
-            menuButtonsList.classList.toggle("hide");
-        } // end function
-
-        for (Option of options) {
-            Option.onclick = function () {
-                menuButtonsList.classList.toggle("hide");
-            } // end function
-        } // end for 
-    </script>
-
-    <br>
+    <br />
 
     <div class="techStackCard">
-        <div class="container text-center">
-            <h3 id="frontEnd">
-                <center> Programming Languages: </center>
-            </h3>
-            <div class="row row-cols-3 justify-content-center">
-                <div class="col">
-                    <button type="button" id="HTMLButton" class="progLangCube">
-                        <h6 class="progLangName"> HTML </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/html.svg" title="HTML" width="75px"
-                            height="75px" alt="HTML Logo">
-                    </button>
-                    <span id="HTMLInfo" class="hide">
-                        <div class="definitions">
-                            <b>HTML:</b> HTML is the language in which most websites are written. 
-                                         HTML is used to create pages and make them functional. 
-                                         HTML stands for Hyper Text Markup Language.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://html.com/"> ~ HTML.com
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
+      <div class="container text-center">
+        <h3 id="frontEnd">
+          <center>Programming Languages:</center>
+        </h3>
+        <div class="row row-cols-3 justify-content-center">
+          <div class="col">
+            <button type="button" id="HTMLButton" class="progLangCube">
+              <h6 class="progLangName">HTML</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/html.svg"
+                title="HTML"
+                width="75px"
+                height="75px"
+                alt="HTML Logo"
+              />
+            </button>
+            <span id="HTMLInfo" class="hide">
+              <div class="definitions">
+                <b>HTML:</b> HTML is the language in which most websites are
+                written. HTML is used to create pages and make them functional.
+                HTML stands for Hyper Text Markup Language.
+                <br />
+                <cite>
+                  <a class="defSource" href="https://html.com/">
+                    ~ HTML.com
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
 
-                <div class="col">
-                    <button type="button" id="CSSButton" class="progLangCube">
-                        <h6 class="progLangName"> CSS </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/css.svg" title="CSS" width="75px" height="75px"
-                            alt="CSS Logo">
-                    </button>
-                    <span id="CSSInfo" class="hide">
-                        <div class="definitions">
-                            <b>CSS:</b> Cascading Style Sheets (CSS) is a simple mechanism for adding
-                                        style (e.g., fonts, colors, spacing) to Web documents.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://www.w3.org/Style/CSS/Overview.en.html"> ~ W3.org
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
+          <div class="col">
+            <button type="button" id="CSSButton" class="progLangCube">
+              <h6 class="progLangName">CSS</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/css.svg"
+                title="CSS"
+                width="75px"
+                height="75px"
+                alt="CSS Logo"
+              />
+            </button>
+            <span id="CSSInfo" class="hide">
+              <div class="definitions">
+                <b>CSS:</b> Cascading Style Sheets (CSS) is a simple mechanism
+                for adding style (e.g., fonts, colors, spacing) to Web
+                documents.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://www.w3.org/Style/CSS/Overview.en.html"
+                  >
+                    ~ W3.org
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
 
-                <div class="col">
-                    <button type="button" id="JSButton" class="progLangCube">
-                        <h6 class="progLangName"> JavaScript </h6>
-                        <div class="space3px"></div>
-                        <img class="progLangIcon" src="Images/Tech Stack/javascript.svg" title="JavaScript" width="65px"
-                            height="65px" alt="JavaScript Logo">
-                    </button>
-                    <span id="JSInfo" class="hide">
-                        <div class="definitions">
-                            <b>JavaScript:</b> JavaScript is a scripting or programming language that 
-                                               allows you to implement complex features on web pages 
-                                               like displaying timely content updates, interactive maps, 
-                                               animated 2D/3D graphics, scrolling video jukeboxes, etc.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"> ~ Mozilla.org
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-            </div>
-            <div class="row row-cols-3 justify-content-center">
-                <div class="col">
-                    <button type="button" id="PythonButton" class="progLangCube">
-                        <h6 class="progLangName"> Python </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/python.svg" title="Python" width="75px"
-                            height="75px" alt="Python Logo">
-                    </button>
-                    <span id="PythonInfo" class="hide">
-                        <div class="definitions">
-                            <b>Python:</b> Python is an interpreted, interactive, object-oriented programming language.
-                            It incorporates modules, exceptions, dynamic typing, very high level dynamic
-                            data types, and classes. It supports multiple programming paradigms beyond
-                            object-oriented programming, such as procedural and functional programming.
-                            Python combines remarkable power with very clear syntax.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://docs.python.org/3/faq/general.html#what-is-python"> ~ Python.org
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-                <div class="col">
-                    <button type="button" id="CPPButton" class="progLangCube">
-                        <h6 class="progLangName"> C++ </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/c++.svg" title="C++" width="75px" height="75px"
-                            alt="C++ Logo">
-                    </button>
-                    <span id="CPPInfo" class="hide">
-                        <div class="definitions">
-                            <b>C++:</b> C++ is a cross-platform language that can be used 
-                                        to create high-performance applications.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://www.w3schools.com/cpp/cpp_intro.asp"> ~ W3Schools.com
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-                <div class="col">
-                    <button type="button" id="DartButton" class="progLangCube">
-                        <h6 class="progLangName"> Dart </h6>
-                        <div class="space5px"></div>
-                        <img class="progLangIcon" src="Images/Tech Stack/dart.svg" title="Dart" width="80px"
-                            height="40px" alt="Dart Logo">
-                    </button>
-                    <span id="DartInfo" class="hide">
-                        <div class="definitions">
-                            <b>Dart:</b>   Dart is a client-optimized language for developing fast apps 
-                                           on any platform. It&#39s goal is to offer the most productive 
-                                           programming language for multi-platform development, paired 
-                                           with a flexible execution runtime platform for app frameworks.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://dart.dev/overview"> ~ Dart.dev
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-            </div>
-            <div class="row row-cols-3 justify-content-center">
-                <div class="col">
-                    <button type="button" id="SQLButton" class="progLangCube">
-                        <h6 class="progLangName"> SQL </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/sql.svg" title="SQL" width="70px" height="70px"
-                            alt="SQL Logo">
-                    </button>
-                    <span id="SQLInfo" class="hide">
-                        <div class="definitions">
-                            <b>SQL:</b> Structured query language (SQL) is a programming language 
-                                        for storing and processing information in a relational 
-                                        database. A relational database stores information in tabular 
-                                        form, with rows and columns representing different data 
-                                        attributes and the various relationships between the data values.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://aws.amazon.com/what-is/sql/#:~:text=Structured%20query%20language%20(SQL)%20is%20a%20standard%20language%20for%20database,undergoes%20continual%20upgrades%20and%20improvements."> ~ AWS.Amazon.com
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-            </div>
+          <div class="col">
+            <button type="button" id="JSButton" class="progLangCube">
+              <h6 class="progLangName">JavaScript</h6>
+              <div class="space3px"></div>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/javascript.svg"
+                title="JavaScript"
+                width="65px"
+                height="65px"
+                alt="JavaScript Logo"
+              />
+            </button>
+            <span id="JSInfo" class="hide">
+              <div class="definitions">
+                <b>JavaScript:</b> JavaScript is a scripting or programming
+                language that allows you to implement complex features on web
+                pages like displaying timely content updates, interactive maps,
+                animated 2D/3D graphics, scrolling video jukeboxes, etc.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
+                  >
+                    ~ Mozilla.org
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
         </div>
+        <div class="row row-cols-3 justify-content-center">
+          <div class="col">
+            <button type="button" id="PythonButton" class="progLangCube">
+              <h6 class="progLangName">Python</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/python.svg"
+                title="Python"
+                width="75px"
+                height="75px"
+                alt="Python Logo"
+              />
+            </button>
+            <span id="PythonInfo" class="hide">
+              <div class="definitions">
+                <b>Python:</b> Python is an interpreted, interactive,
+                object-oriented programming language. It incorporates modules,
+                exceptions, dynamic typing, very high level dynamic data types,
+                and classes. It supports multiple programming paradigms beyond
+                object-oriented programming, such as procedural and functional
+                programming. Python combines remarkable power with very clear
+                syntax.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://docs.python.org/3/faq/general.html#what-is-python"
+                  >
+                    ~ Python.org
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
+          <div class="col">
+            <button type="button" id="CPPButton" class="progLangCube">
+              <h6 class="progLangName">C++</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/c++.svg"
+                title="C++"
+                width="75px"
+                height="75px"
+                alt="C++ Logo"
+              />
+            </button>
+            <span id="CPPInfo" class="hide">
+              <div class="definitions">
+                <b>C++:</b> C++ is a cross-platform language that can be used to
+                create high-performance applications.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://www.w3schools.com/cpp/cpp_intro.asp"
+                  >
+                    ~ W3Schools.com
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
+          <div class="col">
+            <button type="button" id="DartButton" class="progLangCube">
+              <h6 class="progLangName">Dart</h6>
+              <div class="space5px"></div>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/dart.svg"
+                title="Dart"
+                width="80px"
+                height="40px"
+                alt="Dart Logo"
+              />
+            </button>
+            <span id="DartInfo" class="hide">
+              <div class="definitions">
+                <b>Dart:</b> Dart is a client-optimized language for developing
+                fast apps on any platform. It&apos;s goal is to offer the most
+                productive programming language for multi-platform development,
+                paired with a flexible execution runtime platform for app
+                frameworks.
+                <br />
+                <cite>
+                  <a class="defSource" href="https://dart.dev/overview">
+                    ~ Dart.dev
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="row row-cols-3 justify-content-center">
+          <div class="col">
+            <button type="button" id="SQLButton" class="progLangCube">
+              <h6 class="progLangName">SQL</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/sql.svg"
+                title="SQL"
+                width="70px"
+                height="70px"
+                alt="SQL Logo"
+              />
+            </button>
+            <span id="SQLInfo" class="hide">
+              <div class="definitions">
+                <b>SQL:</b> Structured query language (SQL) is a programming
+                language for storing and processing information in a relational
+                database. A relational database stores information in tabular
+                form, with rows and columns representing different data
+                attributes and the various relationships between the data
+                values.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://aws.amazon.com/what-is/sql/#:~:text=Structured%20query%20language%20(SQL)%20is%20a%20standard%20language%20for%20database,undergoes%20continual%20upgrades%20and%20improvements."
+                  >
+                    ~ AWS.Amazon.com
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <br />
+    <br />
 
     <div class="techStackCard">
-        <div class="container text-center">
-            <h3 id="frontEnd">
-                <center> Software: </center>
-            </h3>
-            <div class="row row-cols-3 justify-content-center">
-                <div class="col">
-                    <button type="button" id="VSCODEButton" class="progLangCube">
-                        <h6 class="softwareName"> Visual Studio Code </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/visualStudioCode.svg"
-                            title="Visual Studio Code" width="50px" height="50px" alt="Visual Studio Code Logo">
-                    </button>
-                    <span id="VSCODEInfo" class="hide">
-                        <div class="definitions">
-                            <b>Visual Studio Code:</b> Visual Studio Code is a streamlined code editor 
-                                                       with support for development operations like debugging, 
-                                                       task running, and version control. It aims to provide 
-                                                       just the tools a developer needs for a quick 
-                                                       code-build-debug cycle and leaves more complex workflows
-                                                       to fuller featured IDE&#39s, such as Visual Studio IDE.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://code.visualstudio.com/docs/supporting/faq"> ~ code.visualstudio.com
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
+      <div class="container text-center">
+        <h3 id="frontEnd">
+          <center>Software:</center>
+        </h3>
+        <div class="row row-cols-3 justify-content-center">
+          <div class="col">
+            <button type="button" id="VSCODEButton" class="progLangCube">
+              <h6 class="softwareName">Visual Studio Code</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/visualStudioCode.svg"
+                title="Visual Studio Code"
+                width="50px"
+                height="50px"
+                alt="Visual Studio Code Logo"
+              />
+            </button>
+            <span id="VSCODEInfo" class="hide">
+              <div class="definitions">
+                <b>Visual Studio Code:</b> Visual Studio Code is a streamlined
+                code editor with support for development operations like
+                debugging, task running, and version control. It aims to provide
+                just the tools a developer needs for a quick code-build-debug
+                cycle and leaves more complex workflows to fuller featured
+                IDE&apos;s, such as Visual Studio IDE.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://code.visualstudio.com/docs/supporting/faq"
+                  >
+                    ~ code.visualstudio.com
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
 
-                <div class="col">
-                    <button type="button" id="AndroidStudioButton" class="progLangCube">
-                        <h6 class="softwareName"> Android Studio </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/androidStudio.svg" title="Android Studio"
-                            width="60px" height="60px" alt="Android Studio Logo">
-                    </button>
-                    <span id="AndroidStudioInfo" class="hide">
-                        <div class="definitions">
-                            <b>Android Studio:</b> Android Studio is the official Integrated Development 
-                                                   Environment (IDE) for Android app development. Based 
-                                                   on the powerful code editor and developer tools from 
-                                                   IntelliJ IDEA, Android Studio offers even more features 
-                                                   that enhance your productivity when building Android apps.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://developer.android.com/studio/intro"> ~ developer.android.com
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
+          <div class="col">
+            <button type="button" id="AndroidStudioButton" class="progLangCube">
+              <h6 class="softwareName">Android Studio</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/androidStudio.svg"
+                title="Android Studio"
+                width="60px"
+                height="60px"
+                alt="Android Studio Logo"
+              />
+            </button>
+            <span id="AndroidStudioInfo" class="hide">
+              <div class="definitions">
+                <b>Android Studio:</b> Android Studio is the official Integrated
+                Development Environment (IDE) for Android app development. Based
+                on the powerful code editor and developer tools from IntelliJ
+                IDEA, Android Studio offers even more features that enhance your
+                productivity when building Android apps.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://developer.android.com/studio/intro"
+                  >
+                    ~ developer.android.com
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
 
-                <div class="col">
-                    <button type="button" id="VSButton" class="progLangCube">
-                        <h6 class="softwareName"> Visual Studio </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/visualStudio.svg" title="Visual Studio"
-                            width="60px" height="60px" alt="Visual Studio Logo">
-                    </button>
-                    <span id="VSInfo" class="hide">
-                        <div class="definitions">
-                            <b>Visual Studio:</b> The Visual Studio IDE is a creative launching pad 
-                                                  that you can use to edit, debug, and build code, 
-                                                  and then publish an app. Over and above the standard 
-                                                  editor and debugger that most IDE&#39s provide, Visual 
-                                                  Studio includes compilers, code completion tools, 
-                                                  graphical designers, and many more features to enhance 
-                                                  the software development process.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://visualstudio.microsoft.com/#vs-section"> ~ visualstudio.microsoft.com
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-            </div>
-
-            <div class="row row-cols-3 justify-content-center">
-                <div class="col">
-                    <button type="button" id="VirtualBoxButton" class="progLangCube">
-                        <h6 class="softwareName"> VirtualBox </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/virtualbox.svg" title="VirtualBox" width="60px"
-                            height="60px" alt="VirtualBox Logo">
-                    </button>
-                    <span id="VirtualBoxInfo" class="hide">
-                        <div class="definitions">
-                            <b>VirtualBox:</b> VirtualBox is a general-purpose full virtualizer for 
-                                               x86 hardware, targeted at server, desktop and embedded use.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://www.virtualbox.org/wiki/VirtualBox"> ~ VirtualBox.org
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-                <div class="col">
-                    <button type="button" id="RaspberryPiButton" class="progLangCube">
-                        <h6 class="softwareName"> Raspberry Pi </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/raspberryPi.svg" title="Raspberry Pi"
-                            width="60px" height="60px" alt="Raspberry Pi Logo">
-                    </button>
-                    <span id="RaspberryPiInfo" class="hide">
-                        <div class="definitions">
-                            <b>Raspberry Pi:</b> Raspberry Pi is a micro computer that has all the features 
-                                                 you expect from a regular computer: wireless internet 
-                                                 connectivity, HDMI ports for your monitors, and USB ports 
-                                                 for your accessories, along with ample processing power 
-                                                 and RAM for all your day-to-day use.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://www.raspberrypi.com/for-home/"> ~ RaspberryPi.com
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-                <div class="col">
-                    <button type="button" id="MATLABButton" class="progLangCube">
-                        <h6 class="softwareName"> MATLAB </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/matlab.svg" title="MATLAB" width="75px"
-                            height="75px" alt="MATLAB Logo">
-                    </button>
-                    <span id="MATLABInfo" class="hide">
-                        <div class="definitions">
-                            <b>MATLAB:</b> MATLAB is a programming and numeric computing 
-                                           platform used by millions of engineers and 
-                                           scientists to analyze data, develop algorithms, 
-                                           and create models.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://www.mathworks.com/products/matlab.html"> ~ Mathworks.com
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-            </div>
-            <div class="row row-cols-3 justify-content-center">
-                <div class="col">
-                    <button type="button" id="GitHubButton" class="progLangCube">
-                        <h6 class="techName"> GitHub </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/github.svg" title="GitHub" width="75px"
-                            height="75px" alt="GitHub Logo">
-                    </button>
-                    <span id="GitHubInfo" class="hide">
-                        <div class="definitions">
-                            <b>GitHub:</b> GitHub is a code hosting platform for version control and collaboration. 
-                                           It lets you and others work together on projects from anywhere.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://docs.github.com/en/get-started/quickstart/hello-world"> ~ GitHub.com
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-                <div class="col">
-                    <button type="button" id="JupyterButton" class="progLangCube">
-                        <h6 class="techName"> Jupyter Notebooks </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/Jupyter.svg" title="Jupyter Notebooks"
-                            width="60px" height="60px" alt="Jupyter Logo">
-                    </button>
-                    <span id="JupyterInfo" class="hide">
-                        <div class="definitions">
-                            <b>Jupyter Notebooks:</b> Jupyter Notebook is a simplified notebook authoring application 
-                                                      for interactive computing with computational notebooks. A 
-                                                      computational notebook is a shareable document that combines 
-                                                      computer code, plain language descriptions, data, rich visualizations 
-                                                      like 3D models, charts, graphs and figures, and interactive controls.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://jupyter-notebook.readthedocs.io/en/stable/"> ~ Jupyter-Notebook.readthedocs.io
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-                <div class="col">
-                    <button type="button" id="FlutterButton" class="progLangCube">
-                        <h6 class="techName"> Flutter </h6>
-                        <div class="space3px"></div>
-                        <img class="progLangIcon" src="Images/Tech Stack/flutter.svg" title="Flutter" width="55px"
-                            height="55px" alt="Flutter Logo">
-                    </button>
-                    <span id="FlutterInfo" class="hide">
-                        <div class="definitions">
-                            <b>Flutter:</b> Flutter is an open source framework by Google for building beautiful, 
-                                            natively compiled, multi-platform applications from a single codebase.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://flutter.dev/"> ~ Flutter.dev
-                                </a></cite>
-                        </div>
-                    </span>
-                </div>
-            </div>
-            <div class="row row-cols-3 justify-content-center">
-                <div class="col">
-                    <button type="button" id="DjangoButton" class="progLangCube">
-                        <h6 class="techName"> Django </h6>
-                        <img class="progLangIcon" src="Images/Tech Stack/django.svg" title="Django" width="60px"
-                            height="60px" alt="Django Logo">
-                    </button>
-                    <span id="DjangoInfo" class="hide"> Test <div class="definitions">
-                            <b>Django:</b> Django is a high-level Python web framework that encourages rapid 
-                                           development and clean, pragmatic design. Built by experienced 
-                                           developers, it takes care of much of the hassle of web development, 
-                                           so you can focus on writing your app without needing to reinvent 
-                                           the wheel. It&#39s free and open source.
-                            <br>
-                            <cite> <a class="defSource"
-                                    href="https://www.djangoproject.com/#:~:text=Django%20is%20a%20high%2Dlevel,It's%20free%20and%20open%20source."> ~ DjangoProject.com
-                                </a></cite>
-                        </div> </span>
-                </div>
-            </div>
+          <div class="col">
+            <button type="button" id="VSButton" class="progLangCube">
+              <h6 class="softwareName">Visual Studio</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/visualStudio.svg"
+                title="Visual Studio"
+                width="60px"
+                height="60px"
+                alt="Visual Studio Logo"
+              />
+            </button>
+            <span id="VSInfo" class="hide">
+              <div class="definitions">
+                <b>Visual Studio:</b> The Visual Studio IDE is a creative
+                launching pad that you can use to edit, debug, and build code,
+                and then publish an app. Over and above the standard editor and
+                debugger that most IDE&apos;s provide, Visual Studio includes
+                compilers, code completion tools, graphical designers, and many
+                more features to enhance the software development process.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://visualstudio.microsoft.com/#vs-section"
+                  >
+                    ~ visualstudio.microsoft.com
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
         </div>
-    </div>
 
+        <div class="row row-cols-3 justify-content-center">
+          <div class="col">
+            <button type="button" id="VirtualBoxButton" class="progLangCube">
+              <h6 class="softwareName">VirtualBox</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/virtualbox.svg"
+                title="VirtualBox"
+                width="60px"
+                height="60px"
+                alt="VirtualBox Logo"
+              />
+            </button>
+            <span id="VirtualBoxInfo" class="hide">
+              <div class="definitions">
+                <b>VirtualBox:</b> VirtualBox is a general-purpose full
+                virtualizer for x86 hardware, targeted at server, desktop and
+                embedded use.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://www.virtualbox.org/wiki/VirtualBox"
+                  >
+                    ~ VirtualBox.org
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
+          <div class="col">
+            <button type="button" id="RaspberryPiButton" class="progLangCube">
+              <h6 class="softwareName">Raspberry Pi</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/raspberryPi.svg"
+                title="Raspberry Pi"
+                width="60px"
+                height="60px"
+                alt="Raspberry Pi Logo"
+              />
+            </button>
+            <span id="RaspberryPiInfo" class="hide">
+              <div class="definitions">
+                <b>Raspberry Pi:</b> Raspberry Pi is a micro computer that has
+                all the features you expect from a regular computer: wireless
+                internet connectivity, HDMI ports for your monitors, and USB
+                ports for your accessories, along with ample processing power
+                and RAM for all your day-to-day use.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://www.raspberrypi.com/for-home/"
+                  >
+                    ~ RaspberryPi.com
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
+          <div class="col">
+            <button type="button" id="MATLABButton" class="progLangCube">
+              <h6 class="softwareName">MATLAB</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/matlab.svg"
+                title="MATLAB"
+                width="75px"
+                height="75px"
+                alt="MATLAB Logo"
+              />
+            </button>
+            <span id="MATLABInfo" class="hide">
+              <div class="definitions">
+                <b>MATLAB:</b> MATLAB is a programming and numeric computing
+                platform used by millions of engineers and scientists to analyze
+                data, develop algorithms, and create models.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://www.mathworks.com/products/matlab.html"
+                  >
+                    ~ Mathworks.com
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="row row-cols-3 justify-content-center">
+          <div class="col">
+            <button type="button" id="GitHubButton" class="progLangCube">
+              <h6 class="techName">GitHub</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/github.svg"
+                title="GitHub"
+                width="75px"
+                height="75px"
+                alt="GitHub Logo"
+              />
+            </button>
+            <span id="GitHubInfo" class="hide">
+              <div class="definitions">
+                <b>GitHub:</b> GitHub is a code hosting platform for version
+                control and collaboration. It lets you and others work together
+                on projects from anywhere.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://docs.github.com/en/get-started/quickstart/hello-world"
+                  >
+                    ~ GitHub.com
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
+          <div class="col">
+            <button type="button" id="JupyterButton" class="progLangCube">
+              <h6 class="techName">Jupyter Notebooks</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/Jupyter.svg"
+                title="Jupyter Notebooks"
+                width="60px"
+                height="60px"
+                alt="Jupyter Logo"
+              />
+            </button>
+            <span id="JupyterInfo" class="hide">
+              <div class="definitions">
+                <b>Jupyter Notebooks:</b> Jupyter Notebook is a simplified
+                notebook authoring application for interactive computing with
+                computational notebooks. A computational notebook is a shareable
+                document that combines computer code, plain language
+                descriptions, data, rich visualizations like 3D models, charts,
+                graphs and figures, and interactive controls.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://jupyter-notebook.readthedocs.io/en/stable/"
+                  >
+                    ~ Jupyter-Notebook.readthedocs.io
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
+          <div class="col">
+            <button type="button" id="FlutterButton" class="progLangCube">
+              <h6 class="techName">Flutter</h6>
+              <div class="space3px"></div>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/flutter.svg"
+                title="Flutter"
+                width="55px"
+                height="55px"
+                alt="Flutter Logo"
+              />
+            </button>
+            <span id="FlutterInfo" class="hide">
+              <div class="definitions">
+                <b>Flutter:</b> Flutter is an open source framework by Google
+                for building beautiful, natively compiled, multi-platform
+                applications from a single codebase.
+                <br />
+                <cite>
+                  <a class="defSource" href="https://flutter.dev/">
+                    ~ Flutter.dev
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="row row-cols-3 justify-content-center">
+          <div class="col">
+            <button type="button" id="DjangoButton" class="progLangCube">
+              <h6 class="techName">Django</h6>
+              <img
+                class="progLangIcon"
+                src="Images/Tech Stack/django.svg"
+                title="Django"
+                width="60px"
+                height="60px"
+                alt="Django Logo"
+              />
+            </button>
+            <span id="DjangoInfo" class="hide">
+              <div class="definitions">
+                <b>Django:</b> Django is a high-level Python web framework that
+                encourages rapid development and clean, pragmatic design. Built
+                by experienced developers, it takes care of much of the hassle
+                of web development, so you can focus on writing your app without
+                needing to reinvent the wheel. It&apos;s free and open source.
+                <br />
+                <cite>
+                  <a
+                    class="defSource"
+                    href="https://www.djangoproject.com/#:~:text=Django%20is%20a%20high%2Dlevel,It's%20free%20and%20open%20source."
+                  >
+                    ~ DjangoProject.com
+                  </a></cite
+                >
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Social Media Bar (Footer) -->
     <div class="container">
-        <footer>
-            <br>
-            <h4 id="socialMedia">
-                <center> Social Media: </center>
-            </h4>
+      <footer>
+        <br />
+        <h4 id="socialMedia">
+          <center>Social Media:</center>
+        </h4>
 
-            <div id="socialMediaBar">
-                <br>
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col">
-                            <div class="container">
-                                <button class="socialMediaButton" type="button"
-                                    onclick="window.location.href='https://www.instagram.com/j_dnll/';"><img
-                                        src="Images/Social Media/instagram.svg" title="Instagram" width="30px"
-                                        height="30px" alt="Instagram Button">
-                                </button>
-                                <h6 class="socialMediaTitles"> Instagram </h6>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="container">
-                                <button class="socialMediaButton" type="button"
-                                    onclick="window.location.href='https://www.twitter.com/jadnellReyes';"><img
-                                        src="Images/Social Media/twitter.svg" title="Twitter" width="30px" height="30px"
-                                        alt="Twitter Button">
-                                </button>
-                                <h6 class="socialMediaTitles"> Twitter </h6>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="container">
-                                <button class="socialMediaButton" type="button"
-                                    onclick="window.location.href='https://github.com/jadnell555';"><img
-                                        src="Images/Tech Stack/github.svg" title="GitHub" width="30px" height="30px"
-                                        alt="GitHub Button">
-                                </button>
-                                <h6 class="socialMediaTitles"> GitHub </h6>
-                            </div>
-                        </div>
-                    </div>
+        <div id="socialMediaBar">
+          <br />
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <div class="container">
+                  <button
+                    class="socialMediaButton"
+                    type="button"
+                    onclick="window.location.href='https://www.instagram.com/j_dnll/';"
+                  >
+                    <img
+                      src="Images/Social Media/instagram.svg"
+                      title="Instagram"
+                      width="30px"
+                      height="30px"
+                      alt="Instagram Button"
+                    />
+                  </button>
+                  <h6 class="socialMediaTitles">Instagram</h6>
                 </div>
+              </div>
+              <div class="col">
+                <div class="container">
+                  <button
+                    class="socialMediaButton"
+                    type="button"
+                    onclick="window.location.href='https://www.twitter.com/jadnellReyes';"
+                  >
+                    <img
+                      src="Images/Social Media/twitter.svg"
+                      title="Twitter"
+                      width="30px"
+                      height="30px"
+                      alt="Twitter Button"
+                    />
+                  </button>
+                  <h6 class="socialMediaTitles">Twitter</h6>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="container">
+                  <button
+                    class="socialMediaButton"
+                    type="button"
+                    onclick="window.location.href='https://github.com/jadnell555';"
+                  >
+                    <img
+                      src="Images/Tech Stack/github.svg"
+                      title="GitHub"
+                      width="30px"
+                      height="30px"
+                      alt="GitHub Button"
+                    />
+                  </button>
+                  <h6 class="socialMediaTitles">GitHub</h6>
+                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </footer>
     </div>
 
-    <script>
-        // HTML TECH STACK BUTTON
-        var HTMLButton = document.getElementById("HTMLButton");
-        var HTMLInfo = document.getElementById("HTMLInfo");
-
-        HTMLButton.onclick = function () {
-            HTMLInfo.classList.toggle("hide");
-        }
-
-        // CSS TECH STACK BUTTON
-        var CSSButton = document.getElementById("CSSButton");
-        var CSSInfo = document.getElementById("CSSInfo");
-
-        CSSButton.onclick = function () {
-            CSSInfo.classList.toggle("hide");
-        }
-
-        // JavaScript TECH STACK BUTTON
-        var JSButton = document.getElementById("JSButton");
-        var JSInfo = document.getElementById("JSInfo");
-
-        JSButton.onclick = function () {
-            JSInfo.classList.toggle("hide");
-        }
-
-        // Python TECH STACK BUTTON
-        var PythonButton = document.getElementById("PythonButton");
-        var PythonInfo = document.getElementById("PythonInfo");
-
-        PythonButton.onclick = function () {
-            PythonInfo.classList.toggle("hide");
-        }
-
-        // C++ TECH STACK BUTTON
-        var CPPButton = document.getElementById("CPPButton");
-        var CPPInfo = document.getElementById("CPPInfo");
-
-        CPPButton.onclick = function () {
-            CPPInfo.classList.toggle("hide");
-        }
-
-        // Dart TECH STACK BUTTON
-        var DartButton = document.getElementById("DartButton");
-        var DartInfo = document.getElementById("DartInfo");
-
-        DartButton.onclick = function () {
-            DartInfo.classList.toggle("hide");
-        }
-
-        // SQL TECH STACK BUTTON
-        var SQLButton = document.getElementById("SQLButton");
-        var SQLInfo = document.getElementById("SQLInfo");
-
-        SQLButton.onclick = function () {
-            SQLInfo.classList.toggle("hide");
-        }
-
-        // Software:
-
-        // Visual Studio Code TECH STACK BUTTON
-        var VSCODEButton = document.getElementById("VSCODEButton");
-        var VSCODEInfo = document.getElementById("VSCODEInfo");
-
-        VSCODEButton.onclick = function () {
-            VSCODEInfo.classList.toggle("hide");
-        }
-
-        // Android Studio TECH STACK BUTTON
-        var AndroidStudioButton = document.getElementById("AndroidStudioButton");
-        var AndroidStudioInfo = document.getElementById("AndroidStudioInfo");
-
-        AndroidStudioButton.onclick = function () {
-            AndroidStudioInfo.classList.toggle("hide");
-        }
-
-        // Visual Studio TECH STACK BUTTON
-        var VSButton = document.getElementById("VSButton");
-        var VSInfo = document.getElementById("VSInfo");
-
-        VSButton.onclick = function () {
-            VSInfo.classList.toggle("hide");
-        }
-
-        // VirtualBox TECH STACK BUTTON
-        var VirtualBoxButton = document.getElementById("VirtualBoxButton");
-        var VirtualBoxInfo = document.getElementById("VirtualBoxInfo");
-
-        VirtualBoxButton.onclick = function () {
-            VirtualBoxInfo.classList.toggle("hide");
-        }
-
-        // Raspberry Pi TECH STACK BUTTON
-        var RaspberryPiButton = document.getElementById("RaspberryPiButton");
-        var RaspberryPiInfo = document.getElementById("RaspberryPiInfo");
-
-        RaspberryPiButton.onclick = function () {
-            RaspberryPiInfo.classList.toggle("hide");
-        }
-
-        // MATLAB TECH STACK BUTTON
-        var MATLABButton = document.getElementById("MATLABButton");
-        var MATLABInfo = document.getElementById("MATLABInfo");
-
-        MATLABButton.onclick = function () {
-            MATLABInfo.classList.toggle("hide");
-        }
-
-        // GitHub TECH STACK BUTTON
-        var GitHubButton = document.getElementById("GitHubButton");
-        var GitHubInfo = document.getElementById("GitHubInfo");
-
-        GitHubButton.onclick = function () {
-            GitHubInfo.classList.toggle("hide");
-        }
-
-        // Jupyter Notebooks TECH STACK BUTTON
-        var JupyterButton = document.getElementById("JupyterButton");
-        var JupyterInfo = document.getElementById("JupyterInfo");
-
-        JupyterButton.onclick = function () {
-            JupyterInfo.classList.toggle("hide");
-        }
-
-        // Flutter TECH STACK BUTTON
-        var FlutterButton = document.getElementById("FlutterButton");
-        var FlutterInfo = document.getElementById("FlutterInfo");
-
-        FlutterButton.onclick = function () {
-            FlutterInfo.classList.toggle("hide");
-        }
-
-        // Django TECH STACK BUTTON
-        var DjangoButton = document.getElementById("DjangoButton");
-        var DjangoInfo = document.getElementById("DjangoInfo");
-
-        DjangoButton.onclick = function () {
-            DjangoInfo.classList.toggle("hide");
-        }
-
-        let techStackButtonId = ["HTMLInfo", "CSSInfo", "JSInfo", "PythonInfo", "CPPInfo", "DartInfo", "SQLInfo", "VSCODEInfo", "AndroidStudioInfo", "VSInfo", "VirtualBoxInfo", "RaspberryPiInfo", "MATLABInfo", "GitHubInfo", "JupyterInfo", "FlutterInfo", "DjangoInfo"];
-
-
-    </script>
-
-</body>
-
-</HTML>
+    <script src="scripts/techStackButtons.js"></script>
+  </body>
+</html>

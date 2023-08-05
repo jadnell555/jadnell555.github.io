@@ -22,12 +22,6 @@
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
 
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("ELMXtOZt_-M3UQsLY");
-      })();
-    </script>
-
     <title>Jadnell Reyes' Portfolio</title>
   </head>
 
@@ -96,21 +90,7 @@
       </div>
     </div>
 
-    <!-- Script for Navigation Bar Operation Onclick -->
-    <script>
-      var selectMenu = document.getElementById("selectMenu");
-      var menuButtonsList = document.getElementById("menuButtonsList");
-
-      selectMenu.onclick = function () {
-        menuButtonsList.classList.toggle("hide");
-      }; // end function
-
-      for (Option of options) {
-        Option.onclick = function () {
-          menuButtonsList.classList.toggle("hide");
-        }; // end function
-      } // end for
-    </script>
+    <script src="scripts/navBar.js"></script>
 
     <!--Text Greeting-->
     <div id="greeting">
@@ -206,7 +186,7 @@
                 ></textarea
                 ><br />
                 <button
-                  onclick="sendMail()"
+                  onclick=""
                   id="submitButton"
                   class="formButtons"
                   disabled
@@ -229,22 +209,6 @@
         </div>
       </div>
     </div>
-
-    <script>
-      function sendMail() {
-        var params = {
-          from_name: document.getElementById("firstName").value,
-          from_lastName: document.getElementById("lastName").value,
-          email: document.getElementById("email").value,
-          message: document.getElementById("message").value,
-        };
-        emailjs
-          .send("service_owfhcj3", "template_h244kvb", params)
-          .then(function (res) {
-            alert("Message sent successfully!");
-          });
-      }
-    </script>
 
     <!-- Social Media Bar (Footer) -->
     <div class="container">

@@ -11,10 +11,11 @@
 body {
   background-image: linear-gradient(to bottom left, #ff8473, #fff9d2);
   font-family: Verdana;
-  width: 95%;
+  width: auto;
   min-height: 100vh;
   text-size-adjust: auto;
   margin: 0 auto;
+  position: relative;
 }
 
 .navBar {
@@ -244,11 +245,11 @@ footer {
 /* TECH STACK PAGE */
 .techStackCard {
   background-color: #fff9d2;
-  border-radius: 10px;
   box-shadow: 2px 2px 3px #111111;
-  width: 100%;
-  padding: 10px;
-  margin: 10px;
+  margin: auto;
+  padding: 24px;
+  width: 90%;
+  border-radius: 20px;
 }
 
 .progLangCube {
@@ -299,66 +300,22 @@ footer {
   position: absolute;
   width: 25%;
   min-width: 200px;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 450px;
+  max-height: 450px;
   padding: 25px;
-  margin: 25px;
+  margin: auto;
   background-color: #fff9d2;
   box-shadow: 2px 2px 3px #111111;
   border-radius: 50px;
   transition: 0.3s ease;
 }
 
-#HTMLInfo {
-  right: 50%;
-}
-#CSSInfo {
-  left: 50%;
-}
-#JSInfo {
-  left: 50%;
-}
-#PythonInfo {
-  right: 50%;
-}
-#CPPInfo {
-  left: 50%;
-}
-#DartInfo {
-  left: 50%;
-}
-#SQLInfo {
-  left: 50%;
-}
-#VSCODEInfo {
-  right: 50%;
-}
-#AndroidStudioInfo {
-  left: 50%;
-}
-#VSInfo {
-  left: 50%;
-}
-#VirtualBoxInfo {
-  right: 50%;
-}
-#RaspberryPiInfo {
-  left: 50%;
-}
-#MATLABInfo {
-  left: 50%;
-}
-#GitHubInfo {
-  right: 50%;
-}
-#JupyterInfo {
-  left: 50%;
-}
+#JSInfo,
+#DartInfo,
+#VSInfo,
+#MATLABInfo,
 #FlutterInfo {
-  left: 50%;
-}
-#DjangoInfo {
-  left: 50%;
+  right: 30%;
 }
 
 #HTMLInfo:hover,
