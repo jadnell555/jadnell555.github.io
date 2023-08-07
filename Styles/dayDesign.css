@@ -267,7 +267,7 @@ footer {
   box-shadow: 2px 2px 3px #111111;
   margin: auto;
   padding: 24px;
-  width: 90%;
+  width: 85%;
   border-radius: 20px;
 }
 
@@ -390,7 +390,7 @@ footer {
 #projectContainer {
   display: flex;
   overflow-x: scroll;
-  width: 99%;
+  width: 100%;
   scroll-snap-type: x mandatory;
   scroll-padding: 24px;
   gap: 12px;
