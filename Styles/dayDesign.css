@@ -41,7 +41,7 @@ button {
 button:hover {
   background-color: #ff8473;
   box-shadow: 0px 10px 15px #ff8473;
-  color: #ffffff;
+  color: #fff9d2;
   transform: translateY(-5px);
 }
 
@@ -119,15 +119,43 @@ h2 {
   box-shadow: 2px 2px 3px #252525;
   padding: 20px;
   margin: auto;
-  min-width: 200px;
+  min-width: 250px;
   width: 100%;
   transition: 0.2s ease-in;
 }
 
-.infoCard:hover {
+.infoCard:hover,
+.resumeCard:hover {
   box-shadow: 0px 10px 15px #252525;
   transform: translateY(-5px);
   transition: 0.2s ease-in;
+}
+
+.resumeCard {
+  background-color: #fff9d2;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px #252525;
+  height: auto;
+  margin: auto;
+  width: 100%;
+  transition: 0.2s ease-in;
+}
+
+.resumeCard:hover {
+  font-weight: bold;
+  transition: 0.15s ease;
+}
+
+#resumeButton {
+  margin: auto;
+  width: auto;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #contact,
@@ -228,10 +256,13 @@ textarea {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
+#submitButton {
+  font-size: 12px;
+}
+
 #submitButton:hover {
-  background-color: #252525;
-  box-shadow: 2px 2px 3px #ff8473;
-  color: #ff8473;
+  box-shadow: 0px 10px 15px #ff8473;
+  cursor: pointer;
 }
 
 li {
@@ -247,7 +278,7 @@ footer {
 }
 
 .socialMediaButton {
-  background-color: #fff9d2;
+  background-color: #ff8473;
   box-shadow: 2px 2px 3px #252525;
 
   width: 50px;
@@ -269,6 +300,13 @@ footer {
   padding: 24px;
   width: 85%;
   border-radius: 20px;
+  transition: 0.2s ease-in;
+}
+
+.techStackCard:hover {
+  box-shadow: 0px 10px 15px #252525;
+  transform: translateY(-5px);
+  transition: 0.2s ease-in;
 }
 
 .progLangCube {
@@ -401,6 +439,13 @@ footer {
   box-shadow: 2px 2px 3px #111111;
   margin: 24px;
   width: 100%;
+  transition: 0.2s ease-in;
+}
+
+.projectCard:hover {
+  box-shadow: 0px 10px 15px #252525;
+  transform: translateY(-5px);
+  transition: 0.2s ease-in;
 }
 
 #projectContainer,
