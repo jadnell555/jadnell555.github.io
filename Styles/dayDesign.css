@@ -1,3 +1,4 @@
+/* GLOBAL DESIGN*/
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -90,6 +91,7 @@ button:active {
   border-radius: 20px;
 }
 
+/* ABOUT ME SECTION*/
 #greeting {
   margin-top: -20px;
 }
@@ -133,39 +135,10 @@ h2 {
   transition: 0.2s ease-in;
 }
 
-.resumeCard {
-  background-color: #fff9d2;
-  border-radius: 10px;
-  box-shadow: 2px 2px 3px #252525;
-  height: auto;
-  margin: auto;
-  width: 100%;
-  transition: 0.2s ease-in;
-}
-
-.resumeCard h6 {
-  margin-top: 5px;
-  transition: 0.15s ease;
-}
-
-.resumeCard:hover h6 {
-  color: #ff8473;
-}
-
-#resumeButton {
-  margin: auto;
-  width: auto;
-  height: 35px;
-  background-color: transparent;
-  border: none;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 #contact,
 #summary,
+#skills,
+#awards,
 #frontEnd,
 #objectOriented,
 #other,
@@ -181,6 +154,10 @@ p {
   font-size: medium;
   text-align: justify;
   text-indent: 2em;
+}
+
+.skillHeading {
+  color: #ff8473;
 }
 
 .formButtons {
@@ -289,16 +266,24 @@ footer {
 
   width: 50px;
   height: 50px;
+  margin: auto;
 
   border: none;
   border-radius: 20px;
+}
+
+.socialMediaButton img {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .socialMediaTitles {
   padding: 5px;
 }
 
-/* TECH STACK PAGE */
+/* TECH STACK SECTION */
 .techStackCard {
   background-color: #fff9d2;
   box-shadow: 2px 2px 3px #111111;
@@ -430,7 +415,7 @@ footer {
   overflow: clip;
 }
 
-/* PROJECTS PAGE*/
+/* PROJECTS SECTION*/
 #projectContainer {
   display: flex;
   overflow-x: scroll;
@@ -577,7 +562,42 @@ footer {
   transition: ease 0.5s;
 }
 
-/* Fading animation */
+/* CONTACT INFORMATION SECTION */
+
+.resumeCard {
+  background-color: #fff9d2;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px #252525;
+  height: auto;
+  margin: auto;
+  width: 100%;
+  transition: 0.2s ease-in;
+}
+
+.resumeCard h6 {
+  margin-top: 5px;
+  transition: 0.15s ease;
+}
+
+.resumeCard:hover h6 {
+  color: #ff8473;
+}
+
+#resumeButton {
+  margin: auto;
+  width: auto;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ANIMATIONS */
+
+/*1. Fading animation */
 .fade {
   animation: fade 2s ease 0s 1 normal forwards;
 }
