@@ -119,11 +119,11 @@ h2 {
 
 .infoCard {
   background-color: #fff9d2;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 2px 2px 3px #252525;
   padding: 20px;
   margin: auto;
-  min-width: 250px;
+  min-width: 275px;
   width: 100%;
   transition: 0.2s ease-in;
 }
@@ -288,8 +288,9 @@ footer {
   background-color: #fff9d2;
   box-shadow: 2px 2px 3px #111111;
   margin: auto;
-  padding: 24px;
-  width: 85%;
+  padding: 20px;
+  width: 100%;
+  min-width: 275px;
   border-radius: 20px;
   transition: 0.2s ease-in;
 }
@@ -566,7 +567,7 @@ footer {
 
 .resumeCard {
   background-color: #fff9d2;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 2px 2px 3px #252525;
   height: auto;
   margin: auto;
@@ -585,7 +586,7 @@ footer {
 
 #resumeButton {
   margin: auto;
-  width: auto;
+  width: 100%;
   height: 35px;
   background-color: transparent;
   border: none;
