@@ -257,6 +257,14 @@ li {
   transition: 0.1s ease;
 }
 
+#dartTitle {
+  margin-bottom: 10px;
+}
+
+#dartImage {
+  margin-bottom: 40px;
+}
+
 .progLangIcon {
   z-index: 2;
   overflow: clip;
