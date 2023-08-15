@@ -570,6 +570,11 @@ textarea {
   transition: 0.2s ease-in;
 }
 
+.pageclip-form__submit::after {
+  border-color: rgba(255, 249, 210, 0.8);
+  border-left-color: #fff9d2;
+}
+
 .resumeCard {
   background-color: #fff9d2;
   border-radius: 20px;
