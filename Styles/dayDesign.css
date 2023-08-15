@@ -44,7 +44,7 @@ button:hover {
   background-color: #ff8473;
   box-shadow: 0px 10px 15px #ff8473;
   color: #fff9d2;
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
 button:active {
@@ -130,7 +130,7 @@ h2 {
 
 .mainPictures:hover {
   box-shadow: 0px 10px 15px #252525;
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   transition: 0.2s ease-in;
 }
 
@@ -148,7 +148,7 @@ h2 {
 .infoCard:hover,
 .resumeCard:hover {
   box-shadow: 0px 10px 15px #252525;
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   transition: 0.2s ease-in;
 }
 
@@ -312,7 +312,7 @@ footer {
 
 .techStackCard:hover {
   box-shadow: 0px 10px 15px #252525;
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   transition: 0.2s ease-in;
 }
 
@@ -399,7 +399,7 @@ footer {
 #JupyterInfo:hover,
 #FlutterInfo:hover,
 #DjangoInfo:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
 .progLangCube:hover,
@@ -407,7 +407,7 @@ footer {
   background-color: #ff8473;
   box-shadow: 0px 10px 15px #ff8473;
   color: #fff9d2;
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
 .progLangCube:active,
@@ -451,7 +451,7 @@ footer {
 
 .projectCard:hover {
   box-shadow: 0px 10px 15px #252525;
-  transform: translateY(-5px);
+  transform: translateY(-4px);
   transition: 0.2s ease-in;
 }
 
