@@ -110,17 +110,6 @@ h2 {
   margin: 0 auto;
 }
 
-.typing-effect {
-  overflow: hidden;
-  border-right: 0.15em solid orange;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40) infinite alternate-reverse,
-    blink-caret 0.75s step-end infinite;
-  transition: 1.5s ease-in;
-}
-
 .mainPictures {
   border-radius: 200px;
   box-shadow: 2px 2px 3px #111111;
@@ -175,58 +164,8 @@ p {
   color: #ff8473;
 }
 
-.formButtons {
-  background-color: #ff8473;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 2px 2px 3px #111111;
-  color: #fff9d2;
-  padding: 10px;
-  margin: 5px;
-  resize: none;
-}
-
-.formButtons:focus {
-  box-shadow: 2px 2px 3px #ff8473;
-}
-
-.formButtons:active {
-  padding: 10px;
-  margin: 5px;
-  resize: none;
-}
-
-::placeholder {
-  padding: 5px;
-  margin: 10px;
-  color: #fff9d2;
-  font-size: 13px;
-}
-
-#firstName {
-  margin: 5px;
-  padding: 10px;
-  width: 39%;
-}
-
-#lastName {
-  margin: 5px;
-  padding: 10px;
-  width: 38%;
-}
-
-#email {
-  margin: 5px;
-  padding: 10px;
-  width: 80%;
-}
-
-textarea {
-  margin: 5px;
-  padding: 12px 20px;
-  width: 80%;
-  height: 150px;
-  border-radius: 5px;
+li {
+  text-align: left;
 }
 
 #message::-webkit-scrollbar,
@@ -252,43 +191,6 @@ textarea {
   width: 90%;
   border: 2px solid #252525;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-#submitButton {
-  font-size: 12px;
-}
-
-#submitButton:hover {
-  box-shadow: 0px 10px 15px #ff8473;
-  cursor: pointer;
-}
-
-li {
-  text-align: left;
-}
-
-#link {
-  color: #ff8473;
-}
-
-footer {
-  margin-bottom: 20px;
-}
-
-.socialMediaButton {
-  background-color: #ff8473;
-  box-shadow: 2px 2px 3px #252525;
-
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  padding: 5px;
-  border: none;
-  border-radius: 20px;
-}
-
-.socialMediaTitles {
-  padding: 5px;
 }
 
 /* TECH STACK SECTION */
@@ -322,19 +224,33 @@ footer {
   border: none;
 }
 
-.definitions {
-  font-size: 12px;
-  text-align: justify;
+.progLangCube:hover,
+.projectTitle:hover {
+  background-color: #ff8473;
+  box-shadow: 0px 10px 15px #ff8473;
+  color: #fff9d2;
+  transform: translateY(-4px);
 }
 
-.definitions b {
-  text-decoration: underline;
+.progLangCube:active,
+.projectTitle:active {
+  transform: translateY(-1px);
 }
 
-.defSource {
-  color: #ff8473;
-  position: relative;
-  float: right;
+.progLangName,
+.softwareName,
+.techName {
+  margin: auto;
+  padding-bottom: 2px;
+  font-size: 10px;
+  font-style: oblique;
+  font-weight: bold;
+  transition: 0.1s ease;
+}
+
+.progLangIcon {
+  z-index: 2;
+  overflow: clip;
 }
 
 #HTMLInfo,
@@ -365,6 +281,7 @@ footer {
   box-shadow: 2px 2px 3px #111111;
   border-radius: 50px;
   transition: 0.3s ease;
+  z-index: 3;
 }
 
 #JSInfo,
@@ -395,33 +312,19 @@ footer {
   transform: translateY(-4px);
 }
 
-.progLangCube:hover,
-.projectTitle:hover {
-  background-color: #ff8473;
-  box-shadow: 0px 10px 15px #ff8473;
-  color: #fff9d2;
-  transform: translateY(-4px);
+.definitions {
+  font-size: 12px;
+  text-align: justify;
 }
 
-.progLangCube:active,
-.projectTitle:active {
-  transform: translateY(-1px);
+.definitions b {
+  text-decoration: underline;
 }
 
-.progLangName,
-.softwareName,
-.techName {
-  margin: auto;
-  padding-bottom: 2px;
-  font-size: 10px;
-  font-style: oblique;
-  font-weight: bold;
-  transition: 0.1s ease;
-}
-
-.progLangIcon {
-  z-index: 1100;
-  overflow: clip;
+.defSource {
+  color: #ff8473;
+  position: relative;
+  float: right;
 }
 
 /* PROJECTS SECTION*/
@@ -478,15 +381,14 @@ footer {
 
 .projectDescription {
   padding: 10px;
-  margin: 10px;
+  margin: 10px auto;
 }
 
 /* Image Slideshow */
-
 .projectImages {
   border-radius: 20px;
   width: 100%;
-  height: 200px;
+  height: 250px;
   box-shadow: 2px 2px 3px #111111;
   transition: 0.3s ease-in;
 }
@@ -572,6 +474,100 @@ footer {
 }
 
 /* CONTACT INFORMATION SECTION */
+.socialMediaButton {
+  background-color: #ff8473;
+  box-shadow: 2px 2px 3px #252525;
+
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+}
+
+.socialMediaTitles {
+  padding: 5px;
+}
+
+.formButtons {
+  background-color: #ff8473;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px #111111;
+  color: #fff9d2;
+  padding: 10px;
+  margin: auto;
+  resize: none;
+  transition: 0.2s ease-in;
+  margin: 10px auto;
+}
+
+.formButtons:hover {
+  box-shadow: 0px 10px 15px #252525;
+  transform: translateY(-4px);
+  transition: 0.2s ease-in;
+}
+
+.formButtons:focus {
+  box-shadow: 0px 10px 15px #ff8473;
+  transform: translateY(-4px);
+  transition: 0.2s ease-in;
+}
+
+.formButtons:active {
+  padding: 10px;
+  margin: 5px;
+  resize: none;
+}
+
+::placeholder {
+  padding: 5px;
+  margin: auto;
+  color: #fff9d2;
+  font-size: 13px;
+}
+
+#firstName {
+  margin: 10px auto;
+  padding: 10px;
+  width: 45%;
+}
+
+#lastName {
+  margin: 10px auto;
+  padding: 10px;
+  width: 45%;
+}
+
+#email {
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+}
+
+textarea {
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  height: 150px;
+  border-radius: 20px;
+}
+
+#submitButton {
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+#submitButton:hover {
+  box-shadow: 0px 10px 15px #ff8473;
+  cursor: pointer;
+}
+
+#submitButton:active {
+  transform: translateY(-2px);
+  transition: 0.2s ease-in;
+}
 
 .resumeCard {
   background-color: #fff9d2;
