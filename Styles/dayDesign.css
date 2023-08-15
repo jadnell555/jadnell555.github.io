@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Quicksand", sans-serif;
 }
 
 *:focus,
@@ -94,6 +95,7 @@ button:active {
 /* ABOUT ME SECTION*/
 #greeting {
   margin-top: -20px;
+  transition: 1s ease-in;
 }
 
 .greeting,
@@ -101,7 +103,19 @@ button:active {
 h2 {
   color: #252525;
   text-shadow: 2px 2px 3px #fff9d2;
-  font-style: oblique;
+  transition: 1s ease-in;
+  margin: 0 auto;
+}
+
+.typing-effect {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40) infinite alternate-reverse,
+    blink-caret 0.75s step-end infinite;
+  transition: 1.5s ease-in;
 }
 
 .mainPictures {
@@ -610,5 +624,28 @@ footer {
 
   to {
     opacity: 1;
+  }
+}
+
+/*2. Typing Animation */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/*2.1 Cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff9d2;
   }
 }
