@@ -283,16 +283,8 @@ footer {
   height: 50px;
   margin: auto;
   padding: 5px;
-
   border: none;
   border-radius: 20px;
-}
-
-.socialMediaButton img {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .socialMediaTitles {
