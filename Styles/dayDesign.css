@@ -611,6 +611,7 @@ footer {
   margin: 10px auto;
   background-color: #fff9d2;
   width: fit-content;
+  max-width: 90%;
   padding: 0 10px;
   border-radius: 20px;
   box-shadow: 2px 2px 3px #252525;
