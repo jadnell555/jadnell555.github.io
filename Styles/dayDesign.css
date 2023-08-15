@@ -77,6 +77,10 @@ button:active {
   font-size: small;
   color: #111111;
   transition: 0.3s ease;
+  background-color: #fff9d2;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px #252525;
+  padding: 2px;
 }
 
 .menuButtons {
@@ -86,7 +90,7 @@ button:active {
   width: 65px;
   height: 65px;
   margin: auto;
-
+  padding: 5px;
   border: none;
   border-radius: 20px;
 }
