@@ -549,18 +549,21 @@ li {
   margin: 10px auto;
   padding: 10px;
   width: 45%;
+  box-shadow: 2px 2px 3px #252525;
 }
 
 #lastName {
   margin: 10px auto;
   padding: 10px;
   width: 45%;
+  box-shadow: 2px 2px 3px #252525;
 }
 
 #email {
   margin: auto;
   padding: 10px;
   width: 90%;
+  box-shadow: 2px 2px 3px #252525;
 }
 
 textarea {
@@ -569,21 +572,24 @@ textarea {
   width: 90%;
   height: 150px;
   border-radius: 20px;
+  box-shadow: 2px 2px 3px #252525;
 }
 
 #submitButton {
   font-size: 12px;
   margin: 0 auto;
+  box-shadow: 2px 2px 3px #252525;
 }
 
 #submitButton:hover {
-  box-shadow: 0px 10px 15px #ff8473;
+  box-shadow: 0px 10px 15px #252525;
   cursor: pointer;
 }
 
 #submitButton:active {
   transform: translateY(-2px);
   transition: 0.2s ease-in;
+  box-shadow: 0px 10px 15px #ff8473;
 }
 
 .pageclip-form__submit::after {
