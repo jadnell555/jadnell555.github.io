@@ -13,7 +13,6 @@
 
 body {
   background-image: linear-gradient(to bottom left, #ff8473, #fff9d2);
-  font-family: Verdana;
   width: auto;
   min-height: 100vh;
   text-size-adjust: auto;
@@ -163,8 +162,6 @@ h2 {
 }
 
 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   font-size: medium;
   text-align: justify;
   text-indent: 2em;
@@ -624,28 +621,5 @@ footer {
 
   to {
     opacity: 1;
-  }
-}
-
-/*2. Typing Animation */
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-/*2.1 Cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #fff9d2;
   }
 }
