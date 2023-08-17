@@ -1,10 +1,23 @@
 // HTML TECH STACK BUTTON
 var HTMLButton = document.getElementById("HTMLButton");
 var HTMLInfo = document.getElementById("HTMLInfo");
-var backdrop = document.getElementById("backdrop");
-
+var techStackSection = document.getElementById("techStackPage");
+var techStackCard = document.getElementById("progLangCard");
+var flag = false;
+/*
 HTMLButton.onclick = function () {
   HTMLInfo.classList.toggle("hide");
+};
+*/
+
+HTMLButton.onclick = function () {
+  if (HTMLInfo.classList.contains("hide")) {
+    HTMLInfo.classList.toggle("hide");
+    flag = true;
+  } else {
+    HTMLInfo.classList.toggle("hide");
+    flag = false;
+  }
 };
 
 // CSS TECH STACK BUTTON
