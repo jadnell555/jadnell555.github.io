@@ -97,6 +97,13 @@ button:active {
   border-radius: 20px;
 }
 
+.sectionHeadings {
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
 /* ABOUT ME SECTION*/
 #greeting {
   margin-top: -20px;
@@ -200,6 +207,9 @@ li {
   ::-webkit-scrollbar {
     -webkit-appearance: none;
     display: none;
+  }
+  #projectContainer.container {
+    margin-bottom: -40px;
   }
 }
 
@@ -349,6 +359,8 @@ li {
   display: flex;
   overflow-x: scroll;
   width: 100%;
+  margin: auto;
+  margin-top: -40px;
   scroll-snap-type: x mandatory;
   scroll-padding: 24px;
   gap: 12px;
@@ -357,7 +369,7 @@ li {
 .projectCard {
   background-color: #fff9d2;
   box-shadow: 2px 2px 3px #252525;
-  margin: 24px;
+  margin: 20px auto;
   width: 100%;
   transition: 0.2s ease-in;
 }
@@ -640,11 +652,11 @@ footer {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
+  margin: 20px auto;
   background-color: #fff9d2;
   width: fit-content;
   max-width: 90%;
-  padding: 0 10px;
+  padding: 5px 20px;
   border-radius: 20px;
   box-shadow: 2px 2px 3px #252525;
   transition: 0.2s ease-in;
