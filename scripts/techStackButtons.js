@@ -1,151 +1,44 @@
-// HTML TECH STACK BUTTON
-var HTMLButton = document.getElementById("HTMLButton");
-var HTMLInfo = document.getElementById("HTMLInfo");
-var techStackSection = document.getElementById("techStackPage");
-var techStackCard = document.getElementById("progLangCard");
-var flag = false;
-/*
-HTMLButton.onclick = function () {
-  HTMLInfo.classList.toggle("hide");
-};
-*/
+function setupToggle(elementButton, elementInfo) {
+  var button = document.getElementById(elementButton);
+  var info = document.getElementById(elementInfo);
+  var flag = false;
 
-HTMLButton.onclick = function () {
-  if (HTMLInfo.classList.contains("hide")) {
-    HTMLInfo.classList.toggle("hide");
-    flag = true;
-  } else {
-    HTMLInfo.classList.toggle("hide");
-    flag = false;
-  }
-};
+  button.onclick = function (event) {
+    event.stopPropagation();
+    info.classList.remove("hide");
+    flag = !flag;
 
-// CSS TECH STACK BUTTON
-var CSSButton = document.getElementById("CSSButton");
-var CSSInfo = document.getElementById("CSSInfo");
+    // Hide other info spans except the clicked one
+    var allInfos = document.querySelectorAll(".info");
+    allInfos.forEach(function (otherInfo) {
+      if (otherInfo !== info) {
+        otherInfo.classList.add("hide");
+      }
+    });
+  };
 
-CSSButton.onclick = function () {
-  CSSInfo.classList.toggle("hide");
-};
+  document.addEventListener("click", function (event) {
+    if (flag && !button.contains(event.target)) {
+      info.classList.add("hide");
+      flag = false;
+    }
+  });
+}
 
-// JavaScript TECH STACK BUTTON
-var JSButton = document.getElementById("JSButton");
-var JSInfo = document.getElementById("JSInfo");
-
-JSButton.onclick = function () {
-  JSInfo.classList.toggle("hide");
-};
-
-// Python TECH STACK BUTTON
-var PythonButton = document.getElementById("PythonButton");
-var PythonInfo = document.getElementById("PythonInfo");
-
-PythonButton.onclick = function () {
-  PythonInfo.classList.toggle("hide");
-};
-
-// C++ TECH STACK BUTTON
-var CPPButton = document.getElementById("CPPButton");
-var CPPInfo = document.getElementById("CPPInfo");
-
-CPPButton.onclick = function () {
-  CPPInfo.classList.toggle("hide");
-};
-
-// Dart TECH STACK BUTTON
-var DartButton = document.getElementById("DartButton");
-var DartInfo = document.getElementById("DartInfo");
-
-DartButton.onclick = function () {
-  DartInfo.classList.toggle("hide");
-};
-
-// SQL TECH STACK BUTTON
-var SQLButton = document.getElementById("SQLButton");
-var SQLInfo = document.getElementById("SQLInfo");
-
-SQLButton.onclick = function () {
-  SQLInfo.classList.toggle("hide");
-};
-
-// Software:
-
-// Visual Studio Code TECH STACK BUTTON
-var VSCODEButton = document.getElementById("VSCODEButton");
-var VSCODEInfo = document.getElementById("VSCODEInfo");
-
-VSCODEButton.onclick = function () {
-  VSCODEInfo.classList.toggle("hide");
-};
-
-// Android Studio TECH STACK BUTTON
-var AndroidStudioButton = document.getElementById("AndroidStudioButton");
-var AndroidStudioInfo = document.getElementById("AndroidStudioInfo");
-
-AndroidStudioButton.onclick = function () {
-  AndroidStudioInfo.classList.toggle("hide");
-};
-
-// Visual Studio TECH STACK BUTTON
-var VSButton = document.getElementById("VSButton");
-var VSInfo = document.getElementById("VSInfo");
-
-VSButton.onclick = function () {
-  VSInfo.classList.toggle("hide");
-};
-
-// VirtualBox TECH STACK BUTTON
-var VirtualBoxButton = document.getElementById("VirtualBoxButton");
-var VirtualBoxInfo = document.getElementById("VirtualBoxInfo");
-
-VirtualBoxButton.onclick = function () {
-  VirtualBoxInfo.classList.toggle("hide");
-};
-
-// Raspberry Pi TECH STACK BUTTON
-var RaspberryPiButton = document.getElementById("RaspberryPiButton");
-var RaspberryPiInfo = document.getElementById("RaspberryPiInfo");
-
-RaspberryPiButton.onclick = function () {
-  RaspberryPiInfo.classList.toggle("hide");
-};
-
-// MATLAB TECH STACK BUTTON
-var MATLABButton = document.getElementById("MATLABButton");
-var MATLABInfo = document.getElementById("MATLABInfo");
-
-MATLABButton.onclick = function () {
-  MATLABInfo.classList.toggle("hide");
-};
-
-// GitHub TECH STACK BUTTON
-var GitHubButton = document.getElementById("GitHubButton");
-var GitHubInfo = document.getElementById("GitHubInfo");
-
-GitHubButton.onclick = function () {
-  GitHubInfo.classList.toggle("hide");
-};
-
-// Jupyter Notebooks TECH STACK BUTTON
-var JupyterButton = document.getElementById("JupyterButton");
-var JupyterInfo = document.getElementById("JupyterInfo");
-
-JupyterButton.onclick = function () {
-  JupyterInfo.classList.toggle("hide");
-};
-
-// Flutter TECH STACK BUTTON
-var FlutterButton = document.getElementById("FlutterButton");
-var FlutterInfo = document.getElementById("FlutterInfo");
-
-FlutterButton.onclick = function () {
-  FlutterInfo.classList.toggle("hide");
-};
-
-// Django TECH STACK BUTTON
-var DjangoButton = document.getElementById("DjangoButton");
-var DjangoInfo = document.getElementById("DjangoInfo");
-
-DjangoButton.onclick = function () {
-  DjangoInfo.classList.toggle("hide");
-};
+setupToggle("HTMLButton", "HTMLInfo");
+setupToggle("CSSButton", "CSSInfo");
+setupToggle("JSButton", "JSInfo");
+setupToggle("PythonButton", "PythonInfo");
+setupToggle("CPPButton", "CPPInfo");
+setupToggle("DartButton", "DartInfo");
+setupToggle("SQLButton", "SQLInfo");
+setupToggle("VSCODEButton", "VSCODEInfo");
+setupToggle("AndroidStudioButton", "AndroidStudioInfo");
+setupToggle("VSButton", "VSInfo");
+setupToggle("VirtualBoxButton", "VirtualBoxInfo");
+setupToggle("RaspberryPiButton", "RaspberryPiInfo");
+setupToggle("MATLABButton", "MATLABInfo");
+setupToggle("GitHubButton", "GitHubInfo");
+setupToggle("JupyterButton", "JupyterInfo");
+setupToggle("FlutterButton", "FlutterInfo");
+setupToggle("DjangoButton", "DjangoInfo");
