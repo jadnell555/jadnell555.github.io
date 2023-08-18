@@ -5,7 +5,7 @@ function setupToggle(elementButton, elementInfo) {
 
   button.onclick = function (event) {
     event.stopPropagation();
-    info.classList.remove("hide");
+    info.classList.toggle("hide");
     flag = !flag;
 
     // Hide other info spans except the clicked one
