@@ -18,7 +18,11 @@ function setupToggle(elementButton, elementInfo) {
   };
 
   document.addEventListener("click", function (event) {
-    if (flag && !button.contains(event.target)) {
+    if (
+      flag &&
+      !button.contains(event.target) &&
+      !info.contains(event.target)
+    ) {
       info.classList.add("hide");
       flag = false;
     }
