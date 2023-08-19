@@ -20,12 +20,6 @@ body {
   position: relative;
 }
 
-.blur {
-  filter: blur(10px);
-  transition: 0.2s ease;
-  z-index: 3;
-}
-
 .navBar {
   position: sticky;
   z-index: 1100;
