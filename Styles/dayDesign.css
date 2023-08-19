@@ -116,6 +116,7 @@ button:active {
   padding: 5px;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .mainPictures {
@@ -166,14 +167,7 @@ footer:hover {
   transition: 0.2s ease-in;
 }
 
-#contact,
-#summary,
-#skills,
-#awards,
-#frontEnd,
-#objectOriented,
-#other,
-.projectHeadings {
+.cardTitles {
   color: #ff8473;
   text-shadow: 2px 2px 5px #ff8473;
   font-style: oblique;
@@ -253,6 +247,9 @@ li {
   border-radius: 20px;
   transition: 0.3s ease;
   border: none;
+}
+h4.projectTitle {
+  margin: 0 auto;
 }
 
 .progLangCube:hover,
