@@ -1280,6 +1280,7 @@
                     action="https://send.pageclip.co/CAH0P5X4x3AsDEPAqnhl4MqM62FY8Ndd/contactForm"
                     class="pageclip-form form"
                     method="post"
+                    onsubmit="return validateName()"
                   >
                     <input
                       type="text"
@@ -1288,7 +1289,6 @@
                       placeholder="First Name:"
                       name="firstName"
                       required
-                      onsubmit="return validateName()"
                     />
 
                     <input
