@@ -610,7 +610,7 @@ textarea {
 }
 
 .pageclip-form__success {
-  background: #fff9d2 0.8;
+  background: hsla(52, 100%, 91%, 0.8);
   border-radius: 20px;
 }
 
