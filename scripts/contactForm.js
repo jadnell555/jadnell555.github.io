@@ -15,12 +15,14 @@ function validateName() {
         maxLength +
         "characters."
     );
+    return false;
   } // end if
 
   if (!nameRegex.test(trimmedName)) {
     alert(
       "Invalid name entered. Please enter your name without numbers or special characters"
     );
+    return false;
   } // end if
 
   return true; // Validation passed
