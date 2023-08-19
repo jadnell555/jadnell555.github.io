@@ -609,6 +609,11 @@ textarea {
   border-left-color: #fff9d2;
 }
 
+.pageclip-form__success {
+  background-color: #fff9d2;
+  border-radius: 20px;
+}
+
 .resumeCard {
   background-color: #fff9d2;
   border-radius: 20px;
