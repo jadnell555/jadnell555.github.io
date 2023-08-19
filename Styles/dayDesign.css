@@ -612,6 +612,7 @@ textarea {
 .pageclip-form__success {
   background: hsla(52, 100%, 91%, 0.8);
   border-radius: 20px;
+  color: #ff8473;
 }
 
 .resumeCard {
