@@ -102,21 +102,20 @@ button:active {
   margin: 20px auto;
   display: flex;
   justify-content: center;
-}
-
-/* ABOUT ME SECTION*/
-#greeting {
-  margin-top: -20px;
+  color: #252525;
+  text-shadow: 2px 2px 3px #fff9d2;
   transition: 1s ease-in;
 }
 
-.greeting,
-#socialMedia,
-h2 {
+/* ABOUT ME SECTION*/
+.greeting {
   color: #252525;
   text-shadow: 2px 2px 3px #fff9d2;
   transition: 1s ease-in;
   margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .mainPictures {
@@ -126,7 +125,31 @@ h2 {
   transition: 0.2s ease-in;
 }
 
-.mainPictures:hover {
+.mainPictures:hover,
+.infoCard:hover,
+
+#HTMLInfo:hover,          /*HTML Information Pop Up*/
+#CSSInfo:hover,           /*CSS Information Pop Up*/
+#JSInfo:hover,            /*JavaScript Information Pop Up*/
+#PythonInfo:hover,        /*Python Information Pop Up*/
+#CPPInfo:hover,           /*C++ Information Pop Up*/
+#DartInfo:hover,          /*Dart Information Pop Up*/
+#SQLInfo:hover,           /*SQL Information Pop Up*/
+#VSCODEInfo:hover,        /*Visual Studio Code Information Pop Up*/
+#AndroidStudioInfo:hover, /*Android Studio Information Pop Up*/
+#VSInfo:hover,            /*Visual Studio Information Pop Up*/
+#VirtualBoxInfo:hover,    /*VirtualBoxx Information Pop Up*/
+#RaspberryPiInfo:hover,   /*Raspberry Pi Information Pop Up*/
+#MATLABInfo:hover,        /*Matlab Information Pop Up*/
+#GitHubInfo:hover,        /*GitHub Information Pop Up*/
+#JupyterInfo:hover,       /*Jupyter Notebooks Information Pop Up*/
+#FlutterInfo:hover,       /*Flutter Information Pop Up*/
+#DjangoInfo:hover,        /*Django Information Pop Up*/ 
+
+.resumeCard:hover,
+.formButtons:hover,
+
+footer:hover {
   box-shadow: 0px 10px 15px #252525;
   transform: translateY(-4px);
   transition: 0.2s ease-in;
@@ -140,13 +163,6 @@ h2 {
   margin: auto;
   min-width: 275px;
   width: 100%;
-  transition: 0.2s ease-in;
-}
-
-.infoCard:hover,
-.resumeCard:hover {
-  box-shadow: 0px 10px 15px #252525;
-  transform: translateY(-4px);
   transition: 0.2s ease-in;
 }
 
@@ -315,28 +331,6 @@ li {
 #MATLABInfo,
 #FlutterInfo {
   right: 10%;
-}
-
-#HTMLInfo:hover,
-#CSSInfo:hover,
-#JSInfo:hover,
-#PythonInfo:hover,
-#CPPInfo:hover,
-#DartInfo:hover,
-#SQLInfo:hover,
-#VSCODEInfo:hover,
-#AndroidStudioInfo:hover,
-#VSInfo:hover,
-#VirtualBoxInfo:hover,
-#RaspberryPiInfo:hover,
-#MATLABInfo:hover,
-#GitHubInfo:hover,
-#JupyterInfo:hover,
-#FlutterInfo:hover,
-#DjangoInfo:hover {
-  transform: translateY(-4px);
-  box-shadow: 0px 10px 15px #252525;
-  transition: 0.2s ease-in;
 }
 
 .definitions {
@@ -526,12 +520,6 @@ li {
   margin: 10px auto;
 }
 
-.formButtons:hover {
-  box-shadow: 0px 10px 15px #252525;
-  transform: translateY(-4px);
-  transition: 0.2s ease-in;
-}
-
 .formButtons:focus {
   box-shadow: 0px 10px 15px #ff8473;
   transform: translateY(-4px);
@@ -667,13 +655,6 @@ footer {
   box-shadow: 2px 2px 3px #252525;
   transition: 0.2s ease-in;
 }
-
-footer:hover {
-  box-shadow: 0px 10px 15px #252525;
-  transform: translateY(-4px);
-  transition: 0.2s ease-in;
-}
-
 /* ANIMATIONS */
 
 /*1. Fading animation */
@@ -688,5 +669,22 @@ footer:hover {
 
   to {
     opacity: 1;
+  }
+}
+
+/*2. Left Slide */
+.leftSlide {
+  animation: leftSlide 1.25s ease-out 0s 1 normal forwards;
+}
+
+@keyframes leftSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
