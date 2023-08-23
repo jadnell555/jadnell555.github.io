@@ -602,7 +602,7 @@ textarea {
 }
 
 .pageclip-form__submit::after {
-  border-color: rgba(188, 254, 254, 0.8);
+  border-color: rgba(168, 38, 84, 0.8);
   border-left-color: #a82654;
 }
 
