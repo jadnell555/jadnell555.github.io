@@ -212,7 +212,7 @@ li {
 
 #message::-webkit-scrollbar-thumb,
 .container::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to top left, #a82654, #fd8c69);
+  background-image: linear-gradient(to right, #a82654, #fd8c69);
   border-radius: 30px;
   width: 90%;
   border: 2px solid #252525;
