@@ -180,7 +180,10 @@ p {
 }
 
 .skillHeading {
-  color: #fd8c69;
+  background: -webkit-linear-gradient(bottom, #fd8c69, #a82654);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-style: oblique;
 }
 
