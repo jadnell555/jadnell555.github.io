@@ -76,6 +76,7 @@ button:active {
   border-radius: 20px;
   box-shadow: 2px 2px 3px #252525;
   padding: 2px;
+  color: #252525;
 }
 
 .menuButtons {
@@ -98,6 +99,7 @@ button:active {
   color: #fbf1e4;
   text-shadow: 2px 2px 3px #252525;
   transition: 1s ease-in;
+  z-index: 1;
 }
 
 .animatedSection {
@@ -356,6 +358,7 @@ li {
 }
 
 /* PROJECTS SECTION*/
+
 #projectContainer {
   display: flex;
   overflow-x: scroll;
