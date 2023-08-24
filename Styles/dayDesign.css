@@ -1,5 +1,7 @@
 /* GLOBAL DESIGN*/
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Quicksand", sans-serif;
@@ -13,12 +15,12 @@
 
 body {
   background-image: linear-gradient(to top left, #a82654, #fd8c69);
-
-  width: auto;
   min-height: 100vh;
   text-size-adjust: auto;
   margin: 0 auto;
   position: relative;
+  min-width: 100vw;
+  overflow-x: hidden;
 }
 
 .navBar {
@@ -342,6 +344,19 @@ li {
   right: 10%;
 }
 
+#VSCODEInfo,
+#VirtualBoxInfo,
+#GitHubInfo {
+  left: 10%;
+}
+
+#AndroidStudioInfo,
+#RaspberryPiInfo,
+#JupyterInfo,
+#DjangoInfo {
+  left: 37%;
+}
+
 .definitions {
   font-size: 12px;
   text-align: justify;
@@ -362,8 +377,7 @@ li {
 #projectContainer {
   display: flex;
   overflow-x: scroll;
-  width: 100%;
-  margin: auto;
+  margin: 0 auto;
   margin-top: -40px;
   scroll-snap-type: x mandatory;
   scroll-padding: 24px;
@@ -374,7 +388,6 @@ li {
   background-color: #fbf1e4;
   box-shadow: 2px 2px 3px #252525;
   margin: 20px auto;
-  width: 100%;
   transition: 0.2s ease-in;
 }
 
