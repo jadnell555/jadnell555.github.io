@@ -162,8 +162,7 @@ footer:hover {
 
 .cardTitles {
   color: #fd8c69;
-  text-shadow: 2px 2px 3px #a82654;
-  font-style: oblique;
+  text-shadow: 2px 2px 3px #252525;
 }
 
 p {
@@ -235,7 +234,7 @@ li {
   background-image: linear-gradient(to top left, #a82654, #fd8c69);
   width: 100px;
   height: 100px;
-  box-shadow: 2px 2px 3px #a82654;
+  box-shadow: 2px 2px 3px #252525;
   padding: 10px;
   margin: auto;
   margin-top: 25px;
@@ -243,14 +242,14 @@ li {
   transition: 0.3s ease;
   border: none;
 }
+
 h4.projectTitle {
   margin: 0 auto;
 }
 
-.progLangCube:hover,
-.projectTitle:hover {
+.progLangCube:hover {
   background-color: #252525;
-  box-shadow: 0px 10px 15px #a82654;
+  box-shadow: 0px 10px 15px #252525;
   transform: translateY(-4px);
 }
 
@@ -314,6 +313,7 @@ h4.projectTitle {
   border-radius: 50px;
   transition: 0.2s ease-in;
   z-index: 5;
+  color: #fbf1e4;
 }
 
 #JSInfo,
@@ -367,22 +367,6 @@ h4.projectTitle {
   scroll-snap-align: start;
 }
 
-.projectButton,
-.sourceCodeButton {
-  border-radius: 200px;
-  box-shadow: 2px 2px 3px #252525;
-  padding: 3px;
-  border: none;
-  background-image: linear-gradient(to top left, #a82654, #fd8c69);
-  transition: 0.2s ease-in;
-}
-
-.projectButton:hover,
-.sourceCodeButton:hover {
-  box-shadow: 0px 10px 15px #a82654;
-  transform: translateY(-4px);
-}
-
 .projectTitle {
   color: #fbf1e4;
   background-color: #252525;
@@ -392,6 +376,24 @@ h4.projectTitle {
   padding: 5px;
   width: 80%;
   transition: 0.3s ease;
+}
+
+.projectButton,
+.sourceCodeButton {
+  border-radius: 200px;
+  box-shadow: 2px 2px 3px #252525;
+  padding: 3px;
+  border: none;
+  background-color: #252525;
+  transition: 0.2s ease-in;
+}
+
+.projectButton:hover,
+.sourceCodeButton:hover,
+.projectTitle:hover {
+  box-shadow: 0px 10px 15px #fd8c69;
+  background-color: #fd8c69;
+  transform: translateY(-4px);
 }
 
 .projectDescription {
@@ -440,7 +442,7 @@ h4.projectTitle {
 
 .prev:hover,
 .next:hover {
-  background-color: #a82654;
+  background-color: #fd8c69;
   box-shadow: 1px 2.5px 5px #252525;
   color: #ffffff;
   transform: translateY(-2px);
@@ -503,7 +505,7 @@ h4.projectTitle {
 }
 
 .socialMediaButton:hover {
-  box-shadow: 0 10px 15px #a82654;
+  box-shadow: 0 10px 15px #252525;
 }
 
 .socialMediaTitles {
@@ -515,7 +517,7 @@ h4.projectTitle {
   border: none;
   border-radius: 20px;
   box-shadow: 2px 2px 3px #252525;
-  color: #252525;
+  color: #fbf1e4;
   padding: 10px;
   margin: auto;
   resize: none;
@@ -533,12 +535,13 @@ h4.projectTitle {
   padding: 10px;
   margin: 5px;
   resize: none;
+  color: #fbf1e4;
 }
 
 ::placeholder {
   padding: 5px;
   margin: auto;
-  color: #252525;
+  color: #fbf1e4;
   font-size: 13px;
 }
 
@@ -547,6 +550,7 @@ h4.projectTitle {
   padding: 10px;
   width: 45%;
   box-shadow: 2px 2px 3px #252525;
+  color: #fbf1e4;
 }
 
 #lastName {
@@ -554,6 +558,7 @@ h4.projectTitle {
   padding: 10px;
   width: 45%;
   box-shadow: 2px 2px 3px #252525;
+  color: #fbf1e4;
 }
 
 #email {
@@ -561,6 +566,17 @@ h4.projectTitle {
   padding: 10px;
   width: 90%;
   box-shadow: 2px 2px 3px #252525;
+  color: #fbf1e4;
+}
+
+textarea {
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px #252525;
+  color: #fbf1e4;
 }
 
 #firstName:hover,
@@ -575,16 +591,8 @@ h4.projectTitle {
   box-shadow: 0px 10px 15px #a82654;
 }
 
-textarea {
-  margin: 10px auto;
-  padding: 10px;
-  width: 90%;
-  height: 150px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
-}
-
 #submitButton {
+  color: #fbf1e4;
   font-size: 12px;
   margin: 0 auto;
   box-shadow: 2px 2px 3px #252525;
@@ -627,7 +635,7 @@ textarea {
 }
 
 .resumeCard:hover h6 {
-  color: #a82654;
+  color: #fd8c69;
 }
 
 .resumeCard:active {
