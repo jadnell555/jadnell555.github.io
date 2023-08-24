@@ -161,8 +161,9 @@ footer:hover {
 }
 
 .cardTitles {
-  color: #fd8c69;
-  text-shadow: 2px 2px 3px #252525;
+  background: -webkit-linear-gradient(top, #fd8c69, #a82654);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
