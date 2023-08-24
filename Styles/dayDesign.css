@@ -176,6 +176,7 @@ p {
 
 .skillHeading {
   color: #fd8c69;
+  font-style: oblique;
 }
 
 li {
@@ -244,10 +245,6 @@ li {
   border: none;
 }
 
-h4.projectTitle {
-  margin: 0 auto;
-}
-
 .progLangCube:hover {
   background-color: #252525;
   box-shadow: 0px 10px 15px #252525;
@@ -257,6 +254,16 @@ h4.projectTitle {
 .progLangCube:active,
 .projectTitle:active {
   transform: translateY(-1px);
+}
+
+.space5px {
+  height: 5px;
+  width: auto;
+}
+
+.space8px {
+  height: 8px;
+  width: auto;
 }
 
 .progLangName,
@@ -377,6 +384,10 @@ h4.projectTitle {
   padding: 5px;
   width: 80%;
   transition: 0.3s ease;
+}
+
+h4.projectTitle {
+  margin: 0 auto;
 }
 
 .projectButton,
