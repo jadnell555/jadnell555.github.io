@@ -100,6 +100,10 @@ button:active {
   transition: 1s ease-in;
 }
 
+.animatedSection {
+  opacity: 0;
+}
+
 /* ABOUT ME SECTION*/
 .greeting {
   color: #fbf1e4;
@@ -703,7 +707,8 @@ footer {
 
 /*2. Left Slide */
 .leftSlide {
-  animation: leftSlide 1.25s ease-out 0s 1 normal forwards;
+  animation: leftSlide 0.8s ease-out 0s 1 normal forwards;
+  opacity: 1;
 }
 
 @keyframes leftSlide {
