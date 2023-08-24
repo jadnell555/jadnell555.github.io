@@ -320,7 +320,7 @@ li {
 #JupyterInfo,
 #FlutterInfo,
 #DjangoInfo {
-  display: block;
+  display: inline-block;
   position: absolute;
   width: 25%;
   min-width: 200px;
@@ -337,24 +337,27 @@ li {
 }
 
 #JSInfo,
-#DartInfo,
-#VSInfo,
-#MATLABInfo,
-#FlutterInfo {
-  right: 10%;
+#DartInfo {
+  right: 27%;
 }
 
 #VSCODEInfo,
 #VirtualBoxInfo,
 #GitHubInfo {
-  left: 10%;
+  left: 27%;
 }
 
 #AndroidStudioInfo,
 #RaspberryPiInfo,
 #JupyterInfo,
 #DjangoInfo {
-  left: 37%;
+  right: 20%;
+}
+
+#VSInfo,
+#MATLABInfo,
+#FlutterInfo {
+  left: 48.12%;
 }
 
 .definitions {
