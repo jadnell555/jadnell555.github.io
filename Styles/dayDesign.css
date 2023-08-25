@@ -101,7 +101,6 @@ button:active {
   color: #fbf1e4;
   text-shadow: 2px 2px 3px #252525;
   transition: 1s ease-in;
-  z-index: 1;
 }
 
 .animatedSection {
@@ -136,13 +135,14 @@ button:active {
 #PythonInfo:hover,        /*Python Information Pop Up*/
 #CPPInfo:hover,           /*C++ Information Pop Up*/
 #DartInfo:hover,          /*Dart Information Pop Up*/
+#MATLABInfo:hover,
 #SQLInfo:hover,           /*SQL Information Pop Up*/
 #VSCODEInfo:hover,        /*Visual Studio Code Information Pop Up*/
 #AndroidStudioInfo:hover, /*Android Studio Information Pop Up*/
 #VSInfo:hover,            /*Visual Studio Information Pop Up*/
 #VirtualBoxInfo:hover,    /*VirtualBoxx Information Pop Up*/
 #RaspberryPiInfo:hover,   /*Raspberry Pi Information Pop Up*/
-#MATLABInfo:hover,        /*Matlab Information Pop Up*/
+#ArduinoInfo:hover,        /*Matlab Information Pop Up*/
 #GitHubInfo:hover,        /*GitHub Information Pop Up*/
 #JupyterInfo:hover,       /*Jupyter Notebooks Information Pop Up*/
 #FlutterInfo:hover,       /*Flutter Information Pop Up*/
@@ -249,7 +249,7 @@ li {
   width: 100px;
   height: 100px;
   box-shadow: 2px 2px 3px #252525;
-  padding: 10px;
+  padding: 5px;
   margin: auto;
   margin-top: 25px;
   border-radius: 20px;
@@ -275,6 +275,11 @@ li {
 
 .space8px {
   height: 8px;
+  width: auto;
+}
+
+.space45px {
+  height: 45px;
   width: auto;
 }
 
@@ -310,17 +315,18 @@ li {
 #CPPInfo,
 #DartInfo,
 #SQLInfo,
+#MATLABInfo,
 #VSCODEInfo,
 #AndroidStudioInfo,
 #VSInfo,
 #VirtualBoxInfo,
 #RaspberryPiInfo,
-#MATLABInfo,
+#ArduinoInfo,
 #GitHubInfo,
 #JupyterInfo,
 #FlutterInfo,
 #DjangoInfo {
-  display: inline-block;
+  display: inline;
   position: absolute;
   width: 25%;
   min-width: 200px;
@@ -332,32 +338,19 @@ li {
   box-shadow: 2px 2px 3px #252525;
   border-radius: 50px;
   transition: 0.2s ease-in;
-  z-index: 5;
   color: #fbf1e4;
 }
 
 #JSInfo,
-#DartInfo {
-  right: 27%;
-}
-
-#VSCODEInfo,
-#VirtualBoxInfo,
-#GitHubInfo {
-  left: 27%;
-}
-
-#AndroidStudioInfo,
-#RaspberryPiInfo,
-#JupyterInfo,
-#DjangoInfo {
-  right: 20%;
-}
-
+#DartInfo,
 #VSInfo,
-#MATLABInfo,
+#ArduinoInfo,
 #FlutterInfo {
-  left: 48.12%;
+  left: 48%;
+}
+
+#MATLABInfo {
+  left: 34%;
 }
 
 .definitions {
