@@ -246,15 +246,15 @@ li {
 
 .progLangCube {
   background-image: linear-gradient(to top left, #a82654, #fd8c69);
-  width: 100px;
-  height: 100px;
+  width: inherit;
+  height: 3em;
   box-shadow: 2px 2px 3px #252525;
-  padding: 5px;
   margin: auto;
-  margin-top: 25px;
+  margin-top: 1em;
   border-radius: 20px;
   transition: 0.3s ease;
   border: none;
+  overflow: hidden;
 }
 
 .progLangCube:hover {
@@ -283,7 +283,6 @@ li {
   width: auto;
 }
 
-.progLangName,
 .softwareName,
 .techName {
   margin: auto;
@@ -295,17 +294,36 @@ li {
   transition: 0.1s ease;
 }
 
+h6.progLangName {
+  margin: auto;
+  font-size: 12px;
+  font-style: oblique;
+  color: #fbf1e4;
+  font-weight: bold;
+  transition: 0.1s ease;
+  margin-top: 1.45em;
+}
+
+img.progLangIcon {
+  z-index: 2;
+  display: inline;
+  margin-top: 0.25em;
+}
+
+#jsLogo {
+  margin-top: 0.5em;
+}
+
+.expandArrow {
+  margin-top: 0.5em;
+}
+
 #dartTitle {
   margin-bottom: 10px;
 }
 
 #dartImage {
   margin-bottom: 40px;
-}
-
-.progLangIcon {
-  z-index: 2;
-  overflow: clip;
 }
 
 #HTMLInfo,
