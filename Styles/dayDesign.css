@@ -229,6 +229,9 @@ li {
   #projectContainer.container {
     margin-bottom: -40px;
   }
+  .cardTitles {
+    margin-top: 0.75em;
+  }
 }
 
 /* TECH STACK SECTION */
