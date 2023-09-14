@@ -35,13 +35,14 @@ body {
 }
 
 button {
-  transition: 0.3s ease;
+  transition: 0.2s ease-in;
   margin: auto;
 }
 
-button:hover {
+button.menuButtons:hover {
   background-color: #fbf1e4;
   box-shadow: 0px 10px 15px #fbf1e4;
+  transition: 0.2s ease-in;
   transform: translateY(-4px);
 }
 
@@ -250,7 +251,7 @@ li {
 .progLangCube {
   background-image: linear-gradient(to top left, #a82654, #fd8c69);
   width: inherit;
-  height: 3em;
+  height: 3em; /*3em Original Size*/
   box-shadow: 2px 2px 3px #252525;
   margin: auto;
   margin-top: 1em;
@@ -271,6 +272,10 @@ li {
   transform: translateY(-1px);
 }
 
+#HTMLContainer {
+  height: 3em;
+}
+
 .space5px {
   height: 5px;
   width: auto;
@@ -286,20 +291,9 @@ li {
   width: auto;
 }
 
-.softwareName,
-.techName {
-  margin: auto;
-  padding-bottom: 2px;
-  font-size: 10px;
-  font-style: oblique;
-  color: #fbf1e4;
-  font-weight: bold;
-  transition: 0.1s ease;
-}
-
 h6.progLangName {
   margin: auto;
-  font-size: 12px;
+  font-size: 0.75em;
   font-style: oblique;
   color: #fbf1e4;
   font-weight: bold;
@@ -313,12 +307,48 @@ img.progLangIcon {
   margin-top: 0.25em;
 }
 
+hr#techDescDivider {
+  margin: 0.25em auto;
+  background-color: #fbf1e4;
+  opacity: 100%;
+  border: none;
+  height: 2px;
+  width: 95%;
+}
+
+.description {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1em;
+  color: #fbf1e4;
+  text-decoration: underline;
+  margin: 0.5em auto;
+  font-size: 0.9em;
+}
+
+.techDescription {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  padding: 0 1em;
+  color: #fbf1e4;
+  margin: 0.85em auto;
+  font-size: 0.65em;
+  text-decoration: none;
+  text-indent: 5%;
+}
+
 #jsLogo {
   margin-top: 0.5em;
 }
 
 .expandArrow {
   margin-top: 0.5em;
+}
+
+.expandButton {
+  border: none;
+  background-color: transparent;
 }
 
 #dartTitle {
@@ -387,6 +417,14 @@ img.progLangIcon {
   color: #fbf1e4;
   position: relative;
   float: right;
+  font-size: 0.7em;
+  padding: 0 1em;
+  transition: 0.2s ease-in;
+}
+
+.defSource:hover {
+  text-shadow: 1px 2.5px 5px #252525;
+  transition: 0.2s ease-in;
 }
 
 /* PROJECTS SECTION*/
