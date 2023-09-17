@@ -272,8 +272,8 @@ li {
   transform: translateY(-1px);
 }
 
-#HTMLContainer {
-  height: 3em;
+.expandedTechStackContainer {
+  height: 11em;
 }
 
 .space5px {
@@ -312,7 +312,7 @@ hr#techDescDivider {
   background-color: #fbf1e4;
   opacity: 100%;
   border: none;
-  height: 2px;
+  height: 1.5px;
   width: 95%;
 }
 

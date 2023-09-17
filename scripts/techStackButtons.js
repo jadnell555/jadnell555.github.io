@@ -50,18 +50,16 @@ setupToggle("FlutterButton", "FlutterInfo");
 setupToggle("DjangoButton", "DjangoInfo");
 */
 
-/*
-var button = document.getElementById(HTMLButton);
-var techStackContainer = document.getElementById(HTMLContainer);
+var button = document.getElementById("HTMLButton");
+var techStackContainer = document.getElementById("HTMLContainer");
 var flag = false;
 
-button.addEventListener("click", function (techStackContainer) {
+button.addEventListener("click", function () {
   if (flag == false) {
-    techStackContainer.style.height("11em");
+    techStackContainer.classList.add("expandedTechStackContainer");
     flag = true;
   } else {
-    techStackContainer.style.height("3em");
+    techStackContainer.classList.remove("expandedTechStackContainer");
     flag = false;
   }
 });
-*/
