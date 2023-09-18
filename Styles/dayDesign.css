@@ -235,6 +235,32 @@ li {
     margin-top: 0.75em;
   }
 }
+/*
+@media screen and (min-width: 900px) {
+  #HTMLContainer,
+  #MATLABContainer,
+  #AndroidStudioContainer,
+  #FlutterContainer {
+    height: 9em;
+  }
+
+  #JSContainer,
+  #PythonContainer,
+  #DartContainer,
+  #RaspberryPiContainer,
+  #VSContainer,
+  #ArduinoContainer {
+    height: 10em;
+  }
+
+  #SQLContainer,
+  #VSCODEContainer,
+  #JupyterContainer,
+  #DjangoContainer {
+    height: 11em;
+  }
+}
+*/
 
 /* TECH STACK SECTION */
 .techStackCard {
@@ -321,13 +347,9 @@ hr#techDescDivider {
 }
 
 .description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0 1em;
   color: #fbf1e4;
   text-decoration: underline;
-  margin: 0.25em auto;
   font-size: 0.9em;
 }
 
@@ -351,6 +373,7 @@ hr#techDescDivider {
   margin: 0.15em;
   box-shadow: 2px 2px 3px #252525;
   font-size: 0.6em;
+  min-width: 9.5em;
 }
 
 #readMoreText {

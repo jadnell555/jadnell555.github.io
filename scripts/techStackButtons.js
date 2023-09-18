@@ -69,35 +69,35 @@ function expandableButton(techButton, container, arrow, expandedHeight) {
 }
 
 expandableButton("HTMLButton", "HTMLContainer", "HTMLArrow", 10);
-expandableButton("CSSButton", "CSSContainer", "CSSArrow", 10);
-expandableButton("JSButton", "JSContainer", "JSArrow", 10);
-expandableButton("PythonButton", "PythonContainer", "PythonArrow", 11);
+expandableButton("CSSButton", "CSSContainer", "CSSArrow", 9);
+expandableButton("JSButton", "JSContainer", "JSArrow", 12);
+expandableButton("PythonButton", "PythonContainer", "PythonArrow", 13);
 expandableButton("CPPButton", "CPPContainer", "CPPArrow", 9);
-expandableButton("DartButton", "DartContainer", "DartArrow", 11);
-expandableButton("SQLButton", "SQLContainer", "SQLArrow", 12);
+expandableButton("DartButton", "DartContainer", "DartArrow", 13);
+expandableButton("SQLButton", "SQLContainer", "SQLArrow", 15);
 expandableButton("MATLABButton", "MATLABContainer", "MATLABArrow", 10);
-expandableButton("VSCODEButton", "VSCODEContainer", "VSCODEArrow", 12);
+expandableButton("VSCODEButton", "VSCODEContainer", "VSCODEArrow", 15);
 expandableButton(
   "AndroidStudioButton",
   "AndroidStudioContainer",
   "AndroidStudioArrow",
-  10
+  11
 );
-expandableButton("VSButton", "VSContainer", "VSArrow", 11);
+expandableButton("VSButton", "VSContainer", "VSArrow", 13);
 expandableButton(
   "VirtualBoxButton",
   "VirtualBoxContainer",
   "VirtualBoxArrow",
-  10
+  9
 );
 expandableButton(
   "RaspberryPiButton",
   "RaspberryPiContainer",
   "RaspberryPiArrow",
-  11
+  13
 );
-expandableButton("ArduinoButton", "ArduinoContainer", "ArduinoArrow", 11);
-expandableButton("GitHubButton", "GitHubContainer", "GitHubArrow", 10);
-expandableButton("JupyterButton", "JupyterContainer", "JupyterArrow", 12);
+expandableButton("ArduinoButton", "ArduinoContainer", "ArduinoArrow", 13);
+expandableButton("GitHubButton", "GitHubContainer", "GitHubArrow", 9);
+expandableButton("JupyterButton", "JupyterContainer", "JupyterArrow", 15);
 expandableButton("FlutterButton", "FlutterContainer", "FlutterArrow", 10);
-expandableButton("DjangoButton", "DjangoContainer", "DjangoArrow", 12);
+expandableButton("DjangoButton", "DjangoContainer", "DjangoArrow", 14);
