@@ -151,6 +151,7 @@ button:active {
 
 .resumeCard:hover,
 .formButtons:hover,
+#readMoreButton:hover,
 
 footer:hover {
   box-shadow: 0px 10px 15px #252525;
@@ -267,8 +268,8 @@ li {
   transform: translateY(-4px);
 }
 
-.progLangCube:active,
-.projectTitle:active {
+.projectTitle:active,
+#readMoreButton:active {
   transform: translateY(-1px);
 }
 
@@ -279,6 +280,11 @@ li {
 
 .space8px {
   height: 8px;
+  width: auto;
+}
+
+.space25px {
+  height: 25px;
   width: auto;
 }
 
@@ -316,7 +322,8 @@ hr#techDescDivider {
 
 .description {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 0 1em;
   color: #fbf1e4;
   text-decoration: underline;
@@ -334,6 +341,20 @@ hr#techDescDivider {
   font-size: 0.65em;
   text-decoration: none;
   text-indent: 5%;
+}
+
+#readMoreButton {
+  border: none;
+  background-color: #fbf1e4;
+  border-radius: 20px;
+  padding: 0.25em 0.5em;
+  margin: 0.15em;
+  box-shadow: 2px 2px 3px #252525;
+  font-size: 0.6em;
+}
+
+#readMoreText {
+  padding-left: 1em;
 }
 
 #jsLogo {
