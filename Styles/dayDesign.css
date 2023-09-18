@@ -304,7 +304,7 @@ img.progLangIcon {
 }
 
 hr#techDescDivider {
-  margin: 0.5em auto;
+  margin: 0.25em auto;
   background-color: #fbf1e4;
   opacity: 100%;
   border: none;
@@ -320,7 +320,7 @@ hr#techDescDivider {
   padding: 0 1em;
   color: #fbf1e4;
   text-decoration: underline;
-  margin: 0.5em auto;
+  margin: 0.25em auto;
   font-size: 0.9em;
 }
 
@@ -330,7 +330,7 @@ hr#techDescDivider {
   text-align: center;
   padding: 0 1em;
   color: #fbf1e4;
-  margin: 0.85em auto;
+  margin: 0.6em auto;
   font-size: 0.65em;
   text-decoration: none;
   text-indent: 5%;

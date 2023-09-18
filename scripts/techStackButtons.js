@@ -68,36 +68,36 @@ function expandableButton(techButton, container, arrow, expandedHeight) {
   });
 }
 
-expandableButton("HTMLButton", "HTMLContainer", "HTMLArrow", 11.5);
-expandableButton("CSSButton", "CSSContainer", "CSSArrow", 10.5);
-expandableButton("JSButton", "JSContainer", "JSArrow", 13.5);
-expandableButton("PythonButton", "PythonContainer", "PythonArrow", 13.5);
-expandableButton("CPPButton", "CPPContainer", "CPPArrow", 9.5);
-expandableButton("DartButton", "DartContainer", "DartArrow", 14.5);
-expandableButton("SQLButton", "SQLContainer", "SQLArrow", 15.5);
-expandableButton("MATLABButton", "MATLABContainer", "MATLABArrow", 12.5);
-expandableButton("VSCODEButton", "VSCODEContainer", "VSCODEArrow", 15.5);
+expandableButton("HTMLButton", "HTMLContainer", "HTMLArrow", 11);
+expandableButton("CSSButton", "CSSContainer", "CSSArrow", 10);
+expandableButton("JSButton", "JSContainer", "JSArrow", 13);
+expandableButton("PythonButton", "PythonContainer", "PythonArrow", 13);
+expandableButton("CPPButton", "CPPContainer", "CPPArrow", 9);
+expandableButton("DartButton", "DartContainer", "DartArrow", 14);
+expandableButton("SQLButton", "SQLContainer", "SQLArrow", 15);
+expandableButton("MATLABButton", "MATLABContainer", "MATLABArrow", 12);
+expandableButton("VSCODEButton", "VSCODEContainer", "VSCODEArrow", 15);
 expandableButton(
   "AndroidStudioButton",
   "AndroidStudioContainer",
   "AndroidStudioArrow",
-  12.5
+  12
 );
 expandableButton("VSButton", "VSContainer", "VSArrow", 13);
 expandableButton(
   "VirtualBoxButton",
   "VirtualBoxContainer",
   "VirtualBoxArrow",
-  10.5
+  10
 );
 expandableButton(
   "RaspberryPiButton",
   "RaspberryPiContainer",
   "RaspberryPiArrow",
-  14.5
+  14
 );
-expandableButton("ArduinoButton", "ArduinoContainer", "ArduinoArrow", 14.5);
-expandableButton("GitHubButton", "GitHubContainer", "GitHubArrow", 11.5);
-expandableButton("JupyterButton", "JupyterContainer", "JupyterArrow", 15.5);
-expandableButton("FlutterButton", "FlutterContainer", "FlutterArrow", 11.5);
-expandableButton("DjangoButton", "DjangoContainer", "DjangoArrow", 15.5);
+expandableButton("ArduinoButton", "ArduinoContainer", "ArduinoArrow", 14);
+expandableButton("GitHubButton", "GitHubContainer", "GitHubArrow", 11);
+expandableButton("JupyterButton", "JupyterContainer", "JupyterArrow", 15);
+expandableButton("FlutterButton", "FlutterContainer", "FlutterArrow", 11);
+expandableButton("DjangoButton", "DjangoContainer", "DjangoArrow", 15);
