@@ -272,10 +272,6 @@ li {
   transform: translateY(-1px);
 }
 
-.expandedTechStackContainer {
-  height: 12em;
-}
-
 .space5px {
   height: 5px;
   width: auto;

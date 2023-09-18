@@ -49,8 +49,7 @@ setupToggle("JupyterButton", "JupyterInfo");
 setupToggle("FlutterButton", "FlutterInfo");
 setupToggle("DjangoButton", "DjangoInfo");
 */
-
-function expandableButton(techButton, container, arrow) {
+function expandableButton(techButton, container, arrow, expandedHeight) {
   var button = document.getElementById(techButton);
   var techStackContainer = document.getElementById(container);
   var expandArrow = document.getElementById(arrow);
@@ -58,41 +57,47 @@ function expandableButton(techButton, container, arrow) {
 
   button.addEventListener("click", function () {
     if (flag == false) {
-      techStackContainer.classList.add("expandedTechStackContainer");
+      techStackContainer.style.height = expandedHeight + "em";
       expandArrow.style.transform = "rotateX(180deg)";
       flag = true;
     } else {
-      techStackContainer.classList.remove("expandedTechStackContainer");
+      techStackContainer.style.height = "3em";
       expandArrow.style.transform = "rotateX(0deg)";
       flag = false;
     }
   });
 }
 
-expandableButton("HTMLButton", "HTMLContainer", "HTMLArrow");
-expandableButton("CSSButton", "CSSContainer", "CSSArrow");
-expandableButton("JSButton", "JSContainer", "JSArrow");
-expandableButton("PythonButton", "PythonContainer", "PythonArrow");
-expandableButton("CPPButton", "CPPContainer", "CPPArrow");
-expandableButton("DartButton", "DartContainer", "DartArrow");
-expandableButton("SQLButton", "SQLContainer", "SQLArrow");
-expandableButton("MATLABButton", "MATLABContainer", "MATLABArrow");
-
-expandableButton("VSCODEButton", "VSCODEContainer", "VSCODEArrow");
+expandableButton("HTMLButton", "HTMLContainer", "HTMLArrow", 11);
+expandableButton("CSSButton", "CSSContainer", "CSSArrow", 10);
+expandableButton("JSButton", "JSContainer", "JSArrow", 12);
+expandableButton("PythonButton", "PythonContainer", "PythonArrow", 13);
+expandableButton("CPPButton", "CPPContainer", "CPPArrow", 9);
+expandableButton("DartButton", "DartContainer", "DartArrow", 13);
+expandableButton("SQLButton", "SQLContainer", "SQLArrow", 14);
+expandableButton("MATLABButton", "MATLABContainer", "MATLABArrow", 11);
+expandableButton("VSCODEButton", "VSCODEContainer", "VSCODEArrow", 14);
 expandableButton(
   "AndroidStudioButton",
   "AndroidStudioContainer",
-  "AndroidStudioArrow"
+  "AndroidStudioArrow",
+  11
 );
-expandableButton("VSButton", "VSContainer", "VSArrow");
-expandableButton("VirtualBoxButton", "VirtualBoxContainer", "VirtualBoxArrow");
+expandableButton("VSButton", "VSContainer", "VSArrow", 13);
+expandableButton(
+  "VirtualBoxButton",
+  "VirtualBoxContainer",
+  "VirtualBoxArrow",
+  10
+);
 expandableButton(
   "RaspberryPiButton",
   "RaspberryPiContainer",
-  "RaspberryPiArrow"
+  "RaspberryPiArrow",
+  13
 );
-expandableButton("ArduinoButton", "ArduinoContainer", "ArduinoArrow");
-expandableButton("GitHubButton", "GitHubContainer", "GitHubArrow");
-expandableButton("JupyterButton", "JupyterContainer", "JupyterArrow");
-expandableButton("FlutterButton", "FlutterContainer", "FlutterArrow");
-expandableButton("DjangoButton", "DjangoContainer", "DjangoArrow");
+expandableButton("ArduinoButton", "ArduinoContainer", "ArduinoArrow", 13);
+expandableButton("GitHubButton", "GitHubContainer", "GitHubArrow", 10);
+expandableButton("JupyterButton", "JupyterContainer", "JupyterArrow", 14);
+expandableButton("FlutterButton", "FlutterContainer", "FlutterArrow", 10);
+expandableButton("DjangoButton", "DjangoContainer", "DjangoArrow", 14);
