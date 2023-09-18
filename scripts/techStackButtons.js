@@ -50,16 +50,49 @@ setupToggle("FlutterButton", "FlutterInfo");
 setupToggle("DjangoButton", "DjangoInfo");
 */
 
-var button = document.getElementById("HTMLButton");
-var techStackContainer = document.getElementById("HTMLContainer");
-var flag = false;
+function expandableButton(techButton, container, arrow) {
+  var button = document.getElementById(techButton);
+  var techStackContainer = document.getElementById(container);
+  var expandArrow = document.getElementById(arrow);
+  var flag = false;
 
-button.addEventListener("click", function () {
-  if (flag == false) {
-    techStackContainer.classList.add("expandedTechStackContainer");
-    flag = true;
-  } else {
-    techStackContainer.classList.remove("expandedTechStackContainer");
-    flag = false;
-  }
-});
+  button.addEventListener("click", function () {
+    if (flag == false) {
+      techStackContainer.classList.add("expandedTechStackContainer");
+      expandArrow.style.transform = "rotateX(180deg)";
+      flag = true;
+    } else {
+      techStackContainer.classList.remove("expandedTechStackContainer");
+      expandArrow.style.transform = "rotateX(0deg)";
+      flag = false;
+    }
+  });
+}
+
+expandableButton("HTMLButton", "HTMLContainer", "HTMLArrow");
+expandableButton("CSSButton", "CSSContainer", "CSSArrow");
+expandableButton("JSButton", "JSContainer", "JSArrow");
+expandableButton("PythonButton", "PythonContainer", "PythonArrow");
+expandableButton("CPPButton", "CPPContainer", "CPPArrow");
+expandableButton("DartButton", "DartContainer", "DartArrow");
+expandableButton("SQLButton", "SQLContainer", "SQLArrow");
+expandableButton("MATLABButton", "MATLABContainer", "MATLABArrow");
+
+expandableButton("VSCODEButton", "VSCODEContainer", "VSCODEArrow");
+expandableButton(
+  "AndroidStudioButton",
+  "AndroidStudioContainer",
+  "AndroidStudioArrow"
+);
+expandableButton("VSButton", "VSContainer", "VSArrow");
+expandableButton("VirtualBoxButton", "VirtualBoxContainer", "VirtualBoxArrow");
+expandableButton(
+  "RaspberryPiButton",
+  "RaspberryPiContainer",
+  "RaspberryPiArrow"
+);
+expandableButton("ArduinoButton", "ArduinoContainer", "ArduinoArrow");
+expandableButton("GitHubButton", "GitHubContainer", "GitHubArrow");
+expandableButton("JupyterButton", "JupyterContainer", "JupyterArrow");
+expandableButton("FlutterButton", "FlutterContainer", "FlutterArrow");
+expandableButton("DjangoButton", "DjangoContainer", "DjangoArrow");

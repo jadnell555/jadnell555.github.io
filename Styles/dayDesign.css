@@ -273,7 +273,7 @@ li {
 }
 
 .expandedTechStackContainer {
-  height: 11em;
+  height: 12em;
 }
 
 .space5px {
@@ -308,12 +308,14 @@ img.progLangIcon {
 }
 
 hr#techDescDivider {
-  margin: 0.25em auto;
+  margin: 0.5em auto;
   background-color: #fbf1e4;
   opacity: 100%;
   border: none;
   height: 1.5px;
   width: 95%;
+  border-radius: 30px;
+  z-index: 1;
 }
 
 .description {
@@ -339,11 +341,12 @@ hr#techDescDivider {
 }
 
 #jsLogo {
-  margin-top: 0.5em;
+  margin-top: 0.57em;
 }
 
 .expandArrow {
   margin-top: 0.5em;
+  transition: ease 0.5s;
 }
 
 .expandButton {
@@ -351,12 +354,8 @@ hr#techDescDivider {
   background-color: transparent;
 }
 
-#dartTitle {
-  margin-bottom: 10px;
-}
-
-#dartImage {
-  margin-bottom: 40px;
+#dartLogo {
+  margin: 0.3em 0;
 }
 
 #HTMLInfo,
