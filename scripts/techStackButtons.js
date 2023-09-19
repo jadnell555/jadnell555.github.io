@@ -1,54 +1,3 @@
-/*
-function setupToggle(elementButton, elementInfo) {
-  var button = document.getElementById(elementButton);
-  var info = document.getElementById(elementInfo);
-  var flag = false;
-
-  button.onclick = function (event) {
-    event.stopPropagation();
-    info.classList.toggle("hide");
-    flag = !flag;
-
-    // Hide other info spans except the clicked one
-    var allInfos = document.querySelectorAll(".info");
-    allInfos.forEach(function (otherInfo) {
-      if (otherInfo !== info) {
-        otherInfo.classList.add("hide");
-      }
-    });
-  };
-
-  document.addEventListener("click", function (event) {
-    if (
-      flag &&
-      !button.contains(event.target) &&
-      !info.contains(event.target)
-    ) {
-      info.classList.add("hide");
-      flag = false;
-    }
-  });
-}
-
-setupToggle("HTMLButton", "HTMLInfo");
-setupToggle("CSSButton", "CSSInfo");
-setupToggle("JSButton", "JSInfo");
-setupToggle("PythonButton", "PythonInfo");
-setupToggle("CPPButton", "CPPInfo");
-setupToggle("DartButton", "DartInfo");
-setupToggle("MATLABButton", "MATLABInfo");
-setupToggle("SQLButton", "SQLInfo");
-setupToggle("VSCODEButton", "VSCODEInfo");
-setupToggle("AndroidStudioButton", "AndroidStudioInfo");
-setupToggle("VSButton", "VSInfo");
-setupToggle("VirtualBoxButton", "VirtualBoxInfo");
-setupToggle("RaspberryPiButton", "RaspberryPiInfo");
-setupToggle("ArduinoButton", "ArduinoInfo");
-setupToggle("GitHubButton", "GitHubInfo");
-setupToggle("JupyterButton", "JupyterInfo");
-setupToggle("FlutterButton", "FlutterInfo");
-setupToggle("DjangoButton", "DjangoInfo");
-*/
 const buttons = [
   "HTMLButton",
   "CSSButton",
@@ -121,13 +70,38 @@ function expandableButton(techButton, container, arrow, expandedHeight) {
   var techStackContainer = document.getElementById(container);
   var expandArrow = document.getElementById(arrow);
   var flag = false;
+  var index = buttons.indexOf(techButton); // Get the index of the current button
 
-  button.addEventListener("click", function () {
-    if (flag == false) {
+  button.addEventListener("click", function (event) {
+    event.stopPropagation();
+    if (!flag) {
+      // Expand Tech Stack Container
       techStackContainer.style.height = expandedHeight + "em";
       expandArrow.style.transform = "rotateX(180deg)";
       flag = true;
     } else {
+      // Collapse Tech Stack Container
+      techStackContainer.style.height = "3em";
+      expandArrow.style.transform = "rotateX(0deg)";
+      flag = false;
+    }
+
+    // Hide other descriptions except the clicked one
+    containers.forEach(function (containerName, i) {
+      if (i !== index) {
+        document.getElementById(containerName).style.height = "3em";
+        document.getElementById(arrows[i]).style.transform = "rotateX(0deg)";
+      }
+    });
+  });
+
+  document.addEventListener("click", function (event) {
+    if (
+      flag &&
+      !button.contains(event.target) &&
+      !techStackContainer.contains(event.target) &&
+      !expandArrow.contains(event.target)
+    ) {
       techStackContainer.style.height = "3em";
       expandArrow.style.transform = "rotateX(0deg)";
       flag = false;
@@ -135,7 +109,7 @@ function expandableButton(techButton, container, arrow, expandedHeight) {
   });
 }
 
-let media = window.matchMedia("(min-width: 900px");
+let media = window.matchMedia("(min-width: 900px)");
 
 function screenSize() {
   if (media.matches) {
@@ -149,41 +123,5 @@ function screenSize() {
   }
 }
 
-media.addEventListener("change", screenSize());
-screenSize(media);
-
-/*
-expandableButton("HTMLButton", "HTMLContainer", "HTMLArrow", 10);
-expandableButton("CSSButton", "CSSContainer", "CSSArrow", 9);
-expandableButton("JSButton", "JSContainer", "JSArrow", 12);
-expandableButton("PythonButton", "PythonContainer", "PythonArrow", 13);
-expandableButton("CPPButton", "CPPContainer", "CPPArrow", 9);
-expandableButton("DartButton", "DartContainer", "DartArrow", 13);
-expandableButton("SQLButton", "SQLContainer", "SQLArrow", 15);
-expandableButton("MATLABButton", "MATLABContainer", "MATLABArrow", 10);
-expandableButton("VSCODEButton", "VSCODEContainer", "VSCODEArrow", 15);
-expandableButton(
-  "AndroidStudioButton",
-  "AndroidStudioContainer",
-  "AndroidStudioArrow",
-  11
-);
-expandableButton("VSButton", "VSContainer", "VSArrow", 13);
-expandableButton(
-  "VirtualBoxButton",
-  "VirtualBoxContainer",
-  "VirtualBoxArrow",
-  9
-);
-expandableButton(
-  "RaspberryPiButton",
-  "RaspberryPiContainer",
-  "RaspberryPiArrow",
-  13
-);
-expandableButton("ArduinoButton", "ArduinoContainer", "ArduinoArrow", 13);
-expandableButton("GitHubButton", "GitHubContainer", "GitHubArrow", 9);
-expandableButton("JupyterButton", "JupyterContainer", "JupyterArrow", 15);
-expandableButton("FlutterButton", "FlutterContainer", "FlutterArrow", 10);
-expandableButton("DjangoButton", "DjangoContainer", "DjangoArrow", 14);
-*/
+media.addEventListener("change", screenSize);
+screenSize();
