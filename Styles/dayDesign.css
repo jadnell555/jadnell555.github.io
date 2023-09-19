@@ -228,9 +228,11 @@ li {
     -webkit-appearance: none;
     display: none;
   }
+
   #projectContainer.container {
     margin-bottom: -40px;
   }
+
   #softwareTitle {
     margin-top: 0.75em;
   }
