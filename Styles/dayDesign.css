@@ -23,6 +23,11 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  width: 80%;
+  margin: auto;
+}
+
 .navBar {
   position: sticky;
   z-index: 1100;
@@ -31,7 +36,18 @@ body {
   height: 65px;
   margin-left: 30px;
   border-radius: 20px;
+}
+
+#themeChanger {
+  position: sticky;
+  z-index: 1100;
   top: 10px;
+  width: 65px;
+  height: 65px;
+  margin-right: 30px;
+  margin-top: -99px;
+  border-radius: 20px;
+  float: right;
 }
 
 button {
@@ -227,6 +243,10 @@ li {
   ::-webkit-scrollbar {
     -webkit-appearance: none;
     display: none;
+  }
+
+  section {
+    width: 100%;
   }
 
   #projectContainer.container {

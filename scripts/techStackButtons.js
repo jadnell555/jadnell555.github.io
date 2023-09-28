@@ -77,7 +77,7 @@ const sizes = [
 ];
 // Specific Sizes array for each description in em (Optimized for desktop view)
 const sizesDesktop = [
-  9, 9, 10, 10, 9, 10, 11, 9, 11, 9, 10, 9, 10, 10, 9, 11, 9, 11,
+  9, 9, 11, 11, 9, 11, 12, 9, 13, 9, 12, 9, 12, 11, 9, 13, 9, 13,
 ];
 
 // Function that handles the expanding capability
