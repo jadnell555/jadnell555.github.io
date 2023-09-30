@@ -251,10 +251,14 @@ footer:hover {
     margin: 0;
   }
 
-  .infoCard.mainCard {
+  .mainCard {
     margin: 0.5em auto;
     width: 350px;
     height: fit-content;
+  }
+
+  .infoCard {
+    min-width: 350px;
   }
 
   #projectContainer.container {
