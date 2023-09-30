@@ -15,6 +15,7 @@
 
 body {
   background-image: linear-gradient(to top left, #a82654, #fd8c69);
+  background-color: #fbf1e4;
   min-height: 100vh;
   text-size-adjust: auto;
   margin: 0 auto;
@@ -24,7 +25,7 @@ body {
 }
 
 section {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
@@ -42,8 +43,8 @@ section {
   position: sticky;
   z-index: 1100;
   top: 10px;
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   margin-right: 30px;
   margin-top: -99px;
   border-radius: 20px;
@@ -69,15 +70,13 @@ button:active {
 #menuButtonsList {
   list-style: none;
   padding-left: 0;
-  align-items: left;
-  justify-content: left;
-  padding-top: 28px;
+  padding-top: 15px;
   transition: 0.3s ease;
 }
 
 .options {
   cursor: pointer;
-  box-sizing: border-box;
+  width: 50px;
 }
 
 .hide {
@@ -88,13 +87,14 @@ button:active {
 
 .menuButtonsTitle {
   margin-top: 5px;
+  margin-left: -10px;
   text-align: center;
-  font-size: small;
+  font-size: 0.75em;
   transition: 0.3s ease;
   background-color: #fbf1e4;
   border-radius: 20px;
   box-shadow: 2px 2px 3px #252525;
-  padding: 2px;
+  padding: 1.5px 1.55px;
   color: #252525;
 }
 
@@ -102,8 +102,8 @@ button:active {
   background-color: #fbf1e4;
   box-shadow: 2px 2px 3px #252525;
 
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   margin: auto;
   padding: 5px;
   border: none;
@@ -125,12 +125,18 @@ button:active {
 }
 
 /* ABOUT ME SECTION*/
+.greet {
+  margin: 3em auto;
+  width: 100%;
+  padding: 0;
+}
+
 .greeting {
   color: #fbf1e4;
   text-shadow: 2px 2px 3px #252525;
   transition: 1s ease-in;
   margin: 0 auto;
-  padding: 5px;
+  padding: 0.35em 0;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -145,30 +151,9 @@ button:active {
 
 .mainPictures:hover,
 .infoCard:hover,
-
-#HTMLInfo:hover,          /*HTML Information Pop Up*/
-#CSSInfo:hover,           /*CSS Information Pop Up*/
-#JSInfo:hover,            /*JavaScript Information Pop Up*/
-#PythonInfo:hover,        /*Python Information Pop Up*/
-#CPPInfo:hover,           /*C++ Information Pop Up*/
-#DartInfo:hover,          /*Dart Information Pop Up*/
-#MATLABInfo:hover,
-#SQLInfo:hover,           /*SQL Information Pop Up*/
-#VSCODEInfo:hover,        /*Visual Studio Code Information Pop Up*/
-#AndroidStudioInfo:hover, /*Android Studio Information Pop Up*/
-#VSInfo:hover,            /*Visual Studio Information Pop Up*/
-#VirtualBoxInfo:hover,    /*VirtualBoxx Information Pop Up*/
-#RaspberryPiInfo:hover,   /*Raspberry Pi Information Pop Up*/
-#ArduinoInfo:hover,        /*Matlab Information Pop Up*/
-#GitHubInfo:hover,        /*GitHub Information Pop Up*/
-#JupyterInfo:hover,       /*Jupyter Notebooks Information Pop Up*/
-#FlutterInfo:hover,       /*Flutter Information Pop Up*/
-#DjangoInfo:hover,        /*Django Information Pop Up*/ 
-
 .resumeCard:hover,
 .formButtons:hover,
 #readMoreButton:hover,
-
 footer:hover {
   box-shadow: 0px 10px 15px #252525;
   transform: translateY(-4px);
@@ -179,11 +164,15 @@ footer:hover {
   background-color: #fbf1e4;
   border-radius: 20px;
   box-shadow: 2px 2px 3px #252525;
-  padding: 20px;
+  padding: 1em;
   margin: auto;
-  min-width: 275px;
   width: 100%;
   transition: 0.2s ease-in;
+}
+
+.mainCard {
+  width: 266px;
+  height: 255px;
 }
 
 .cardTitles {
@@ -191,14 +180,16 @@ footer:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 0.75em;
+  font-size: 1.2em;
 }
 
-p {
-  font-size: medium;
+.infoCard p {
+  font-size: 0.8em;
   text-align: justify;
   text-indent: 2em;
-  margin: 10px auto;
   color: #252525;
+  margin: 0;
 }
 
 .skillHeading {
@@ -209,9 +200,16 @@ p {
   font-style: oblique;
 }
 
-li {
+.infoCard ul {
+  margin: 0;
+  padding-left: 1em;
+}
+
+.infoCard li {
   text-align: left;
   color: #252525;
+  font-size: 0.8em;
+  padding: 0.45em 0;
 }
 
 #message::-webkit-scrollbar,
@@ -249,6 +247,16 @@ li {
     width: 100%;
   }
 
+  .greet {
+    margin: 0;
+  }
+
+  .infoCard.mainCard {
+    margin: 0.5em auto;
+    width: 350px;
+    height: fit-content;
+  }
+
   #projectContainer.container {
     margin-bottom: -40px;
   }
@@ -257,32 +265,6 @@ li {
     margin-top: 0.75em;
   }
 }
-/*
-@media screen and (min-width: 900px) {
-  #HTMLContainer,
-  #MATLABContainer,
-  #AndroidStudioContainer,
-  #FlutterContainer {
-    height: 9em;
-  }
-
-  #JSContainer,
-  #PythonContainer,
-  #DartContainer,
-  #RaspberryPiContainer,
-  #VSContainer,
-  #ArduinoContainer {
-    height: 10em;
-  }
-
-  #SQLContainer,
-  #VSCODEContainer,
-  #JupyterContainer,
-  #DjangoContainer {
-    height: 11em;
-  }
-}
-*/
 
 /* TECH STACK SECTION */
 .techStackCard {
@@ -420,51 +402,6 @@ hr#techDescDivider {
   margin: 0.3em 0;
 }
 
-#HTMLInfo,
-#CSSInfo,
-#JSInfo,
-#PythonInfo,
-#CPPInfo,
-#DartInfo,
-#SQLInfo,
-#MATLABInfo,
-#VSCODEInfo,
-#AndroidStudioInfo,
-#VSInfo,
-#VirtualBoxInfo,
-#RaspberryPiInfo,
-#ArduinoInfo,
-#GitHubInfo,
-#JupyterInfo,
-#FlutterInfo,
-#DjangoInfo {
-  display: inline;
-  position: absolute;
-  width: 25%;
-  min-width: 200px;
-  max-width: 450px;
-  max-height: 450px;
-  padding: 20px;
-  margin: 10px auto;
-  background-image: linear-gradient(to top left, #a82654, #fd8c69);
-  box-shadow: 2px 2px 3px #252525;
-  border-radius: 50px;
-  transition: 0.2s ease-in;
-  color: #fbf1e4;
-}
-
-#JSInfo,
-#DartInfo,
-#VSInfo,
-#ArduinoInfo,
-#FlutterInfo {
-  left: 48%;
-}
-
-#MATLABInfo {
-  left: 34%;
-}
-
 .definitions {
   font-size: 12px;
   text-align: justify;
@@ -497,7 +434,7 @@ hr#techDescDivider {
   margin-top: -40px;
   scroll-snap-type: x mandatory;
   scroll-padding: 24px;
-  gap: 12px;
+  gap: 10px;
 }
 
 .projectCard {
