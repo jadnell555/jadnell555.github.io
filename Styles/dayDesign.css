@@ -14,7 +14,7 @@
 }
 
 body {
-  background-image: linear-gradient(to top left, #a82654, #fd8c69);
+  /*background-image: linear-gradient(to top left, #a82654, #fd8c69);*/
   background-color: #fbf1e4;
   min-height: 100vh;
   text-size-adjust: auto;
@@ -22,6 +22,11 @@ body {
   position: relative;
   min-width: 100vw;
   overflow-x: hidden;
+}
+
+.background {
+  width: auto;
+  background-image: linear-gradient(to top left, #a82654, #fd8c69);
 }
 
 section {
@@ -94,7 +99,7 @@ button:active {
   background-color: #fbf1e4;
   border-radius: 20px;
   box-shadow: 2px 2px 3px #252525;
-  padding: 1.5px 1.55px;
+  padding: 0.1em 0.25em;
   color: #252525;
 }
 
@@ -237,7 +242,7 @@ footer:hover {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 767px) {
   ::-webkit-scrollbar {
     -webkit-appearance: none;
     display: none;
@@ -253,7 +258,7 @@ footer:hover {
 
   .mainCard {
     margin: 0.5em auto;
-    width: 350px;
+    width: 275px;
     height: fit-content;
   }
 
