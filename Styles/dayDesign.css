@@ -64,7 +64,7 @@ button {
 }
 
 button.menuButtons:hover {
-  box-shadow: 0px 10px 15px #798ef6;
+  box-shadow: 0px 10px 15px #79a9f5;
   transition: 0.2s ease-in;
   transform: translateY(-4px);
 }
@@ -122,9 +122,9 @@ button:active {
   margin: 20px auto;
   display: flex;
   justify-content: center;
-  color: #798ef6;
-  text-shadow: 2px 2px 3px #252525;
+  color: #252525;
   transition: 1s ease-in;
+  text-shadow: 2px 2px 3px #79a9f5;
 }
 
 .animatedSection {
@@ -139,14 +139,20 @@ button:active {
 }
 
 .greeting {
-  color: #798ef6;
-  text-shadow: 1px 2px 3px #252525; /* Horizontal offset, Vertical offset, Blur radius, Color */
+  color: #252525;
+  text-shadow: 1px 2px 3px #79a9f5; /* Horizontal offset, Vertical offset, Blur radius, Color */
   transition: 1s ease-in;
   margin: 0 auto;
   padding: 0.35em 0;
   display: flex;
   justify-content: center;
   text-align: center;
+  transition: 0.2s ease-in;
+}
+
+.greeting:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease-in;
 }
 
 .mainPictures {
