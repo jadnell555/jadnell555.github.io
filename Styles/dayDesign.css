@@ -185,7 +185,8 @@ footer:hover {
   height: 255px;
 }
 
-.infoCard p {
+.infoCard p,
+.projectCard p {
   font-size: 0.8em;
   text-align: justify;
   text-indent: 2em;
@@ -269,8 +270,12 @@ footer:hover {
 
   .infoCard {
     margin: 0.5em auto;
-    width: 275px;
+    width: 300px;
     height: fit-content;
+  }
+
+  .desktopSpace {
+    display: none;
   }
 
   .contactCard {
