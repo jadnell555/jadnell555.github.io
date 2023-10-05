@@ -289,13 +289,15 @@ footer:hover {
 }
 
 #message::-webkit-scrollbar,
-.container::-webkit-scrollbar {
+.container::-webkit-scrollbar,
+.infoCard::-webkit-scrollbar {
   padding: 10px;
   margin: 5px;
 }
 
 #message::-webkit-scrollbar-track,
-.container::-webkit-scrollbar-track {
+.container::-webkit-scrollbar-track,
+.infoCard::-webkit-scrollbar-track {
   background: #e3e1e3;
   border: 2px solid #252525;
   border-radius: 30px;
@@ -305,7 +307,8 @@ footer:hover {
 }
 
 #message::-webkit-scrollbar-thumb,
-.container::-webkit-scrollbar-thumb {
+.container::-webkit-scrollbar-thumb,
+.infoCard::-webkit-scrollbar-thumb {
   background: -webkit-linear-gradient(top right, #7bd5f5, #787ff6);
   border-radius: 30px;
   width: 90%;
@@ -370,7 +373,7 @@ footer:hover {
 }
 
 .progLangCube {
-  background: -webkit-linear-gradient(top, #7bd5f5, #787ff6);
+  background: -webkit-linear-gradient(bottom left, #7bd5f5, #787ff6);
   width: inherit;
   height: 3em; /*3em Original Size*/
   box-shadow: 2px 2px 3px #252525;
@@ -656,7 +659,7 @@ h4.projectTitle {
 }
 
 .socialMediaButton {
-  background: -webkit-linear-gradient(top right, #7bd5f5, #787ff6);
+  background: -webkit-linear-gradient(bottom right, #7bd5f5, #787ff6);
   box-shadow: 2px 2px 3px #252525;
 
   width: 50px;
@@ -676,7 +679,7 @@ h4.projectTitle {
 }
 
 .formButtons {
-  background: -webkit-linear-gradient(top right, #7bd5f5, #787ff6);
+  background: -webkit-linear-gradient(right, #7bd5f5, #787ff6);
   border: none;
   border-radius: 20px;
   box-shadow: 2px 2px 3px #252525;
