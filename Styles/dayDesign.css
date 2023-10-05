@@ -124,7 +124,7 @@ button:active {
   justify-content: center;
   color: #252525;
   transition: 1s ease-in;
-  text-shadow: 2px 2px 3px #79a9f5;
+  text-shadow: 2px 2px 3px #e3e1e3;
 }
 
 .animatedSection {
@@ -140,19 +140,80 @@ button:active {
 
 .greeting {
   color: #252525;
-  text-shadow: 1px 2px 3px #79a9f5; /* Horizontal offset, Vertical offset, Blur radius, Color */
-  transition: 1s ease-in;
+  text-shadow: 1px 3px 5px #e3e1e3; /* Horizontal offset, Vertical offset, Blur radius, Color */
+  font-size: 1.75em;
   margin: 0 auto;
   padding: 0.35em 0;
   display: flex;
   justify-content: center;
   text-align: center;
+  transition: 1s ease-in;
+
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.greeting span {
+  font-family: "Pacifico", sans-serif;
+  display: inline-block;
+  margin-right: 0.25em;
+  opacity: 0;
+  filter: blur(4px);
   transition: 0.2s ease-in;
 }
 
-.greeting:hover {
+.greeting span:hover {
   transform: translateY(-5px);
   transition: 0.2s ease-in;
+  text-shadow: 2px 2px 3px #787ff6;
+}
+
+h3.greeting span:nth-child(1) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h3.greeting span:nth-child(2) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h2.greeting span:nth-child(1) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h2.greeting span:nth-child(2) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h2.greeting span:nth-child(3) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h2.greeting span:nth-child(4) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h2.greeting span:nth-child(5) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h4.greeting span:nth-child(1) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h4.greeting span:nth-child(2) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h4.greeting span:nth-child(3) {
+  animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h4.greeting span:nth-child(4) {
+  animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h4.greeting span:nth-child(5) {
+  animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 .mainPictures {
@@ -207,10 +268,14 @@ footer:hover {
 }
 
 .cardTitles {
+  /*
   background: -webkit-linear-gradient(bottom right, #7bd5f5, #787ff6);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  */
+  color: #787ff6;
+  text-shadow: 0px 2px 3px #7bd5f5;
   margin-bottom: 0.75em;
   font-size: 1.2em;
 }
@@ -804,4 +869,17 @@ footer {
   }
 }
 
-/*3.*/
+/*3. Scale */
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*4. Fade-in */
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
