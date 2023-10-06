@@ -69,8 +69,9 @@ button.menuButtons:hover {
   transform: translateY(-4px);
 }
 
-button:active {
-  transform: translateY(-1px);
+button.menuButtons:active,
+button.menuButtons:focus {
+  transform: translateY(-2px);
 }
 
 #menuButtonsList {
@@ -165,7 +166,7 @@ button:active {
 .greeting span:hover {
   transform: translateY(-5px);
   transition: 0.2s ease-in;
-  text-shadow: 2px 2px 3px #787ff6;
+  text-shadow: 2px 2px 3px #79a9f5;
 }
 
 h3.greeting span:nth-child(1) {
