@@ -1460,55 +1460,123 @@
       <div class="container">
         <h2 class="sectionHeadings">Projects:</h2>
       </div>
+
       <div class="container" id="projectContainer">
         <div class="projectCard">
           <div class="container text-center">
             <div class="row">
               <div class="col">
                 <h3 class="cardTitles">Title:</h3>
+                <h4 class="projectTitle">
+                  Capstone Project: <br />
+                  DEPO Web App
+                </h4>
 
-                <h4 class="projectTitle">Haresh' Quiz Game</h4>
                 <br />
 
-                <h3 class="cardTitles">Programming Language Used:</h3>
+                <h3 class="cardTitles">Type of Project:</h3>
+                <div class="row">
+                  <div id="personal" class="col projectType">Personal</div>
+                  <div id="university" class="col projectType uniActive">
+                    University
+                  </div>
+                  <div id="professional" class="col projectType">
+                    Professional
+                  </div>
+                </div>
+
                 <br />
 
-                <button class="projectButton" type="button">
-                  <img
-                    src="Images/Tech Stack/python.svg"
-                    title="Python"
-                    width="100px"
-                    height="100px"
-                    alt="Python Logo"
-                  />
-                </button>
-                <br /><br />
-
-                <h3 class="cardTitles">Source Code:</h3>
-                <br />
-
-                <button class="sourceCodeButton" type="button">
-                  <img
-                    class="sourceCode"
-                    src="Images/Tech Stack/github.svg"
-                    title="Source Code"
-                    width="100px"
-                    height="100px"
-                    alt="GitHub Logo"
-                  />
-                </button>
-                <br /><br />
-              </div>
-
-              <div class="col">
                 <h3 class="cardTitles">Description:</h3>
-
                 <p class="projectDescription">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
                   earum illum pariatur dolorem dignissimos eligendi consectetur
                   deleniti officia laboriosam quasi cupiditate dolores iusto
                   unde mollitia numquam eius aspernatur, quis et.
                 </p>
+                <br />
+
+                <h3 class="cardTitles">Status:</h3>
+                <div class="status">Completed</div>
+
+                <br />
+              </div>
+
+              <div class="col">
+                <h3 class="cardTitles">Tech Stack Implemented:</h3>
+                <button class="projectButton" type="button">
+                  <img
+                    src="Images/Tech Stack/python.svg"
+                    title="Python"
+                    width="35px"
+                    height="35px"
+                    alt="Python Logo"
+                  />
+                </button>
+
+                <button class="projectButton" type="button">
+                  <img
+                    src="Images/Tech Stack/html.svg"
+                    title="HTML"
+                    width="35px"
+                    height="35px"
+                    alt="HTML Logo"
+                  />
+                </button>
+
+                <button class="projectButton" type="button">
+                  <img
+                    src="Images/Tech Stack/css.svg"
+                    title="CSS"
+                    width="35px"
+                    height="35px"
+                    alt="CSS Logo"
+                  />
+                </button>
+
+                <button class="projectButton" type="button">
+                  <img
+                    src="Images/Tech Stack/javascript.svg"
+                    title="JavaScript"
+                    width="29.18px"
+                    height="35px"
+                    alt="JavaScript Logo"
+                  />
+                </button>
+
+                <br />
+
+                <button class="projectButton" type="button">
+                  <img
+                    src="Images/Tech Stack/sql.svg"
+                    title="SQL"
+                    width="35px"
+                    height="35px"
+                    alt="SQL Logo"
+                  />
+                </button>
+
+                <button class="projectButton" type="button">
+                  <img
+                    src="Images/Tech Stack/django.svg"
+                    title="Django"
+                    width="35px"
+                    height="35px"
+                    alt="Django Logo"
+                  />
+                </button>
+
+                <button class="projectButton" type="button">
+                  <img
+                    src="Images/Tech Stack/github.svg"
+                    title="JavaScript"
+                    width="35px"
+                    height="35px"
+                    alt="GitHub Logo"
+                  />
+                </button>
+
+                <br /><br />
 
                 <h3 class="cardTitles">Images:</h3>
 
@@ -1555,7 +1623,28 @@
                   <span class="dot1" onclick="currentSlide(2, 0)"></span>
                   <span class="dot1" onclick="currentSlide(3, 0)"></span>
                 </div>
+
+                <br />
+
+                <h3 class="cardTitles">Source:</h3>
+                <button class="sourceCodeButton" type="button">
+                  <img
+                    class="sourceCode"
+                    src="Images/Tech Stack/github.svg"
+                    title="Source Code"
+                    width="50px"
+                    height="50px"
+                    alt="GitHub Logo"
+                  />
+                  GitHub
+                </button>
               </div>
+            </div>
+
+            <br />
+
+            <div class="row">
+              <div class="col"></div>
             </div>
           </div>
         </div>
@@ -1934,6 +2023,7 @@
                       placeholder="Email:"
                       name="email"
                       required
+                      autocomplete="email"
                     />
 
                     <textarea
