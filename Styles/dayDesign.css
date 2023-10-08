@@ -355,7 +355,8 @@ footer:hover {
     margin-bottom: -40px;
   }
 
-  #softwareTitle {
+  #softwareTitle,
+  #frameworkTitle {
     margin-top: 0.75em;
   }
 }
@@ -371,6 +372,12 @@ footer:hover {
   border-radius: 20px;
   transition: 0.2s ease-in;
   z-index: 3;
+}
+
+#progLangTitle,
+#softwareTitle,
+#frameworkTitle {
+  font-size: 1.1em;
 }
 
 .progLangCube {
@@ -467,15 +474,15 @@ hr#techDescDivider {
   border: none;
   background-color: #e3e1e3;
   border-radius: 20px;
-  padding: 0.25em 0.5em;
-  margin: 0.15em;
+  padding: 0.15em;
+  margin: 0.1em;
   box-shadow: 2px 2px 3px #252525;
   font-size: 0.6em;
-  min-width: 9.5em;
+  min-width: 8em;
 }
 
-#readMoreText {
-  padding-left: 1em;
+.readMoreText {
+  padding-left: 0.4em;
 }
 
 #jsLogo {
