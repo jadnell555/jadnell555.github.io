@@ -769,7 +769,7 @@
               <div class="col">
                 <div class="container">
                   <h3 id="softwareTitle" class="cardTitles">
-                    Software/Hardware:
+                    Software &amp; Hardware:
                   </h3>
                 </div>
                 <div id="VSCODEContainer" class="progLangCube">
@@ -785,7 +785,9 @@
                       />
                     </div>
                     <div class="col-5">
-                      <h6 class="progLangName">Visual Studio Code</h6>
+                      <h6 id="vsCodeTitle" class="progLangName">
+                        Visual Studio Code
+                      </h6>
                     </div>
                     <div class="col">
                       <button
@@ -1246,7 +1248,9 @@
                       />
                     </div>
                     <div class="col-5">
-                      <h6 class="progLangName">Jupyter Notebook</h6>
+                      <h6 id="jupyterTitle" class="progLangName">
+                        Jupyter Notebook
+                      </h6>
                     </div>
                     <div class="col">
                       <button
@@ -1437,6 +1441,71 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- Tech Stack New Container -->
+                <div id="BootstrapContainer" class="progLangCube">
+                  <div class="row">
+                    <div class="col">
+                      <img
+                        class="progLangIcon"
+                        src="Images/Tech Stack/bootstrap.svg"
+                        title="Bootstrap"
+                        width="40em"
+                        height="40em"
+                        alt="Bootstrap Logo"
+                      />
+                    </div>
+                    <div class="col-5">
+                      <h6 class="progLangName">Bootstrap</h6>
+                    </div>
+                    <div class="col">
+                      <button
+                        type="button"
+                        id="BootstrapButton"
+                        class="expandButton"
+                      >
+                        <img
+                          id="BootstrapArrow"
+                          class="expandArrow"
+                          src="Images/Icons/expandArrow.svg"
+                          title="Expand Arrow"
+                          width="30em"
+                          height="30em"
+                          alt="Expand Arrow"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <hr id="techDescDivider" />
+                  <div class="row">
+                    <div class="col-4">
+                      <b class="description">Description:</b>
+                      <div class="container">
+                        <div class="space25px"></div>
+                        <button
+                          id="readMoreButton"
+                          onclick="window.location.href='https://www.w3schools.com/whatis/whatis_bootstrap.asp';"
+                        >
+                          <b class="readMoreText">Read More</b>
+                          <img
+                            src="Images/Icons/readMore.svg"
+                            title="Read More"
+                            width="16em"
+                            height="16em"
+                            alt="Magnifier"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <b class="techDescription">
+                        Bootstrap is the most popular CSS Framework for
+                        developing responsive and mobile-first websites.
+                        Bootstrap 5 is the newest version of Bootstrap.
+                      </b>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1544,6 +1613,7 @@
                 </button>
 
                 <br />
+                <div class="space5px"></div>
 
                 <button class="projectButton" type="button">
                   <img
@@ -1568,10 +1638,20 @@
                 <button class="projectButton" type="button">
                   <img
                     src="Images/Tech Stack/github.svg"
-                    title="JavaScript"
+                    title="GitHub"
                     width="35px"
                     height="35px"
                     alt="GitHub Logo"
+                  />
+                </button>
+
+                <button class="projectButton" type="button">
+                  <img
+                    src="Images/Tech Stack/bootstrap.svg"
+                    title="Bootstrap"
+                    width="35px"
+                    height="35px"
+                    alt="Bootstrap Logo"
                   />
                 </button>
 

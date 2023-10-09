@@ -28,6 +28,7 @@ const buttons = [
   "JupyterButton",
   "FlutterButton",
   "DjangoButton",
+  "BootstrapButton",
 ];
 // Array of each Tech Stack container
 const containers = [
@@ -49,6 +50,7 @@ const containers = [
   "JupyterContainer",
   "FlutterContainer",
   "DjangoContainer",
+  "BootstrapContainer",
 ];
 // Array of each tech stack arrow
 const arrows = [
@@ -70,14 +72,15 @@ const arrows = [
   "JupyterArrow",
   "FlutterArrow",
   "DjangoArrow",
+  "BootstrapArrow",
 ];
 // Specific Sizes array for each description in em (Optimized for mobile view)
 const sizes = [
-  11, 10, 13, 14, 10, 14, 16, 11, 16, 12, 15, 10, 14, 14, 10, 17, 11, 16,
+  11, 10, 13, 14, 10, 14, 16, 11, 16, 12, 15, 10, 14, 14, 10, 17, 11, 16, 10,
 ];
 // Specific Sizes array for each description in em (Optimized for desktop view)
 const sizesDesktop = [
-  11, 10, 15, 15, 9, 15, 18, 12, 18, 12, 16, 9, 16, 16, 10, 18, 10, 17,
+  11, 10, 15, 15, 9, 15, 18, 12, 18, 12, 16, 9, 16, 16, 10, 18, 10, 17, 10,
 ];
 
 // Function that handles the expanding capability

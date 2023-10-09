@@ -382,7 +382,8 @@ footer:hover {
 
 .progLangCube {
   background: -webkit-linear-gradient(bottom left, #7bd5f5, #787ff6);
-  width: inherit;
+  width: 100%;
+  min-width: 225px;
   height: 3em; /*3em Original Size*/
   box-shadow: 2px 2px 3px #252525;
   margin: auto;
@@ -432,6 +433,11 @@ h6.progLangName {
   font-weight: bold;
   transition: 0.1s ease;
   margin-top: 1.45em;
+}
+
+#vsCodeTitle,
+#jupyterTitle {
+  margin-top: 0.8em;
 }
 
 img.progLangIcon {
