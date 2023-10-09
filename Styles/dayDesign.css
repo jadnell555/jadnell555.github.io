@@ -394,6 +394,10 @@ footer:hover {
   overflow: hidden;
 }
 
+#FlutterContainer {
+  background: -webkit-linear-gradient(70deg, #7bd5f5, #787ff6);
+}
+
 .progLangCube:hover {
   background-color: #252525;
   box-shadow: 0px 10px 15px #252525;
@@ -603,6 +607,7 @@ div.col.projectType {
 #personal {
   border-radius: 200px 0px 0px 200px; /*top-left top-right bottom-right bottom-left*/
 }
+
 #professional {
   border-radius: 0px 200px 200px 0px;
 }
