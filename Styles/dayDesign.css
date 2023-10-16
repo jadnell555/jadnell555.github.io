@@ -627,11 +627,14 @@ div.col.projectType {
 
 .status {
   color: #7ec384;
-  text-shadow: 2px 2px 3px #7ec384;
   font-size: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 200px;
+  padding: 0 0.5em;
+  margin: 0.5em 0.5em;
+  transition: 0.2s ease-in;
 }
 
 /* Image Slideshow */
@@ -695,7 +698,9 @@ div.col.projectType {
 /* The dots/indicators */
 .dot1,
 .dot2,
-.dot3 {
+.dot3,
+.dot4,
+.dot5 {
   cursor: pointer;
   height: 10px;
   width: 10px;
@@ -709,7 +714,9 @@ div.col.projectType {
 
 #imageDots1,
 #imageDots2,
-#imageDots3 {
+#imageDots3,
+#imageDots4,
+#imageDots5 {
   margin-top: -30px;
   position: relative;
   z-index: 10;
@@ -718,11 +725,17 @@ div.col.projectType {
 .active,
 .dot1:hover,
 .dot2:hover,
-.dot3:hover {
+.dot3:hover,
+.dot4:hover,
+.dot5:hover {
   background: -webkit-linear-gradient(top, #7bd5f5, #787ff6);
   box-shadow: 0px 2px 5px #798ef6;
   transform: translateY(-2px);
   transition: ease 0.5s;
+}
+
+#portfolioTitle {
+  font-size: 0.65em;
 }
 
 /* CONTACT INFORMATION SECTION */
