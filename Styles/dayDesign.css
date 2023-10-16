@@ -32,7 +32,7 @@ body {
 }
 
 section {
-  width: 85%;
+  width: 90%;
   margin: auto;
 }
 
@@ -243,13 +243,13 @@ footer:hover {
   padding: 16px;
   margin: auto;
   transition: 0.2s ease-in;
-  width: 265px;
-  height: 255px;
+  width: 280px;
+  height: 350px;
 }
 
 .infoCard p,
 .projectCard p {
-  font-size: 0.8em;
+  font-size: 1em;
   text-align: justify;
   text-indent: 2em;
   color: #252525;
@@ -264,7 +264,7 @@ footer:hover {
 .infoCard li {
   text-align: left;
   color: #252525;
-  font-size: 0.8em;
+  font-size: 1em;
   padding: 0.45em 0;
 }
 
@@ -345,6 +345,10 @@ footer:hover {
 
   .desktopSpace {
     display: none;
+  }
+
+  #androidStudioTitle {
+    margin: 1em auto;
   }
 
   .contactCard {
@@ -431,17 +435,18 @@ footer:hover {
 
 h6.progLangName {
   margin: auto;
-  font-size: 0.75em;
+  font-size: 0.9em;
   font-style: oblique;
-  color: #e3e1e3;
+  color: #252525;
   font-weight: bold;
   transition: 0.1s ease;
-  margin-top: 1.45em;
+  margin-top: 1em;
 }
 
 #vsCodeTitle,
-#jupyterTitle {
-  margin-top: 0.8em;
+#jupyterTitle,
+#androidStudioTitle {
+  margin-top: 0.5em;
 }
 
 img.progLangIcon {
@@ -452,7 +457,7 @@ img.progLangIcon {
 
 hr#techDescDivider {
   margin: 0.25em auto;
-  background-color: #e3e1e3;
+  background-color: #252525;
   opacity: 100%;
   border: none;
   height: 1.5px;
@@ -463,7 +468,7 @@ hr#techDescDivider {
 
 .description {
   padding: 0 1em;
-  color: #e3e1e3;
+  color: #252525;
   text-decoration: underline;
   font-size: 0.9em;
 }
@@ -473,16 +478,16 @@ hr#techDescDivider {
   align-items: flex-start;
   text-align: center;
   padding: 0 1em;
-  color: #e3e1e3;
+  color: #252525;
   margin: 0.6em auto;
-  font-size: 0.65em;
+  font-size: 0.85em;
   text-decoration: none;
   text-indent: 5%;
 }
 
 #readMoreButton {
   border: none;
-  background-color: #e3e1e3;
+  background-color: #252525;
   border-radius: 20px;
   padding: 0.15em;
   margin: 0.1em;
@@ -493,6 +498,7 @@ hr#techDescDivider {
 
 .readMoreText {
   padding-left: 0.4em;
+  color: #e3e1e3;
 }
 
 #jsLogo {
@@ -569,11 +575,34 @@ h4.projectTitle {
   border-radius: 200px;
   box-shadow: 2px 2px 3px #252525;
   padding: 0 0.5em;
-  margin: 0.5em 0.5em;
+  margin: 0.5em auto;
   border: none;
   background-color: #252525;
   transition: 0.2s ease-in;
   color: #e3e1e3;
+  width: 125px;
+}
+
+#notAvai {
+  width: 175px;
+}
+
+.youtubeButton {
+  border-radius: 200px;
+  box-shadow: 2px 2px 3px #252525;
+  padding: 0 0.5em;
+  margin: 0.5em 0.5em;
+  border: none;
+  background-color: #b2071d;
+  transition: 0.2s ease-in;
+  color: #e3e1e3;
+  width: 125px;
+  height: 50px;
+}
+
+.youtubeButton:hover {
+  box-shadow: 0px 10px 15px #b2071d;
+  transform: translateY(-4px);
 }
 
 .projectButton:hover,
@@ -628,19 +657,34 @@ div.col.projectType {
 .status {
   color: #7ec384;
   font-size: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: fit-content;
   border-radius: 200px;
   padding: 0 0.5em;
-  margin: 0.5em 0.5em;
+  margin: 0.5em auto;
   transition: 0.2s ease-in;
+  box-shadow: 2px 2px 3px #252525;
+  border: none;
+  background-color: #252525;
+}
+
+.inProgress {
+  color: #fbcc18;
+}
+
+.inProgress:hover {
+  box-shadow: 0px 10px 15px #fbcc18;
+  transform: translateY(-4px);
+}
+
+.completed:hover {
+  box-shadow: 0px 10px 15px #7ec384;
+  transform: translateY(-4px);
 }
 
 /* Image Slideshow */
 .projectImages {
   border-radius: 20px;
-  height: 185px;
+  height: 190px;
   aspect-ratio: 3/2;
   box-shadow: 2px 2px 3px #252525;
   transition: 0.3s ease-in;
@@ -658,30 +702,29 @@ div.col.projectType {
   cursor: pointer;
   position: absolute;
   width: auto;
-  top: 40%;
-  margin: 0 2.75em;
+  top: 42.5%;
+  margin: 0 0.1em;
   color: #e3e1e3;
   transition: 0.3s ease;
   border-radius: 20px;
   user-select: none;
-  opacity: 75%;
+  background: -webkit-linear-gradient(top, #7bd5f5, #787ff6);
+  box-shadow: 2px 2px 3px #252525;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 2.5%;
 }
 
 /* Position the "left button" to the left */
 .prev {
-  left: 0;
+  left: 2.5%;
 }
 
 .prev:hover,
 .next:hover {
-  background-color: #798ef6;
   box-shadow: 1px 2.5px 5px #252525;
-  color: #e3e1e3;
   transform: translateY(-2px);
 }
 
@@ -717,9 +760,11 @@ div.col.projectType {
 #imageDots3,
 #imageDots4,
 #imageDots5 {
-  margin-top: -30px;
   position: relative;
+  bottom: 4%;
   z-index: 10;
+  width: fit-content;
+  margin: auto;
 }
 
 .active,
@@ -928,6 +973,21 @@ footer {
   box-shadow: 2px 2px 3px #252525;
   transition: 0.2s ease-in;
 }
+
+@media screen and (max-width: 767px) {
+  #androidStudioTitle {
+    margin-top: 1em;
+  }
+
+  .prev {
+    left: -12%;
+  }
+
+  .next {
+    right: -12%;
+  }
+}
+
 /* ANIMATIONS */
 
 /*1. Fading animation */

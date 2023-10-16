@@ -10,69 +10,75 @@
 
 // Array of each Tech Stack Button
 const buttons = [
-  "HTMLButton",
   "CSSButton",
-  "JSButton",
-  "PythonButton",
   "CPPButton",
   "DartButton",
-  "SQLButton",
+  "HTMLButton",
+  "JSButton",
   "MATLABButton",
-  "VSCODEButton",
+  "PythonButton",
+  "SQLButton",
+
   "AndroidStudioButton",
-  "VSButton",
-  "VirtualBoxButton",
-  "RaspberryPiButton",
   "ArduinoButton",
   "GitHubButton",
   "JupyterButton",
-  "FlutterButton",
-  "DjangoButton",
+  "RaspberryPiButton",
+  "VirtualBoxButton",
+  "VSButton",
+  "VSCODEButton",
+
   "BootstrapButton",
+  "DjangoButton",
+  "FlutterButton",
 ];
 // Array of each Tech Stack container
 const containers = [
-  "HTMLContainer",
   "CSSContainer",
-  "JSContainer",
-  "PythonContainer",
   "CPPContainer",
   "DartContainer",
-  "SQLContainer",
+  "HTMLContainer",
+  "JSContainer",
   "MATLABContainer",
-  "VSCODEContainer",
+  "PythonContainer",
+  "SQLContainer",
+
   "AndroidStudioContainer",
-  "VSContainer",
-  "VirtualBoxContainer",
-  "RaspberryPiContainer",
   "ArduinoContainer",
   "GitHubContainer",
   "JupyterContainer",
-  "FlutterContainer",
-  "DjangoContainer",
+  "RaspberryPiContainer",
+  "VirtualBoxContainer",
+  "VSContainer",
+  "VSCODEContainer",
+
   "BootstrapContainer",
+  "DjangoContainer",
+  "FlutterContainer",
 ];
 // Array of each tech stack arrow
 const arrows = [
-  "HTMLArrow",
   "CSSArrow",
-  "JSArrow",
-  "PythonArrow",
   "CPPArrow",
   "DartArrow",
-  "SQLArrow",
+  "HTMLArrow",
+  "JSArrow",
   "MATLABArrow",
-  "VSCODEArrow",
+  "PythonArrow",
+  "SQLArrow",
+
   "AndroidStudioArrow",
-  "VSArrow",
-  "VirtualBoxArrow",
-  "RaspberryPiArrow",
   "ArduinoArrow",
   "GitHubArrow",
   "JupyterArrow",
-  "FlutterArrow",
-  "DjangoArrow",
+  "RaspberryPiArrow",
+  "VirtualBoxArrow",
+  "VSArrow",
+  "VSCODEArrow",
+
   "BootstrapArrow",
+  "DjangoArrow",
+  "FlutterArrow",
 ];
 // Specific Sizes array for each description in em (Optimized for mobile view)
 const sizes = [
@@ -80,7 +86,8 @@ const sizes = [
 ];
 // Specific Sizes array for each description in em (Optimized for desktop view)
 const sizesDesktop = [
-  11, 10, 15, 15, 9, 15, 18, 12, 18, 12, 16, 9, 16, 16, 10, 18, 10, 17, 10,
+  13.5, 12.5, 23.5, 17.5, 21, 16, 24.5, 27, 18.5, 23.5, 13.5, 28.5, 23.5, 12,
+  26.5, 27.5, 17, 26, 14.5,
 ];
 
 // Function that handles the expanding capability

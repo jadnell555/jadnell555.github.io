@@ -189,10 +189,10 @@
             <div class="infoCard">
               <h6 class="cardTitles">Who am I?</h6>
               <p>
-                I'm a 22-year-old Computer Engineering graduate from the
+                I&apos;m a 22 year old Computer Engineering graduate from the
                 Polytechnic University of Puerto Rico. My goal is to use the
                 knowledge and skills I&apos;ve acquired through real projects,
-                while, simultaneously gaining experience. Beyond work, I find
+                while, at the same time, gaining experience. Beyond work, I find
                 joy in going to the beach, socializing with friends, and playing
                 basketball and videogames.
               </p>
@@ -788,7 +788,9 @@
                       />
                     </div>
                     <div class="col-5">
-                      <h6 class="progLangName">Android Studio</h6>
+                      <h6 id="androidStudioTitle" class="progLangName">
+                        Android Studio
+                      </h6>
                     </div>
                     <div class="col">
                       <button
@@ -846,7 +848,7 @@
                     <div class="col">
                       <img
                         class="progLangIcon"
-                        src="Images/Tech Stack/arduino.svg"
+                        src="Images/Tech Stack/arduinoTechStack.svg"
                         title="Arduino"
                         width="40em"
                         height="40em"
@@ -913,7 +915,7 @@
                     <div class="col">
                       <img
                         class="progLangIcon"
-                        src="Images/Tech Stack/github.svg"
+                        src="Images/Tech Stack/githubSocialMedia.svg"
                         title="GitHub"
                         width="40em"
                         height="40em"
@@ -1553,10 +1555,14 @@
                 </p>
                 <br />
 
-                <h3 class="cardTitles">Source:</h3>
-                <button class="sourceCodeButton" type="button" disabled>
+                <h3 class="cardTitles">Sources:</h3>
+                <button
+                  id="notAvai"
+                  class="sourceCodeButton"
+                  type="button"
+                  disabled
+                >
                   <img
-                    class="sourceCode"
                     src="Images/Tech Stack/github.svg"
                     title="Source Code"
                     width="50px"
@@ -1772,11 +1778,8 @@
                   <span class="dot1" onclick="currentSlide(5, 0)"></span>
                 </div>
 
-                <br /><br />
-                <div class="space5px"></div>
-
                 <h3 class="cardTitles">Status:</h3>
-                <div class="status">Completed</div>
+                <div class="status completed">Completed.</div>
               </div>
             </div>
           </div>
@@ -1810,21 +1813,20 @@
                 </p>
                 <br />
 
-                <h3 class="cardTitles">Source:</h3>
+                <h3 class="cardTitles">Sources:</h3>
                 <button
                   class="sourceCodeButton"
                   type="button"
                   onclick="window.location.href='https://github.com/jadnell555/jadnell555.github.io';"
                 >
                   <img
-                    class="sourceCode"
                     src="Images/Tech Stack/github.svg"
                     title="Source Code"
                     width="50px"
                     height="50px"
                     alt="GitHub Logo"
                   />
-                  Source
+                  Code
                 </button>
 
                 <br /><br />
@@ -2023,7 +2025,7 @@
                 <div class="space5px"></div>
 
                 <h3 class="cardTitles">Status:</h3>
-                <div class="status">In progress...</div>
+                <div class="status inProgress">In progress...</div>
               </div>
             </div>
           </div>
@@ -2058,21 +2060,20 @@
                 </p>
                 <br />
 
-                <h3 class="cardTitles">Source:</h3>
+                <h3 class="cardTitles">Sources:</h3>
                 <button
                   class="sourceCodeButton"
                   type="button"
                   onclick="window.location.href='https://github.com/jadnell555/reyes_109739_project01_HareshQuizGame';"
                 >
                   <img
-                    class="sourceCode"
                     src="Images/Tech Stack/github.svg"
                     title="Source Code"
                     width="50px"
                     height="50px"
                     alt="GitHub Logo"
                   />
-                  Source
+                  Code
                 </button>
 
                 <br /><br />
@@ -2212,7 +2213,7 @@
                 <div class="space5px"></div>
 
                 <h3 class="cardTitles">Status:</h3>
-                <div class="status">Completed</div>
+                <div class="status completed">Completed.</div>
               </div>
             </div>
           </div>
@@ -2245,24 +2246,43 @@
                 </p>
                 <br />
 
-                <h3 class="cardTitles">Source:</h3>
-                <button
-                  class="sourceCodeButton"
-                  type="button"
-                  onclick="window.location.href='https://github.com/jadnell555/CollegeProjects/tree/main/Arduino/Microcomputer%20Interfacing%20Lab/Lab%205%20-%20DC%20Motor';"
-                >
-                  <img
-                    class="sourceCode"
-                    src="Images/Tech Stack/github.svg"
-                    title="Source Code"
-                    width="50px"
-                    height="50px"
-                    alt="GitHub Logo"
-                  />
-                  Source
-                </button>
+                <h3 class="cardTitles">Sources:</h3>
+                <div class="row">
+                  <div class="col">
+                    <button
+                      class="sourceCodeButton"
+                      type="button"
+                      onclick="window.location.href='https://github.com/jadnell555/CollegeProjects/tree/main/Arduino/Microcomputer%20Interfacing%20Lab/Lab%206%20-%20Stepper%20Motor';"
+                    >
+                      <img
+                        src="Images/Tech Stack/github.svg"
+                        title="Source Code"
+                        width="50px"
+                        height="50px"
+                        alt="GitHub Logo"
+                      />
+                      Code
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="youtubeButton"
+                      type="button"
+                      onclick="window.location.href='https://youtu.be/KwMOkR7ds_U';"
+                    >
+                      <img
+                        src="Images/Social Media/youtube.svg"
+                        title="Video Link"
+                        width="45px"
+                        height="40px"
+                        alt="Youtube Logo"
+                      />
+                      Video
+                    </button>
+                  </div>
+                </div>
 
-                <br /><br />
+                <br />
               </div>
 
               <div class="col">
@@ -2383,7 +2403,7 @@
                 <div class="space5px"></div>
 
                 <h3 class="cardTitles">Status:</h3>
-                <div class="status">Completed</div>
+                <div class="status completed">Completed.</div>
               </div>
             </div>
           </div>
@@ -2417,24 +2437,42 @@
                 </p>
                 <br />
 
-                <h3 class="cardTitles">Source:</h3>
-                <button
-                  class="sourceCodeButton"
-                  type="button"
-                  onclick="window.location.href='https://github.com/jadnell555/CollegeProjects/tree/main/Arduino/Microcomputer%20Interfacing%20Lab/Lab%206%20-%20Stepper%20Motor';"
-                >
-                  <img
-                    class="sourceCode"
-                    src="Images/Tech Stack/github.svg"
-                    title="Source Code"
-                    width="50px"
-                    height="50px"
-                    alt="GitHub Logo"
-                  />
-                  Source
-                </button>
-
-                <br /><br />
+                <h3 class="cardTitles">Sources:</h3>
+                <div class="row">
+                  <div class="col">
+                    <button
+                      class="sourceCodeButton"
+                      type="button"
+                      onclick="window.location.href='https://github.com/jadnell555/CollegeProjects/tree/main/Arduino/Microcomputer%20Interfacing%20Lab/Lab%206%20-%20Stepper%20Motor';"
+                    >
+                      <img
+                        src="Images/Tech Stack/github.svg"
+                        title="Source Code"
+                        width="50px"
+                        height="50px"
+                        alt="GitHub Logo"
+                      />
+                      Code
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      class="youtubeButton"
+                      type="button"
+                      onclick="window.location.href='https://youtu.be/WMJqQuGLzes';"
+                    >
+                      <img
+                        src="Images/Social Media/youtube.svg"
+                        title="Video Link"
+                        width="45px"
+                        height="40px"
+                        alt="Youtube Logo"
+                      />
+                      Video
+                    </button>
+                  </div>
+                </div>
+                <br />
               </div>
 
               <div class="col">
@@ -2554,7 +2592,7 @@
                 <div class="space5px"></div>
 
                 <h3 class="cardTitles">Status:</h3>
-                <div class="status">Completed</div>
+                <div class="status completed">Completed.</div>
               </div>
             </div>
           </div>
