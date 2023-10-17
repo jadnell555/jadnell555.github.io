@@ -96,7 +96,7 @@ button.menuButtons:focus {
   margin-top: 5px;
   margin-left: -10px;
   text-align: center;
-  font-size: 0.75em;
+  font-size: 0.85em;
   transition: 0.3s ease;
   background: -webkit-linear-gradient(bottom right, #7bd5f5, #787ff6);
 
@@ -878,6 +878,7 @@ div.col.projectType {
   resize: none;
   transition: 0.2s ease-in;
   margin: 10px auto;
+  font-size: 1em;
 }
 
 .formButtons:focus {
@@ -897,7 +898,7 @@ div.col.projectType {
   padding: 5px;
   margin: auto;
   color: #252525;
-  font-size: 13px;
+  font-size: 1em;
 }
 
 #firstName {
@@ -906,6 +907,7 @@ div.col.projectType {
   width: 45%;
   box-shadow: 2px 2px 3px #252525;
   color: #252525;
+  font-size: 1em;
 }
 
 #lastName {
@@ -914,6 +916,7 @@ div.col.projectType {
   width: 45%;
   box-shadow: 2px 2px 3px #252525;
   color: #252525;
+  font-size: 1em;
 }
 
 #email {
@@ -922,6 +925,7 @@ div.col.projectType {
   width: 90%;
   box-shadow: 2px 2px 3px #252525;
   color: #252525;
+  font-size: 1em;
 }
 
 textarea {
@@ -932,6 +936,7 @@ textarea {
   border-radius: 20px;
   box-shadow: 2px 2px 3px #252525;
   color: #252525;
+  font-size: 1em;
 }
 
 #firstName:hover,
@@ -948,7 +953,7 @@ textarea {
 
 #submitButton {
   color: #252525;
-  font-size: 12px;
+  font-size: 1em;
   margin: 0 auto;
   box-shadow: 2px 2px 3px #252525;
 }
