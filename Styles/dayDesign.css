@@ -485,6 +485,64 @@ hr#techDescDivider {
   text-indent: 5%;
 }
 
+#CSSSpacing {
+  height: 6.5em;
+}
+#CPPSpacing {
+  height: 3.5em;
+}
+#DartSpacing {
+  height: 15em;
+}
+#HTMLSpacing {
+  height: 9em;
+}
+#JavascriptSpacing {
+  height: 12.5em;
+}
+#MATLABSpacing {
+  height: 7.5em;
+}
+#PythonSpacing {
+  height: 16em;
+}
+#SQLSpacing {
+  height: 18.5em;
+}
+#AndroidStudioSpacing {
+  height: 10em;
+}
+#ArduinoSpacing {
+  height: 15em;
+}
+#GitHubSpacing {
+  height: 5em;
+}
+#JupyterSpacing {
+  height: 20em;
+}
+#RaspberryPiSpacing {
+  height: 15em;
+}
+#VirtualBoxSpacing {
+  height: 3.5em;
+}
+#VSSpacing {
+  height: 17.5em;
+}
+#VSCODESpacing {
+  height: 18.5em;
+}
+#BootstrapSpacing {
+  height: 8.5em;
+}
+#DjangoSpacing {
+  height: 17.5em;
+}
+#FlutterSpacing {
+  height: 6em;
+}
+
 #readMoreButton {
   border: none;
   background-color: #252525;
@@ -494,10 +552,14 @@ hr#techDescDivider {
   box-shadow: 2px 2px 3px #252525;
   font-size: 0.6em;
   min-width: 8em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
 }
 
 .readMoreText {
-  padding-left: 0.4em;
+  padding-left: 0.6em;
+  padding-bottom: 0.17em;
   color: #e3e1e3;
 }
 
@@ -684,7 +746,7 @@ div.col.projectType {
 /* Image Slideshow */
 .projectImages {
   border-radius: 20px;
-  height: 190px;
+  height: 185px;
   aspect-ratio: 3/2;
   box-shadow: 2px 2px 3px #252525;
   transition: 0.3s ease-in;
