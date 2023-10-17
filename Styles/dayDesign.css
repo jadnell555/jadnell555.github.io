@@ -423,6 +423,11 @@ footer:hover {
   width: auto;
 }
 
+.space10px {
+  height: 10px;
+  width: auto;
+}
+
 .space25px {
   height: 25px;
   width: auto;
@@ -643,10 +648,6 @@ h4.projectTitle {
   transition: 0.2s ease-in;
   color: #e3e1e3;
   width: 125px;
-}
-
-#notAvai {
-  width: 175px;
 }
 
 .youtubeButton {
