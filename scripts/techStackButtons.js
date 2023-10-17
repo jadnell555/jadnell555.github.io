@@ -82,8 +82,8 @@ const arrows = [
 ];
 // Specific Sizes array for each description in em (Optimized for mobile view)
 const sizes = [
-  13, 12, 20.5, 13.5, 18.5, 16, 18.5, 23.5, 16, 21.5, 13.5, 22.5, 21.5, 12, 20,
-  22.5, 13.5, 22.5, 13.5,
+  13, 12, 20.5, 14.5, 19.5, 16, 19.5, 23.5, 16, 21.5, 13.5, 24.5, 21.5, 12, 20,
+  23.5, 13.5, 23.5, 13.5,
 ];
 // Specific Sizes array for each description in em (Optimized for desktop view)
 const sizesDesktop = [
