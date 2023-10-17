@@ -746,7 +746,7 @@ div.col.projectType {
 /* Image Slideshow */
 .projectImages {
   border-radius: 20px;
-  height: 185px;
+  height: 180px;
   aspect-ratio: 3/2;
   box-shadow: 2px 2px 3px #252525;
   transition: 0.3s ease-in;
@@ -1039,6 +1039,64 @@ footer {
 @media screen and (max-width: 767px) {
   #androidStudioTitle {
     margin-top: 1em;
+  }
+
+  #CSSSpacing {
+    height: 5.5em;
+  }
+  #CPPSpacing {
+    height: 2.5em;
+  }
+  #DartSpacing {
+    height: 11.5em;
+  }
+  #HTMLSpacing {
+    height: 5em;
+  }
+  #JavascriptSpacing {
+    height: 10em;
+  }
+  #MATLABSpacing {
+    height: 7em;
+  }
+  #PythonSpacing {
+    height: 10em;
+  }
+  #SQLSpacing {
+    height: 15em;
+  }
+  #AndroidStudioSpacing {
+    height: 7.5em;
+  }
+  #ArduinoSpacing {
+    height: 13em;
+  }
+  #GitHubSpacing {
+    height: 5em;
+  }
+  #JupyterSpacing {
+    height: 13.5em;
+  }
+  #RaspberryPiSpacing {
+    height: 13em;
+  }
+  #VirtualBoxSpacing {
+    height: 3.5em;
+  }
+  #VSSpacing {
+    height: 11em;
+  }
+  #VSCODESpacing {
+    height: 13.5em;
+  }
+  #BootstrapSpacing {
+    height: 5em;
+  }
+  #DjangoSpacing {
+    height: 13.5em;
+  }
+  #FlutterSpacing {
+    height: 5em;
   }
 
   .prev {
