@@ -79,7 +79,7 @@ button.menuButtons:focus {
 
 .menuButtons {
   background: -webkit-linear-gradient(bottom right, #fd8c69, #a82654);
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
 
   width: 50px;
   height: 50px;
@@ -98,7 +98,7 @@ button.menuButtons:focus {
   background: -webkit-linear-gradient(bottom right, #fd8c69, #a82654);
 
   border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   padding: 0.1em 0.25em;
   color: #252525;
 }
@@ -171,22 +171,36 @@ section {
 /* END SCROLLBARS */
 
 /* Shadow effect when hovering */
-.mainPictures:hover,
+.mainPictures:hover {
+  box-shadow: 0px 10px 15px #e3e1e3;
+  transform: translateY(-4px);
+  transition: 0.2s ease-in;
+}
+
 .infoCard:hover,
-.progLangCube:hover,
-.projectButton:hover,
-.sourceCodeButton:hover,
-.projectTitle:hover,
-.projectType:hover,
-.prev:hover,
-.next:hover,
 .contactCard:hover,
-.socialMediaButton:hover,
 .resumeCard:hover,
-.formButtons:hover,
-#readMoreButton:hover,
 footer:hover {
   box-shadow: 0px 10px 15px #252525;
+  transform: translateY(-4px);
+  transition: 0.2s ease-in;
+}
+
+.progLangCube:hover,
+#readMoreButton:hover,
+.projectTitle:hover,
+.sourceCodeButton:hover,
+.projectType:hover,
+.projectButton:hover,
+.prev:hover,
+.next:hover,
+.socialMediaButton:hover,
+.formButtons:hover,
+#firstName:hover,
+#lastName:hover,
+#email:hover,
+#submitButton:hover {
+  box-shadow: 0px 10px 15px #000000;
   transform: translateY(-4px);
   transition: 0.2s ease-in;
 }
@@ -220,7 +234,7 @@ footer:hover {
 /* ABOUT ME SECTION*/
 .mainPictures {
   border-radius: 200px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   margin: 20px;
   transition: 0.2s ease-in;
 }
@@ -232,7 +246,7 @@ footer:hover {
 
 .greeting {
   color: #e3e1e3;
-  text-shadow: 2px 3px 3px #303030; /* Horizontal offset, Vertical offset, Blur radius, Color */
+  text-shadow: 2px 3px 3px #252525; /* Horizontal offset, Vertical offset, Blur radius, Color */
   font-size: 1.8em;
   margin: 0 auto;
   padding: 0.35em 0;
@@ -311,7 +325,7 @@ h4.greeting span:nth-child(5) {
 .infoCard {
   background-color: #303030;
   border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   padding: 16px;
   margin: auto;
   transition: 0.2s ease-in;
@@ -321,7 +335,7 @@ h4.greeting span:nth-child(5) {
 
 .cardTitles {
   color: #d0565e;
-  text-shadow: 2px 2px 3px #d0565e;
+  text-shadow: 2px 2px 3px #000000;
   margin-bottom: 0.75em;
   font-size: 1.2em;
 }
@@ -350,7 +364,7 @@ h4.greeting span:nth-child(5) {
 /* TECH STACK SECTION */
 .techStackCard {
   background-color: #303030;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   margin: 10px auto;
   padding: 20px;
   width: 100%;
@@ -371,7 +385,7 @@ h4.greeting span:nth-child(5) {
   width: 100%;
   min-width: 225px;
   height: 3em; /*3em Original Size*/
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   margin: auto;
   margin-top: 1em;
   border-radius: 20px;
@@ -523,7 +537,7 @@ hr#techDescDivider {
   border-radius: 20px;
   padding: 0.15em;
   margin: 0.1em;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   font-size: 0.6em;
   min-width: 8em;
   display: flex;
@@ -550,7 +564,7 @@ hr#techDescDivider {
 
 .projectCard {
   background-color: #303030;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   margin: 1em auto;
   transition: 0.2s ease-in;
 }
@@ -567,7 +581,7 @@ hr#techDescDivider {
   color: #e3e1e3;
   background-color: #252525;
   border-radius: 200px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   margin: 0.5em 0.5em;
   padding: 0.75em;
   width: fit-content;
@@ -586,7 +600,7 @@ h4.projectTitle {
 
 .sourceCodeButton {
   border-radius: 200px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   padding: 0 0.5em;
   margin: 0.5em auto;
   border: none;
@@ -598,7 +612,7 @@ h4.projectTitle {
 
 .youtubeButton {
   border-radius: 200px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   padding: 0 0.5em;
   margin: 0.5em 0.5em;
   border: none;
@@ -617,7 +631,7 @@ h4.projectTitle {
 .projectType {
   color: #e3e1e3;
   background-color: #252525;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   margin: 0.25em 0.1em;
   padding: 0.25em;
   width: fit-content;
@@ -638,7 +652,7 @@ div.col.projectType {
 
 .persActive {
   background-color: #fd8c69;
-  color: #252525;
+  color: #000;
 }
 
 .persActive:hover {
@@ -647,7 +661,7 @@ div.col.projectType {
 
 .uniActive {
   background-color: #d0565e;
-  color: #252525;
+  color: #000;
 }
 
 .uniActive:hover {
@@ -656,7 +670,7 @@ div.col.projectType {
 
 .profActive {
   background-color: #a82654;
-  color: #252525;
+  color: #000;
 }
 
 .profActive:hover {
@@ -665,7 +679,7 @@ div.col.projectType {
 
 .projectButton {
   border-radius: 200px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   padding: 3px;
   border: none;
   background-color: #252525;
@@ -679,7 +693,7 @@ div.col.projectType {
   border-radius: 20px;
   height: 175px;
   aspect-ratio: 3/2;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   transition: 0.3s ease-in;
 }
 
@@ -702,7 +716,7 @@ div.col.projectType {
   border-radius: 20px;
   user-select: none;
   background: -webkit-linear-gradient(top, #fd8c69, #a82654);
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
 }
 
 /* Position the "next button" to the right */
@@ -725,7 +739,7 @@ div.col.projectType {
   height: 10px;
   width: 10px;
   background-color: #303030;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.3s ease;
@@ -764,7 +778,7 @@ div.col.projectType {
   padding: 0 0.5em;
   margin: 0.5em auto;
   transition: 0.2s ease-in;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   border: none;
   background-color: #252525;
 }
@@ -787,7 +801,7 @@ div.col.projectType {
 .contactCard {
   background-color: #303030;
   border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   padding: 16px;
   margin: auto;
   width: 100%;
@@ -796,7 +810,7 @@ div.col.projectType {
 
 .socialMediaButton {
   background: -webkit-linear-gradient(bottom right, #fd8c69, #a82654);
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
 
   width: 50px;
   height: 50px;
@@ -814,7 +828,7 @@ div.col.projectType {
 .resumeCard {
   background-color: #303030;
   border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   height: auto;
   margin: auto;
   width: 100%;
@@ -853,7 +867,7 @@ div.col.projectType {
   background: -webkit-linear-gradient(right, #fd8c69, #a82654);
   border: none;
   border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   color: #252525;
   padding: 10px;
   margin: auto;
@@ -887,7 +901,7 @@ div.col.projectType {
   margin: 10px auto;
   padding: 10px;
   width: 45%;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   color: #252525;
   font-size: 1em;
 }
@@ -896,7 +910,7 @@ div.col.projectType {
   margin: 10px auto;
   padding: 10px;
   width: 45%;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   color: #252525;
   font-size: 1em;
 }
@@ -905,15 +919,9 @@ div.col.projectType {
   margin: auto;
   padding: 10px;
   width: 90%;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   color: #252525;
   font-size: 1em;
-}
-
-#firstName:hover,
-#lastName:hover,
-#email:hover {
-  box-shadow: 0px 10px 15px #252525;
 }
 
 #firstName:focus,
@@ -928,7 +936,7 @@ textarea {
   width: 90%;
   height: 150px;
   border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   color: #252525;
   font-size: 1em;
 }
@@ -937,12 +945,7 @@ textarea {
   color: #252525;
   font-size: 1em;
   margin: 0 auto;
-  box-shadow: 2px 2px 3px #252525;
-}
-
-#submitButton:hover {
-  box-shadow: 0px 10px 15px #252525;
-  cursor: pointer;
+  box-shadow: 2px 2px 3px #000000;
 }
 
 #submitButton:active {
