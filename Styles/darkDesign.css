@@ -969,7 +969,7 @@ footer {
   max-width: 90%;
   padding: 5px 20px;
   border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 2px 2px 3px #000000;
   transition: 0.2s ease-in;
   color: #e3e1e3;
 }
