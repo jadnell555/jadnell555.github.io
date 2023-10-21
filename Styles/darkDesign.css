@@ -883,13 +883,6 @@ div.col.projectType {
   transition: 0.2s ease-in;
 }
 
-.formButtons:active {
-  padding: 10px;
-  margin: 5px;
-  resize: none;
-  color: #252525;
-}
-
 ::placeholder {
   padding: 5px;
   margin: auto;
