@@ -187,7 +187,7 @@ footer:hover {
 }
 
 .progLangCube:hover,
-#readMoreButton:hover,
+.readMoreButton:hover,
 .projectTitle:hover,
 .sourceCodeButton:hover,
 .projectType:hover,
@@ -407,7 +407,7 @@ h4.greeting span:nth-child(5) {
 }
 
 .projectTitle:active,
-#readMoreButton:active {
+.readMoreButton:active {
   transform: translateY(-1px);
 }
 
@@ -531,7 +531,7 @@ hr#techDescDivider {
   height: 6em;
 }
 
-#readMoreButton {
+.readMoreButton {
   border: none;
   background-color: #252525;
   border-radius: 20px;
@@ -714,6 +714,7 @@ div.col.projectType {
   color: #303030;
   transition: 0.3s ease;
   border-radius: 20px;
+  border: none;
   user-select: none;
   background: -webkit-linear-gradient(top, #fd8c69, #a82654);
   box-shadow: 2px 2px 3px #000000;

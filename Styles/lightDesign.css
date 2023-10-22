@@ -181,7 +181,7 @@ section {
 .socialMediaButton:hover,
 .resumeCard:hover,
 .formButtons:hover,
-#readMoreButton:hover,
+.readMoreButton:hover,
 footer:hover {
   box-shadow: 0px 10px 15px #252525;
   transform: translateY(-4px);
@@ -390,7 +390,7 @@ h4.greeting span:nth-child(5) {
 }
 
 .projectTitle:active,
-#readMoreButton:active {
+.readMoreButton:active {
   transform: translateY(-1px);
 }
 
@@ -514,7 +514,7 @@ hr#techDescDivider {
   height: 6em;
 }
 
-#readMoreButton {
+.readMoreButton {
   border: none;
   background-color: #252525;
   border-radius: 20px;
@@ -697,6 +697,7 @@ div.col.projectType {
   color: #e3e1e3;
   transition: 0.3s ease;
   border-radius: 20px;
+  border: none;
   user-select: none;
   background: -webkit-linear-gradient(top, #7bd5f5, #787ff6);
   box-shadow: 2px 2px 3px #252525;
