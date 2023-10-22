@@ -317,8 +317,8 @@ h4.greeting span:nth-child(5) {
 }
 
 .cardTitles {
-  color: #787ff6;
-  text-shadow: 2px 3px 3px #7bd5f5;
+  color: #252525;
+  text-shadow: 2px 2px 3px #79a9f5;
   margin-bottom: 0.75em;
   font-size: 1.2em;
 }
