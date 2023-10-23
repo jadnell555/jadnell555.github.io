@@ -447,7 +447,7 @@ hr#techDescDivider {
 .techDescription {
   display: flex;
   align-items: flex-start;
-  text-align: center;
+  text-align: justify;
   padding: 0 1em;
   color: #252525;
   margin: 0.6em auto;
