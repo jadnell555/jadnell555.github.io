@@ -1,7 +1,13 @@
-let slideIndex = [1, 1, 1];
-let slideId = ["mySlides1 fade", "mySlides2 fade", "mySlides3 fade"];
-let dotId = ["dot1", "dot2", "dot3"];
-for (i = 0; i < 3; i++) {
+let slideIndex = [1, 1, 1, 1, 1];
+let slideId = [
+  "mySlides1 fade",
+  "mySlides2 fade",
+  "mySlides3 fade",
+  "mySlides4 fade",
+  "mySlides5 fade",
+];
+let dotId = ["dot1", "dot2", "dot3", "dot4", "dot5"];
+for (i = 0; i < 5; i++) {
   showSlides(1, i);
 }
 
