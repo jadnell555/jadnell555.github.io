@@ -64,90 +64,50 @@
   </video>
 
   <body>
-    <!-- Menu Button -->
-    <div class="navBar">
-      <div>
-        <div id="selectMenu">
-          <button class="menuButtons" type="button">
-            <img
-              id="menuButton"
-              src="Images/Icons/gridFour.svg"
-              title="Menu"
-              width="35px"
-              height="35px"
-              alt="Menu Button"
-            />
-          </button>
+    <div id="newNavBar">
+      <div class="row">
+        <div class="col">
+          <!-- Theme Changer Button -->
+          <div id="themeChanger">
+            <button id="themeButton" type="button">
+              <img
+                id="themeChangerButtonIcon"
+                src="Images/Icons/moon.svg"
+                title="Change Theme"
+                alt="Theme changing button"
+              />
+            </button>
+          </div>
+          <div id="myName">
+            <a class="myName" href="#"> JADNELL </a>
+            <br />
+            <a class="myName" href="#"> HARESH </a>
+          </div>
         </div>
-
-        <ul id="menuButtonsList" class="hide">
-          <li class="options">
-            <button class="menuButtons"" type=" button"
-            onclick="window.location.href='#aboutMeSection';">
-            <img
-              src="Images/Icons/aboutMe.svg"
-              title="About Me"
-              width="35px"
-              height="35px"
-              alt="About Me Button"
-            />
-          </li>
-          <h6 class="menuButtonsTitle">About Me</h6>
-
-          <li class="options">
-            <button class="menuButtons"" type=" button"
-            onclick="window.location.href='#techStackSection';">
-            <img
-              src="Images/Icons/layers.svg"
-              title="Tech Stack"
-              width="35px"
-              height="35px"
-              alt="Tech Stack Button"
-            />
-          </li>
-          <h6 class="menuButtonsTitle">Tech Stack</h6>
-          <li class="options">
-            <button class="menuButtons"" type=" button"
-            onclick="window.location.href='#projectsSection';">
-            <img
-              src="Images/Icons/projects.svg"
-              title="Projects"
-              width="35px"
-              height="35px"
-              alt="Projects Button"
-            />
-          </li>
-          <h6 class="menuButtonsTitle">Projects</h6>
-          <li class="options">
-            <button class="menuButtons"" type=" button"
-            onclick="window.location.href='#contactSection';">
-            <img
-              src="Images/Icons/contactInfo.svg"
-              title="Contact Information"
-              width="35px"
-              height="35px"
-              alt="Contact Information Button"
-            />
-          </li>
-          <h6 class="menuButtonsTitle">Contact Info</h6>
-        </ul>
+        <div class="col"></div>
+        <div class="col-lg-auto">
+          <ul id="navBarItems">
+            <li class="navBarItem">
+              <a class="navBarTitles" href="#aboutMeSection"> ABOUT ME </a>
+            </li>
+            <li class="navBarItem">
+              <a class="navBarTitles" href="#techStackSection"> EXPERTISE </a>
+            </li>
+            <li class="navBarItem">
+              <a class="navBarTitles" href="#projectsSection"> PROJECTS </a>
+            </li>
+            <li class="navBarItem">
+              <a class="navBarTitles" href="#contactSection"> CONTACT </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <!-- Theme Changer Button -->
-    <div id="themeChanger">
-      <button id="themeChangerButton" class="menuButtons" type="button">
-        <img
-          id="themeChangerButtonIcon"
-          src="Images/Icons/moon.svg"
-          title="Change Theme"
-          alt="Theme changing button"
-        />
-      </button>
     </div>
 
     <!-- ABOUT ME SECTION -->
     <section id="aboutMeSection" class="animatedSection leftSlide">
+      <div class="HEADINGS">ABOUT ME</div>
+
       <!-- Image and Info Cards Containers -->
       <div class="container text-center">
         <div class="row align-items-center">

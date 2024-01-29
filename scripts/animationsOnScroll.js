@@ -1,4 +1,4 @@
-// Select all the sections you want to animate
+// Select all the sections to be animated
 const sections = document.querySelectorAll(".animatedSection");
 
 // Create an Intersection Observer instance

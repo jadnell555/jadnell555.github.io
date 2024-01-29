@@ -31,14 +31,70 @@ body {
   overflow-x: hidden;
 }
 
-.navBar {
+#newNavBar {
+  width: 100vw;
+  background-color: #fbcc18;
   position: sticky;
-  z-index: 1100;
-  top: 10px;
-  left: 20px;
-  width: 65px;
-  height: 65px;
-  border-radius: 20px;
+  top: 0;
+  z-index: 25;
+  margin: auto;
+  padding: 0 1.5rem 0 0.5rem;
+  height: 50px;
+}
+
+#themeButton {
+  border: none;
+  background-color: transparent;
+}
+
+#themeChanger {
+  display: flex;
+  float: left;
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+  flex-direction: row;
+}
+
+#themeChanger img {
+  width: 30px;
+  height: 30px;
+}
+
+#myName {
+  margin: 0 auto;
+  margin-bottom: -10px;
+  padding: 0 4rem;
+}
+
+.myName,
+.navBarTitles {
+  text-decoration: none;
+  color: #252525;
+}
+
+#navBarItems {
+  display: flex;
+  float: right;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+}
+
+.navBarItem {
+  float: initial;
+  margin: 0;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.HEADINGS {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 button {
@@ -99,23 +155,6 @@ button.menuButtons:focus {
   box-shadow: 2px 2px 3px #252525;
   padding: 0.1em 0.25em;
   color: #252525;
-}
-
-#themeChanger {
-  position: sticky;
-  z-index: 1100;
-  top: 10px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  margin-top: -99px;
-  border-radius: 20px;
-  float: right;
-}
-
-#themeChanger img {
-  width: 30px;
-  height: 30px;
 }
 
 section {
