@@ -51,6 +51,7 @@
   </head>
 
   <!-- Video Background -->
+  <!--
   <video
     class="background"
     autoplay
@@ -62,7 +63,7 @@
   >
     >
   </video>
-
+-->
   <body>
     <div id="newNavBar">
       <div class="row">
@@ -91,7 +92,7 @@
               <a class="navBarTitles" href="#aboutMeSection"> ABOUT ME </a>
             </li>
             <li class="navBarItem">
-              <a class="navBarTitles" href="#techStackSection"> EXPERTISE </a>
+              <a class="navBarTitles" href="#expertiseSection"> EXPERTISE </a>
             </li>
             <li class="navBarItem">
               <a class="navBarTitles" href="#projectsSection"> PROJECTS </a>
@@ -110,17 +111,17 @@
       <div class="container text-center">
         <div class="row align-items-center">
           <div class="col">
-            <div id="hello">
-              <h1>Hello World! I'm</h1>
-              <h1>Jadnell H. Reyes Perez</h1>
-              <h3>Computer Engineer</h3>
+            <div id="intro">
+              <h1 id="introHello">Hello World! I'm</h1>
+              <h1 id="introName">Jadnell H. Reyes Perez</h1>
+              <h3 id="introTitle">Computer Engineer</h3>
             </div>
-            <br />
+
             <div id="summary">
               A Full Stack Web Developer, Designer and Engineer graduated from
               the Polytechnic University of Puerto Rico.
             </div>
-            <br />
+
             <div id="learnMoreButton">
               <button onclick="window.location.href='#aboutMeSection';">
                 Learn More:
@@ -214,20 +215,604 @@
     </section>
 
     <section id="aboutMeSection" class="animatedSection leftSlide">
-      <br /><br />
-      <div class="HEADINGS">ABOUT ME</div>
-      <div class="row align-items-center">
-        <div class="col"><div class="block"></div></div>
+      <br />
+      <br />
+      <br />
+      <div class="HEADINGS"><h1>ABOUT ME</h1></div>
+      <div class="headingsDescriptions text-center">
+        <p>
+          Here you can find more information about me, my goals, achievements,
+          licenses, among other information.
+        </p>
+      </div>
 
-        <div class="col"><div class="block"></div></div>
+      <div class="row">
+        <div class="col">
+          <div class="block">
+            <h5 class="blockTitles">More About Me</h5>
+            <ul id="moreAboutMe">
+              <li>
+                My goal is to apply the knowledge and skills I've acquired to
+                solve real life problems.
+              </li>
+
+              <!--
+              <li>
+                Beyond work, I find joy in going to the beach, socializing with
+                friends, and playing basketball and videogames.
+              </li>
+            -->
+              <li>
+                Keep scrolling to learn about the technologies & hardware I have
+                experience on. You can also find projects and contact
+                information.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="block">
+            <h5 class="blockTitles">Degrees, Licenses & Certifications</h5>
+            <div class="row">
+              <div class="col-4">
+                <ul id="DLCyears">
+                  <li>2024-2032</li>
+                  <li>2023</li>
+                  <br />
+                  <br />
+                  <li>2018</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul id="DLC">
+                  <li>Driver's License</li>
+                  <li>
+                    Bachelor's Degree of Science in Computer Engineering,
+                    <i>cum laude</i>
+                  </li>
+                  <li>High School Diploma</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- TECH STACK SECTION -->
-    <section id="techStackSection" class="animatedSection">
-      <div class="container">
-        <h2 class="sectionHeadings">Technologies Stack:</h2>
+    <!-- EXPERTISE SECTION -->
+    <section id="expertiseSection" class="animatedSection">
+      <br />
+      <br />
+      <br />
+      <div class="HEADINGS"><h1>EXPERTISE</h1></div>
+      <div class="headingsDescriptions text-center">
+        <p>
+          Here you can learn about my educational background, and my familiarity
+          with various technologies, hardware, programming languages, and
+          frameworks. Additionally, you'll find a link to access my
+          resum&eacute;.
+        </p>
       </div>
 
+      <div class="row">
+        <div class="col">
+          <h5 class="blockTitles">Education:</h5>
+          <div class="smallBlock">
+            <div class="row">
+              <div class="col-4">
+                <div class="educationDates">
+                  <b
+                    >01/18 - 7/23 <br />
+                    Hato Rey, PR
+                  </b>
+                </div>
+              </div>
+              <div class="col">
+                <div id="PUPR">
+                  <b>Bachelor's Degree of Science in Computer Engineering</b>
+                  <br />
+                  <i>Polytechnic University of Puerto Rico</i> <br />
+                  <ul class="educationLists">
+                    <li>GPA: 3.30</li>
+
+                    <li><i> Cum Laude </i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="smallBlock">
+            <div class="row">
+              <div class="col-4">
+                <div class="educationDates">
+                  <b
+                    >08/06 - 6/18 <br />
+                    San Juan, PR
+                  </b>
+                </div>
+              </div>
+              <div class="col">
+                <div id="CNSA">
+                  <b>High School Diploma</b>
+                  <br />
+                  <i>Colegio Nuestra Se&ntilde;ora de la Altagracia</i> <br />
+                  <ul class="educationLists">
+                    <li>GPA: 4.00</li>
+                    <li>Valedictorian</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <h5 class="blockTitles">Resum&eacute;:</h5>
+
+          <div class="resumeBlock">
+            <div class="col">
+              <div class="container">
+                <a
+                  id="resumeButton"
+                  type="button"
+                  onclick="href='https://drive.google.com/uc?id=1RnokdGCcXRmXDb7dFUEhO5OL5lO1PT3C&export=download';"
+                >
+                  <h6>Resumé.pdf</h6>
+                  <img
+                    id="resumeDownload"
+                    src="Images/Icons/downloadArrow.svg"
+                    title="Resume Download"
+                    width="20px"
+                    height="20px"
+                    alt="Resume Download Button"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <h5 class="blockTitles">Toolkit:</h5>
+
+          <div class="smallBlock">
+            <h6 class="blockTitles">Programming Languages:</h6>
+            <div class="row">
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://html.com/#What_is_HTML';"
+                >
+                  <img
+                    src="Images/Tech Stack/html.svg"
+                    title="HTML"
+                    width="25rem"
+                    height="25rem"
+                    alt="HTML Logo"
+                  />
+                  HTML
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="HTML Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More HTML information"
+                  />
+                </button>
+              </div>
+
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://www.w3.org/Style/CSS/Overview.en.html';"
+                >
+                  <img
+                    src="Images/Tech Stack/css.svg"
+                    title="CSS"
+                    width="25rem"
+                    height="25rem"
+                    alt="CSS Logo"
+                  />
+                  CSS
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="CSS Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More CSS information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript';"
+                >
+                  <img
+                    src="Images/Tech Stack/javascript.svg"
+                    title="JavaScript"
+                    width="20rem"
+                    height="20rem"
+                    alt="JavaScript Logo"
+                  />
+                  JavaScript
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="CSS Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More CSS information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://www.w3schools.com/cpp/cpp_intro.asp';"
+                >
+                  <img
+                    src="Images/Tech Stack/c++.svg"
+                    title="C++"
+                    width="25rem"
+                    height="25rem"
+                    alt="C++ Logo"
+                  />
+                  C++
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="C++ Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More C++ information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://dart.dev/overview';"
+                >
+                  <img
+                    src="Images/Tech Stack/dart.svg"
+                    title="Dart"
+                    width="20rem"
+                    height="20rem"
+                    alt="Dart Logo"
+                  />
+                  Dart
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="Dart Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More Dart information"
+                  />
+                </button>
+              </div>
+
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://docs.python.org/3/faq/general.html#what-is-python';"
+                >
+                  <img
+                    src="Images/Tech Stack/python.svg"
+                    title="Python"
+                    width="25rem"
+                    height="25rem"
+                    alt="Python Logo"
+                  />
+                  Python
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="Python Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More Python information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://www.mathworks.com/products/matlab.html';"
+                >
+                  <img
+                    src="Images/Tech Stack/matlab.svg"
+                    title="MATLAB"
+                    width="25rem"
+                    height="25rem"
+                    alt="MATLAB Logo"
+                  />
+                  MATLAB
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="MATLAB Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More MATLAB information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://aws.amazon.com/what-is/sql/';"
+                >
+                  <img
+                    src="Images/Tech Stack/sql.svg"
+                    title="SQL"
+                    width="25rem"
+                    height="25rem"
+                    alt="SQL Logo"
+                  />
+                  SQL
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="SQL Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More SQL information"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="smallBlock">
+            <h6 class="blockTitles">Software & Hardware:</h6>
+            <div class="row">
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://code.visualstudio.com/docs/supporting/faq';"
+                >
+                  <img
+                    src="Images/Tech Stack/visualStudioCode.svg"
+                    title="Visual Studio Code"
+                    width="20rem"
+                    height="20rem"
+                    alt="Visual Studio Code Logo"
+                  />
+                  Visual Studio Code
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="Visual Studio Code Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More Visual Studio Code information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://docs.github.com/en/get-started/quickstart/hello-world';"
+                >
+                  <img
+                    src="Images/Tech Stack/githubSocialMedia.svg"
+                    title="GitHub"
+                    width="20rem"
+                    height="20rem"
+                    alt="GitHub Logo"
+                  />
+                  GitHub
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="GitHub Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More GitHub information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://developer.android.com/studio/intro';"
+                >
+                  <img
+                    src="Images/Tech Stack/androidStudio.svg"
+                    title="Android Studio"
+                    width="25rem"
+                    height="25rem"
+                    alt="Android Studio Logo"
+                  />
+                  Android Studio
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="Android Studio Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More Android Studio information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://visualstudio.microsoft.com/#vs-section';"
+                >
+                  <img
+                    src="Images/Tech Stack/visualStudio.svg"
+                    title="Visual Studio"
+                    width="20rem"
+                    height="20rem"
+                    alt="Visual Studio Logo"
+                  />
+                  Visual Studio
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="Visual Studio Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More Visual Studio information"
+                  />
+                </button>
+              </div>
+
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://www.arduino.cc/en/Guide/Introduction';"
+                >
+                  <img
+                    src="Images/Tech Stack/arduinoTechStack.svg"
+                    title="Arduino"
+                    width="25rem"
+                    height="25rem"
+                    alt="Arduino Logo"
+                  />
+                  Arduino
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="Arduino Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More Arduino information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://jupyter-notebook.readthedocs.io/en/stable/';"
+                >
+                  <img
+                    src="Images/Tech Stack/Jupyter.svg"
+                    title="Jupyter Notebook"
+                    width="25rem"
+                    height="25rem"
+                    alt="Jupyter Notebook Logo"
+                  />
+                  Jupyter Notebook
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="Jupyter Notebook Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More Jupyter Notebook information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://www.raspberrypi.com/for-home/';"
+                >
+                  <img
+                    src="Images/Tech Stack/raspberryPi.svg"
+                    title="Raspberry Pi"
+                    width="20rem"
+                    height="20rem"
+                    alt="Raspberry Pi Logo"
+                  />
+                  Raspberry Pi
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="Raspberry Pi Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More Raspberry Pi information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://www.virtualbox.org/wiki/VirtualBox';"
+                >
+                  <img
+                    src="Images/Tech Stack/virtualbox.svg"
+                    title="VirtualBox"
+                    width="25rem"
+                    height="25rem"
+                    alt="VirtualBox Logo"
+                  />
+                  VirtualBox
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="VirtualBox Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More VirtualBox information"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="smallBlock">
+            <h6 class="blockTitles">Frameworks:</h6>
+            <div class="row">
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://www.w3schools.com/whatis/whatis_bootstrap.asp';"
+                >
+                  <img
+                    src="Images/Tech Stack/bootstrap.svg"
+                    title="Bootstrap"
+                    width="25rem"
+                    height="25rem"
+                    alt="Bootstrap Logo"
+                  />
+                  Bootstrap
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="Bootstrap Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More Bootstrap information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://www.djangoproject.com/';"
+                >
+                  <img
+                    src="Images/Tech Stack/django.svg"
+                    title="Django"
+                    width="17.5rem"
+                    height="17.5rem"
+                    alt="Django Logo"
+                  />
+                  Django
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="Django Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More Django information"
+                  />
+                </button>
+              </div>
+              <div class="col-auto">
+                <button
+                  class="toolkitButtons"
+                  onclick="window.location.href='https://flutter.dev/';"
+                >
+                  <img
+                    src="Images/Tech Stack/flutter.svg"
+                    title="Flutter"
+                    width="20rem"
+                    height="20rem"
+                    alt="Flutter Logo"
+                  />
+                  Flutter
+                  <img
+                    src="Images/Icons/info.svg"
+                    title="Flutter Info"
+                    width="25rem"
+                    height="25rem"
+                    alt="More Flutter information"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
       <div class="container">
         <div class="techStackCard">
           <div class="container text-center">
@@ -239,7 +824,7 @@
                   </h3>
                 </div>
 
-                <!-- CSS Container -->
+                
                 <div id="CSSContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -313,7 +898,7 @@
                   </div>
                 </div>
 
-                <!-- C++ Container -->
+             
                 <div id="CPPContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -376,7 +961,7 @@
                   </div>
                 </div>
 
-                <!-- Dart Container -->
+                
                 <div id="DartContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -447,7 +1032,7 @@
                   </div>
                 </div>
 
-                <!-- HTML Container -->
+                
                 <div id="HTMLContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -516,7 +1101,7 @@
                   </div>
                 </div>
 
-                <!-- JavaScript Container -->
+              
                 <div id="JSContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -583,7 +1168,7 @@
                   </div>
                 </div>
 
-                <!-- MATLAB Container -->
+                
                 <div id="MATLABContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -651,7 +1236,6 @@
                   </div>
                 </div>
 
-                <!-- Python Container -->
                 <div id="PythonContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -721,7 +1305,7 @@
                   </div>
                 </div>
 
-                <!-- SQL Container -->
+               
                 <div id="SQLContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -795,7 +1379,7 @@
                   </h3>
                 </div>
 
-                <!-- Android Studio Container -->
+            
                 <div id="AndroidStudioContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -866,7 +1450,6 @@
                   </div>
                 </div>
 
-                <!-- Arduino Container -->
                 <div id="ArduinoContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -936,7 +1519,7 @@
                   </div>
                 </div>
 
-                <!-- GitHub Container -->
+           
                 <div id="GitHubContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -1004,7 +1587,7 @@
                   </div>
                 </div>
 
-                <!-- Jupyter Notebooks Container -->
+          
                 <div id="JupyterContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -1077,7 +1660,7 @@
                   </div>
                 </div>
 
-                <!-- Raspberry Pi Container -->
+            
                 <div id="RaspberryPiContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -1147,7 +1730,7 @@
                   </div>
                 </div>
 
-                <!-- VirtualBox Container -->
+             
                 <div id="VirtualBoxContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -1215,7 +1798,7 @@
                   </div>
                 </div>
 
-                <!-- Visual Studio Container -->
+               
                 <div id="VSContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -1281,7 +1864,7 @@
                   </div>
                 </div>
 
-                <!-- Visual Studio Code Container -->
+           
                 <div id="VSCODEContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -1360,7 +1943,7 @@
                   <h3 id="frameworkTitle" class="cardTitles">Frameworks:</h3>
                 </div>
 
-                <!-- Bootstrap Container -->
+              
                 <div id="BootstrapContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -1428,7 +2011,7 @@
                   </div>
                 </div>
 
-                <!-- Django Container -->
+              
                 <div id="DjangoContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -1499,7 +2082,7 @@
                   </div>
                 </div>
 
-                <!-- FLutter Container -->
+                
                 <div id="FlutterContainer" class="progLangCube">
                   <div class="row">
                     <div class="col">
@@ -1571,16 +2154,196 @@
           </div>
         </div>
       </div>
-    </section>
+    --></section>
 
     <!-- PROJECTS SECTION -->
     <section id="projectsSection" class="animatedSection">
-      <div class="container">
-        <h2 class="sectionHeadings">Projects:</h2>
+      <br />
+      <br />
+      <br />
+      <div class="HEADINGS"><h1>PROJECTS</h1></div>
+      <div class="headingsDescriptions text-center">
+        <p>
+          Here you can find more information about me, my goals, achievements,
+          licenses, among other information.
+        </p>
+      </div>
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <!--Image of me-->
+          <div class="col">
+            <img
+              class="projectPictures"
+              src="Images/Project Pictures/ProjDepo1.png"
+              title="Hello! This is me"
+              alt="A picture of Jadnell Reyes was supposed to appear here..."
+            />
+          </div>
+          <div class="col">
+            <div id="intro">
+              <h2 id="introHello">DEPO Web Application:</h2>
+            </div>
+
+            <div id="summary">
+              <h5>Overview:</h5>
+
+              As a Capstone Project my classmates and I developed DEPO, a web
+              app to automate purchase reporting for Puerto Rico govt entities.
+              Minimized errors & sped up data entry. Focused on user-friendly
+              portal for ASG employees.
+            </div>
+
+            <div id="learnMoreButton">
+              <button
+                onclick="window.location.href='/Projects/depoProject.html';"
+              >
+                Learn More:
+              </button>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <div class="row align-items-center">
+          <!--Image of me-->
+          <div class="col">
+            <div id="intro">
+              <h2 id="introHello">My Portfolio:</h2>
+            </div>
+
+            <div id="summary">
+              <h5>Overview:</h5>
+
+              Dive into my knowledge! Explore real-world projects (personal &
+              uni) & master skills I've honed. Contact me via social media,
+              form, or Resumé. Built with free & user-friendly GitHub Pages.
+              Evolving since July 2023. (This Website)
+            </div>
+
+            <div id="learnMoreButton">
+              <button
+                onclick="window.location.href='/Projects/depoProject.html';"
+              >
+                Learn More:
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <img
+              class="projectPictures"
+              src="Images/Project Pictures/ProjDepo1.png"
+              title="Hello! This is me"
+              alt="A picture of Jadnell Reyes was supposed to appear here..."
+            />
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="row align-items-center">
+        <!--Image of me-->
+        <div class="col">
+          <img
+            class="projectPictures"
+            src="Images/Project Pictures/ProjHareshQuizGame1.png"
+            title="Hello! This is me"
+            alt="A picture of Jadnell Reyes was supposed to appear here..."
+          />
+        </div>
+        <div class="col">
+          <div id="intro">
+            <h2 id="introHello">Haresh Quiz Game:</h2>
+          </div>
+
+          <div id="summary">
+            <h5>Overview:</h5>
+
+            Test your knowledge with Haresh Quiz Game! A simple game developed
+            for my Advanced Programming class using Python. Answer 20 questions
+            to win. 3 lives, simple GUI, 3 versions: simple logic, functions and
+            classes.
+          </div>
+
+          <div id="learnMoreButton">
+            <button
+              onclick="window.location.href='/Projects/depoProject.html';"
+            >
+              Learn More:
+            </button>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <div class="row align-items-center">
+        <!--Image of me-->
+        <div class="col">
+          <div id="intro">
+            <h2 id="introHello">DC Motor Control:</h2>
+          </div>
+
+          <div id="summary">
+            <h5>Overview:</h5>
+
+            Harnessing an Arduino board, C++ & keyboard inputs, we built a
+            system that commands a DC motor's speed! Watch it accelerate using
+            pulse width modulation, then take the wheel through your keyboard.
+          </div>
+
+          <div id="learnMoreButton">
+            <button
+              onclick="window.location.href='/Projects/depoProject.html';"
+            >
+              Learn More:
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            class="projectPictures"
+            src="Images/Project Pictures/ProjDCmotor1.png"
+            title="Hello! This is me"
+            alt="A picture of Jadnell Reyes was supposed to appear here..."
+          />
+        </div>
       </div>
 
+      <br /><br />
+      <div class="row align-items-center">
+        <!--Image of me-->
+        <div class="col">
+          <img
+            class="projectPictures"
+            src="Images/Project Pictures/ProjStepMotor1.png"
+            title="Hello! This is me"
+            alt="A picture of Jadnell Reyes was supposed to appear here..."
+          />
+        </div>
+        <div class="col">
+          <div id="intro">
+            <h2 id="introHello">Step Motor Control:</h2>
+          </div>
+
+          <div id="summary">
+            <h5>Overview:</h5>
+
+            This project used an Arduino & C++ to command a 28BYJ-48 geared step
+            motor. Control included clockwise/counter-clockwise rotation
+            (continuous & by steps) & stop function, all triggered by keyboard
+            commands. ️
+          </div>
+
+          <div id="learnMoreButton">
+            <button
+              onclick="window.location.href='/Projects/depoProject.html';"
+            >
+              Learn More:
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--
       <div class="container" id="projectContainer">
-        <!-- CAPSTONE PROJECT -->
+       
         <div class="projectCard">
           <div class="container text-center">
             <div class="row">
@@ -1744,9 +2507,8 @@
 
                 <h3 class="cardTitles">Images:</h3>
 
-                <!-- Image Slideshow -->
+                
                 <div class="slideshow-container">
-                  <!-- Full-width images with number and caption text -->
                   <div class="mySlides1 fade">
                     <img
                       class="projectImages"
@@ -1787,7 +2549,7 @@
                     />
                   </div>
 
-                  <!-- Next and previous buttons -->
+                  
                   <button class="prev" onclick="plusSlides(-1, 0)">
                     <img
                       src="Images/Icons/prevImage.svg"
@@ -1806,7 +2568,7 @@
                   </button>
                 </div>
 
-                <!-- The dots/circles -->
+               
                 <div id="imageDots1">
                   <span class="dot1" onclick="currentSlide(1, 0)"></span>
                   <span class="dot1" onclick="currentSlide(2, 0)"></span>
@@ -1824,7 +2586,7 @@
             </div>
           </div>
         </div>
-        <!-- MY PORTFOLIO PROJECT -->
+   
         <div class="projectCard">
           <div class="container text-center">
             <div class="row">
@@ -1991,9 +2753,8 @@
 
                 <h3 class="cardTitles">Images:</h3>
 
-                <!-- Image Slideshow -->
+                
                 <div class="slideshow-container">
-                  <!-- Full-width images with number and caption text -->
                   <div class="mySlides2 fade">
                     <img
                       class="projectImages"
@@ -2050,7 +2811,6 @@
                     />
                   </div>
 
-                  <!-- Next and previous buttons -->
                   <button class="prev" onclick="plusSlides(-1, 1)">
                     <img
                       src="Images/Icons/prevImage.svg"
@@ -2069,7 +2829,6 @@
                   </button>
                 </div>
 
-                <!-- The dots/circles -->
                 <div id="imageDots2">
                   <span class="dot2" onclick="currentSlide(1, 1)"></span>
                   <span class="dot2" onclick="currentSlide(2, 1)"></span>
@@ -2088,10 +2847,8 @@
               </div>
             </div>
           </div>
-          <!-- End Project Card -->
-        </div>
+          </div>
 
-        <!-- HARESH QUIZ GAME PROJECT -->
         <div class="projectCard">
           <div class="container text-center">
             <div class="row">
@@ -2199,9 +2956,7 @@
 
                 <h3 class="cardTitles">Images:</h3>
 
-                <!-- Image Slideshow -->
                 <div class="slideshow-container">
-                  <!-- Full-width images with number and caption text -->
                   <div class="mySlides3 fade">
                     <img
                       class="projectImages"
@@ -2242,7 +2997,6 @@
                     />
                   </div>
 
-                  <!-- Next and previous buttons -->
                   <button class="prev" onclick="plusSlides(-1, 2)">
                     <img
                       src="Images/Icons/prevImage.svg"
@@ -2261,7 +3015,6 @@
                   </button>
                 </div>
 
-                <!-- The dots/circles -->
                 <div id="imageDots3">
                   <span class="dot3" onclick="currentSlide(1, 2)"></span>
                   <span class="dot3" onclick="currentSlide(2, 2)"></span>
@@ -2278,10 +3031,8 @@
               </div>
             </div>
           </div>
-          <!-- End Project Card-->
-        </div>
+           </div>
 
-        <!-- DC MOTOR PROJECT -->
         <div class="projectCard">
           <div class="container text-center">
             <div class="row">
@@ -2410,9 +3161,7 @@
 
                 <h3 class="cardTitles">Images:</h3>
 
-                <!-- Image Slideshow -->
                 <div class="slideshow-container">
-                  <!-- Full-width images with number and caption text -->
                   <div class="mySlides4 fade">
                     <img
                       class="projectImages"
@@ -2437,7 +3186,6 @@
                     />
                   </div>
 
-                  <!-- Next and previous buttons -->
                   <button class="prev" onclick="plusSlides(-1, 3)">
                     <img
                       src="Images/Icons/prevImage.svg"
@@ -2456,7 +3204,6 @@
                   </button>
                 </div>
 
-                <!-- The dots/circles -->
                 <div id="imageDots4">
                   <span class="dot4" onclick="currentSlide(1, 3)"></span>
                   <span class="dot4" onclick="currentSlide(2, 3)"></span>
@@ -2470,10 +3217,8 @@
               </div>
             </div>
           </div>
-          <!-- End Project Card-->
-        </div>
+          </div>
 
-        <!-- STEPPER MOTOR PROJECT -->
         <div class="projectCard">
           <div class="container text-center">
             <div class="row">
@@ -2600,9 +3345,7 @@
 
                 <h3 class="cardTitles">Images:</h3>
 
-                <!-- Image Slideshow -->
                 <div class="slideshow-container">
-                  <!-- Full-width images with number and caption text -->
                   <div class="mySlides5 fade">
                     <img
                       class="projectImages"
@@ -2627,7 +3370,6 @@
                     />
                   </div>
 
-                  <!-- Next and previous buttons -->
                   <button class="prev" onclick="plusSlides(-1, 4)">
                     <img
                       src="Images/Icons/prevImage.svg"
@@ -2646,7 +3388,6 @@
                   </button>
                 </div>
 
-                <!-- The dots/circles -->
                 <div id="imageDots5">
                   <span class="dot5" onclick="currentSlide(1, 4)"></span>
                   <span class="dot5" onclick="currentSlide(2, 4)"></span>
@@ -2660,21 +3401,171 @@
               </div>
             </div>
           </div>
-          <!-- End Project Card-->
+         </div>
         </div>
-
-        <!-- End Projects Container-->
       </div>
+      -->
     </section>
     <!-- CONTACT INFORMATION SECTION -->
     <section id="contactSection" class="animatedSection">
-      <div class="container">
-        <h2 class="sectionHeadings">Contact Information:</h2>
+      <br />
+      <br />
+      <br />
+      <div class="HEADINGS"><h1>CONTACT</h1></div>
+      <div class="headingsDescriptions text-center">
+        <p>
+          If you want to collaborate or hire me, send me a message through the
+          form or my social media below.
+        </p>
       </div>
 
+      <div class="contactBlock">
+        <h3 class="blockTitles">Message Me:</h3>
+
+        <form
+          action="https://send.pageclip.co/CAH0P5X4x3AsDEPAqnhl4MqM62FY8Ndd/contactForm"
+          class="pageclip-form form"
+          method="post"
+          onsubmit="return validateName()"
+        >
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                class="formButtons"
+                id="firstName"
+                placeholder="First Name:"
+                name="firstName"
+                required
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                class="formButtons"
+                id="lastName"
+                placeholder="Last Name:"
+                name="lastName"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input
+                type="email"
+                class="formButtons"
+                id="email"
+                placeholder="Email:"
+                name="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <textarea
+                type="textarea"
+                placeholder="Message:"
+                id="message"
+                class="formButtons"
+                name="message"
+                value="Hello how are you?"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col text-center">
+              <button
+                type="submit"
+                id="submitButton"
+                class="pageclip-form__submit formButtons"
+                value="Send"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <br />
+      <div class="row align-items-center">
+        <div class="col">
+          <h4 id="socialMediaHeading">Social:</h4>
+        </div>
+        <div class="col">
+          <ul id="socialMediaItems">
+            <li class="socialMediaItem">
+              <button
+                class="socialMediaButton"
+                type="button"
+                onclick="window.location.href='https://www.instagram.com/j_dnll/';"
+              >
+                <img
+                  src="Images/Social Media/instagram.svg"
+                  title="Instagram"
+                  width="25px"
+                  height="25px"
+                  alt="Instagram Button"
+                />
+              </button>
+            </li>
+            <li class="socialMediaItem">
+              <button
+                class="socialMediaButton"
+                type="button"
+                onclick="window.location.href='https://www.x.com/jadnellReyes';"
+              >
+                <img
+                  src="Images/Social Media/x.svg"
+                  title="X"
+                  width="20px"
+                  height="20px"
+                  alt="X Button"
+                />
+              </button>
+            </li>
+            <li class="socialMediaItem">
+              <button
+                class="socialMediaButton"
+                type="button"
+                onclick="window.location.href='https://github.com/jadnell555';"
+              >
+                <img
+                  src="Images/Tech Stack/githubSocialMedia.svg"
+                  title="GitHub"
+                  width="30px"
+                  height="30px"
+                  alt="GitHub Button"
+                />
+              </button>
+            </li>
+            <li class="socialMediaItem">
+              <button
+                class="socialMediaButton"
+                type="button"
+                onclick="window.location.href='https://www.linkedin.com/in/jadnell-h-reyes-perez-301687280';"
+              >
+                <img
+                  src="Images/Social Media/linkedin.svg"
+                  title="LinkedIn"
+                  width="25px"
+                  height="25px"
+                  alt="LinkedIn Button"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--
       <div>
         <div class="container text-center">
-          <!-- Social Media Buttons Column -->
+          
           <div class="row">
             <div class="col">
               <div class="container">
@@ -2810,7 +3701,7 @@
                 <div class="contactCard">
                   <h3 class="cardTitles">Contact Me:</h3>
 
-                  <!-- Contact Form: -->
+                  
                   <form
                     action="https://send.pageclip.co/CAH0P5X4x3AsDEPAqnhl4MqM62FY8Ndd/contactForm"
                     class="pageclip-form form"
@@ -2863,26 +3754,27 @@
                     >
                       Send
                     </button>
-                    <!-- end contact form -->
+                    
                   </form>
-                  <!-- end infoCard-->
+                 
                 </div>
-                <!-- end container-->
+               
               </div>
-              <!-- end col-->
+              
             </div>
           </div>
-          <!-- end container-text-center-->
+          
         </div>
-        <!-- end socialMediaBar-->
+        
       </div>
+    -->
+      <br />
       <!-- end contact section-->
     </section>
     <section class="animatedSection">
       <footer>
-        Copyright © 2023. All Rights Reserved
-        <br />
-        Created by Jadnell H. Reyes P&eacute;rez
+        Copyright © 2023. All Rights Reserved. Created by Jadnell H. Reyes
+        P&eacute;rez
       </footer>
     </section>
 

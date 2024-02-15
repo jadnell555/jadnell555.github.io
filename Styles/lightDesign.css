@@ -21,19 +21,22 @@
 }
 
 body {
+  background-color: #e3e1e3;
   min-height: 100vh;
   text-size-adjust: auto;
   margin: 0 auto;
   position: relative;
-  min-width: 100vw;
   width: 100%;
   display: block;
   overflow-x: hidden;
 }
 
 #newNavBar {
-  width: 100vw;
+  width: 98.5vw;
+  float: left;
   background-color: #fbcc18;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0px 2px 3px #252525;
   position: sticky;
   top: 0;
   z-index: 25;
@@ -93,8 +96,13 @@ body {
   flex-direction: column;
   align-items: center;
   font-size: 3rem;
-  width: 100%;
+  width: fit-content;
   margin: 0 auto;
+  border-bottom: 3px solid #fbcc18;
+}
+
+.headingsDescriptions {
+  padding: 0.5rem;
 }
 
 button {
@@ -218,10 +226,10 @@ section {
 .next:hover,
 .contactCard:hover,
 .socialMediaButton:hover,
+.resumeBlock:hover,
 .resumeCard:hover,
 .formButtons:hover,
-.readMoreButton:hover,
-footer:hover {
+.readMoreButton:hover {
   box-shadow: 0px 10px 15px #252525;
   transform: translateY(-4px);
   transition: 0.2s ease-in;
@@ -254,25 +262,146 @@ footer:hover {
 }
 
 /* ABOUT ME SECTION*/
-#hello {
+#intro {
   text-align: left;
+}
+
+#introHello {
+}
+
+#introName {
+}
+
+#introTitle {
+  color: #fbcc18;
+  text-shadow: 2px 2px 3px #252525;
 }
 
 .block {
   width: 100%;
-  height: 70vh;
-  background-color: #e3e1e3;
+  height: auto;
   border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
+  border-style: dashed;
+}
+
+.blockTitles {
+  text-align: center;
+  padding: 0.25rem;
+  margin: auto;
+}
+
+#moreAboutMe {
+  list-style: none;
+  text-align: justify;
+  padding: 0.5rem;
+  margin: auto;
+}
+
+#moreAboutMe li {
+  padding: 0.5rem;
+}
+
+#DLCyears {
+  list-style: none;
+  text-align: center;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  margin: auto;
+}
+
+#DLCyears li {
+  padding: 0.15rem;
+  background-color: lightgray;
+  border-radius: 20px;
+  margin: 0.35rem 0;
+}
+
+#DLC {
+  list-style: none;
+  text-align: justify;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  float: left;
+  margin: auto;
+}
+
+#DLC li {
+  padding: 0.35rem;
+}
+
+.smallBlock {
+  width: 100%;
+  height: fit-content;
+  border-radius: 20px;
+  border-style: dashed;
+  margin: 0.25rem;
+  padding: 0.5rem;
+}
+
+.educationDates {
+  padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+}
+
+.PUPR {
+  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+}
+
+.CNSA {
+  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+}
+
+.educationLists {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: auto;
+}
+
+.educationLists li {
+  padding: 0 0.5rem;
+  margin: 0 0.25rem;
+  background-color: lightgray;
+  border-radius: 20px;
+}
+
+.resumeBlock {
+  border-radius: 20px;
+  border-style: dashed;
+  height: fit-content;
+  margin: 0.25rem;
+  width: 100%;
+  transition: 0.2s ease-in;
+}
+
+.resumeBlock h6 {
+  text-align: center;
+  margin: 0;
+}
+
+.resumeBlock:hover h6 {
+  color: #798ef6;
+}
+
+.resumeBlock:active {
+  transform: translateY(-2px);
+  transition: 0.2s ease-in;
+  box-shadow: 0px 10px 15px #252525;
+}
+
+.toolkitButtons {
+  border-style: none;
+  border-radius: 20px;
+  background-color: lightgray;
+  padding: 0.1rem 0.2rem;
+  margin: 0.25rem auto;
 }
 
 #summary {
-  width: 80%;
+  width: 100%;
   height: fit-content;
-  margin: auto;
+  margin: 1rem auto;
   padding: 0.5rem;
 
   border: #252525;
+  border-radius: 20px;
   border-style: dashed;
 
   text-align: justify;
@@ -286,8 +415,10 @@ footer:hover {
 #learnMoreButton button {
   border: none;
   border-radius: 20px;
+  box-shadow: 2px 2px 3px #252525;
   margin: auto;
   padding: 0.25rem;
+  background-color: #fbcc18;
 }
 
 .mainPictures {
@@ -299,7 +430,13 @@ footer:hover {
 
 img.mainPictures {
   aspect-ratio: 0.7/1;
-  width: 60%;
+  height: 80vh;
+}
+
+img.projectPictures {
+  aspect-ratio: 121/69;
+  height: 60vh;
+  border-radius: 20px;
 }
 
 .greet {
@@ -872,20 +1009,52 @@ div.col.projectType {
   transition: 0.2s ease-in;
 }
 
-.socialMediaButton {
-  background: -webkit-linear-gradient(bottom right, #7bd5f5, #787ff6);
-  box-shadow: 2px 2px 3px #252525;
-
-  width: 50px;
-  height: 50px;
+.contactBlock {
+  width: 100%;
+  height: fit-content;
   margin: auto;
-  padding: 5px;
+  padding: 1rem;
+  border-radius: 20px;
+  border-style: dashed;
+}
+
+#socialMediaHeading {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  float: right;
+}
+
+#socialMediaItems {
+  display: flex;
+  float: left;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+}
+
+.socialMediaItem {
+  float: initial;
+  margin: 0;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.socialMediaButton {
+  background: lightgray;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  padding: 2.5px;
   border: none;
   border-radius: 20px;
 }
 
 .socialMediaTitles {
   padding: 5px;
+  margin: auto;
+  justify-content: center;
 }
 
 .resumeCard {
@@ -926,10 +1095,10 @@ div.col.projectType {
 }
 
 .formButtons {
-  background: -webkit-linear-gradient(right, #7bd5f5, #787ff6);
+  background: #e3e1e3;
   border: none;
   border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
+
   color: #252525;
   padding: 10px;
   margin: auto;
@@ -955,8 +1124,7 @@ div.col.projectType {
 #firstName {
   margin: 10px auto;
   padding: 10px;
-  width: 45%;
-  box-shadow: 2px 2px 3px #252525;
+  width: 100%;
   color: #252525;
   font-size: 1em;
 }
@@ -964,8 +1132,8 @@ div.col.projectType {
 #lastName {
   margin: 10px auto;
   padding: 10px;
-  width: 45%;
-  box-shadow: 2px 2px 3px #252525;
+  width: 100%;
+
   color: #252525;
   font-size: 1em;
 }
@@ -973,8 +1141,8 @@ div.col.projectType {
 #email {
   margin: auto;
   padding: 10px;
-  width: 90%;
-  box-shadow: 2px 2px 3px #252525;
+  width: 100%;
+
   color: #252525;
   font-size: 1em;
 }
@@ -994,10 +1162,9 @@ div.col.projectType {
 textarea {
   margin: 10px auto;
   padding: 10px;
-  width: 90%;
+  width: 100%;
   height: 150px;
   border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
   color: #252525;
   font-size: 1em;
 }
@@ -1006,7 +1173,6 @@ textarea {
   color: #252525;
   font-size: 1em;
   margin: 0 auto;
-  box-shadow: 2px 2px 3px #252525;
 }
 
 #submitButton:hover {
@@ -1032,18 +1198,14 @@ textarea {
 
 /* FOOTER */
 footer {
-  display: flex;
+  width: 98.5vw;
+  background-color: #fbcc18;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px 2px 3px #252525;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto;
-  background-color: #e3e1e3;
-  width: fit-content;
-  max-width: 90%;
-  padding: 5px 20px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
-  transition: 0.2s ease-in;
+  float: left;
+  margin: 0 0 0 -3.2rem;
+  height: 25px;
 }
 
 /* For devices with screens with a width less than 767px */
@@ -1057,6 +1219,7 @@ footer {
     height: 100vh;
     width: auto;
     position: fixed;
+    background-color: #e3e1e3;
   }
 
   section {
