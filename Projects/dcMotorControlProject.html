@@ -93,15 +93,15 @@
 
     <section id="depoProjectSection" class="animatedSection leftSlide">
       <div class="HEADINGS">
-        <h1 class="projectTitle">My Portfolio</h1>
+        <h1 class="projectTitle">DC Motor Control</h1>
       </div>
       <br />
       <div class="row text-center">
         <div class="col">
           <button
-            class="sourceCodeButton"
+            class="sourceCodeButtonAlt"
             type="button"
-            onclick="window.location.href='https://github.com/jadnell555/jadnell555.github.io';"
+            onclick="window.location.href='https://github.com/jadnell555/CollegeProjects/tree/main/Arduino/Microcomputer%20Interfacing%20Lab/Lab%205%20-%20DC%20Motor';"
           >
             <img
               src="/jadnell555.github.io/Images/Tech Stack/github.svg"
@@ -111,6 +111,22 @@
               alt="GitHub Logo"
             />
             Source Code
+          </button>
+        </div>
+        <div class="col">
+          <button
+            class="youtubeButton"
+            type="button"
+            onclick="window.location.href='https://youtu.be/KwMOkR7ds_U';"
+          >
+            <img
+              src="/jadnell555.github.io/Images/Social Media/youtube.svg"
+              title="Video Link"
+              width="45px"
+              height="40px"
+              alt="Youtube Logo"
+            />
+            Video
           </button>
         </div>
       </div>
@@ -137,8 +153,10 @@
         <div class="col">
           <h3 class="text-center">Type of Project:</h3>
           <div class="row text-center">
-            <div id="personal" class="col projectType persActive">Personal</div>
-            <div id="university" class="col projectType">University</div>
+            <div id="personal" class="col projectType">Personal</div>
+            <div id="university" class="col projectType uniActive">
+              University
+            </div>
             <div id="professional" class="col projectType">Professional</div>
           </div>
         </div>
@@ -146,15 +164,15 @@
           <h3 class="text-center">Status:</h3>
           <div class="row text-center g-0">
             <div class="col projectStatus">
-              <div
-                id="inProgress"
-                style="background-color: #fbcc18; color: #252525"
-              >
-                In Progress
-              </div>
+              <div id="inProgress">In Progress</div>
             </div>
             <div class="col projectStatus">
-              <div id="complete">Complete</div>
+              <div
+                id="complete"
+                style="background-color: #7ec384; color: #252525"
+              >
+                Complete
+              </div>
             </div>
           </div>
         </div>
@@ -164,118 +182,6 @@
         <div class="col">
           <h3>Technologies Stack Implemented:</h3>
           <div class="row">
-            <div class="col-auto">
-              <button
-                class="toolkitButtons"
-                onclick="window.location.href='https://html.com/#What_is_HTML';"
-              >
-                <img
-                  src="/jadnell555.github.io/Images/Tech Stack/html.svg"
-                  title="HTML"
-                  width="25rem"
-                  height="25rem"
-                  alt="HTML Logo"
-                />
-                HTML
-                <img
-                  src="/jadnell555.github.io/Images/Icons/info.svg"
-                  title="HTML Info"
-                  width="25rem"
-                  height="25rem"
-                  alt="More HTML information"
-                />
-              </button>
-            </div>
-
-            <div class="col-auto">
-              <button
-                class="toolkitButtons"
-                onclick="window.location.href='https://www.w3.org/Style/CSS/Overview.en.html';"
-              >
-                <img
-                  src="/jadnell555.github.io/Images/Tech Stack/css.svg"
-                  title="CSS"
-                  width="25rem"
-                  height="25rem"
-                  alt="CSS Logo"
-                />
-                CSS
-                <img
-                  src="/jadnell555.github.io/Images/Icons/info.svg"
-                  title="CSS Info"
-                  width="25rem"
-                  height="25rem"
-                  alt="More CSS information"
-                />
-              </button>
-            </div>
-            <div class="col-auto">
-              <button
-                class="toolkitButtons"
-                onclick="window.location.href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript';"
-              >
-                <img
-                  src="/jadnell555.github.io/Images/Tech Stack/javascript.svg"
-                  title="JavaScript"
-                  width="20rem"
-                  height="20rem"
-                  alt="JavaScript Logo"
-                />
-                JavaScript
-                <img
-                  src="/jadnell555.github.io/Images/Icons/info.svg"
-                  title="CSS Info"
-                  width="25rem"
-                  height="25rem"
-                  alt="More CSS information"
-                />
-              </button>
-            </div>
-            <div class="col-auto">
-              <button
-                class="toolkitButtons"
-                onclick="window.location.href='https://www.w3schools.com/whatis/whatis_bootstrap.asp';"
-              >
-                <img
-                  src="/jadnell555.github.io/Images/Tech Stack/bootstrap.svg"
-                  title="Bootstrap"
-                  width="25rem"
-                  height="25rem"
-                  alt="Bootstrap Logo"
-                />
-                Bootstrap
-                <img
-                  src="/jadnell555.github.io/Images/Icons/info.svg"
-                  title="Bootstrap Info"
-                  width="25rem"
-                  height="25rem"
-                  alt="More Bootstrap information"
-                />
-              </button>
-            </div>
-
-            <div class="col-auto">
-              <button
-                class="toolkitButtons"
-                onclick="window.location.href='https://code.visualstudio.com/docs/supporting/faq';"
-              >
-                <img
-                  src="/jadnell555.github.io/Images/Tech Stack/visualStudioCode.svg"
-                  title="Visual Studio Code"
-                  width="20rem"
-                  height="20rem"
-                  alt="Visual Studio Code Logo"
-                />
-                Visual Studio Code
-                <img
-                  src="/jadnell555.github.io/Images/Icons/info.svg"
-                  title="Visual Studio Code Info"
-                  width="25rem"
-                  height="25rem"
-                  alt="More Visual Studio Code information"
-                />
-              </button>
-            </div>
             <div class="col-auto">
               <button
                 class="toolkitButtons"
@@ -301,22 +207,44 @@
             <div class="col-auto">
               <button
                 class="toolkitButtons"
-                onclick="window.location.href='https://jupyter-notebook.readthedocs.io/en/stable/';"
+                onclick="window.location.href='https://www.arduino.cc/en/Guide/Introduction';"
               >
                 <img
-                  src="/jadnell555.github.io/Images/Tech Stack/Jupyter.svg"
-                  title="Jupyter Notebook"
+                  src="/jadnell555.github.io/Images/Tech Stack/arduinoTechStack.svg"
+                  title="Arduino"
                   width="25rem"
                   height="25rem"
-                  alt="Jupyter Notebook Logo"
+                  alt="Arduino Logo"
                 />
-                Jupyter Notebook
+                Arduino
                 <img
                   src="/jadnell555.github.io/Images/Icons/info.svg"
-                  title="Jupyter Notebook Info"
+                  title="Arduino Info"
                   width="25rem"
                   height="25rem"
-                  alt="More Jupyter Notebook information"
+                  alt="More Arduino information"
+                />
+              </button>
+            </div>
+            <div class="col-auto">
+              <button
+                class="toolkitButtons"
+                onclick="window.location.href='https://www.w3schools.com/cpp/cpp_intro.asp';"
+              >
+                <img
+                  src="/jadnell555.github.io/Images/Tech Stack/c++.svg"
+                  title="C++"
+                  width="25rem"
+                  height="25rem"
+                  alt="C++ Logo"
+                />
+                C++
+                <img
+                  src="/jadnell555.github.io/Images/Icons/info.svg"
+                  title="C++ Info"
+                  width="25rem"
+                  height="25rem"
+                  alt="More C++ information"
                 />
               </button>
             </div>
@@ -328,59 +256,27 @@
         <div class="col">
           <h3>Images:</h3>
           <div class="slideshow-container">
-            <div class="mySlides2 fade">
+            <div class="mySlides4 fade">
               <img
                 class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/portfolio1.jpg"
-                alt="Image of a sketch I made August 6, 2023 of how I wanted the About Me Section of my Portfolio."
+                src="/jadnell555.github.io/Images/Project Pictures/DCmotor1.png"
+                alt="DC Motor Operation Truth Table."
               />
             </div>
 
-            <div class="mySlides2 fade">
+            <div class="mySlides4 fade">
               <img
                 class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/portfolio2.png"
-                alt="Image of a previous version of the Portfolio."
+                src="/jadnell555.github.io/Images/Project Pictures/DCmotor2.png"
+                alt="Table of the keyboard inputs and their corresponding outputs."
               />
             </div>
 
-            <div class="mySlides2 fade">
+            <div class="mySlides4 fade">
               <img
                 class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/portfolio3.jpg"
-                alt="Image of a sketch I made of how I wanted the Contact Section of my Portfolio."
-              />
-            </div>
-
-            <div class="mySlides2 fade">
-              <img
-                class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/portfolio4.png"
-                alt="Image of the current Contact Section in Light Mode."
-              />
-            </div>
-
-            <div class="mySlides2 fade">
-              <img
-                class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/portfolio5.png"
-                alt="Image of the current Technologies Stack Section in Light Mode."
-              />
-            </div>
-
-            <div class="mySlides2 fade">
-              <img
-                class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/portfolio6.png"
-                alt="Image of the current About Me Section in Light Mode."
-              />
-            </div>
-
-            <div class="mySlides2 fade">
-              <img
-                class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/portfolio7.png"
-                alt="Image of the current About Me Section in Dark Mode."
+                src="/jadnell555.github.io/Images/Project Pictures/DCmotor3.png"
+                alt="DC Motor Circuit using a Pulse Width Modulation input.."
               />
             </div>
 
@@ -402,14 +298,10 @@
             </button>
           </div>
 
-          <div id="imageDots2">
-            <span class="dot2" onclick="currentSlide(1)"></span>
-            <span class="dot2" onclick="currentSlide(2)"></span>
-            <span class="dot2" onclick="currentSlide(3)"></span>
-            <span class="dot2" onclick="currentSlide(4)"></span>
-            <span class="dot2" onclick="currentSlide(5)"></span>
-            <span class="dot2" onclick="currentSlide(6)"></span>
-            <span class="dot2" onclick="currentSlide(7)"></span>
+          <div id="imageDots4">
+            <span class="dot4" onclick="currentSlide(1)"></span>
+            <span class="dot4" onclick="currentSlide(2)"></span>
+            <span class="dot4" onclick="currentSlide(3)"></span>
           </div>
         </div>
       </div>
@@ -425,6 +317,6 @@
     <!-- SCRIPTS -->
     <script src="/jadnell555.github.io/scripts/themeChangerButton.js"></script>
     <script src="/jadnell555.github.io/scripts/animationsOnScroll.js"></script>
-    <script src="/jadnell555.github.io/scripts/imageSlideshowProj2.js"></script>
+    <script src="/jadnell555.github.io/scripts/imageSlideshowProj4.js"></script>
   </body>
 </html>

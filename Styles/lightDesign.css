@@ -13,20 +13,13 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.background {
-  z-index: -2;
-  position: fixed;
-  height: auto;
-  width: 100%;
-}
-
 body {
-  background-color: #e3e1e3;
+  background-color: #f8f8ff;
   min-height: 100vh;
   text-size-adjust: auto;
   margin: 0 auto;
   position: relative;
-  width: 100%;
+  width: 98.5vw;
   display: block;
   overflow-x: hidden;
 }
@@ -34,14 +27,20 @@ body {
 #newNavBar {
   width: 98.5vw;
   float: left;
-  background-color: #fbcc18;
+
+  background: rgb(13, 171, 141);
+  background: linear-gradient(
+    241deg,
+    rgba(13, 171, 141, 1) 44%,
+    rgba(0, 131, 138, 1) 80%
+  );
   border-radius: 0px 0px 20px 20px;
   box-shadow: 0px 2px 3px #252525;
   position: sticky;
   top: 0;
   z-index: 25;
   margin: auto;
-  padding: 0 1.5rem 0 0.5rem;
+  padding: 0 1rem;
   height: 50px;
 }
 
@@ -61,6 +60,10 @@ body {
 #themeChanger img {
   width: 30px;
   height: 30px;
+}
+
+.wrap {
+  padding: 0 4em;
 }
 
 #myName {
@@ -91,6 +94,19 @@ body {
   text-decoration: none;
 }
 
+#landingSection,
+#expertiseSection,
+#contactSection {
+  background-color: #f8f8ff;
+  width: 100vw;
+}
+
+#aboutMeSection,
+#projectsSection {
+  background-color: #eeeef5;
+  width: 100vw;
+}
+
 .HEADINGS {
   display: flex;
   flex-direction: column;
@@ -98,7 +114,7 @@ body {
   font-size: 3rem;
   width: fit-content;
   margin: 0 auto;
-  border-bottom: 3px solid #fbcc18;
+  border-bottom: 3px solid #00838a;
 }
 
 .headingsDescriptions {
@@ -110,59 +126,10 @@ button {
   margin: auto;
 }
 
-button.menuButtons:hover {
-  box-shadow: 0px 10px 15px #79a9f5;
-  transition: 0.2s ease-in;
-  transform: translateY(-4px);
-}
-
-button.menuButtons:active,
-button.menuButtons:focus {
-  transform: translateY(-2px);
-}
-
-#menuButtonsList {
-  list-style: none;
-  padding-left: 0;
-  padding-top: 15px;
-  transition: 0.3s ease;
-}
-
 .hide {
   opacity: 0;
   transition: 0.3s ease;
   visibility: hidden;
-}
-
-.options {
-  cursor: pointer;
-  width: 50px;
-}
-
-.menuButtons {
-  background: -webkit-linear-gradient(bottom right, #7bd5f5, #787ff6);
-  box-shadow: 2px 2px 3px #252525;
-
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  padding: 5px;
-  border: none;
-  border-radius: 20px;
-}
-
-.menuButtonsTitle {
-  margin-top: 5px;
-  margin-left: -10px;
-  text-align: center;
-  font-size: 0.85em;
-  transition: 0.3s ease;
-  background: -webkit-linear-gradient(bottom right, #7bd5f5, #787ff6);
-
-  border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
-  padding: 0.1em 0.25em;
-  color: #252525;
 }
 
 section {
@@ -174,27 +141,15 @@ section {
   opacity: 0;
 }
 
-.sectionHeadings {
-  padding: 20px;
-  margin: 20px auto;
-  display: flex;
-  justify-content: center;
-  color: #252525;
-  transition: 0.2s ease-in;
-  text-shadow: 2px 3px 3px #e3e1e3;
-}
-
 /* SCROLLBARS */
 #message::-webkit-scrollbar,
-.container::-webkit-scrollbar,
-.infoCard::-webkit-scrollbar {
+.container::-webkit-scrollbar {
   padding: 10px;
   margin: 5px;
 }
 
 #message::-webkit-scrollbar-track,
-.container::-webkit-scrollbar-track,
-.infoCard::-webkit-scrollbar-track {
+.container::-webkit-scrollbar-track {
   background: #e3e1e3;
   border: 2px solid #252525;
   border-radius: 30px;
@@ -204,8 +159,7 @@ section {
 }
 
 #message::-webkit-scrollbar-thumb,
-.container::-webkit-scrollbar-thumb,
-.infoCard::-webkit-scrollbar-thumb {
+.container::-webkit-scrollbar-thumb {
   background: -webkit-linear-gradient(top right, #7bd5f5, #787ff6);
   border-radius: 30px;
   width: 90%;
@@ -213,53 +167,6 @@ section {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 /* END SCROLLBARS */
-
-/* Shadow effect when hovering */
-.mainPictures:hover,
-.infoCard:hover,
-.progLangCube:hover,
-.projectButton:hover,
-.sourceCodeButton:hover,
-.projectTitle:hover,
-.projectType:hover,
-.prev:hover,
-.next:hover,
-.contactCard:hover,
-.socialMediaButton:hover,
-.resumeBlock:hover,
-.resumeCard:hover,
-.formButtons:hover,
-.readMoreButton:hover {
-  box-shadow: 0px 10px 15px #252525;
-  transform: translateY(-4px);
-  transition: 0.2s ease-in;
-}
-
-/*Manual Spaces*/
-.space5px {
-  height: 5px;
-  width: auto;
-}
-
-.space8px {
-  height: 8px;
-  width: auto;
-}
-
-.space10px {
-  height: 10px;
-  width: auto;
-}
-
-.space25px {
-  height: 25px;
-  width: auto;
-}
-
-.space45px {
-  height: 45px;
-  width: auto;
-}
 
 /* ABOUT ME SECTION*/
 #intro {
@@ -273,8 +180,7 @@ section {
 }
 
 #introTitle {
-  color: #fbcc18;
-  text-shadow: 2px 2px 3px #252525;
+  color: #00838a;
 }
 
 .block {
@@ -288,6 +194,7 @@ section {
   text-align: center;
   padding: 0.25rem;
   margin: auto;
+  color: #00838a;
 }
 
 #moreAboutMe {
@@ -310,8 +217,8 @@ section {
 
 #DLCyears li {
   padding: 0.15rem;
-  background-color: lightgray;
-  border-radius: 20px;
+  border: #00838a dashed;
+  border-radius: 30px;
   margin: 0.35rem 0;
 }
 
@@ -364,11 +271,13 @@ section {
 
 .resumeBlock {
   border-radius: 20px;
-  border-style: dashed;
+  border-style: solid;
+  border-color: #00838a;
   height: fit-content;
   margin: 0.25rem;
   width: 100%;
   transition: 0.2s ease-in;
+  color: #00838a;
 }
 
 .resumeBlock h6 {
@@ -376,20 +285,11 @@ section {
   margin: 0;
 }
 
-.resumeBlock:hover h6 {
-  color: #798ef6;
-}
-
-.resumeBlock:active {
-  transform: translateY(-2px);
-  transition: 0.2s ease-in;
-  box-shadow: 0px 10px 15px #252525;
-}
-
 .toolkitButtons {
-  border-style: none;
+  border-style: solid;
+  border-color: #00838a;
   border-radius: 20px;
-  background-color: lightgray;
+  background-color: transparent;
   padding: 0.1rem 0.2rem;
   margin: 0.25rem auto;
 }
@@ -415,10 +315,10 @@ section {
 #learnMoreButton button {
   border: none;
   border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
+  box-shadow: 1px 1px 1px #00838a;
   margin: auto;
   padding: 0.25rem;
-  background-color: #fbcc18;
+  background-color: #00838a;
 }
 
 .mainPictures {
@@ -437,11 +337,6 @@ img.projectPictures {
   aspect-ratio: 121/69;
   height: 60vh;
   border-radius: 20px;
-}
-
-.greet {
-  margin: auto;
-  width: 100%;
 }
 
 .greeting {
@@ -522,282 +417,9 @@ h4.greeting span:nth-child(5) {
   animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-.infoCard {
-  background-color: #e3e1e3;
-  border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
-  padding: 16px;
-  margin: auto;
-  transition: 0.2s ease-in;
-  width: 280px;
-  height: 350px;
-}
-
-.cardTitles {
-  color: #252525;
-  text-shadow: 2px 2px 3px #79a9f5;
-  margin-bottom: 0.75em;
-  font-size: 1.2em;
-}
-
-.infoCard p,
-.projectCard p {
-  font-size: 1em;
-  text-align: justify;
-  text-indent: 2em;
-  color: #252525;
-  margin: 0;
-}
-
-.infoCard ul {
-  margin: 0;
-  padding-left: 1em;
-}
-
-.infoCard li {
-  text-align: left;
-  color: #252525;
-  font-size: 1em;
-  padding: 0.45em 0;
-}
-
 /* TECH STACK SECTION */
-.techStackCard {
-  background-color: #e3e1e3;
-  box-shadow: 2px 2px 3px #252525;
-  margin: 10px auto;
-  padding: 20px;
-  width: 100%;
-  min-width: 275px;
-  border-radius: 20px;
-  transition: 0.2s ease-in;
-  z-index: 3;
-}
-
-#progLangTitle,
-#softwareTitle,
-#frameworkTitle {
-  font-size: 1.1em;
-}
-
-.progLangCube {
-  background: -webkit-linear-gradient(bottom left, #7bd5f5, #787ff6);
-  width: 100%;
-  min-width: 225px;
-  height: 3em; /*3em Original Size*/
-  box-shadow: 2px 2px 3px #252525;
-  margin: auto;
-  margin-top: 1em;
-  border-radius: 20px;
-  transition: 0.3s ease;
-  border: none;
-  overflow: hidden;
-}
-
-#FlutterContainer {
-  background: -webkit-linear-gradient(70deg, #7bd5f5, #787ff6);
-}
-
-#jsLogo {
-  margin-top: 0.57em;
-}
-
-#dartLogo {
-  margin: 0.3em 0;
-}
-
-.projectTitle:active,
-.readMoreButton:active {
-  transform: translateY(-1px);
-}
-
-h6.progLangName {
-  margin: auto;
-  font-size: 0.9em;
-  font-style: oblique;
-  color: #252525;
-  font-weight: bold;
-  transition: 0.1s ease;
-  margin-top: 1em;
-}
-
-.expandButton {
-  border: none;
-  background-color: transparent;
-}
-
-.expandArrow {
-  margin-top: 0.5em;
-  transition: ease 0.5s;
-}
-
-#vsCodeTitle,
-#jupyterTitle,
-#androidStudioTitle {
-  margin-top: 0.5em;
-}
-
-img.progLangIcon {
-  z-index: 2;
-  display: inline;
-  margin-top: 0.25em;
-}
-
-hr#techDescDivider {
-  margin: 0.25em auto;
-  background-color: #252525;
-  opacity: 100%;
-  border: none;
-  height: 1.5px;
-  width: 95%;
-  border-radius: 30px;
-  z-index: 1;
-}
-
-.description {
-  padding: 0 1em;
-  color: #252525;
-  text-decoration: underline;
-  font-size: 0.9em;
-}
-
-.techDescription {
-  display: flex;
-  align-items: flex-start;
-  text-align: justify;
-  padding: 0 1em;
-  color: #252525;
-  margin: 0.6em auto;
-  font-size: 0.85em;
-  text-decoration: none;
-  text-indent: 5%;
-}
-
-#CSSSpacing {
-  height: 6.5em;
-}
-#CPPSpacing {
-  height: 3.5em;
-}
-#DartSpacing {
-  height: 15em;
-}
-#HTMLSpacing {
-  height: 9em;
-}
-#JavascriptSpacing {
-  height: 12.5em;
-}
-#MATLABSpacing {
-  height: 7.5em;
-}
-#PythonSpacing {
-  height: 16em;
-}
-#SQLSpacing {
-  height: 18.5em;
-}
-#AndroidStudioSpacing {
-  height: 10em;
-}
-#ArduinoSpacing {
-  height: 15em;
-}
-#GitHubSpacing {
-  height: 5em;
-}
-#JupyterSpacing {
-  height: 20em;
-}
-#RaspberryPiSpacing {
-  height: 15em;
-}
-#VirtualBoxSpacing {
-  height: 3.5em;
-}
-#VSSpacing {
-  height: 17.5em;
-}
-#VSCODESpacing {
-  height: 18.5em;
-}
-#BootstrapSpacing {
-  height: 8.5em;
-}
-#DjangoSpacing {
-  height: 17.5em;
-}
-#FlutterSpacing {
-  height: 6em;
-}
-
-.readMoreButton {
-  border: none;
-  background-color: #252525;
-  border-radius: 20px;
-  padding: 0.15em;
-  margin: 0.1em;
-  box-shadow: 2px 2px 3px #252525;
-  font-size: 0.6em;
-  min-width: 8em;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-evenly;
-}
-
-.readMoreText {
-  padding-left: 0.6em;
-  padding-bottom: 0.17em;
-  color: #e3e1e3;
-}
 
 /* PROJECTS SECTION*/
-#projectContainer {
-  display: flex;
-  overflow-x: scroll;
-  margin: 0 auto;
-  margin-top: -40px;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 24px;
-  gap: 10px;
-}
-
-.projectCard {
-  background-color: #e3e1e3;
-  box-shadow: 2px 2px 3px #252525;
-  margin: 1em auto;
-  transition: 0.2s ease-in;
-}
-
-#projectContainer,
-.projectCard {
-  flex: 0 0 100%;
-  padding: 24px;
-  border-radius: 20px;
-  scroll-snap-align: start;
-}
-
-.projectTitle {
-  color: #e3e1e3;
-  background-color: #252525;
-  border-radius: 200px;
-  box-shadow: 2px 2px 3px #252525;
-  margin: 0.5em 0.5em;
-  padding: 0.75em;
-  width: fit-content;
-  transition: 0.3s ease;
-}
-
-h4.projectTitle {
-  margin: 0 auto;
-}
-
-.projectDescription {
-  padding: 10px;
-  margin: 10px auto;
-  min-width: 250px;
-}
-
 .sourceCodeButton {
   border-radius: 200px;
   box-shadow: 2px 2px 3px #252525;
@@ -807,7 +429,20 @@ h4.projectTitle {
   background-color: #252525;
   transition: 0.2s ease-in;
   color: #e3e1e3;
-  width: 125px;
+  width: fit-content;
+}
+
+.sourceCodeButtonAlt {
+  border-radius: 200px;
+  box-shadow: 2px 2px 3px #252525;
+  padding: 0 0.5em;
+  margin: 0.5em auto;
+  border: none;
+  background-color: #252525;
+  transition: 0.2s ease-in;
+  color: #e3e1e3;
+  width: fit-content;
+  float: right;
 }
 
 .youtubeButton {
@@ -821,6 +456,7 @@ h4.projectTitle {
   color: #e3e1e3;
   width: 125px;
   height: 50px;
+  float: left;
 }
 
 .youtubeButton:hover {
@@ -840,6 +476,35 @@ h4.projectTitle {
 
 div.col.projectType {
   padding: 0.2em;
+}
+
+#inProgress {
+  border-radius: 200px 0px 0px 200px; /*top-left top-right bottom-right bottom-left*/
+  width: fit-content;
+  min-width: 10em;
+  color: #e3e1e3;
+  background-color: #252525;
+  box-shadow: 2px 2px 3px #252525;
+  margin: 0 0.25em;
+  padding: 0.2em 0.5em;
+  float: right;
+}
+
+#complete {
+  border-radius: 0px 200px 200px 0px;
+  width: fit-content;
+  min-width: 10em;
+  color: #e3e1e3;
+  background-color: #252525;
+  box-shadow: 2px 2px 3px #252525;
+  margin: 0 0.25em;
+  padding: 0.2em 0.5em;
+  float: left;
+}
+
+.inProgressActive {
+  background-color: #fbcc18;
+  color: #252525;
 }
 
 #personal {
@@ -877,21 +542,10 @@ div.col.projectType {
   box-shadow: 0px 10px 15px #787ff6;
 }
 
-.projectButton {
-  border-radius: 200px;
-  box-shadow: 2px 2px 3px #252525;
-  padding: 3px;
-  border: none;
-  background-color: #252525;
-  transition: 0.2s ease-in;
-  width: 55px;
-  height: 55px;
-}
-
 /* Image Slideshow */
 .projectImages {
   border-radius: 20px;
-  height: 175px;
+  height: 300px;
   aspect-ratio: 3/2;
   box-shadow: 2px 2px 3px #252525;
   transition: 0.3s ease-in;
@@ -922,12 +576,12 @@ div.col.projectType {
 
 /* Position the "next button" to the right */
 .next {
-  right: 2.5%;
+  right: 20%;
 }
 
 /* Position the "left button" to the left */
 .prev {
-  left: 2.5%;
+  left: 20%;
 }
 
 /* The dots/indicators */
@@ -971,58 +625,24 @@ div.col.projectType {
   transition: ease 0.5s;
 }
 
-.status {
-  color: #7ec384;
-  font-size: 2em;
-  width: fit-content;
-  border-radius: 200px;
-  padding: 0 0.5em;
-  margin: 0.5em auto;
-  transition: 0.2s ease-in;
-  box-shadow: 2px 2px 3px #252525;
-  border: none;
-  background-color: #252525;
-}
-
-.inProgress {
-  color: #fbcc18;
-}
-
-.inProgress:hover {
-  box-shadow: 0px 10px 15px #fbcc18;
-  transform: translateY(-4px);
-}
-
-.completed:hover {
-  box-shadow: 0px 10px 15px #7ec384;
-  transform: translateY(-4px);
-}
-
 /* CONTACT INFORMATION SECTION */
-.contactCard {
-  background-color: #e3e1e3;
-  border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
-  padding: 16px;
-  margin: auto;
-  width: 100%;
-  transition: 0.2s ease-in;
-}
-
 .contactBlock {
   width: 100%;
   height: fit-content;
   margin: auto;
   padding: 1rem;
   border-radius: 20px;
-  border-style: dashed;
+  border: solid #00838a;
 }
 
-#socialMediaHeading {
+h3#socialMediaHeading {
   display: flex;
   flex-direction: row;
   text-align: center;
   float: right;
+  color: #f8f8ff;
+  padding: 0 0.5em;
+  margin: 0.1em 0.5em;
 }
 
 #socialMediaItems {
@@ -1042,44 +662,13 @@ div.col.projectType {
 }
 
 .socialMediaButton {
-  background: lightgray;
+  background: #f8f8ff;
   width: 40px;
   height: 40px;
   margin: auto;
   padding: 2.5px;
   border: none;
   border-radius: 20px;
-}
-
-.socialMediaTitles {
-  padding: 5px;
-  margin: auto;
-  justify-content: center;
-}
-
-.resumeCard {
-  background-color: #e3e1e3;
-  border-radius: 20px;
-  box-shadow: 2px 2px 3px #252525;
-  height: auto;
-  margin: auto;
-  width: 100%;
-  transition: 0.2s ease-in;
-}
-
-.resumeCard h6 {
-  margin-top: 5px;
-  transition: 0.15s ease;
-}
-
-.resumeCard:hover h6 {
-  color: #798ef6;
-}
-
-.resumeCard:active {
-  transform: translateY(-2px);
-  transition: 0.2s ease-in;
-  box-shadow: 0px 10px 15px #252525;
 }
 
 #resumeButton {
@@ -1095,7 +684,7 @@ div.col.projectType {
 }
 
 .formButtons {
-  background: #e3e1e3;
+  background: #eeeef5;
   border: none;
   border-radius: 20px;
 
@@ -1103,21 +692,15 @@ div.col.projectType {
   padding: 10px;
   margin: auto;
   resize: none;
-  transition: 0.2s ease-in;
   margin: 10px auto;
   font-size: 1em;
-}
-
-.formButtons:focus {
-  box-shadow: 0px 10px 15px #798ef6;
-  transform: translateY(-4px);
-  transition: 0.2s ease-in;
+  transition: 0.5s ease-in;
 }
 
 ::placeholder {
   padding: 5px;
   margin: auto;
-  color: #252525;
+  color: #00838a;
   font-size: 1em;
 }
 
@@ -1125,7 +708,7 @@ div.col.projectType {
   margin: 10px auto;
   padding: 10px;
   width: 100%;
-  color: #252525;
+  color: #00838a;
   font-size: 1em;
 }
 
@@ -1134,7 +717,7 @@ div.col.projectType {
   padding: 10px;
   width: 100%;
 
-  color: #252525;
+  color: #00838a;
   font-size: 1em;
 }
 
@@ -1143,20 +726,8 @@ div.col.projectType {
   padding: 10px;
   width: 100%;
 
-  color: #252525;
+  color: #00838a;
   font-size: 1em;
-}
-
-#firstName:hover,
-#lastName:hover,
-#email:hover {
-  box-shadow: 0px 10px 15px #252525;
-}
-
-#firstName:focus,
-#lastName:focus,
-#email:focus {
-  box-shadow: 0px 10px 15px #798ef6;
 }
 
 textarea {
@@ -1165,7 +736,7 @@ textarea {
   width: 100%;
   height: 150px;
   border-radius: 20px;
-  color: #252525;
+  color: #00838a;
   font-size: 1em;
 }
 
@@ -1173,17 +744,12 @@ textarea {
   color: #252525;
   font-size: 1em;
   margin: 0 auto;
+  background-color: #00838a;
+  transition: 0.5s ease-in;
 }
 
 #submitButton:hover {
-  box-shadow: 0px 10px 15px #252525;
-  cursor: pointer;
-}
-
-#submitButton:active {
-  transform: translateY(-2px);
-  transition: 0.2s ease-in;
-  box-shadow: 0px 10px 15px #798ef6;
+  box-shadow: 1px 1px 1px #00838a;
 }
 
 .pageclip-form__submit::after {
@@ -1196,15 +762,18 @@ textarea {
   border-radius: 20px;
 }
 
+#socialMediaSection {
+  background-color: #252525;
+  width: 100vw;
+}
+
 /* FOOTER */
 footer {
   width: 98.5vw;
-  background-color: #fbcc18;
-  border-radius: 20px 20px 0px 0px;
+  background-color: #252525;
+  color: #f8f8ff;
   box-shadow: 0px 2px 3px #252525;
   text-align: center;
-  float: left;
-  margin: 0 0 0 -3.2rem;
   height: 25px;
 }
 
@@ -1215,108 +784,12 @@ footer {
     display: none;
   }
 
-  .background {
-    height: 100vh;
-    width: auto;
-    position: fixed;
-    background-color: #e3e1e3;
-  }
-
   section {
     width: 100%;
   }
 
-  .greet {
-    margin: 0;
-  }
-
-  .infoCard {
-    margin: 0.5em auto;
-    width: 300px;
-    height: fit-content;
-  }
-
   .desktopSpace {
     display: none;
-  }
-
-  #androidStudioTitle {
-    margin: 1em auto;
-  }
-
-  .contactCard {
-    min-width: 300px;
-  }
-
-  #projectContainer.container {
-    margin-bottom: -40px;
-  }
-
-  #softwareTitle,
-  #frameworkTitle {
-    margin-top: 0.75em;
-  }
-
-  #androidStudioTitle {
-    margin-top: 1em;
-  }
-
-  #CSSSpacing {
-    height: 5.5em;
-  }
-  #CPPSpacing {
-    height: 2.5em;
-  }
-  #DartSpacing {
-    height: 11.5em;
-  }
-  #HTMLSpacing {
-    height: 5em;
-  }
-  #JavascriptSpacing {
-    height: 10em;
-  }
-  #MATLABSpacing {
-    height: 7em;
-  }
-  #PythonSpacing {
-    height: 10em;
-  }
-  #SQLSpacing {
-    height: 15em;
-  }
-  #AndroidStudioSpacing {
-    height: 7.5em;
-  }
-  #ArduinoSpacing {
-    height: 13em;
-  }
-  #GitHubSpacing {
-    height: 5em;
-  }
-  #JupyterSpacing {
-    height: 13.5em;
-  }
-  #RaspberryPiSpacing {
-    height: 13em;
-  }
-  #VirtualBoxSpacing {
-    height: 3.5em;
-  }
-  #VSSpacing {
-    height: 11em;
-  }
-  #VSCODESpacing {
-    height: 13.5em;
-  }
-  #BootstrapSpacing {
-    height: 5em;
-  }
-  #DjangoSpacing {
-    height: 13.5em;
-  }
-  #FlutterSpacing {
-    height: 5em;
   }
 
   .prev {
