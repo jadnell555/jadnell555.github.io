@@ -45,58 +45,71 @@
     a Puerto Rican Computer Engineering Graduate"
     />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Jadnell Reyes' Portfolio</title>
   </head>
 
   <body>
     <div id="newNavBar">
-      <div class="row">
-        <div class="col">
-          <!-- Theme Changer Button -->
-          <div id="themeChanger">
-            <button id="themeButton" type="button">
-              <img
-                id="themeChangerButtonIcon"
-                src="Images/Icons/moon.svg"
-                title="Change Theme"
-                alt="Theme changing button"
-              />
-            </button>
+      <div id="navBarWrapper">
+        <div class="row row-cols-3">
+          <div class="col-sm">
+            <!-- Theme Changer Button -->
+            <div id="themeChanger">
+              <button id="themeButton" type="button">
+                <img
+                  id="themeChangerButtonIcon"
+                  src="Images/Icons/moon.svg"
+                  title="Change Theme"
+                  alt="Theme changing button"
+                />
+              </button>
+            </div>
+            <div id="myName">
+              <a class="myName" title="Home" href="#"> JADNELL </a>
+              <br />
+              <a class="myName" title="Home" href="#"> HARESH </a>
+            </div>
           </div>
-          <div id="myName">
-            <a class="myName" href="#"> JADNELL </a>
-            <br />
-            <a class="myName" href="#"> HARESH </a>
+          <div class="col-sm"></div>
+          <div class="col-lg-auto">
+            <ul id="navBarItems">
+              <li class="navBarItem">
+                <a class="navBarTitles" href="#aboutMeSection"> ABOUT ME </a>
+              </li>
+              <li class="navBarItem">
+                <a class="navBarTitles" href="#expertiseSection"> EXPERTISE </a>
+              </li>
+              <li class="navBarItem">
+                <a class="navBarTitles" href="#projectsSection"> PROJECTS </a>
+              </li>
+              <li class="navBarItem">
+                <a class="navBarTitles" href="#contactSection"> CONTACT </a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="col"></div>
-        <div class="col-lg-auto">
-          <ul id="navBarItems">
-            <li class="navBarItem">
-              <a class="navBarTitles" href="#aboutMeSection"> ABOUT ME </a>
-            </li>
-            <li class="navBarItem">
-              <a class="navBarTitles" href="#expertiseSection"> EXPERTISE </a>
-            </li>
-            <li class="navBarItem">
-              <a class="navBarTitles" href="#projectsSection"> PROJECTS </a>
-            </li>
-            <li class="navBarItem">
-              <a class="navBarTitles" href="#contactSection"> CONTACT </a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
 
     <!-- LANDING SECTION -->
-    <section id="landingSection" class="animatedSection leftSlide">
-      <!-- Intro and Image -->
-      <div class="wrap">
+    <section id="landingSection">
+      <div class="wrapper">
+        <!-- Intro and Image -->
+
         <div class="container text-center">
           <div class="row align-items-center">
+            <!--Image of me-->
+            <div class="col">
+              <img
+                class="mainPictures"
+                src="Images/Pictures/GRADUATION ME.jpg"
+                title="Hello! This is me"
+                alt="A picture of Jadnell Reyes was supposed to appear here..."
+              />
+            </div>
+
             <div class="col">
               <div id="intro">
                 <h1 id="introHello">Hello World! I'm</h1>
@@ -110,19 +123,13 @@
               </div>
 
               <div class="learnMoreButton">
-                <button onclick="window.location.href='#aboutMeSection';">
+                <button
+                  title="Learn More About Me"
+                  onclick="window.location.href='#aboutMeSection';"
+                >
                   Learn More:
                 </button>
               </div>
-            </div>
-            <!--Image of me-->
-            <div class="col">
-              <img
-                class="mainPictures"
-                src="Images/Pictures/GRADUATION ME.jpg"
-                title="Hello! This is me"
-                alt="A picture of Jadnell Reyes was supposed to appear here..."
-              />
             </div>
           </div>
 
@@ -132,18 +139,20 @@
       </div>
     </section>
 
-    <section id="aboutMeSection" class="animatedSection leftSlide">
-      <br />
-      <br />
-      <br />
-      <div class="HEADINGS"><h1>ABOUT ME</h1></div>
-      <div class="headingsDescriptions text-center">
-        <p>
-          Here you can find more information about me, my goals, achievements,
-          licenses, among other information.
-        </p>
-      </div>
-      <div class="wrap">
+    <section id="aboutMeSection">
+      <div class="wrapper">
+        <br />
+        <br />
+        <br />
+
+        <div class="HEADINGS"><h1>ABOUT ME</h1></div>
+        <div class="headingsDescriptions text-center">
+          <p>
+            Here you can find more information about me, my goals, achievements,
+            licenses, among other information.
+          </p>
+        </div>
+
         <div class="row">
           <div class="col">
             <div class="block">
@@ -153,16 +162,15 @@
                   My goal is to apply the knowledge and skills I've acquired to
                   solve real life problems.
                 </li>
-
                 <!--
-              <li>
-                Beyond work, I find joy in going to the beach, socializing with
-                friends, and playing basketball and videogames.
-              </li>
-            -->
+                <li>
+                  Beyond work, I find joy in going to the beach, socializing with
+                  friends, and playing basketball and videogames.
+                </li>
+              -->
                 <li>
                   Keep scrolling to learn about the technologies & hardware I
-                  have experience on. You can also find projects and contact
+                  have experience on. You can also find my projects and contact
                   information.
                 </li>
               </ul>
@@ -175,7 +183,7 @@
               <div class="row">
                 <div class="col-4">
                   <ul id="DLCyears">
-                    <li>2024-2032</li>
+                    <li>2024~2032</li>
                     <li>2023</li>
                     <br />
                     <li>2018</li>
@@ -195,24 +203,26 @@
             </div>
           </div>
         </div>
+
+        <br />
+        <br />
+        <br />
       </div>
-      <br />
-      <br />
-      <br />
     </section>
+
     <!-- EXPERTISE SECTION -->
-    <section id="expertiseSection" class="animatedSection">
-      <br />
-      <br />
-      <br />
-      <div class="wrap">
+    <section id="expertiseSection">
+      <div class="wrapper">
+        <br />
+        <br />
+        <br />
+
         <div class="HEADINGS"><h1>EXPERTISE</h1></div>
         <div class="headingsDescriptions text-center">
           <p>
             Here you can learn about my educational background, and my
-            familiarity with various technologies, hardware, programming
-            languages, and frameworks. Additionally, you'll find a link to
-            access my resum&eacute;.
+            familiarity with various technologies, hardware & languages.
+            Additionally, you'll find a link to my resum&eacute;.
           </p>
         </div>
 
@@ -235,7 +245,7 @@
                     <br />
                     <i>Polytechnic University of Puerto Rico</i> <br />
                     <ul class="educationLists">
-                      <li>GPA: 3.30</li>
+                      <li>GPA: 3.3</li>
 
                       <li><i> Cum Laude </i></li>
                     </ul>
@@ -258,9 +268,10 @@
                   <div id="CNSA">
                     <b>High School Diploma</b>
                     <br />
-                    <i>Colegio Nuestra Se&ntilde;ora de la Altagracia</i> <br />
+                    <i>Colegio Nuestra Se&ntilde;ora <br />de la Altagracia</i>
+                    <br />
                     <ul class="educationLists">
-                      <li>GPA: 4.00</li>
+                      <li>GPA: 4.0</li>
                       <li>Valedictorian</li>
                     </ul>
                   </div>
@@ -271,10 +282,11 @@
             <div class="smallBlock">
               <h6 class="smallBlockTitles">Resum&eacute;:</h6>
               <div class="resumeBlock">
-                <div class="col">
-                  <div class="container">
+                <div id="resumeWrapper">
+                  <div class="col">
                     <a
                       id="resumeButton"
+                      title="Resumé download button"
                       type="button"
                       onclick="href='https://drive.google.com/uc?id=1RnokdGCcXRmXDb7dFUEhO5OL5lO1PT3C&export=download';"
                     >
@@ -282,10 +294,10 @@
                       <img
                         id="resumeDownload"
                         src="Images/Icons/downloadArrow.svg"
-                        title="Resume Download"
-                        width="20px"
-                        height="20px"
-                        alt="Resume Download Button"
+                        title="Download Arrow"
+                        width="20rem"
+                        height="20rem"
+                        alt="Resume Download Arrow"
                       />
                     </a>
                   </div>
@@ -303,11 +315,12 @@
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is HTML?"
                     onclick="window.location.href='https://html.com/#What_is_HTML';"
                   >
                     <img
                       src="Images/Tech Stack/html.svg"
-                      title="HTML"
+                      title="HTML Logo"
                       width="25rem"
                       height="25rem"
                       alt="HTML Logo"
@@ -315,10 +328,10 @@
                     HTML
                     <img
                       src="Images/Icons/info.svg"
-                      title="HTML Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More HTML information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
@@ -326,11 +339,12 @@
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is CSS?"
                     onclick="window.location.href='https://www.w3.org/Style/CSS/Overview.en.html';"
                   >
                     <img
                       src="Images/Tech Stack/css.svg"
-                      title="CSS"
+                      title="CSS Logo"
                       width="25rem"
                       height="25rem"
                       alt="CSS Logo"
@@ -338,21 +352,22 @@
                     CSS
                     <img
                       src="Images/Icons/info.svg"
-                      title="CSS Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More CSS information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is JavaScript"
                     onclick="window.location.href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript';"
                   >
                     <img
                       src="Images/Tech Stack/javascript.svg"
-                      title="JavaScript"
+                      title="JavaScript Logo"
                       width="20rem"
                       height="20rem"
                       alt="JavaScript Logo"
@@ -360,21 +375,22 @@
                     JavaScript
                     <img
                       src="Images/Icons/info.svg"
-                      title="CSS Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More CSS information"
+                      alt="Info Buttonn"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is C++?"
                     onclick="window.location.href='https://www.w3schools.com/cpp/cpp_intro.asp';"
                   >
                     <img
                       src="Images/Tech Stack/c++.svg"
-                      title="C++"
+                      title="C++ Logo"
                       width="25rem"
                       height="25rem"
                       alt="C++ Logo"
@@ -382,21 +398,22 @@
                     C++
                     <img
                       src="Images/Icons/info.svg"
-                      title="C++ Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More C++ information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is Dart?"
                     onclick="window.location.href='https://dart.dev/overview';"
                   >
                     <img
                       src="Images/Tech Stack/dart.svg"
-                      title="Dart"
+                      title="Dart Logo"
                       width="20rem"
                       height="20rem"
                       alt="Dart Logo"
@@ -404,10 +421,10 @@
                     Dart
                     <img
                       src="Images/Icons/info.svg"
-                      title="Dart Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More Dart information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
@@ -415,11 +432,12 @@
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is Python?"
                     onclick="window.location.href='https://docs.python.org/3/faq/general.html#what-is-python';"
                   >
                     <img
                       src="Images/Tech Stack/python.svg"
-                      title="Python"
+                      title="Python Logo"
                       width="25rem"
                       height="25rem"
                       alt="Python Logo"
@@ -427,21 +445,22 @@
                     Python
                     <img
                       src="Images/Icons/info.svg"
-                      title="Python Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More Python information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is MATLAB?"
                     onclick="window.location.href='https://www.mathworks.com/products/matlab.html';"
                   >
                     <img
                       src="Images/Tech Stack/matlab.svg"
-                      title="MATLAB"
+                      title="MATLAB Logo"
                       width="25rem"
                       height="25rem"
                       alt="MATLAB Logo"
@@ -449,21 +468,22 @@
                     MATLAB
                     <img
                       src="Images/Icons/info.svg"
-                      title="MATLAB Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More MATLAB information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is SQL?"
                     onclick="window.location.href='https://aws.amazon.com/what-is/sql/';"
                   >
                     <img
                       src="Images/Tech Stack/sql.svg"
-                      title="SQL"
+                      title="SQL Logo"
                       width="25rem"
                       height="25rem"
                       alt="SQL Logo"
@@ -471,10 +491,10 @@
                     SQL
                     <img
                       src="Images/Icons/info.svg"
-                      title="SQL Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More SQL information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
@@ -486,11 +506,12 @@
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is Visual Studio Code?"
                     onclick="window.location.href='https://code.visualstudio.com/docs/supporting/faq';"
                   >
                     <img
                       src="Images/Tech Stack/visualStudioCode.svg"
-                      title="Visual Studio Code"
+                      title="Visual Studio Code Logo"
                       width="20rem"
                       height="20rem"
                       alt="Visual Studio Code Logo"
@@ -498,21 +519,22 @@
                     Visual Studio Code
                     <img
                       src="Images/Icons/info.svg"
-                      title="Visual Studio Code Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More Visual Studio Code information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is GitHub?"
                     onclick="window.location.href='https://docs.github.com/en/get-started/quickstart/hello-world';"
                   >
                     <img
                       src="Images/Tech Stack/githubSocialMedia.svg"
-                      title="GitHub"
+                      title="GitHub Logo"
                       width="20rem"
                       height="20rem"
                       alt="GitHub Logo"
@@ -520,21 +542,22 @@
                     GitHub
                     <img
                       src="Images/Icons/info.svg"
-                      title="GitHub Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More GitHub information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is Android Studio?"
                     onclick="window.location.href='https://developer.android.com/studio/intro';"
                   >
                     <img
                       src="Images/Tech Stack/androidStudio.svg"
-                      title="Android Studio"
+                      title="Android Studio Logo"
                       width="25rem"
                       height="25rem"
                       alt="Android Studio Logo"
@@ -542,21 +565,22 @@
                     Android Studio
                     <img
                       src="Images/Icons/info.svg"
-                      title="Android Studio Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More Android Studio information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is Visual Studio?"
                     onclick="window.location.href='https://visualstudio.microsoft.com/#vs-section';"
                   >
                     <img
                       src="Images/Tech Stack/visualStudio.svg"
-                      title="Visual Studio"
+                      title="Visual Studio Logo"
                       width="20rem"
                       height="20rem"
                       alt="Visual Studio Logo"
@@ -564,10 +588,10 @@
                     Visual Studio
                     <img
                       src="Images/Icons/info.svg"
-                      title="Visual Studio Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More Visual Studio information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
@@ -575,11 +599,12 @@
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is Arduino?"
                     onclick="window.location.href='https://www.arduino.cc/en/Guide/Introduction';"
                   >
                     <img
                       src="Images/Tech Stack/arduinoTechStack.svg"
-                      title="Arduino"
+                      title="Arduino Logo"
                       width="25rem"
                       height="25rem"
                       alt="Arduino Logo"
@@ -587,21 +612,22 @@
                     Arduino
                     <img
                       src="Images/Icons/info.svg"
-                      title="Arduino Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More Arduino information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What are Jupyter Notebooks?"
                     onclick="window.location.href='https://jupyter-notebook.readthedocs.io/en/stable/';"
                   >
                     <img
                       src="Images/Tech Stack/Jupyter.svg"
-                      title="Jupyter Notebook"
+                      title="Jupyter Notebook Logo"
                       width="25rem"
                       height="25rem"
                       alt="Jupyter Notebook Logo"
@@ -609,21 +635,22 @@
                     Jupyter Notebook
                     <img
                       src="Images/Icons/info.svg"
-                      title="Jupyter Notebook Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More Jupyter Notebook information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is Raspberry Pi"
                     onclick="window.location.href='https://www.raspberrypi.com/for-home/';"
                   >
                     <img
                       src="Images/Tech Stack/raspberryPi.svg"
-                      title="Raspberry Pi"
+                      title="Raspberry Pi Logo"
                       width="20rem"
                       height="20rem"
                       alt="Raspberry Pi Logo"
@@ -631,21 +658,22 @@
                     Raspberry Pi
                     <img
                       src="Images/Icons/info.svg"
-                      title="Raspberry Pi Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More Raspberry Pi information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is VirtualBox?"
                     onclick="window.location.href='https://www.virtualbox.org/wiki/VirtualBox';"
                   >
                     <img
                       src="Images/Tech Stack/virtualbox.svg"
-                      title="VirtualBox"
+                      title="VirtualBox Logo"
                       width="25rem"
                       height="25rem"
                       alt="VirtualBox Logo"
@@ -653,10 +681,10 @@
                     VirtualBox
                     <img
                       src="Images/Icons/info.svg"
-                      title="VirtualBox Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More VirtualBox information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
@@ -668,11 +696,12 @@
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is Bootstrap?"
                     onclick="window.location.href='https://www.w3schools.com/whatis/whatis_bootstrap.asp';"
                   >
                     <img
                       src="Images/Tech Stack/bootstrap.svg"
-                      title="Bootstrap"
+                      title="Bootstrap Logo"
                       width="25rem"
                       height="25rem"
                       alt="Bootstrap Logo"
@@ -680,21 +709,22 @@
                     Bootstrap
                     <img
                       src="Images/Icons/info.svg"
-                      title="Bootstrap Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More Bootstrap information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is Django?"
                     onclick="window.location.href='https://www.djangoproject.com/';"
                   >
                     <img
                       src="Images/Tech Stack/django.svg"
-                      title="Django"
+                      title="Django Logo"
                       width="17.5rem"
                       height="17.5rem"
                       alt="Django Logo"
@@ -702,21 +732,22 @@
                     Django
                     <img
                       src="Images/Icons/info.svg"
-                      title="Django Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More Django information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
                 <div class="col-auto">
                   <button
                     class="toolkitButtons"
+                    title="What is Flutter?"
                     onclick="window.location.href='https://flutter.dev/';"
                   >
                     <img
                       src="Images/Tech Stack/flutter.svg"
-                      title="Flutter"
+                      title="Flutter Logo"
                       width="20rem"
                       height="20rem"
                       alt="Flutter Logo"
@@ -724,10 +755,10 @@
                     Flutter
                     <img
                       src="Images/Icons/info.svg"
-                      title="Flutter Info"
+                      title="Info"
                       width="25rem"
                       height="25rem"
-                      alt="More Flutter information"
+                      alt="More Info Button"
                     />
                   </button>
                 </div>
@@ -735,18 +766,19 @@
             </div>
           </div>
         </div>
-      </div>
-      <br />
-      <br />
-      <br />
-    </section>
 
+        <br />
+        <br />
+        <br />
+      </div>
+    </section>
     <!-- PROJECTS SECTION -->
-    <section id="projectsSection" class="animatedSection">
-      <br />
-      <br />
-      <br />
-      <div class="wrap">
+    <section id="projectsSection">
+      <div class="wrapper">
+        <br />
+        <br />
+        <br />
+
         <div class="HEADINGS"><h1>PROJECTS</h1></div>
         <div class="headingsDescriptions text-center">
           <p>
@@ -761,8 +793,8 @@
               <img
                 class="projectPictures"
                 src="Images/Project Pictures/ProjDepo1.png"
-                title="Hello! This is me"
-                alt="A picture of Jadnell Reyes was supposed to appear here..."
+                title="Depo Web Application Fines Tab."
+                alt="A picture of the DEPO Web Application Fines tab was supposed to appear here..."
               />
             </div>
             <div class="col">
@@ -782,6 +814,7 @@
               <div class="learnMoreButton">
                 <button
                   onclick="window.location.href='/jadnell555.github.io/Projects/depoProject.html';"
+                  title="More details about the DEPO Web App"
                 >
                   More Details:
                 </button>
@@ -806,6 +839,7 @@
               <div class="learnMoreButton">
                 <button
                   onclick="window.location.href='/jadnell555.github.io/Projects/myPortfolioProject.html';"
+                  title="More details about my Portfolio"
                 >
                   More Details:
                 </button>
@@ -815,8 +849,8 @@
               <img
                 class="projectPictures"
                 src="Images/Project Pictures/ProjDepo1.png"
-                title="Hello! This is me"
-                alt="A picture of Jadnell Reyes was supposed to appear here..."
+                title="My Portfolio (This Website)."
+                alt="A picture of My Portfolio was supposed to appear here..."
               />
             </div>
           </div>
@@ -829,8 +863,8 @@
             <img
               class="projectPictures"
               src="Images/Project Pictures/ProjHareshQuizGame1.png"
-              title="Hello! This is me"
-              alt="A picture of Jadnell Reyes was supposed to appear here..."
+              title="Haresh Quiz Game Main Screen."
+              alt="A picture of Haresh Quiz Game was supposed to appear here..."
             />
           </div>
           <div class="col">
@@ -848,6 +882,7 @@
             <div class="learnMoreButton">
               <button
                 onclick="window.location.href='/jadnell555.github.io/Projects/hareshQuizGame.html';"
+                title="More details about Haresh Quiz Game"
               >
                 More Details:
               </button>
@@ -871,6 +906,7 @@
             <div class="learnMoreButton">
               <button
                 onclick="window.location.href='/jadnell555.github.io/Projects/dcMotorControlProject.html';"
+                title="More details about DC Motor Control"
               >
                 More Details:
               </button>
@@ -880,8 +916,8 @@
             <img
               class="projectPictures"
               src="Images/Project Pictures/ProjDCmotor1.png"
-              title="Hello! This is me"
-              alt="A picture of Jadnell Reyes was supposed to appear here..."
+              title="DC Motor Circuit with two Inputs."
+              alt="A picture of a DC Motor circuit was supposed to appear here..."
             />
           </div>
         </div>
@@ -893,8 +929,8 @@
             <img
               class="projectPictures"
               src="Images/Project Pictures/ProjStepMotor1.png"
-              title="Hello! This is me"
-              alt="A picture of Jadnell Reyes was supposed to appear here..."
+              title="28byj-48 Step Motor and Arduino Connector."
+              alt="A picture of a 28byj-48 Step Motor and an Arduino Connector was supposed to appear here..."
             />
           </div>
           <div class="col">
@@ -912,23 +948,26 @@
             <div class="learnMoreButton">
               <button
                 onclick="window.location.href='/jadnell555.github.io/Projects/stepMotorControlProject.html';"
+                title="More details about Step Motor Control"
               >
                 More Details:
               </button>
             </div>
           </div>
         </div>
+
+        <br />
+        <br />
+        <br />
       </div>
-      <br />
-      <br />
-      <br />
     </section>
     <!-- CONTACT INFORMATION SECTION -->
-    <section id="contactSection" class="animatedSection">
-      <br />
-      <br />
-      <br />
-      <div class="wrap">
+    <section id="contactSection">
+      <div class="wrapper">
+        <br />
+        <br />
+        <br />
+
         <div class="HEADINGS"><h1>CONTACT</h1></div>
         <div class="headingsDescriptions text-center">
           <p>
@@ -997,6 +1036,7 @@
             <div class="row">
               <div class="col text-center">
                 <button
+                  title="Send"
                   type="submit"
                   id="submitButton"
                   class="pageclip-form__submit formButtons"
@@ -1008,87 +1048,91 @@
             </div>
           </form>
         </div>
+
+        <br />
+        <br />
+        <br />
       </div>
-      <br />
-      <br />
-      <br />
     </section>
     <section id="socialMediaSection">
-      <div class="row align-items-center">
-        <div class="col">
-          <h3 id="socialMediaHeading">Social Media:</h3>
-        </div>
-        <div class="col">
-          <ul id="socialMediaItems">
-            <li class="socialMediaItem">
-              <button
-                class="socialMediaButton"
-                type="button"
-                onclick="window.location.href='https://www.instagram.com/j_dnll/';"
-              >
-                <img
-                  src="Images/Social Media/instagram.svg"
-                  title="Instagram"
-                  width="25px"
-                  height="25px"
-                  alt="Instagram Button"
-                />
-              </button>
-            </li>
-            <li class="socialMediaItem">
-              <button
-                class="socialMediaButton"
-                type="button"
-                onclick="window.location.href='https://www.x.com/jadnellReyes';"
-              >
-                <img
-                  src="Images/Social Media/x.svg"
-                  title="X"
-                  width="20px"
-                  height="20px"
-                  alt="X Button"
-                />
-              </button>
-            </li>
-            <li class="socialMediaItem">
-              <button
-                class="socialMediaButton"
-                type="button"
-                onclick="window.location.href='https://github.com/jadnell555';"
-              >
-                <img
-                  src="Images/Tech Stack/githubSocialMedia.svg"
-                  title="GitHub"
-                  width="30px"
-                  height="30px"
-                  alt="GitHub Button"
-                />
-              </button>
-            </li>
-            <li class="socialMediaItem">
-              <button
-                class="socialMediaButton"
-                type="button"
-                onclick="window.location.href='https://www.linkedin.com/in/jadnell-h-reyes-perez-301687280';"
-              >
-                <img
-                  src="Images/Social Media/linkedin.svg"
-                  title="LinkedIn"
-                  width="25px"
-                  height="25px"
-                  alt="LinkedIn Button"
-                />
-              </button>
-            </li>
-          </ul>
+      <div class="wrapper">
+        <div class="row align-items-center">
+          <div class="col">
+            <h3 id="socialMediaHeading">Social Media:</h3>
+          </div>
+          <div class="col">
+            <ul id="socialMediaItems">
+              <li class="socialMediaItem">
+                <button
+                  class="socialMediaButton"
+                  type="button"
+                  onclick="window.location.href='https://www.instagram.com/j_dnll/';"
+                >
+                  <img
+                    src="Images/Social Media/instagram.svg"
+                    title="Instagram"
+                    width="25px"
+                    height="25px"
+                    alt="Instagram Button"
+                  />
+                </button>
+              </li>
+              <li class="socialMediaItem">
+                <button
+                  class="socialMediaButton"
+                  type="button"
+                  onclick="window.location.href='https://www.x.com/jadnellReyes';"
+                >
+                  <img
+                    src="Images/Social Media/x.svg"
+                    title="X"
+                    width="20px"
+                    height="20px"
+                    alt="X Button"
+                  />
+                </button>
+              </li>
+              <li class="socialMediaItem">
+                <button
+                  class="socialMediaButton"
+                  type="button"
+                  onclick="window.location.href='https://github.com/jadnell555';"
+                >
+                  <img
+                    src="Images/Tech Stack/githubSocialMedia.svg"
+                    title="GitHub"
+                    width="30px"
+                    height="30px"
+                    alt="GitHub Button"
+                  />
+                </button>
+              </li>
+              <li class="socialMediaItem">
+                <button
+                  class="socialMediaButton"
+                  type="button"
+                  onclick="window.location.href='https://www.linkedin.com/in/jadnell-h-reyes-perez-301687280';"
+                >
+                  <img
+                    src="Images/Social Media/linkedin.svg"
+                    title="LinkedIn"
+                    width="25px"
+                    height="25px"
+                    alt="LinkedIn Button"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
     <!-- end contact section-->
-
     <footer>
-      Copyright © 2023. All Rights Reserved. Created by Jadnell H. Reyes
-      P&eacute;rez
+      <div class="wrapper">
+        Copyright © 2023. All Rights Reserved. Created by Jadnell H. Reyes
+        P&eacute;rez
+      </div>
     </footer>
 
     <!-- SCRIPTS -->
