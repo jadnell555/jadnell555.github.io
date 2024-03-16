@@ -15,13 +15,6 @@
       rel="stylesheet"
     />
 
-    <!-- Pageclip Link (Serverless Form Handling)-->
-    <link
-      rel="stylesheet"
-      href="https://s.pageclip.co/v1/pageclip.css"
-      media="screen"
-    />
-
     <!-- Stylesheet Link-->
     <link
       id="theme"
@@ -73,14 +66,14 @@
           </div>
           <div class="col-sm"></div>
           <div class="col-lg-auto">
-            <ul id="navBarItems">
-              <li class="navBarItem">
-                <a
-                  class="navBarTitles"
-                  href="/jadnell555.github.io/index.html#projectsSection"
-                >
-                  GO BACK
-                </a>
+            <ul id="goBackArrow">
+              <li>
+                <button id="goBackButton" type="button">
+                  <img
+                  onclick="window.location.href='/jadnell555.github.io/index.html#projectsSection';"
+                  " src="/jadnell555.github.io/Images/Icons/goBack.svg"
+                  title="Menu" alt="Menu Button" />
+                </button>
               </li>
             </ul>
           </div>
@@ -118,27 +111,33 @@
         <br />
         <div class="row">
           <div class="col">
-            <h3 class="text-center">Type of Project:</h3>
-            <div class="row text-center">
-              <div id="personal" class="col projectType">Personal</div>
-              <div id="university" class="col projectType uniActive">
-                University
+            <div class="projectWrapper">
+              <h3 class="text-center">Type of Project:</h3>
+              <div class="row text-center">
+                <div id="personal" class="col projectType">Personal</div>
+                <div id="university" class="col projectType uniActive">
+                  University
+                </div>
+                <div id="professional" class="col projectType">
+                  Professional
+                </div>
               </div>
-              <div id="professional" class="col projectType">Professional</div>
             </div>
           </div>
           <div class="col">
-            <h3 class="text-center">Status:</h3>
-            <div class="row text-center g-0">
-              <div class="col">
-                <div id="inProgress">In Progress</div>
-              </div>
-              <div class="col">
-                <div
-                  id="complete"
-                  style="background-color: #7ec384; color: #252525"
-                >
-                  Complete
+            <div class="projectWrapper">
+              <h3 class="text-center">Status:</h3>
+              <div class="row text-center g-0">
+                <div class="col">
+                  <div id="inProgress">In Progress</div>
+                </div>
+                <div class="col">
+                  <div
+                    id="complete"
+                    style="background-color: #7ec384; color: #252525"
+                  >
+                    Complete
+                  </div>
                 </div>
               </div>
             </div>
@@ -147,16 +146,17 @@
         <br />
         <div class="row">
           <div class="col">
-            <h3>Technologies Stack Implemented:</h3>
+            <h3>Technologies Implemented:</h3>
             <div class="row">
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is HTML?"
                   onclick="window.location.href='https://html.com/#What_is_HTML';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/html.svg"
-                    title="HTML"
+                    title="HTML Logo"
                     width="25rem"
                     height="25rem"
                     alt="HTML Logo"
@@ -164,10 +164,10 @@
                   HTML
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="HTML Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More HTML information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
@@ -175,11 +175,12 @@
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is CSS?"
                   onclick="window.location.href='https://www.w3.org/Style/CSS/Overview.en.html';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/css.svg"
-                    title="CSS"
+                    title="CSS Logo"
                     width="25rem"
                     height="25rem"
                     alt="CSS Logo"
@@ -187,21 +188,23 @@
                   CSS
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="CSS Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More CSS information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
+
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is JavaScript"
                   onclick="window.location.href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/javascript.svg"
-                    title="JavaScript"
+                    title="JavaScript Logo"
                     width="20rem"
                     height="20rem"
                     alt="JavaScript Logo"
@@ -209,21 +212,22 @@
                   JavaScript
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="CSS Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More CSS information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is Python?"
                   onclick="window.location.href='https://docs.python.org/3/faq/general.html#what-is-python';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/python.svg"
-                    title="Python"
+                    title="Python Logo"
                     width="25rem"
                     height="25rem"
                     alt="Python Logo"
@@ -231,21 +235,22 @@
                   Python
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="Python Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More Python information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is SQL?"
                   onclick="window.location.href='https://aws.amazon.com/what-is/sql/';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/sql.svg"
-                    title="SQL"
+                    title="SQL Logo"
                     width="25rem"
                     height="25rem"
                     alt="SQL Logo"
@@ -253,21 +258,22 @@
                   SQL
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="SQL Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More SQL information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is Visual Studio Code?"
                   onclick="window.location.href='https://code.visualstudio.com/docs/supporting/faq';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/visualStudioCode.svg"
-                    title="Visual Studio Code"
+                    title="Visual Studio Code Logo"
                     width="20rem"
                     height="20rem"
                     alt="Visual Studio Code Logo"
@@ -275,21 +281,22 @@
                   Visual Studio Code
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="Visual Studio Code Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More Visual Studio Code information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is GitHub?"
                   onclick="window.location.href='https://docs.github.com/en/get-started/quickstart/hello-world';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/githubSocialMedia.svg"
-                    title="GitHub"
+                    title="GitHub Logo"
                     width="20rem"
                     height="20rem"
                     alt="GitHub Logo"
@@ -297,21 +304,22 @@
                   GitHub
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="GitHub Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More GitHub information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is Bootstrap?"
                   onclick="window.location.href='https://www.w3schools.com/whatis/whatis_bootstrap.asp';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/bootstrap.svg"
-                    title="Bootstrap"
+                    title="Bootstrap Logo"
                     width="25rem"
                     height="25rem"
                     alt="Bootstrap Logo"
@@ -319,21 +327,22 @@
                   Bootstrap
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="Bootstrap Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More Bootstrap information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is Django?"
                   onclick="window.location.href='https://www.djangoproject.com/';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/django.svg"
-                    title="Django"
+                    title="Django Logo"
                     width="17.5rem"
                     height="17.5rem"
                     alt="Django Logo"
@@ -341,10 +350,10 @@
                   Django
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="Django Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More Django information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
@@ -353,72 +362,74 @@
         </div>
         <br />
         <div class="row text-center">
-          <div class="col"><h3>Images:</h3></div>
-          <div class="slideshow-container">
-            <div class="mySlides1 fade">
-              <img
-                class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/depo1.png"
-                alt="Image of the Fines Section of the DEPO Web Application."
-              />
-            </div>
+          <div class="col">
+            <h3>Images:</h3>
+            <div class="slideshow-container">
+              <div class="mySlides1 fade">
+                <img
+                  class="projectImages"
+                  src="/jadnell555.github.io/Images/Project Pictures/depo1.png"
+                  alt="Image of the Fines Section of the DEPO Web Application."
+                />
+              </div>
 
-            <div class="mySlides1 fade">
-              <img
-                class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/depo2.png"
-                alt="Image of the Details Section of the DEPO Web Application."
-              />
-            </div>
+              <div class="mySlides1 fade">
+                <img
+                  class="projectImages"
+                  src="/jadnell555.github.io/Images/Project Pictures/depo2.png"
+                  alt="Image of the Details Section of the DEPO Web Application."
+                />
+              </div>
 
-            <div class="mySlides1 fade">
-              <img
-                class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/depo3.png"
-                alt="Image of the Purchases Section of the DEPO Web Application."
-              />
-            </div>
+              <div class="mySlides1 fade">
+                <img
+                  class="projectImages"
+                  src="/jadnell555.github.io/Images/Project Pictures/depo3.png"
+                  alt="Image of the Purchases Section of the DEPO Web Application."
+                />
+              </div>
 
-            <div class="mySlides1 fade">
-              <img
-                class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/depo4.png"
-                alt="Image of the Cases Section of the DEPO Web Application."
-              />
-            </div>
+              <div class="mySlides1 fade">
+                <img
+                  class="projectImages"
+                  src="/jadnell555.github.io/Images/Project Pictures/depo4.png"
+                  alt="Image of the Cases Section of the DEPO Web Application."
+                />
+              </div>
 
-            <div class="mySlides1 fade">
-              <img
-                class="projectImages"
-                src="/jadnell555.github.io/Images/Project Pictures/depo5.png"
-                alt="Image of the Darshboard of the DEPO Web Application."
-              />
-            </div>
+              <div class="mySlides1 fade">
+                <img
+                  class="projectImages"
+                  src="/jadnell555.github.io/Images/Project Pictures/depo5.png"
+                  alt="Image of the Darshboard of the DEPO Web Application."
+                />
+              </div>
 
-            <button class="prev" onclick="plusSlides(-1)">
-              <img
-                src="/jadnell555.github.io/Images/Icons/prevImage.svg"
-                width="30px"
-                height="30px"
-                alt="Previous picture arrow button."
-              />
-            </button>
-            <button class="next" onclick="plusSlides(1)">
-              <img
-                src="/jadnell555.github.io/Images/Icons/nextImage.svg"
-                width="30px"
-                height="30px"
-                alt="Next picture arrow button."
-              />
-            </button>
-          </div>
-          <br />
-          <div id="imageDots1">
-            <span class="dot1" onclick="currentSlide(1)"></span>
-            <span class="dot1" onclick="currentSlide(2)"></span>
-            <span class="dot1" onclick="currentSlide(3)"></span>
-            <span class="dot1" onclick="currentSlide(4)"></span>
-            <span class="dot1" onclick="currentSlide(5)"></span>
+              <button title="Previous" class="prev" onclick="plusSlides(-1)">
+                <img
+                  src="/jadnell555.github.io/Images/Icons/prevImage.svg"
+                  width="30px"
+                  height="30px"
+                  alt="Previous picture arrow button."
+                />
+              </button>
+              <button title="Next" class="next" onclick="plusSlides(1)">
+                <img
+                  src="/jadnell555.github.io/Images/Icons/nextImage.svg"
+                  width="30px"
+                  height="30px"
+                  alt="Next picture arrow button."
+                />
+              </button>
+            </div>
+            <br />
+            <div id="imageDots1">
+              <span class="dot1" onclick="currentSlide(1)"></span>
+              <span class="dot1" onclick="currentSlide(2)"></span>
+              <span class="dot1" onclick="currentSlide(3)"></span>
+              <span class="dot1" onclick="currentSlide(4)"></span>
+              <span class="dot1" onclick="currentSlide(5)"></span>
+            </div>
           </div>
         </div>
       </div>

@@ -16,13 +16,6 @@
       rel="stylesheet"
     />
 
-    <!-- Pageclip Link (Serverless Form Handling)-->
-    <link
-      rel="stylesheet"
-      href="https://s.pageclip.co/v1/pageclip.css"
-      media="screen"
-    />
-
     <!-- Stylesheet Link-->
     <link
       id="theme"
@@ -74,14 +67,14 @@
           </div>
           <div class="col-sm"></div>
           <div class="col-lg-auto">
-            <ul id="navBarItems">
-              <li class="navBarItem">
-                <a
-                  class="navBarTitles"
-                  href="/jadnell555.github.io/index.html#projectsSection"
-                >
-                  GO BACK
-                </a>
+            <ul id="goBackArrow">
+              <li>
+                <button id="goBackButton" type="button">
+                  <img
+                  onclick="window.location.href='/jadnell555.github.io/index.html#projectsSection';"
+                  " src="/jadnell555.github.io/Images/Icons/goBack.svg"
+                  title="Menu" alt="Menu Button" />
+                </button>
               </li>
             </ul>
           </div>
@@ -100,6 +93,7 @@
         <div class="row text-center">
           <div class="col">
             <button
+              title="Step Motor Control Source Code"
               class="sourceCodeButtonAlt"
               type="button"
               onclick="window.location.href='https://github.com/jadnell555/CollegeProjects/tree/main/Arduino/Microcomputer%20Interfacing%20Lab/Lab%206%20-%20Stepper%20Motor';"
@@ -111,18 +105,18 @@
                 height="50px"
                 alt="GitHub Logo"
               />
-              Source Code
+              Source
             </button>
           </div>
           <div class="col">
             <button
+              title="Step Motor Control YouTube Link"
               class="youtubeButton"
               type="button"
               onclick="window.location.href='https://youtu.be/WMJqQuGLzes';"
             >
               <img
                 src="/jadnell555.github.io/Images/Social Media/youtube.svg"
-                title="Video Link"
                 width="45px"
                 height="40px"
                 alt="Youtube Logo"
@@ -153,27 +147,33 @@
         <br />
         <div class="row">
           <div class="col">
-            <h3 class="text-center">Type of Project:</h3>
-            <div class="row text-center">
-              <div id="personal" class="col projectType">Personal</div>
-              <div id="university" class="col projectType uniActive">
-                University
+            <div class="projectWrapper">
+              <h3 class="text-center">Type of Project:</h3>
+              <div class="row text-center">
+                <div id="personal" class="col projectType">Personal</div>
+                <div id="university" class="col projectType uniActive">
+                  University
+                </div>
+                <div id="professional" class="col projectType">
+                  Professional
+                </div>
               </div>
-              <div id="professional" class="col projectType">Professional</div>
             </div>
           </div>
           <div class="col">
-            <h3 class="text-center">Status:</h3>
-            <div class="row text-center g-0">
-              <div class="col">
-                <div id="inProgress">In Progress</div>
-              </div>
-              <div class="col">
-                <div
-                  id="complete"
-                  style="background-color: #7ec384; color: #252525"
-                >
-                  Complete
+            <div class="projectWrapper">
+              <h3 class="text-center">Status:</h3>
+              <div class="row text-center g-0">
+                <div class="col">
+                  <div id="inProgress">In Progress</div>
+                </div>
+                <div class="col">
+                  <div
+                    id="complete"
+                    style="background-color: #7ec384; color: #252525"
+                  >
+                    Complete
+                  </div>
                 </div>
               </div>
             </div>
@@ -182,16 +182,17 @@
         <br />
         <div class="row">
           <div class="col">
-            <h3>Technologies Stack Implemented:</h3>
+            <h3>Technologies Implemented:</h3>
             <div class="row">
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is GitHub?"
                   onclick="window.location.href='https://docs.github.com/en/get-started/quickstart/hello-world';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/githubSocialMedia.svg"
-                    title="GitHub"
+                    title="GitHub Logo"
                     width="20rem"
                     height="20rem"
                     alt="GitHub Logo"
@@ -199,21 +200,23 @@
                   GitHub
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="GitHub Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More GitHub information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
+
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is Arduino?"
                   onclick="window.location.href='https://www.arduino.cc/en/Guide/Introduction';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/arduinoTechStack.svg"
-                    title="Arduino"
+                    title="Arduino Logo"
                     width="25rem"
                     height="25rem"
                     alt="Arduino Logo"
@@ -221,21 +224,22 @@
                   Arduino
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="Arduino Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More Arduino information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
               <div class="col-auto">
                 <button
                   class="toolkitButtons"
+                  title="What is C++?"
                   onclick="window.location.href='https://www.w3schools.com/cpp/cpp_intro.asp';"
                 >
                   <img
                     src="/jadnell555.github.io/Images/Tech Stack/c++.svg"
-                    title="C++"
+                    title="C++ Logo"
                     width="25rem"
                     height="25rem"
                     alt="C++ Logo"
@@ -243,10 +247,10 @@
                   C++
                   <img
                     src="/jadnell555.github.io/Images/Icons/info.svg"
-                    title="C++ Info"
+                    title="Info"
                     width="25rem"
                     height="25rem"
-                    alt="More C++ information"
+                    alt="More Info Button"
                   />
                 </button>
               </div>
@@ -282,7 +286,7 @@
                 />
               </div>
 
-              <button class="prev" onclick="plusSlides(-1)">
+              <button title="Previous" class="prev" onclick="plusSlides(-1)">
                 <img
                   src="/jadnell555.github.io/Images/Icons/prevImage.svg"
                   width="30px"
@@ -290,7 +294,7 @@
                   alt="Previous picture arrow button."
                 />
               </button>
-              <button class="next" onclick="plusSlides(1)">
+              <button title="Next" class="next" onclick="plusSlides(1)">
                 <img
                   src="/jadnell555.github.io/Images/Icons/nextImage.svg"
                   width="30px"
