@@ -171,7 +171,7 @@ button {
   margin: auto;
 }
 
-.hide {
+.hamburgerMenuHide {
   opacity: 0;
   transition: 0.3s ease;
   visibility: hidden;
@@ -286,7 +286,7 @@ img.mainPictures {
 
 #DLC {
   list-style: none;
-  text-align: justify;
+
   padding: 0.5rem 1rem 0.5rem 0.5rem;
   float: left;
   margin: auto;
@@ -294,6 +294,10 @@ img.mainPictures {
 
 #DLC li {
   padding: 0.35rem;
+}
+
+#DLCyears li:last-child {
+  margin-top: 1rem;
 }
 
 /*EXPERTISE SECTION*/
@@ -391,8 +395,8 @@ img.mainPictures {
 
 /*PROJECTS SECTIONS*/
 img.projectPictures {
-  aspect-ratio: 121/69;
-  height: 60vh;
+  aspect-ratio: 4/3;
+  height: 80vh;
   border-radius: 20px;
 }
 
@@ -828,29 +832,39 @@ footer {
 
 /* s screens */
 @media screen and (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
-  #nevNavBar {
-    width: 100vw;
-  }
-
   #myName {
     padding: 0 8.5em;
     height: fit-content;
   }
 
+  .myName {
+    z-index: 25;
+  }
+
+  .spaceBetween {
+    display: flex;
+    justify-content: space-between;
+  }
+
   #navBarItems {
-    /*
-    visibility: hidden;
-    display: none;
-    */
     flex-direction: column;
     padding-top: 0.5rem;
   }
 
-  .navBarItem {
-    /*
+  .hide {
+    opacity: 0;
+    transition: 0.3s ease;
     visibility: hidden;
     display: none;
-    */
+  }
+
+  .hamburgerMenuHide {
+    opacity: 100;
+    visibility: visible;
+    display: block;
+  }
+
+  .navBarItem {
     margin: 0.25rem auto;
     padding: 0.25rem 1rem;
     background: rgb(84, 170, 227);
@@ -873,6 +887,10 @@ footer {
     font-size: large;
   }
 
+  .reverseColumns {
+    order: 1;
+  }
+
   img.mainPictures {
     height: 50vh;
   }
@@ -882,6 +900,10 @@ footer {
   }
   #DLCyears li:nth-child(2) {
     margin-bottom: 4.5rem;
+  }
+
+  #DLCyears li:last-child {
+    margin-top: 0.25rem;
   }
 
   .educationDates {
@@ -913,7 +935,7 @@ footer {
   }
 
   img.projectPictures {
-    height: 20vh;
+    height: 30vh;
   }
 
   .smallBlock {
@@ -933,8 +955,6 @@ footer {
   }
 
   footer {
-    width: 100vw;
-    margin: 0 auto;
     height: fit-content;
   }
 }

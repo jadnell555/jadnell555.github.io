@@ -1,37 +1,37 @@
 // Script for Navigation Bar Operation Onclick
-var selectMenu = document.getElementById("selectMenu");
-var menuButtonsList = document.getElementById("menuButtonsList");
-var options = document.getElementsByClassName("options");
-var menuButtonIcon = document.getElementById("menuButton");
+
+var hamburgerMenu = document.getElementById("menuButton");
+var navBarItems = document.getElementById("navBarItems");
+var navBarItem = document.getElementsByClassName("navBarItem");
 var flag = false;
 
-selectMenu.onclick = function (event) {
+hamburgerMenu.onclick = function (event) {
   if (flag == false) {
     event.stopPropagation();
     flag = true;
-    menuButtonIcon.style.transition = "0.3s ease-in";
-    menuButtonIcon.style.transform = "rotateZ(90deg)";
-    menuButtonsList.classList.toggle("hide");
+    hamburgerMenu.style.transition = "0.3s ease-in";
+    hamburgerMenu.style.transform = "rotateZ(90deg)";
+    navBarItems.classList.toggle("hide");
   } else {
     event.stopPropagation();
     flag = false;
-    menuButtonIcon.style.transition = "0.3s ease-in";
-    menuButtonIcon.style.transform = "rotateZ(0deg)";
-    menuButtonsList.classList.toggle("hide");
+    hamburgerMenu.style.transition = "0.3s ease-in";
+    hamburgerMenu.style.transform = "rotateZ(0deg)";
+    navBarItems.classList.toggle("hide");
   }
 };
 
-for (Option of options) {
+for (Option of navBarItem) {
   Option.onclick = function (event) {
     if (flag == true) {
       event.stopPropagation();
-      menuButtonsList.classList.toggle("hide");
-      menuButtonIcon.style.transform = "rotateZ(0deg)";
+      navBarItems.classList.toggle("hide");
+      hamburgerMenu.style.transform = "rotateZ(0deg)";
       flag = false;
     } else {
       event.stopPropagation();
-      menuButtonsList.classList.toggle("hide");
-      menuButtonIcon.style.transform = "rotateZ(90deg)";
+      navBarItems.classList.toggle("hide");
+      hamburgerMenu.style.transform = "rotateZ(90deg)";
       flag = true;
     } // end else
   };
@@ -41,19 +41,19 @@ for (Option of options) {
 document.addEventListener("click", function (event) {
   if (
     flag == true &&
-    !selectMenu.contains(event.target) &&
-    !menuButtonsList.contains(event.target)
+    !hamburgerMenu.contains(event.target) &&
+    !navBarItems.contains(event.target)
   ) {
-    menuButtonsList.classList.add("hide");
-    menuButtonIcon.style.transform = "rotateZ(0deg)";
+    navBarItems.classList.add("hide");
+    hamburgerMenu.style.transform = "rotateZ(0deg)";
     flag = false;
   } else if (
     flag == false &&
-    selectMenu.contains(event.target) &&
-    menuButtonsList.contains(event.target)
+    hamburgerMenu.contains(event.target) &&
+    navBarItems.contains(event.target)
   ) {
-    menuButtonsList.classList.toggle("hide");
-    menuButtonIcon.style.transform = "rotateZ(90deg)";
+    navBarItems.classList.toggle("hide");
+    hamburgerMenu.style.transform = "rotateZ(90deg)";
     flag = true;
   }
 });
