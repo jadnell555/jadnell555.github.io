@@ -827,10 +827,6 @@ footer {
 }
 
 /* xs screens */
-@media (max-width <= 320px) {
-}
-
-/* s screens */
 @media screen and (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
   #myName {
     padding: 0 8.5em;
@@ -959,11 +955,11 @@ footer {
   }
 }
 
-/*  m screens */
+/*  s screens */
 @media screen and (max-width <= 412px) {
 }
 
-/* l screens */
+/* m screens */
 @media screen and (max-width <= 768px) {
 }
 
