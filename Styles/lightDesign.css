@@ -828,13 +828,27 @@ footer {
 
 /* xs screens */
 @media screen and (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* General */
+  .hide {
+    opacity: 0;
+    transition: 0.3s ease;
+    visibility: hidden;
+    display: none;
+  }
+
+  .wrapper {
+    max-width: 375px;
+  }
+
+  .smallBlock {
+    margin-bottom: 2rem;
+  }
+  /* End General */
+
+  /*Navigation Bar*/
   #myName {
     padding: 0 8.5em;
     height: fit-content;
-  }
-
-  .myName {
-    z-index: 25;
   }
 
   .spaceBetween {
@@ -845,13 +859,6 @@ footer {
   #navBarItems {
     flex-direction: column;
     padding-top: 0.5rem;
-  }
-
-  .hide {
-    opacity: 0;
-    transition: 0.3s ease;
-    visibility: hidden;
-    display: none;
   }
 
   .hamburgerMenuHide {
@@ -869,6 +876,12 @@ footer {
     box-shadow: 0px 2px 3px #111812;
     position: sticky;
   }
+  /* End Navigation Bar */
+
+  /* Landing Page */
+  img.mainPictures {
+    height: 50vh;
+  }
 
   #introHello {
     margin-top: 1rem;
@@ -882,26 +895,22 @@ footer {
   #introTitle {
     font-size: large;
   }
+  /* End Landing Page */
 
-  .reverseColumns {
-    order: 1;
-  }
-
-  img.mainPictures {
-    height: 50vh;
-  }
-
+  /* About Me */
   #DLCyears li:nth-child(1) {
     margin-bottom: 1.5rem;
   }
   #DLCyears li:nth-child(2) {
-    margin-bottom: 4.5rem;
+    margin-bottom: 10rem;
   }
 
   #DLCyears li:last-child {
     margin-top: 0.25rem;
   }
+  /* End About Me*/
 
+  /* Expertise */
   .educationDates {
     font-size: 13.5px;
     padding: 0.1rem;
@@ -911,9 +920,15 @@ footer {
     font-size: small;
     padding: 0.1rem 0;
   }
+  /*End Expertise*/
 
+  /* Projects */
   .projectWrapper {
     min-width: 50vw;
+  }
+
+  .reverseColumns {
+    order: 1;
   }
 
   .prev,
@@ -933,11 +948,9 @@ footer {
   img.projectPictures {
     height: 30vh;
   }
+  /* End Projects */
 
-  .smallBlock {
-    margin-bottom: 2rem;
-  }
-
+  /* Social Media */
   h3#socialMediaHeading {
     margin: 0.5rem auto 0 auto;
     flex-direction: row;
@@ -945,22 +958,399 @@ footer {
     float: none;
     justify-content: space-around;
   }
+
   #socialMediaItems {
     float: none;
     justify-content: space-evenly;
   }
+  /* End Social Media */
 
+  /* Footer */
   footer {
     height: fit-content;
   }
 }
 
-/*  s screens */
-@media screen and (max-width <= 412px) {
+@media screen and (max-device-width: 425px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* General */
+  .hide {
+    opacity: 0;
+    transition: 0.3s ease;
+    visibility: hidden;
+    display: none;
+  }
+
+  .wrapper {
+    max-width: 425px; /* Adjusted for 425px width */
+  }
+
+  .smallBlock {
+    margin: 0.5rem;
+  }
+
+  .block {
+    margin: 0.5rem 0.35rem;
+  }
+  /* End General */
+
+  /*Navigation Bar*/
+  #myName {
+    padding: 0 10rem;
+    margin-left: 1rem;
+    height: fit-content;
+  }
+
+  .spaceBetween {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #navBarItems {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+
+  .hamburgerMenuHide {
+    opacity: 100;
+    visibility: visible;
+    display: block;
+  }
+
+  .navBarItem {
+    margin: 0.25rem auto;
+    padding: 0.25rem 1rem;
+    background: rgb(84, 170, 227);
+    background: linear-gradient(40deg, #54aae3 44%, #2984c5 100%);
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px #111812;
+    position: sticky;
+  }
+  /* End Navigation Bar */
+
+  /* Landing Page */
+  img.mainPictures {
+    height: 50vh;
+  }
+
+  #introHello {
+    margin-top: 1rem;
+    font-size: x-large;
+  }
+
+  #introName {
+    font-size: x-large;
+  }
+
+  #introTitle {
+    font-size: large;
+  }
+  /* End Landing Page */
+
+  /* About Me */
+
+  /* End About Me*/
+
+  /* Expertise */
+  .educationDates {
+    font-size: 13.5px;
+    padding: 0.1rem;
+  }
+
+  .educationLists {
+    font-size: small;
+    padding: 0.1rem 0;
+  }
+  /*End Expertise*/
+
+  /* Projects */
+  .projectWrapper {
+    min-width: 50vw;
+  }
+
+  .reverseColumns {
+    order: 1;
+  }
+
+  .prev,
+  .next {
+    margin: 0 -4.65rem;
+  }
+
+  .projectImages {
+    height: 30vh;
+  }
+
+  #inProgress,
+  #complete {
+    min-width: 9em;
+  }
+
+  img.projectPictures {
+    height: 35vh;
+  }
+  /* End Projects */
+
+  /* Social Media */
+  h3#socialMediaHeading {
+    margin: 0.5rem auto 0 auto;
+    flex-direction: row;
+    align-items: center;
+    float: none;
+    justify-content: space-around;
+  }
+
+  #socialMediaItems {
+    float: none;
+    justify-content: space-evenly;
+  }
+  /* End Social Media */
+
+  /* Footer */
+  footer {
+    height: fit-content;
+  }
 }
 
-/* m screens */
-@media screen and (max-width <= 768px) {
+@media screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* General */
+  .hide {
+    opacity: 0;
+    transition: 0.3s ease;
+    visibility: hidden;
+    display: none;
+  }
+
+  .wrapper {
+    max-width: 768px;
+  }
+
+  .smallBlock {
+    margin: 0.5rem;
+  }
+
+  .block {
+    margin: 0.5rem 0.35rem;
+  }
+  /* End General */
+
+  /*Navigation Bar*/
+  #myName {
+    padding: 0 10rem;
+    margin-left: 10rem;
+    height: fit-content;
+  }
+
+  .spaceBetween {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #navBarItems {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+
+  .hamburgerMenuHide {
+    opacity: 100;
+    visibility: visible;
+    display: block;
+  }
+
+  .navBarItem {
+    margin: 0.25rem auto;
+    padding: 0.25rem 1rem;
+    background: rgb(84, 170, 227);
+    background: linear-gradient(40deg, #54aae3 44%, #2984c5 100%);
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px #111812;
+    position: sticky;
+  }
+  /* End Navigation Bar */
+
+  /* Landing Page */
+  img.mainPictures {
+    height: 50vh;
+  }
+
+  #introHello {
+    margin-top: 1rem;
+    font-size: x-large;
+  }
+
+  #introName {
+    font-size: x-large;
+  }
+
+  #introTitle {
+    font-size: large;
+  }
+  /* End Landing Page */
+
+  /* About Me */
+
+  /* End About Me*/
+
+  /* Expertise */
+  .educationDates {
+    font-size: 13.5px;
+    padding: 0.1rem;
+  }
+
+  .educationLists {
+    font-size: small;
+    padding: 0.1rem 0;
+  }
+  /*End Expertise*/
+
+  /* Projects */
+  .projectWrapper {
+    min-width: 50vw;
+  }
+
+  .prev,
+  .next {
+    margin: 0 -4.65rem;
+  }
+
+  .projectImages {
+    height: 30vh;
+  }
+
+  #inProgress,
+  #complete {
+    min-width: 9em;
+  }
+
+  img.projectPictures {
+    height: 35vh;
+  }
+  /* End Projects */
+
+  /* Social Media */
+  h3#socialMediaHeading {
+    margin: 0.5rem auto 0 auto;
+    flex-direction: row;
+    align-items: center;
+    float: none;
+    justify-content: space-around;
+  }
+
+  #socialMediaItems {
+    float: none;
+    justify-content: space-evenly;
+  }
+  /* End Social Media */
+
+  /* Footer */
+  footer {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* General */
+  .wrapper {
+    max-width: 1024px;
+  }
+
+  .smallBlock {
+    margin: 0.5rem;
+  }
+
+  .block {
+    margin: 0.5rem 0.35rem;
+  }
+  /* End General */
+
+  /*Navigation Bar*/
+  #myName {
+    height: fit-content;
+  }
+
+  .spaceBetween {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* End Navigation Bar */
+
+  /* Landing Page */
+  img.mainPictures {
+    height: 75vh;
+  }
+
+  #introHello {
+    margin-top: 1rem;
+    font-size: x-large;
+  }
+
+  #introName {
+    font-size: x-large;
+  }
+
+  #introTitle {
+    font-size: large;
+  }
+  /* End Landing Page */
+
+  /* About Me */
+
+  /* End About Me*/
+
+  /* Expertise */
+  .educationDates {
+    font-size: 13.5px;
+    padding: 0.1rem;
+  }
+
+  .educationLists {
+    font-size: small;
+    padding: 0.1rem 0;
+  }
+  /*End Expertise*/
+
+  /* Projects */
+  .projectWrapper {
+    min-width: 25vw;
+  }
+
+  .prev,
+  .next {
+    margin: 0 -4.65rem;
+  }
+
+  .projectImages {
+    height: 30vh;
+  }
+
+  #inProgress,
+  #complete {
+    min-width: 9em;
+  }
+
+  img.projectPictures {
+    height: 35vh;
+  }
+  /* End Projects */
+
+  /* Social Media */
+  h3#socialMediaHeading {
+    margin: 0.5rem auto 0 auto;
+    flex-direction: row;
+    align-items: center;
+    float: none;
+    justify-content: space-around;
+  }
+
+  #socialMediaItems {
+    float: none;
+    justify-content: space-evenly;
+  }
+  /* End Social Media */
+
+  /* Footer */
+  footer {
+    height: fit-content;
+  }
 }
 
 /* ANIMATIONS */
