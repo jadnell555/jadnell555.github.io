@@ -827,7 +827,7 @@ footer {
 }
 
 /* xs screens */
-@media screen and (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
   /* General */
   .hide {
     opacity: 0;
@@ -846,8 +846,8 @@ footer {
   /* End General */
 
   /*Navigation Bar*/
-  #myName {
-    padding: 0 8.5em;
+  div#myName {
+    margin-left: 70px;
     height: fit-content;
   }
 
@@ -880,7 +880,8 @@ footer {
 
   /* Landing Page */
   img.mainPictures {
-    height: 50vh;
+    aspect-ratio: 0.7/1;
+    max-height: 55vh;
   }
 
   #introHello {
@@ -902,11 +903,7 @@ footer {
     margin-bottom: 1.5rem;
   }
   #DLCyears li:nth-child(2) {
-    margin-bottom: 10rem;
-  }
-
-  #DLCyears li:last-child {
-    margin-top: 0.25rem;
+    margin-bottom: 7.75rem;
   }
   /* End About Me*/
 
@@ -917,7 +914,7 @@ footer {
   }
 
   .educationLists {
-    font-size: small;
+    font-size: 12px;
     padding: 0.1rem 0;
   }
   /*End Expertise*/
@@ -971,7 +968,7 @@ footer {
   }
 }
 
-@media screen and (max-device-width: 425px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (device-width: 425px) and (-webkit-min-device-pixel-ratio: 2) {
   /* General */
   .hide {
     opacity: 0;
@@ -994,9 +991,8 @@ footer {
   /* End General */
 
   /*Navigation Bar*/
-  #myName {
-    padding: 0 10rem;
-    margin-left: 1rem;
+  div#myName {
+    margin-left: 90px;
     height: fit-content;
   }
 
@@ -1029,7 +1025,7 @@ footer {
 
   /* Landing Page */
   img.mainPictures {
-    height: 50vh;
+    height: 65vh;
   }
 
   #introHello {
@@ -1047,17 +1043,23 @@ footer {
   /* End Landing Page */
 
   /* About Me */
+  #DLCyears li:nth-child(1) {
+    margin-bottom: 1.5rem;
+  }
+  #DLCyears li:nth-child(2) {
+    margin-bottom: 4.75rem;
+  }
 
   /* End About Me*/
 
   /* Expertise */
   .educationDates {
-    font-size: 13.5px;
+    font-size: 16px;
     padding: 0.1rem;
   }
 
   .educationLists {
-    font-size: small;
+    font-size: 16px;
     padding: 0.1rem 0;
   }
   /*End Expertise*/
@@ -1111,7 +1113,7 @@ footer {
   }
 }
 
-@media screen and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   /* General */
   .hide {
     opacity: 0;
@@ -1134,8 +1136,8 @@ footer {
   /* End General */
 
   /*Navigation Bar*/
-  #myName {
-    margin-left: 10rem;
+  div#myName {
+    margin-left: 260px;
     height: fit-content;
   }
 
@@ -1168,7 +1170,7 @@ footer {
 
   /* Landing Page */
   img.mainPictures {
-    height: 50vh;
+    height: 65vh;
   }
 
   #introHello {
@@ -1186,17 +1188,22 @@ footer {
   /* End Landing Page */
 
   /* About Me */
-
+  #DLCyears li:nth-child(1) {
+    margin-bottom: 1.5rem;
+  }
+  #DLCyears li:nth-child(2) {
+    margin-bottom: 4.75rem;
+  }
   /* End About Me*/
 
   /* Expertise */
   .educationDates {
-    font-size: 13.5px;
+    font-size: 14px;
     padding: 0.1rem;
   }
 
   .educationLists {
-    font-size: small;
+    font-size: 14px;
     padding: 0.1rem 0;
   }
   /*End Expertise*/
@@ -1212,12 +1219,12 @@ footer {
   }
 
   .projectImages {
-    height: 30vh;
+    height: 50vh;
   }
 
   #inProgress,
   #complete {
-    min-width: 9em;
+    min-width: 15rem;
   }
 
   img.projectPictures {
@@ -1246,7 +1253,7 @@ footer {
   }
 }
 
-@media screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   /* General */
   .wrapper {
     max-width: 1024px;
@@ -1274,7 +1281,7 @@ footer {
 
   /* Landing Page */
   img.mainPictures {
-    height: 75vh;
+    height: 80vh;
   }
 
   #introHello {
@@ -1292,17 +1299,22 @@ footer {
   /* End Landing Page */
 
   /* About Me */
-
+  #DLCyears li:nth-child(1) {
+    margin-bottom: 1.5rem;
+  }
+  #DLCyears li:nth-child(2) {
+    margin-bottom: 1.75rem;
+  }
   /* End About Me*/
 
   /* Expertise */
   .educationDates {
-    font-size: 13.5px;
+    font-size: 16px;
     padding: 0.1rem;
   }
 
   .educationLists {
-    font-size: small;
+    font-size: 16px;
     padding: 0.1rem 0;
   }
   /*End Expertise*/
@@ -1318,7 +1330,7 @@ footer {
   }
 
   .projectImages {
-    height: 30vh;
+    height: 75vh;
   }
 
   #inProgress,
@@ -1327,7 +1339,7 @@ footer {
   }
 
   img.projectPictures {
-    height: 35vh;
+    height: 45vh;
   }
   /* End Projects */
 
