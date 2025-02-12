@@ -32,8 +32,8 @@ body {
   width: 99.9%;
   float: left;
 
-  background: rgb(84, 170, 227);
-  background: linear-gradient(40deg, #54aae3 44%, #2984c5 100%);
+  background: #1a7452;
+  background: linear-gradient(40deg, #1a7452 44%, #347b56 100%);
   border-radius: 0px 0px 20px 20px;
   box-shadow: 0px 2px 3px #111812;
   position: sticky;
@@ -45,7 +45,7 @@ body {
 #themeChanger {
   display: flex;
   float: left;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 1rem;
   margin: 0;
   flex-direction: row;
 }
@@ -94,7 +94,7 @@ body {
 #myName {
   margin: 0 auto;
   margin-bottom: -10px;
-  padding: 0 4rem;
+  padding: 0 4rem 0 1rem;
 }
 
 .myName,
@@ -159,7 +159,7 @@ body {
   font-size: 3rem;
   width: fit-content;
   margin: 0 auto;
-  border-bottom: 3px solid #1d70af;
+  border-bottom: 3px solid #347b56;
 }
 
 .headingsDescriptions {
@@ -193,7 +193,7 @@ button {
 }
 
 #introTitle {
-  color: #1d70af;
+  color: #347b56;
 }
 
 #summary {
@@ -202,7 +202,7 @@ button {
   margin: 1rem auto;
   padding: 0.5rem;
 
-  border: #1d70af;
+  border: #347b56;
   background-color: #eeeef5;
   border-radius: 20px;
 
@@ -210,30 +210,30 @@ button {
 }
 
 .learnMoreButton {
-  float: left;
+  float: right;
   padding: 0.5rem;
 }
 
 .learnMoreButton button {
   border: none;
   border-radius: 20px;
-  box-shadow: 1px 1px 1px #1d70af;
+  box-shadow: 1px 1px 1px #347b56;
   margin: auto;
   padding: 0.25rem 0.5rem;
-  background: #54aae3;
-  background: linear-gradient(180deg, #54aae3 55%, #2984c5 100%);
+  background: #1a7452;
+  background: linear-gradient(180deg, #1a7452 55%, #347b56 100%);
 }
 
 .mainPictures {
-  border-radius: 50px;
+  border-radius: 200px;
   box-shadow: 2px 2px 3px #111812;
   margin: 20px;
   transition: 0.2s ease-in;
 }
 
 img.mainPictures {
-  aspect-ratio: 0.7/1;
-  height: 80vh;
+  aspect-ratio: 1/1;
+  height: 70vh;
 }
 
 .desktopSpace {
@@ -254,7 +254,7 @@ img.mainPictures {
   text-align: center;
   padding: 0.25rem;
   margin: auto;
-  color: #1d70af;
+  color: #347b56;
 }
 
 #moreAboutMe {
@@ -273,13 +273,13 @@ img.mainPictures {
   text-align: center;
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   margin: auto;
-  color: #1d70af;
+  color: #347b56;
   width: fit-content;
 }
 
 #DLCyears li {
   padding: 0.15rem;
-  border: #1d70af dashed;
+  border: #347b56 dashed;
   border-radius: 30px;
   margin: 0.35rem 0;
 }
@@ -325,10 +325,6 @@ img.mainPictures {
   padding: 0.25rem 0.5rem 0.25rem 0.25rem;
 }
 
-.CNSA {
-  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
-}
-
 .educationLists {
   display: flex;
   flex-direction: row;
@@ -341,8 +337,8 @@ img.mainPictures {
   margin: 0 0.25rem;
   border-radius: 20px;
   border-style: dashed;
-  color: #1d70af;
-  border-color: #1d70af;
+  color: #347b56;
+  border-color: #347b56;
 }
 
 #resumeWrapper {
@@ -355,12 +351,12 @@ img.mainPictures {
 .resumeBlock {
   border-radius: 20px;
   border-style: solid;
-  border-color: #1d70af;
+  border-color: #347b56;
   height: fit-content;
   margin: 0.25rem;
   width: 100%;
   transition: 0.2s ease-in;
-  color: #1d70af;
+  color: #347b56;
 }
 
 .resumeBlock h6 {
@@ -383,12 +379,12 @@ img.mainPictures {
 
 .toolkitButtons {
   border-style: solid;
-  border-color: #1d70af;
+  border-color: #347b56;
   border-radius: 20px;
   background-color: transparent;
   padding: 0.1rem 0.2rem;
   margin: 0.25rem auto;
-  color: #1d70af;
+  color: #347b56;
   text-align: center;
   font-size: small;
 }
@@ -401,7 +397,7 @@ img.projectPictures {
 }
 
 .projectTitle {
-  color: #1d70af;
+  color: #347b56;
   text-align: left;
 }
 
@@ -696,7 +692,7 @@ h4.greeting span:nth-child(5) {
   margin: auto;
   padding: 1rem;
   border-radius: 20px;
-  border: solid #1d70af;
+  border: solid #347b56;
 }
 
 .pageclip-form__submit::after {
@@ -726,7 +722,7 @@ h4.greeting span:nth-child(5) {
 ::placeholder {
   padding: 5px;
   margin: auto;
-  color: #1d70af;
+  color: #347b56;
   font-size: 1em;
 }
 
@@ -734,7 +730,7 @@ h4.greeting span:nth-child(5) {
   margin: 10px auto;
   padding: 10px;
   width: 100%;
-  color: #1d70af;
+  color: #347b56;
   font-size: 1em;
 }
 
@@ -743,7 +739,7 @@ h4.greeting span:nth-child(5) {
   padding: 10px;
   width: 100%;
 
-  color: #1d70af;
+  color: #347b56;
   font-size: 1em;
 }
 
@@ -752,7 +748,7 @@ h4.greeting span:nth-child(5) {
   padding: 10px;
   width: 100%;
 
-  color: #1d70af;
+  color: #347b56;
   font-size: 1em;
 }
 
@@ -762,18 +758,18 @@ textarea {
   width: 100%;
   height: 150px;
   border-radius: 20px;
-  color: #1d70af;
+  color: #347b56;
   font-size: 1em;
 }
 
 #submitButton {
   border: none;
   border-radius: 20px;
-  box-shadow: 1px 1px 1px #1d70af;
+  box-shadow: 1px 1px 1px #347b56;
   margin: auto;
   padding: 0.25rem 0.5rem;
-  background: #54aae3;
-  background: linear-gradient(180deg, #54aae3 55%, #2984c5 100%);
+  background: #1a7452;
+  background: linear-gradient(180deg, #1a7452 55%, #347b56 100%);
 }
 
 /*SOCIAL MEDIA SECTION*/
@@ -871,7 +867,7 @@ footer {
     margin: 0.25rem auto;
     padding: 0.25rem 1rem;
     background: rgb(84, 170, 227);
-    background: linear-gradient(40deg, #54aae3 44%, #2984c5 100%);
+    background: linear-gradient(40deg, #1a7452 44%, #347b56 100%);
     border-radius: 20px;
     box-shadow: 0px 2px 3px #111812;
     position: sticky;
@@ -880,8 +876,7 @@ footer {
 
   /* Landing Page */
   img.mainPictures {
-    aspect-ratio: 0.7/1;
-    max-height: 55vh;
+    height: 25%;
   }
 
   #introHello {
@@ -1016,7 +1011,7 @@ footer {
     margin: 0.25rem auto;
     padding: 0.25rem 1rem;
     background: rgb(84, 170, 227);
-    background: linear-gradient(40deg, #54aae3 44%, #2984c5 100%);
+    background: linear-gradient(40deg, #1a7452 44%, #347b56 100%);
     border-radius: 20px;
     box-shadow: 0px 2px 3px #111812;
     position: sticky;
@@ -1025,7 +1020,8 @@ footer {
 
   /* Landing Page */
   img.mainPictures {
-    height: 65vh;
+    aspect-ratio: 0.7/1;
+    width: 75%;
   }
 
   #introHello {
@@ -1161,7 +1157,7 @@ footer {
     margin: 0.25rem auto;
     padding: 0.25rem 1rem;
     background: rgb(84, 170, 227);
-    background: linear-gradient(40deg, #54aae3 44%, #2984c5 100%);
+    background: linear-gradient(40deg, #1a7452 44%, #347b56 100%);
     border-radius: 20px;
     box-shadow: 0px 2px 3px #111812;
     position: sticky;
@@ -1170,7 +1166,8 @@ footer {
 
   /* Landing Page */
   img.mainPictures {
-    height: 65vh;
+    aspect-ratio: 0.7/1;
+    width: 75%;
   }
 
   #introHello {
@@ -1281,7 +1278,8 @@ footer {
 
   /* Landing Page */
   img.mainPictures {
-    height: 80vh;
+    aspect-ratio: 0.7/1;
+    width: 85%;
   }
 
   #introHello {
