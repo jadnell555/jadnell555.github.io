@@ -1,6 +1,6 @@
 <!-- Jadnell H. Reyes Pérez -->
-<!-- February 11th 2025 -->
-<!-- Version: 0.8 -->
+<!-- February 17th 2025 -->
+<!-- Version: 1.5 (in progress...) -->
 <?xml version = "1.0"?>
 <!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
@@ -26,17 +26,9 @@
     <!-- Stylesheet Link -->
     <link
       id="theme"
-      href="styles/lightDesign.css"
+      href="styles/lightDesign_v1.5.css"
       type="text/css"
       rel="stylesheet"
-    />
-
-    <!-- Bootstrap Link-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
     />
 
     <meta
@@ -53,182 +45,91 @@
   <body>
     <div id="newNavBar">
       <div id="navBarWrapper">
-        <div class="row row-cols-3 spaceBetween">
-          <div class="col-sm">
-            <div id="myName">
-              <a class="myName" title="Home" href="#landingSection">
-                JADNELL
-              </a>
-              <br />
-              <a class="myName" title="Home" href="#landingSection"> HARESH </a>
-            </div>
-          </div>
+        <div id="menu">
+          <button id="menuButton" type="button">
+            <img
+              src="assets/images/Icons/hamburgerMenu.svg"
+              title="Menu"
+              alt="Menu Button"
+            />
+          </button>
+        </div>
 
-          <div class="col-lg-auto">
-            <ul id="menuButtonList" class="hamburgerMenuHide">
-              <li>
-                <button id="menuButton" type="button">
-                  <img
-                    src="assets/images/Icons/hamburgerMenu.svg"
-                    title="Menu"
-                    alt="Menu Button"
-                  />
-                </button>
-              </li>
-            </ul>
+        <div id="myName">
+          <a class="myName" title="Home" href="#landingSection"> JADNELL </a>
 
-            <ul id="navBarItems" class="hide">
-              <!--
-              <li class="navBarItem">
-                <a class="navBarTitles" href="#aboutMeSection"> ABOUT ME </a>
-              </li>
-              -->
-              <li class="navBarItem">
-                <a class="navBarTitles" href="#expertiseSection"> EXPERTISE </a>
-              </li>
-              <li class="navBarItem">
-                <a class="navBarTitles" href="#projectsSection"> PROJECTS </a>
-              </li>
-              <li class="navBarItem">
-                <a class="navBarTitles" href="#contactSection"> CONTACT </a>
-              </li>
-              <!-- Theme Changer Button -->
-              <div id="themeChanger">
-                <button id="themeButton" type="button">
-                  <img
-                    id="themeChangerButtonIcon"
-                    src="assets/images/Icons/moon.svg"
-                    title="Change Theme"
-                    alt="Theme changing button"
-                  />
-                </button>
-              </div>
-            </ul>
-          </div>
+          <a class="myName" title="Home" href="#landingSection"> HARESH </a>
+        </div>
+
+        <!-- Theme Changer Button -->
+        <div id="themeChanger">
+          <button id="themeButton" type="button">
+            <img
+              src="assets/images/Icons/moon.svg"
+              title="Change Theme"
+              alt="Theme changing button"
+            />
+          </button>
         </div>
       </div>
     </div>
 
+    <ul id="navBarItems" class="hide">
+      <li class="navBarItem">
+        <a class="navBarTitles" href="#expertiseSection"> EXPERTISE </a>
+      </li>
+      <li class="navBarItem">
+        <a class="navBarTitles" href="#projectsSection"> PROJECTS </a>
+      </li>
+      <li class="navBarItem">
+        <a class="navBarTitles" href="#contactSection"> CONTACT </a>
+      </li>
+    </ul>
+
     <!-- LANDING SECTION -->
     <section id="landingSection">
+      <br />
+      <br />
       <div class="wrapper animatedSection">
         <!-- Intro and Image -->
 
-        <div class="container text-center">
-          <div class="row align-items-center">
-            <!--Image of me-->
-            <div class="col">
-              <img
-                class="mainPictures"
-                src="assets/images/Pictures/ME.png"
-                title="Hello! This is me"
-                alt="A picture of Jadnell Reyes was supposed to appear here..."
-              />
-            </div>
+        <!--Image of me-->
+        <div class="wrapper">
+          <img
+            id="mainPicture"
+            src="assets/images/Pictures/ME.png"
+            title="Hello! This is me"
+            alt="A picture of Jadnell Reyes was supposed to appear here..."
+          />
+        </div>
 
-            <div class="col">
-              <div id="intro">
-                <h1 id="introHello">Hello World! I'm</h1>
-                <h1 id="introName">Jadnell H. Reyes Perez</h1>
-                <h3 id="introTitle">Computer Engineer</h3>
-              </div>
+        <div id="intro">
+          <h1>Hello World! I'm</h1>
+          <h1>Jadnell H. Reyes Perez</h1>
+          <h3>Computer Engineer</h3>
+        </div>
 
-              <div id="summary">
-                A Full Stack Web Developer, Designer and Engineer graduated from
-                the Polytechnic University of Puerto Rico. Keep scrolling or
-                press the button below to learn about the technologies &
-                hardware I have experience on, projects and more.
-              </div>
+        <div class="smallBlock">
+          A Full Stack Web Developer, Designer and Engineer graduated from the
+          Polytechnic University of Puerto Rico. Keep scrolling or press the
+          button below to learn about the technologies & hardware I have
+          experience on, projects and more.
+        </div>
 
-              <div class="learnMoreButton">
-                <button
-                  title="Learn More About Me"
-                  onclick="window.location.href='#expertiseSection';"
-                >
-                  Learn More:
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <br class="desktopSpace" />
-          <br />
+        <div class="primaryButtons">
+          <button
+            title="Learn More About Me"
+            onclick="window.location.href='#expertiseSection';"
+          >
+            Learn More:
+          </button>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
     </section>
 
-    <!--
-    <section id="aboutMeSection">
-      <div class="wrapper animatedSection">
-        <br />
-        <br />
-        <br />
-
-        <div class="HEADINGS"><h1>ABOUT ME</h1></div>
-        <div class="headingsDescriptions text-center">
-          <p>
-            Here you can find more information about me, my goals, achievements,
-            licenses, among other information.
-          </p>
-        </div>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col">
-              <div class="block">
-                <h5 class="blockTitles">More About Me</h5>
-                <ul id="moreAboutMe">
-                  <li>
-                    My goal is to apply the knowledge and skills I've acquired
-                    to solve real life problems.
-                  </li>
-                  <!--
-                <li>
-                  Beyond work, I find joy in going to the beach, socializing with
-                  friends, and playing basketball and videogames.
-                </li>
-              
-                  <li>
-                    Keep scrolling to learn about the technologies & hardware I
-                    have experience on. You can also find my projects and
-                    contact information.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="block">
-                <h5 class="blockTitles">Degrees, Licenses & Certifications</h5>
-                <div class="row">
-                  <div class="col-4">
-                    <ul id="DLCyears">
-                      <li>2024~2032</li>
-                      <li>2023</li>
-                      <li>2018</li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <ul id="DLC">
-                      <li>Driver's License (Puerto Rico)</li>
-                      <li>
-                        Bachelor's Degree of Science in Computer Engineering,
-                        <i>cum laude</i>
-                      </li>
-                      <li>High School Diploma</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <br />
-        <br />
-        <br />
-      </div>
-    </section>
--->
     <!-- EXPERTISE SECTION -->
     <section id="expertiseSection">
       <div class="wrapper animatedSection">
@@ -237,7 +138,7 @@
         <br />
 
         <div class="HEADINGS"><h1>EXPERTISE</h1></div>
-        <div class="headingsDescriptions text-center">
+        <div class="headingsDescriptions">
           <p>
             Here you can learn about my educational background, and my
             familiarity with various technologies, hardware & languages.
@@ -245,549 +146,477 @@
           </p>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <h5 class="blockTitles">Education:</h5>
-            <div class="smallBlock">
-              <div class="row">
-                <div class="col-4">
-                  <div class="educationDates">
-                    <b
-                      >01/18 - 7/23 <br />
-                      Hato Rey, PR
-                    </b>
-                  </div>
-                </div>
-                <div class="col">
-                  <div id="PUPR">
-                    <b>Bachelor's Degree of Science in Computer Engineering</b>
-                    <br />
-                    <i>Polytechnic University of Puerto Rico</i> <br />
-                    <ul class="educationLists">
-                      <li>GPA: 3.3</li>
-
-                      <li><i> Cum Laude </i></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br /><br />
-            <div class="smallBlock">
-              <div class="row">
-                <div class="col-4">
-                  <div class="educationDates">
-                    <b
-                      >08/06 - 6/18 <br />
-                      San Juan, PR
-                    </b>
-                  </div>
-                </div>
-                <div class="col">
-                  <div id="CNSA">
-                    <b>High School Diploma</b>
-                    <br />
-                    <i>Colegio Nuestra Se&ntilde;ora de la Altagracia</i>
-                    <br />
-                    <ul class="educationLists">
-                      <li>GPA: 4.0</li>
-                      <li>Valedictorian</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br /><br />
-            <div class="smallBlock">
-              <h6 class="smallBlockTitles">Resum&eacute;:</h6>
-              <div class="resumeBlock">
-                <div id="resumeWrapper">
-                  <div class="col">
-                    <a
-                      id="resumeButton"
-                      title="Resumé download button"
-                      type="button"
-                      onclick="href='https://drive.google.com/uc?id=1RnokdGCcXRmXDb7dFUEhO5OL5lO1PT3C&export=download';"
-                    >
-                      Resumé.pdf
-                      <img
-                        id="resumeDownload"
-                        src="assets/images/Icons/downloadArrow.svg"
-                        title="Download Arrow"
-                        width="20rem"
-                        height="20rem"
-                        alt="Resume Download Arrow"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <h5 class="blockTitles">Education:</h5>
+        <div class="smallBlock">
+          <div class="educationDates">
+            <b
+              >01/18 - 7/23 <br />
+              Hato Rey, PR
+            </b>
           </div>
 
-          <div class="col">
-            <h5 class="blockTitles">Toolkit:</h5>
+          <div>
+            <b>Bachelor's Degree of Science in Computer Engineering</b>
+            <br />
+            <i>Polytechnic University of Puerto Rico</i> <br />
+            <ul class="educationLists">
+              <li>GPA: 3.3</li>
 
-            <div class="smallBlock">
-              <h6 class="smallBlockTitles">Programming Languages:</h6>
-              <div class="row">
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is HTML?"
-                    onclick="window.location.href='https://html.com/#What_is_HTML';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/html.svg"
-                      title="HTML Logo"
-                      width="25rem"
-                      height="25rem"
-                      alt="HTML Logo"
-                    />
-                    HTML
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
+              <li><i> Cum Laude </i></li>
+            </ul>
+          </div>
+        </div>
+        <br /><br />
+        <div class="smallBlock">
+          <div class="educationDates">
+            <b
+              >08/06 - 6/18 <br />
+              San Juan, PR
+            </b>
+          </div>
 
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is CSS?"
-                    onclick="window.location.href='https://www.w3.org/Style/CSS/Overview.en.html';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/css.svg"
-                      title="CSS Logo"
-                      width="25rem"
-                      height="25rem"
-                      alt="CSS Logo"
-                    />
-                    CSS
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is JavaScript"
-                    onclick="window.location.href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/javascript.svg"
-                      title="JavaScript Logo"
-                      width="20rem"
-                      height="20rem"
-                      alt="JavaScript Logo"
-                    />
-                    JavaScript
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is C++?"
-                    onclick="window.location.href='https://www.w3schools.com/cpp/cpp_intro.asp';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/c++.svg"
-                      title="C++ Logo"
-                      width="25rem"
-                      height="25rem"
-                      alt="C++ Logo"
-                    />
-                    C++
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is Dart?"
-                    onclick="window.location.href='https://dart.dev/overview';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/dart.svg"
-                      title="Dart Logo"
-                      width="20rem"
-                      height="20rem"
-                      alt="Dart Logo"
-                    />
-                    Dart
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is Python?"
-                    onclick="window.location.href='https://docs.python.org/3/faq/general.html#what-is-python';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/python.svg"
-                      title="Python Logo"
-                      width="25rem"
-                      height="25rem"
-                      alt="Python Logo"
-                    />
-                    Python
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is MATLAB?"
-                    onclick="window.location.href='https://www.mathworks.com/products/matlab.html';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/matlab.svg"
-                      title="MATLAB Logo"
-                      width="25rem"
-                      height="25rem"
-                      alt="MATLAB Logo"
-                    />
-                    MATLAB
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is SQL?"
-                    onclick="window.location.href='https://aws.amazon.com/what-is/sql/';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/sql.svg"
-                      title="SQL Logo"
-                      width="25rem"
-                      height="25rem"
-                      alt="SQL Logo"
-                    />
-                    SQL
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="smallBlock">
-              <h6 class="smallBlockTitles">Software & Hardware:</h6>
-              <div class="row">
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is Visual Studio Code?"
-                    onclick="window.location.href='https://code.visualstudio.com/docs/supporting/faq';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/visualStudioCode.svg"
-                      title="Visual Studio Code Logo"
-                      width="20rem"
-                      height="20rem"
-                      alt="Visual Studio Code Logo"
-                    />
-                    Visual Studio Code
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is GitHub?"
-                    onclick="window.location.href='https://docs.github.com/en/get-started/quickstart/hello-world';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/githubSocialMedia.svg"
-                      title="GitHub Logo"
-                      width="20rem"
-                      height="20rem"
-                      alt="GitHub Logo"
-                    />
-                    GitHub
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is Android Studio?"
-                    onclick="window.location.href='https://developer.android.com/studio/intro';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/androidStudio.svg"
-                      title="Android Studio Logo"
-                      width="25rem"
-                      height="25rem"
-                      alt="Android Studio Logo"
-                    />
-                    Android Studio
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is Visual Studio?"
-                    onclick="window.location.href='https://visualstudio.microsoft.com/#vs-section';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/visualStudio.svg"
-                      title="Visual Studio Logo"
-                      width="20rem"
-                      height="20rem"
-                      alt="Visual Studio Logo"
-                    />
-                    Visual Studio
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is Arduino?"
-                    onclick="window.location.href='https://www.arduino.cc/en/Guide/Introduction';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/arduinoTechStack.svg"
-                      title="Arduino Logo"
-                      width="25rem"
-                      height="25rem"
-                      alt="Arduino Logo"
-                    />
-                    Arduino
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What are Jupyter Notebooks?"
-                    onclick="window.location.href='https://jupyter-notebook.readthedocs.io/en/stable/';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/Jupyter.svg"
-                      title="Jupyter Notebook Logo"
-                      width="25rem"
-                      height="25rem"
-                      alt="Jupyter Notebook Logo"
-                    />
-                    Jupyter Notebook
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is Raspberry Pi"
-                    onclick="window.location.href='https://www.raspberrypi.com/for-home/';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/raspberryPi.svg"
-                      title="Raspberry Pi Logo"
-                      width="20rem"
-                      height="20rem"
-                      alt="Raspberry Pi Logo"
-                    />
-                    Raspberry Pi
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is VirtualBox?"
-                    onclick="window.location.href='https://www.virtualbox.org/wiki/VirtualBox';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/virtualbox.svg"
-                      title="VirtualBox Logo"
-                      width="25rem"
-                      height="25rem"
-                      alt="VirtualBox Logo"
-                    />
-                    VirtualBox
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="smallBlock">
-              <h6 class="smallBlockTitles">Frameworks:</h6>
-              <div class="row">
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is Bootstrap?"
-                    onclick="window.location.href='https://www.w3schools.com/whatis/whatis_bootstrap.asp';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/bootstrap.svg"
-                      title="Bootstrap Logo"
-                      width="25rem"
-                      height="25rem"
-                      alt="Bootstrap Logo"
-                    />
-                    Bootstrap
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is Django?"
-                    onclick="window.location.href='https://www.djangoproject.com/';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/django.svg"
-                      title="Django Logo"
-                      width="17.5rem"
-                      height="17.5rem"
-                      alt="Django Logo"
-                    />
-                    Django
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-                <div class="col-auto">
-                  <button
-                    class="toolkitButtons"
-                    title="What is Flutter?"
-                    onclick="window.location.href='https://flutter.dev/';"
-                  >
-                    <img
-                      src="assets/images/Tech Stack/flutter.svg"
-                      title="Flutter Logo"
-                      width="20rem"
-                      height="20rem"
-                      alt="Flutter Logo"
-                    />
-                    Flutter
-                    <img
-                      src="assets/images/Icons/info.svg"
-                      title="Info"
-                      width="25rem"
-                      height="25rem"
-                      alt="More Info Button"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div>
+            <b>High School Diploma</b>
+            <br />
+            <i>Colegio Nuestra Se&ntilde;ora de la Altagracia</i>
+            <br />
+            <ul class="educationLists">
+              <li>GPA: 4.0</li>
+              <li>Valedictorian</li>
+            </ul>
           </div>
         </div>
 
-        <br />
-        <br />
+        <h5 class="blockTitles">Toolkit:</h5>
+
+        <div class="smallBlock">
+          <h6 class="smallBlockTitles">Programming Languages:</h6>
+
+          <button
+            class="secondaryButtons"
+            title="What is HTML?"
+            onclick="window.location.href='https://html.com/#What_is_HTML';"
+          >
+            <img
+              src="assets/images/Tech Stack/html.svg"
+              title="HTML Logo"
+              width="25rem"
+              height="25rem"
+              alt="HTML Logo"
+            />
+            HTML
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is CSS?"
+            onclick="window.location.href='https://www.w3.org/Style/CSS/Overview.en.html';"
+          >
+            <img
+              src="assets/images/Tech Stack/css.svg"
+              title="CSS Logo"
+              width="25rem"
+              height="25rem"
+              alt="CSS Logo"
+            />
+            CSS
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is JavaScript"
+            onclick="window.location.href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript';"
+          >
+            <img
+              src="assets/images/Tech Stack/javascript.svg"
+              title="JavaScript Logo"
+              width="20rem"
+              height="20rem"
+              alt="JavaScript Logo"
+            />
+            JavaScript
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is C++?"
+            onclick="window.location.href='https://www.w3schools.com/cpp/cpp_intro.asp';"
+          >
+            <img
+              src="assets/images/Tech Stack/c++.svg"
+              title="C++ Logo"
+              width="25rem"
+              height="25rem"
+              alt="C++ Logo"
+            />
+            C++
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is Dart?"
+            onclick="window.location.href='https://dart.dev/overview';"
+          >
+            <img
+              src="assets/images/Tech Stack/dart.svg"
+              title="Dart Logo"
+              width="20rem"
+              height="20rem"
+              alt="Dart Logo"
+            />
+            Dart
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is Python?"
+            onclick="window.location.href='https://docs.python.org/3/faq/general.html#what-is-python';"
+          >
+            <img
+              src="assets/images/Tech Stack/python.svg"
+              title="Python Logo"
+              width="25rem"
+              height="25rem"
+              alt="Python Logo"
+            />
+            Python
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is MATLAB?"
+            onclick="window.location.href='https://www.mathworks.com/products/matlab.html';"
+          >
+            <img
+              src="assets/images/Tech Stack/matlab.svg"
+              title="MATLAB Logo"
+              width="25rem"
+              height="25rem"
+              alt="MATLAB Logo"
+            />
+            MATLAB
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is SQL?"
+            onclick="window.location.href='https://aws.amazon.com/what-is/sql/';"
+          >
+            <img
+              src="assets/images/Tech Stack/sql.svg"
+              title="SQL Logo"
+              width="25rem"
+              height="25rem"
+              alt="SQL Logo"
+            />
+            SQL
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+        </div>
+        <div class="smallBlock">
+          <h6 class="smallBlockTitles">Software & Hardware:</h6>
+
+          <button
+            class="secondaryButtons"
+            title="What is Visual Studio Code?"
+            onclick="window.location.href='https://code.visualstudio.com/docs/supporting/faq';"
+          >
+            <img
+              src="assets/images/Tech Stack/visualStudioCode.svg"
+              title="Visual Studio Code Logo"
+              width="20rem"
+              height="20rem"
+              alt="Visual Studio Code Logo"
+            />
+            Visual Studio Code
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is GitHub?"
+            onclick="window.location.href='https://docs.github.com/en/get-started/quickstart/hello-world';"
+          >
+            <img
+              src="assets/images/Tech Stack/githubSocialMedia.svg"
+              title="GitHub Logo"
+              width="20rem"
+              height="20rem"
+              alt="GitHub Logo"
+            />
+            GitHub
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is Android Studio?"
+            onclick="window.location.href='https://developer.android.com/studio/intro';"
+          >
+            <img
+              src="assets/images/Tech Stack/androidStudio.svg"
+              title="Android Studio Logo"
+              width="25rem"
+              height="25rem"
+              alt="Android Studio Logo"
+            />
+            Android Studio
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is Visual Studio?"
+            onclick="window.location.href='https://visualstudio.microsoft.com/#vs-section';"
+          >
+            <img
+              src="assets/images/Tech Stack/visualStudio.svg"
+              title="Visual Studio Logo"
+              width="20rem"
+              height="20rem"
+              alt="Visual Studio Logo"
+            />
+            Visual Studio
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is Arduino?"
+            onclick="window.location.href='https://www.arduino.cc/en/Guide/Introduction';"
+          >
+            <img
+              src="assets/images/Tech Stack/arduinoTechStack.svg"
+              title="Arduino Logo"
+              width="25rem"
+              height="25rem"
+              alt="Arduino Logo"
+            />
+            Arduino
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What are Jupyter Notebooks?"
+            onclick="window.location.href='https://jupyter-notebook.readthedocs.io/en/stable/';"
+          >
+            <img
+              src="assets/images/Tech Stack/Jupyter.svg"
+              title="Jupyter Notebook Logo"
+              width="25rem"
+              height="25rem"
+              alt="Jupyter Notebook Logo"
+            />
+            Jupyter Notebook
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is Raspberry Pi"
+            onclick="window.location.href='https://www.raspberrypi.com/for-home/';"
+          >
+            <img
+              src="assets/images/Tech Stack/raspberryPi.svg"
+              title="Raspberry Pi Logo"
+              width="20rem"
+              height="20rem"
+              alt="Raspberry Pi Logo"
+            />
+            Raspberry Pi
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is VirtualBox?"
+            onclick="window.location.href='https://www.virtualbox.org/wiki/VirtualBox';"
+          >
+            <img
+              src="assets/images/Tech Stack/virtualbox.svg"
+              title="VirtualBox Logo"
+              width="25rem"
+              height="25rem"
+              alt="VirtualBox Logo"
+            />
+            VirtualBox
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+        </div>
+        <div class="smallBlock">
+          <h6 class="smallBlockTitles">Frameworks:</h6>
+
+          <button
+            class="secondaryButtons"
+            title="What is Bootstrap?"
+            onclick="window.location.href='https://www.w3schools.com/whatis/whatis_bootstrap.asp';"
+          >
+            <img
+              src="assets/images/Tech Stack/bootstrap.svg"
+              title="Bootstrap Logo"
+              width="25rem"
+              height="25rem"
+              alt="Bootstrap Logo"
+            />
+            Bootstrap
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is Django?"
+            onclick="window.location.href='https://www.djangoproject.com/';"
+          >
+            <img
+              src="assets/images/Tech Stack/django.svg"
+              title="Django Logo"
+              width="17.5rem"
+              height="17.5rem"
+              alt="Django Logo"
+            />
+            Django
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+
+          <button
+            class="secondaryButtons"
+            title="What is Flutter?"
+            onclick="window.location.href='https://flutter.dev/';"
+          >
+            <img
+              src="assets/images/Tech Stack/flutter.svg"
+              title="Flutter Logo"
+              width="20rem"
+              height="20rem"
+              alt="Flutter Logo"
+            />
+            Flutter
+            <img
+              src="assets/images/Icons/info.svg"
+              title="Info"
+              width="25rem"
+              height="25rem"
+              alt="More Info Button"
+            />
+          </button>
+        </div>
+
         <br />
       </div>
     </section>
@@ -799,182 +628,167 @@
         <br />
 
         <div class="HEADINGS"><h1>PROJECTS</h1></div>
-        <div class="headingsDescriptions text-center">
+        <div class="headingsDescriptions">
           <p>
             Here you can find more information about me, my goals, achievements,
             licenses, among other information.
           </p>
         </div>
-        <div class="container text-center">
-          <div class="row align-items-center">
-            <!--Image of me-->
-            <div class="col">
-              <img
-                class="projectPictures"
-                src="assets/images/Project Pictures/DEPO.png"
-                title="Depo Web Application Fines Tab."
-                alt="A picture of the DEPO Web Application Fines tab was supposed to appear here..."
-              />
-            </div>
-            <div class="col">
-              <div>
-                <h2 class="projectTitle">DEPO Web Application:</h2>
-              </div>
 
-              <div class="projectOverview">
-                <h5>Overview:</h5>
+        <img
+          class="projectPictures"
+          src="assets/images/Project Pictures/DEPO.png"
+          title="Depo Web Application Fines Tab."
+          alt="A picture of the DEPO Web Application Fines tab was supposed to appear here..."
+        />
 
-                As a Capstone Project my classmates and I developed DEPO, a web
-                app to automate purchase reporting for Puerto Rico govt
-                entities. Minimized errors & sped up data entry. Focused on
-                user-friendly portal for ASG employees.
-              </div>
-
-              <div class="learnMoreButton">
-                <button
-                  onclick="window.location.href='/jadnell555.github.io/Projects/depoProject.html';"
-                  title="More details about the DEPO Web App"
-                >
-                  More Details:
-                </button>
-              </div>
-            </div>
-          </div>
-          <br /><br />
-          <div class="row align-items-center">
-            <!--Image of me-->
-            <div class="col reverseColumns">
-              <h2 class="projectTitle">My Portfolio:</h2>
-
-              <div class="projectOverview">
-                <h5>Overview:</h5>
-
-                Dive into my knowledge! Explore real-world projects (personal &
-                uni) & master skills I've honed. Contact me via social media,
-                form, or Resumé. Built with free & user-friendly GitHub Pages.
-                Evolving since July 2023. (This Website)
-              </div>
-
-              <div class="learnMoreButton">
-                <button
-                  onclick="window.location.href='/jadnell555.github.io/Projects/myPortfolioProject.html';"
-                  title="More details about my Portfolio"
-                >
-                  More Details:
-                </button>
-              </div>
-            </div>
-            <div class="col">
-              <img
-                class="projectPictures"
-                src="assets/images/Project Pictures/DEPO.png"
-                title="My Portfolio (This Website)."
-                alt="A picture of My Portfolio was supposed to appear here..."
-              />
-            </div>
-          </div>
-          <br />
-          <br />
-          <div class="row align-items-center">
-            <!--Image of me-->
-            <div class="col">
-              <img
-                class="projectPictures"
-                src="assets/images/Project Pictures/HQG.png"
-                title="Haresh Quiz Game Main Screen."
-                alt="A picture of Haresh Quiz Game was supposed to appear here..."
-              />
-            </div>
-            <div class="col">
-              <h2 class="projectTitle">Haresh Quiz Game:</h2>
-
-              <div class="projectOverview">
-                <h5>Overview:</h5>
-
-                Test your knowledge with Haresh Quiz Game! A simple game
-                developed for my Advanced Programming class using Python. Answer
-                20 questions to win. 3 lives, simple GUI, 3 versions: simple
-                logic, functions and classes.
-              </div>
-
-              <div class="learnMoreButton">
-                <button
-                  onclick="window.location.href='/jadnell555.github.io/Projects/hareshQuizGame.html';"
-                  title="More details about Haresh Quiz Game"
-                >
-                  More Details:
-                </button>
-              </div>
-            </div>
-          </div>
-          <br /><br />
-          <div class="row align-items-center">
-            <!--Image of me-->
-            <div class="col reverseColumns">
-              <h2 class="projectTitle">DC Motor Control:</h2>
-
-              <div class="projectOverview">
-                <h5>Overview:</h5>
-
-                Harnessing an Arduino board, C++ & keyboard inputs, we built a
-                system that commands a DC motor's speed! Watch it accelerate
-                using pulse width modulation, then take the wheel through your
-                keyboard.
-              </div>
-
-              <div class="learnMoreButton">
-                <button
-                  onclick="window.location.href='/jadnell555.github.io/Projects/dcMotorControlProject.html';"
-                  title="More details about DC Motor Control"
-                >
-                  More Details:
-                </button>
-              </div>
-            </div>
-            <div class="col">
-              <img
-                class="projectPictures"
-                src="assets/images/Project Pictures/DCM.png"
-                title="DC Motor Circuit with two Inputs."
-                alt="A picture of a DC Motor circuit was supposed to appear here..."
-              />
-            </div>
-          </div>
-
-          <br /><br />
-          <div class="row align-items-center">
-            <!--Image of me-->
-            <div class="col">
-              <img
-                class="projectPictures"
-                src="assets/images/Project Pictures/STM.png"
-                title="28byj-48 Step Motor and Arduino Connector."
-                alt="A picture of a 28byj-48 Step Motor and an Arduino Connector was supposed to appear here..."
-              />
-            </div>
-            <div class="col">
-              <h2 class="projectTitle">Step Motor Control:</h2>
-
-              <div class="projectOverview">
-                <h5>Overview:</h5>
-
-                This project used an Arduino & C++ to command a 28BYJ-48 geared
-                step motor. Control included clockwise/counter-clockwise
-                rotation (continuous & by steps) & stop function, all triggered
-                by keyboard commands. ️
-              </div>
-
-              <div class="learnMoreButton">
-                <button
-                  onclick="window.location.href='/jadnell555.github.io/Projects/stepMotorControlProject.html';"
-                  title="More details about Step Motor Control"
-                >
-                  More Details:
-                </button>
-              </div>
-            </div>
-          </div>
+        <div>
+          <h2 class="projectTitle">DEPO Web Application:</h2>
         </div>
+
+        <div class="smallBlock">
+          <h5>Overview:</h5>
+
+          As a Capstone Project my classmates and I developed DEPO, a web app to
+          automate purchase reporting for Puerto Rico govt entities. Minimized
+          errors & sped up data entry. Focused on user-friendly portal for ASG
+          employees.
+        </div>
+
+        <div class="primaryButtons">
+          <button
+            onclick="window.location.href='/jadnell555.github.io/Projects/depoProject.html';"
+            title="More details about the DEPO Web App"
+          >
+            More Details:
+          </button>
+        </div>
+
+        <br /><br />
+
+        <!--Image of me-->
+
+        <h2 class="projectTitle">My Portfolio:</h2>
+
+        <div class="smallBlock">
+          <h5>Overview:</h5>
+
+          Dive into my knowledge! Explore real-world projects (personal & uni) &
+          master skills I've honed. Contact me via social media, form, or
+          Resumé. Built with free & user-friendly GitHub Pages. Evolving since
+          July 2023. (This Website)
+        </div>
+
+        <div class="primaryButtons">
+          <button
+            onclick="window.location.href='/jadnell555.github.io/Projects/myPortfolioProject.html';"
+            title="More details about my Portfolio"
+          >
+            More Details:
+          </button>
+        </div>
+
+        <img
+          class="projectPictures"
+          src="assets/images/Project Pictures/DEPO.png"
+          title="My Portfolio (This Website)."
+          alt="A picture of My Portfolio was supposed to appear here..."
+        />
+
+        <br />
+        <br />
+
+        <!--Image of me-->
+        <div class="col">
+          <img
+            class="projectPictures"
+            src="assets/images/Project Pictures/HQG.png"
+            title="Haresh Quiz Game Main Screen."
+            alt="A picture of Haresh Quiz Game was supposed to appear here..."
+          />
+        </div>
+
+        <h2 class="projectTitle">Haresh Quiz Game:</h2>
+
+        <div class="smallBlock">
+          <h5>Overview:</h5>
+
+          Test your knowledge with Haresh Quiz Game! A simple game developed for
+          my Advanced Programming class using Python. Answer 20 questions to
+          win. 3 lives, simple GUI, 3 versions: simple logic, functions and
+          classes.
+        </div>
+
+        <div class="primaryButtons">
+          <button
+            onclick="window.location.href='/jadnell555.github.io/Projects/hareshQuizGame.html';"
+            title="More details about Haresh Quiz Game"
+          >
+            More Details:
+          </button>
+        </div>
+
+        <br /><br />
+
+        <!--Image of me-->
+
+        <h2 class="projectTitle">DC Motor Control:</h2>
+
+        <div class="smallBlock">
+          <h5>Overview:</h5>
+
+          Harnessing an Arduino board, C++ & keyboard inputs, we built a system
+          that commands a DC motor's speed! Watch it accelerate using pulse
+          width modulation, then take the wheel through your keyboard.
+        </div>
+
+        <div class="primaryButtons">
+          <button
+            onclick="window.location.href='/jadnell555.github.io/Projects/dcMotorControlProject.html';"
+            title="More details about DC Motor Control"
+          >
+            More Details:
+          </button>
+        </div>
+
+        <img
+          class="projectPictures"
+          src="assets/images/Project Pictures/DCM.png"
+          title="DC Motor Circuit with two Inputs."
+          alt="A picture of a DC Motor circuit was supposed to appear here..."
+        />
+
+        <br /><br />
+
+        <!--Image of me-->
+
+        <img
+          class="projectPictures"
+          src="assets/images/Project Pictures/STM.png"
+          title="28byj-48 Step Motor and Arduino Connector."
+          alt="A picture of a 28byj-48 Step Motor and an Arduino Connector was supposed to appear here..."
+        />
+
+        <h2 class="projectTitle">Step Motor Control:</h2>
+
+        <div class="smallBlock">
+          <h5>Overview:</h5>
+
+          This project used an Arduino & C++ to command a 28BYJ-48 geared step
+          motor. Control included clockwise/counter-clockwise rotation
+          (continuous & by steps) & stop function, all triggered by keyboard
+          commands. ️
+        </div>
+
+        <div class="primaryButtons">
+          <button
+            onclick="window.location.href='/jadnell555.github.io/Projects/stepMotorControlProject.html';"
+            title="More details about Step Motor Control"
+          >
+            More Details:
+          </button>
+        </div>
+
         <br />
         <br />
         <br />
@@ -988,14 +802,15 @@
         <br />
 
         <div class="HEADINGS"><h1>CONTACT</h1></div>
-        <div class="headingsDescriptions text-center">
+        <div class="headingsDescriptions">
           <p>
             If you want to collaborate or hire me, send me a message through the
             form or my social media below.
           </p>
         </div>
+        <br />
 
-        <div class="contactBlock">
+        <div class="smallBlock">
           <h3 class="blockTitles">Message Me:</h3>
 
           <form
@@ -1004,153 +819,130 @@
             method="post"
             onsubmit="return validateName()"
           >
-            <div class="row">
-              <div class="col">
-                <input
-                  type="text"
-                  class="formButtons"
-                  id="firstName"
-                  placeholder="First Name:"
-                  name="firstName"
-                  required
-                />
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="formButtons"
-                  id="lastName"
-                  placeholder="Last Name:"
-                  name="lastName"
-                  required
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <input
-                  type="email"
-                  class="formButtons"
-                  id="email"
-                  placeholder="Email:"
-                  name="email"
-                  required
-                  autocomplete="email"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <textarea
-                  type="textarea"
-                  placeholder="Message:"
-                  class="formButtons"
-                  name="message"
-                  value="Hello how are you?"
-                  required
-                ></textarea>
-              </div>
-            </div>
+            <div id="fullName">
+              <input
+                type="text"
+                class="formButtons"
+                placeholder="First Name:"
+                name="firstName"
+                required
+              />
 
-            <div class="row">
-              <div class="col text-center">
-                <button
-                  title="Send"
-                  type="submit"
-                  id="submitButton"
-                  class="pageclip-form__submit formButtons"
-                  value="Send"
-                >
-                  Send
-                </button>
-              </div>
+              <input
+                type="text"
+                class="formButtons"
+                placeholder="Last Name:"
+                name="lastName"
+                required
+              />
+            </div>
+            <input
+              type="email"
+              class="formButtons"
+              placeholder="Email:"
+              name="email"
+              required
+              autocomplete="email"
+            />
+
+            <textarea
+              type="textarea"
+              placeholder="Message:"
+              class="formButtons"
+              name="message"
+              value="Hello how are you?"
+              required
+            ></textarea>
+
+            <div class="primaryButtons">
+              <button
+                title="Send"
+                type="submit"
+                class="pageclip-form__submit formButtons"
+                value="Send"
+              >
+                Send
+              </button>
             </div>
           </form>
         </div>
-
-        <br />
-        <br />
-        <br />
       </div>
     </section>
     <section id="socialMediaSection">
       <div class="wrapper animatedSection">
-        <div class="row align-items-center">
-          <div class="col">
-            <h3 id="socialMediaHeading">Social Media:</h3>
-          </div>
-          <div class="col">
-            <ul id="socialMediaItems">
-              <li class="socialMediaItem">
-                <button
-                  class="socialMediaButton"
-                  type="button"
-                  onclick="window.location.href='https://www.instagram.com/j_dnll/';"
-                >
-                  <img
-                    src="assets/images/Social Media/instagram.svg"
-                    title="Instagram"
-                    width="25px"
-                    height="25px"
-                    alt="Instagram Button"
-                  />
-                </button>
-              </li>
-              <li class="socialMediaItem">
-                <button
-                  class="socialMediaButton"
-                  type="button"
-                  onclick="window.location.href='https://www.x.com/jadnellReyes';"
-                >
-                  <img
-                    src="assets/images/Social Media/x.svg"
-                    title="X"
-                    width="20px"
-                    height="20px"
-                    alt="X Button"
-                  />
-                </button>
-              </li>
-              <li class="socialMediaItem">
-                <button
-                  class="socialMediaButton"
-                  type="button"
-                  onclick="window.location.href='https://github.com/jadnell555';"
-                >
-                  <img
-                    src="assets/images/Tech Stack/githubSocialMedia.svg"
-                    title="GitHub"
-                    width="30px"
-                    height="30px"
-                    alt="GitHub Button"
-                  />
-                </button>
-              </li>
-              <li class="socialMediaItem">
-                <button
-                  class="socialMediaButton"
-                  type="button"
-                  onclick="window.location.href='https://www.linkedin.com/in/jadnell-h-reyes-perez-301687280';"
-                >
-                  <img
-                    src="assets/images/Social Media/linkedin.svg"
-                    title="LinkedIn"
-                    width="25px"
-                    height="25px"
-                    alt="LinkedIn Button"
-                  />
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <h3 id="socialMediaHeading">Social Media:</h3>
+
+        <ul id="socialMediaItems">
+          <li class="socialMediaItem">
+            <button
+              class="socialMediaButton"
+              type="button"
+              onclick="window.location.href='https://www.instagram.com/j_dnll/';"
+            >
+              <img
+                src="assets/images/Social Media/instagram.svg"
+                title="Instagram"
+                width="25px"
+                height="25px"
+                alt="Instagram Button"
+              />
+            </button>
+          </li>
+          <li class="socialMediaItem">
+            <button
+              class="socialMediaButton"
+              type="button"
+              onclick="window.location.href='https://www.x.com/jadnellReyes';"
+            >
+              <img
+                src="assets/images/Social Media/x.svg"
+                title="X"
+                width="20px"
+                height="20px"
+                alt="X Button"
+              />
+            </button>
+          </li>
+          <li class="socialMediaItem">
+            <button
+              class="socialMediaButton"
+              type="button"
+              onclick="window.location.href='https://github.com/jadnell555';"
+            >
+              <img
+                src="assets/images/Tech Stack/githubSocialMedia.svg"
+                title="GitHub"
+                width="30px"
+                height="30px"
+                alt="GitHub Button"
+              />
+            </button>
+          </li>
+          <li class="socialMediaItem">
+            <button
+              class="socialMediaButton"
+              type="button"
+              onclick="window.location.href='https://www.linkedin.com/in/jadnell-h-reyes-perez-301687280';"
+            >
+              <img
+                src="assets/images/Social Media/linkedin.svg"
+                title="LinkedIn"
+                width="25px"
+                height="25px"
+                alt="LinkedIn Button"
+              />
+            </button>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- end contact section-->
     <footer>
       <div class="wrapper animatedSection">
-        Copyright © 2023. All Rights Reserved. Created by Jadnell H. Reyes
-        P&eacute;rez
+        <p>
+          Copyright © 2025. All Rights Reserved. Created by Jadnell H. Reyes
+          P&eacute;rez
+        </p>
       </div>
     </footer>
 
