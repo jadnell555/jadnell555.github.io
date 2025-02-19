@@ -138,6 +138,7 @@ button {
   color: #111812;
   font-size: 1rem;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 /*Theme Changer Button*/
@@ -196,7 +197,7 @@ button {
   background-color: #f8f8ff;
 }
 
-#expertiseSection,
+#aboutMeSection,
 #contactSection {
   background-color: #eeeef5;
 }
@@ -331,7 +332,7 @@ button {
 }
 /*END LANDING SECTION*/
 
-/*EXPERTISE SECTION*/
+/*ABOUT ME SECTION*/
 .blockTitles {
   text-align: center;
   padding: 0.25rem;
@@ -378,7 +379,7 @@ button {
   border-color: #347b56;
 }
 
-/*END EXPERTISE SECTION*/
+/*END ABOUT ME SECTION*/
 
 /*PROJECTS SECTIONS*/
 img.projectPictures {
@@ -598,12 +599,12 @@ div.col.projectType {
 
 /* CONTACT SECTION */
 .pageclip-form__submit::after {
-  border-color: rgba(120, 127, 246, 0.8);
-  border-left-color: #7bd5f5;
+  border-color: #1a7452;
+  border-left-color: #347b56;
 }
 
 .pageclip-form__success {
-  background: hsla(300, 3%, 89%, 0.8);
+  background: #eeeef5;
   border-radius: 20px;
 }
 
