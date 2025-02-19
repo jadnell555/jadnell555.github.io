@@ -335,36 +335,49 @@ button {
 .blockTitles {
   text-align: center;
   padding: 0.25rem;
-  margin: auto;
   color: #347b56;
 }
 
+.inBlockTitles {
+  text-align: center;
+  padding: 0.5rem;
+  color: #111812;
+}
+
+.educationBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .educationDates {
-  padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+  flex: 1.25;
+  padding: 0.5rem;
+}
+
+.credentials {
+  flex: 2;
+  padding: 0.5rem;
+  text-align: justify;
+  font-size: medium;
 }
 
 .educationLists {
   display: flex;
+  padding: 0.1rem;
   flex-direction: row;
+  justify-content: space-evenly;
   list-style-type: none;
-  margin: auto;
 }
 
 .educationLists li {
-  padding: 0 0.5rem;
-  margin: 0 0.25rem;
+  padding: 0.1rem 0.5rem;
   border-radius: 20px;
   border-style: dashed;
   color: #347b56;
   border-color: #347b56;
 }
 
-.smallBlockTitles {
-  text-align: center;
-  padding: 0.25rem;
-  margin: auto;
-  color: #111812;
-}
 /*END EXPERTISE SECTION*/
 
 /*PROJECTS SECTIONS*/
