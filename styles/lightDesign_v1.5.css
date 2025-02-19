@@ -382,13 +382,18 @@ button {
 
 /*PROJECTS SECTIONS*/
 img.projectPictures {
-  aspect-ratio: 4/3;
-  height: 30vh;
+  aspect-ratio: initial;
+  height: auto;
+  width: 95%;
 }
 
 .projectTitle {
   color: #347b56;
   text-align: left;
+}
+
+.projectContainer {
+  padding-bottom: 2.5rem;
 }
 
 /*INDIVIDUAL PROJECTS*/
