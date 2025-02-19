@@ -69,6 +69,14 @@ button {
   margin-right: auto;
   padding-left: 2rem;
   padding-right: 2rem;
+  align-items: center;
+}
+
+.pictureWrapper {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 1.5rem;
 }
 
 #navBarWrapper {
@@ -386,6 +394,9 @@ img.projectPictures {
   aspect-ratio: initial;
   height: auto;
   width: 95%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
 }
 
 .projectTitle {
