@@ -74,9 +74,10 @@ button {
 
 .pictureWrapper {
   display: flex;
+  width: 100%;
   align-items: center;
   box-sizing: border-box;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 #navBarWrapper {
