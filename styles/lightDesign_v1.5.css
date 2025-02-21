@@ -104,7 +104,7 @@ button {
 /*Navigation Bar*/
 #newNavBar {
   width: 100%;
-  height: 50px;
+  height: 75px;
   background: linear-gradient(40deg, #1a7452 44%, #347b56 100%);
   border-radius: 0px 0px 20px 20px;
   box-shadow: 0px 2px 3px #111812;
@@ -121,8 +121,8 @@ button {
 }
 
 #menuButton img {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
 }
 
 #menuButton {
@@ -147,7 +147,7 @@ button {
 .navBarTitles {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.2;
   white-space: nowrap;
 }
@@ -160,8 +160,8 @@ button {
 }
 
 #themeChanger img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 #themeButton {
@@ -194,9 +194,9 @@ button {
 
 .navBarItem {
   margin: 0.25rem auto;
-  padding: 0.25rem 1rem;
+  padding: 0.75rem 1rem;
   background: linear-gradient(40deg, #1a7452 44%, #347b56 100%);
-  border-radius: 20px;
+  border-radius: 50px;
   box-shadow: 0px 2px 3px #111812;
   text-decoration: none;
 }
