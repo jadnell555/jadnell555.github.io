@@ -44,6 +44,7 @@ button {
   border-radius: 50px;
   box-shadow: 1px 1px 1px #347b56;
   font-size: large;
+  font-weight: bold;
   color: white;
   margin: auto;
   padding: 0.75rem 1rem;
@@ -148,6 +149,7 @@ button {
   text-decoration: none;
   color: white;
   font-size: large;
+  font-weight: bold;
   line-height: 1.2;
   white-space: nowrap;
 }
@@ -617,7 +619,7 @@ div.col.projectType {
 
 /* CONTACT SECTION */
 .pageclip-form__submit::after {
-  border-color: #1a7452;
+  border-color: #252525;
   border-left-color: #347b56;
 }
 
