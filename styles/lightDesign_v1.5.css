@@ -372,8 +372,9 @@ section {
 }
 
 .educationDates {
-  flex: 1.25;
+  flex: 1;
   padding: 0.5rem;
+  font-size: medium;
 }
 
 .credentials {
