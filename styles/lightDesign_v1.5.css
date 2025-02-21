@@ -340,6 +340,7 @@ section {
   border-radius: 20px;
   margin: 1rem 0;
   padding: 1rem;
+  font-size: large;
   background-color: #f8f8ff;
   text-align: justify;
 }
@@ -348,6 +349,7 @@ section {
   font-size: larger;
   padding: 0 0 0.5rem 0;
 }
+
 /*END LANDING SECTION*/
 
 /*ABOUT ME SECTION*/
