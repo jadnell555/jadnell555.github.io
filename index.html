@@ -89,38 +89,39 @@
     <!-- LANDING SECTION -->
     <section id="landingSection">
       <div class="wrapper animatedSection">
-        <!-- Intro and Image -->
+        <div id="landing">
+          <!--Image of me-->
+          <div class="pictureWrapper">
+            <img
+              id="mainPicture"
+              src="assets/images/Pictures/ME.png"
+              title="Hello! This is me"
+              alt="A picture of Jadnell Reyes was supposed to appear here..."
+            />
+          </div>
 
-        <!--Image of me-->
-        <div class="pictureWrapper">
-          <img
-            id="mainPicture"
-            src="assets/images/Pictures/ME.png"
-            title="Hello! This is me"
-            alt="A picture of Jadnell Reyes was supposed to appear here..."
-          />
+          <div id="intro">
+            <h1>Hello World! I'm</h1>
+            <h1>Jadnell H. Reyes Perez</h1>
+            <h3>Computer Engineer</h3>
+          </div>
+
+          <div class="smallBlock">
+            A Full Stack Web Developer, Designer and Engineer graduated from the
+            Polytechnic University of Puerto Rico. Keep scrolling or press the
+            button below to learn about the technologies & hardware I have
+            experience on, projects and more.
+          </div>
         </div>
-
-        <div id="intro">
-          <h1>Hello World! I'm</h1>
-          <h1>Jadnell H. Reyes Perez</h1>
-          <h3>Computer Engineer</h3>
-        </div>
-
-        <div class="smallBlock">
-          A Full Stack Web Developer, Designer and Engineer graduated from the
-          Polytechnic University of Puerto Rico. Keep scrolling or press the
-          button below to learn about the technologies & hardware I have
-          experience on, projects and more.
-        </div>
-
-        <div class="primaryButtons">
-          <button
-            title="Learn More About Me"
-            onclick="window.location.href='#aboutMeSection';"
-          >
-            Learn More:
-          </button>
+        <div class="wrapper">
+          <div class="primaryButtons">
+            <button
+              title="Learn More About Me"
+              onclick="window.location.href='#aboutMeSection';"
+            >
+              Learn More:
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -135,55 +136,56 @@
             familiarity with various tools and software.
           </p>
         </div>
-
         <h2 class="blockTitles">Education:</h2>
-        <div class="smallBlock">
-          <div class="educationBlock">
-            <div class="educationDates">
-              1/18 - 7/23
-              <br />
-              Hato Rey, PR
-            </div>
+        <div id="education">
+          <div class="smallBlock">
+            <div class="educationBlock">
+              <div class="educationDates">
+                1/18 - 7/23
+                <br />
+                Hato Rey, PR
+              </div>
 
-            <div class="credentials">
-              <b>Bachelor's Degree of Science in Computer Engineering</b>
-              <br />
-              <i>Polytechnic University of Puerto Rico</i> <br />
+              <div class="credentials">
+                <b>Bachelor's Degree of Science in Computer Engineering</b>
+                <br />
+                <i>Polytechnic University of Puerto Rico</i> <br />
+              </div>
             </div>
+            <ul class="educationLists">
+              <li>GPA: 3.3</li>
+
+              <li><i> Cum Laude </i></li>
+            </ul>
           </div>
-          <ul class="educationLists">
-            <li>GPA: 3.3</li>
 
-            <li><i> Cum Laude </i></li>
-          </ul>
-        </div>
+          <div class="smallBlock">
+            <div class="educationBlock">
+              <div class="educationDates">
+                8/06 - 6/18
+                <br />
+                San Juan, PR
+              </div>
 
-        <div class="smallBlock">
-          <div class="educationBlock">
-            <div class="educationDates">
-              8/06 - 6/18
-              <br />
-              San Juan, PR
+              <div class="credentials">
+                <b>High School Diploma</b>
+                <br />
+                <i>Colegio Nuestra Se&ntilde;ora de la Altagracia</i>
+                <br />
+              </div>
             </div>
-
-            <div class="credentials">
-              <b>High School Diploma</b>
-              <br />
-              <i>Colegio Nuestra Se&ntilde;ora de la Altagracia</i>
-              <br />
-            </div>
+            <ul class="educationLists">
+              <li>GPA: 4.0</li>
+              <li>Valedictorian</li>
+            </ul>
           </div>
-          <ul class="educationLists">
-            <li>GPA: 4.0</li>
-            <li>Valedictorian</li>
-          </ul>
         </div>
-
         <h2 class="blockTitles">Tech Stack:</h2>
 
-        <div class="smallBlock">
-          <h3 class="inBlockTitles">Software Development:</h3>
-          <!--
+        <div id="techStack1">
+          <div class="smallBlock">
+            <h3 class="inBlockTitles">Software Development:</h3>
+            <!--
           <button
             class="secondaryButtons"
             title="What is HTML?"
@@ -359,12 +361,11 @@
               alt="More Info Button"
             />
           </button>
-          -->
-        </div>
+          --></div>
 
-        <div class="smallBlock">
-          <h3 class="inBlockTitles">Data Analysis:</h3>
-          <!--
+          <div class="smallBlock">
+            <h3 class="inBlockTitles">Data Analysis:</h3>
+            <!--
           <button
             class="secondaryButtons"
             title="What is Visual Studio Code?"
@@ -540,11 +541,12 @@
               alt="More Info Button"
             />
           </button>
-          -->
+          --></div>
         </div>
-        <div class="smallBlock">
-          <h3 class="inBlockTitles">Hardware:</h3>
-          <!--
+        <div id="techStack2">
+          <div class="smallBlock">
+            <h3 class="inBlockTitles">Hardware:</h3>
+            <!--
           <button
             class="secondaryButtons"
             title="What is Bootstrap?"
@@ -610,11 +612,11 @@
               alt="More Info Button"
             />
           </button>
-          -->
-        </div>
+          --></div>
 
-        <div class="smallBlock">
-          <h3 class="inBlockTitles">Project Management & Other Tools:</h3>
+          <div class="smallBlock">
+            <h3 class="inBlockTitles">Project Management & Other Tools:</h3>
+          </div>
         </div>
       </div>
     </section>
@@ -680,14 +682,15 @@
             Resumé. Built with free & user-friendly GitHub Pages. Evolving since
             July 2023. (This Website)
           </div>
-
-          <div class="primaryButtons">
-            <button
-              onclick="window.location.href='/jadnell555.github.io/Projects/myPortfolioProject.html';"
-              title="More details about my Portfolio"
-            >
-              More Details:
-            </button>
+          <div class="wrapper">
+            <div class="primaryButtons">
+              <button
+                onclick="window.location.href='/jadnell555.github.io/Projects/myPortfolioProject.html';"
+                title="More details about my Portfolio"
+              >
+                More Details:
+              </button>
+            </div>
           </div>
         </div>
 
@@ -711,14 +714,15 @@
             to win. 3 lives, simple GUI, 3 versions: simple logic, functions and
             classes.
           </div>
-
-          <div class="primaryButtons">
-            <button
-              onclick="window.location.href='/jadnell555.github.io/Projects/hareshQuizGame.html';"
-              title="More details about Haresh Quiz Game"
-            >
-              More Details:
-            </button>
+          <div class="wrapper">
+            <div class="primaryButtons">
+              <button
+                onclick="window.location.href='/jadnell555.github.io/Projects/hareshQuizGame.html';"
+                title="More details about Haresh Quiz Game"
+              >
+                More Details:
+              </button>
+            </div>
           </div>
         </div>
 
@@ -740,14 +744,15 @@
             system that commands a DC motor's speed! Watch it accelerate using
             pulse width modulation, then take the wheel through your keyboard.
           </div>
-
-          <div class="primaryButtons">
-            <button
-              onclick="window.location.href='/jadnell555.github.io/Projects/dcMotorControlProject.html';"
-              title="More details about DC Motor Control"
-            >
-              More Details:
-            </button>
+          <div class="wrapper">
+            <div class="primaryButtons">
+              <button
+                onclick="window.location.href='/jadnell555.github.io/Projects/dcMotorControlProject.html';"
+                title="More details about DC Motor Control"
+              >
+                More Details:
+              </button>
+            </div>
           </div>
         </div>
 
@@ -771,14 +776,15 @@
             (continuous & by steps) & stop function, all triggered by keyboard
             commands. ️
           </div>
-
-          <div class="primaryButtons">
-            <button
-              onclick="window.location.href='/jadnell555.github.io/Projects/stepMotorControlProject.html';"
-              title="More details about Step Motor Control"
-            >
-              More Details:
-            </button>
+          <div class="wrapper">
+            <div class="primaryButtons">
+              <button
+                onclick="window.location.href='/jadnell555.github.io/Projects/stepMotorControlProject.html';"
+                title="More details about Step Motor Control"
+              >
+                More Details:
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -794,62 +800,63 @@
           </p>
         </div>
         <br />
+        <div id="contactForm">
+          <div class="smallBlock">
+            <h2 class="blockTitles">Message Me:</h2>
 
-        <div class="smallBlock">
-          <h2 class="blockTitles">Message Me:</h2>
+            <form
+              action="https://send.pageclip.co/CAH0P5X4x3AsDEPAqnhl4MqM62FY8Ndd/contactForm"
+              class="pageclip-form form"
+              method="post"
+              onsubmit="return validateName()"
+            >
+              <div id="fullName">
+                <input
+                  type="text"
+                  class="formButtons"
+                  placeholder="First Name:"
+                  name="firstName"
+                  required
+                />
 
-          <form
-            action="https://send.pageclip.co/CAH0P5X4x3AsDEPAqnhl4MqM62FY8Ndd/contactForm"
-            class="pageclip-form form"
-            method="post"
-            onsubmit="return validateName()"
-          >
-            <div id="fullName">
+                <input
+                  type="text"
+                  class="formButtons"
+                  placeholder="Last Name:"
+                  name="lastName"
+                  required
+                />
+              </div>
               <input
-                type="text"
+                type="email"
                 class="formButtons"
-                placeholder="First Name:"
-                name="firstName"
+                placeholder="Email:"
+                name="email"
                 required
+                autocomplete="email"
               />
 
-              <input
-                type="text"
+              <textarea
+                type="textarea"
+                placeholder="Message:"
                 class="formButtons"
-                placeholder="Last Name:"
-                name="lastName"
+                name="message"
+                value="Hello how are you?"
                 required
-              />
-            </div>
-            <input
-              type="email"
-              class="formButtons"
-              placeholder="Email:"
-              name="email"
-              required
-              autocomplete="email"
-            />
+              ></textarea>
 
-            <textarea
-              type="textarea"
-              placeholder="Message:"
-              class="formButtons"
-              name="message"
-              value="Hello how are you?"
-              required
-            ></textarea>
-
-            <div class="primaryButtons">
-              <button
-                title="Send"
-                type="submit"
-                class="pageclip-form__submit formButtons"
-                value="Send"
-              >
-                Send
-              </button>
-            </div>
-          </form>
+              <div class="primaryButtons">
+                <button
+                  title="Send"
+                  type="submit"
+                  class="pageclip-form__submit formButtons"
+                  value="Send"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
