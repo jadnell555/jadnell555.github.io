@@ -741,13 +741,17 @@ footer {
 
 /* @MEDIA */
 
-@media screen and (width >= 768px) {
+@media screen and (width >= 768px) and (width <= 1023px) {
   #landing,
   #education,
   #techStack1,
   #techStack2 {
     flex-direction: row;
     gap: 10px;
+  }
+
+  #landing2 > .smallBlock {
+    width: 70%;
   }
 
   #navBarItems {
@@ -832,6 +836,10 @@ footer {
     justify-content: space-evenly;
     flex: 3;
     align-items: center;
+  }
+
+  #landing2 > .smallBlock {
+    width: 85%;
   }
   /*End Landing Section*/
 
