@@ -91,36 +91,38 @@
       <div class="wrapper animatedSection">
         <div id="landing">
           <!--Image of me-->
-          <div class="pictureWrapper">
-            <img
-              id="mainPicture"
-              src="assets/images/Pictures/ME.png"
-              title="Hello! This is me"
-              alt="A picture of Jadnell Reyes was supposed to appear here..."
-            />
+          <div id="landing1">
+            <div class="pictureWrapper">
+              <img
+                id="mainPicture"
+                src="assets/images/Pictures/ME.png"
+                title="Hello! This is me"
+                alt="A picture of Jadnell Reyes was supposed to appear here..."
+              />
+            </div>
           </div>
+          <div id="landing2">
+            <div id="intro">
+              <h1>Hello World! I'm Jadnell H. Reyes Perez</h1>
 
-          <div id="intro">
-            <h1>Hello World! I'm</h1>
-            <h1>Jadnell H. Reyes Perez</h1>
-            <h3>Computer Engineer</h3>
-          </div>
+              <h3>Computer Engineer</h3>
+            </div>
 
-          <div class="smallBlock">
-            A Full Stack Web Developer, Designer and Engineer graduated from the
-            Polytechnic University of Puerto Rico. Keep scrolling or press the
-            button below to learn about the technologies & hardware I have
-            experience on, projects and more.
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="primaryButtons">
-            <button
-              title="Learn More About Me"
-              onclick="window.location.href='#aboutMeSection';"
-            >
-              Learn More:
-            </button>
+            <div class="smallBlock">
+              A Full Stack Web Developer, Designer and Engineer graduated from
+              the Polytechnic University of Puerto Rico. Keep scrolling or press
+              the button below to learn about the technologies & hardware I have
+              experience on, projects and more.
+            </div>
+
+            <div class="primaryButtons">
+              <button
+                title="Learn More About Me"
+                onclick="window.location.href='#aboutMeSection';"
+              >
+                Learn More:
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -136,56 +138,60 @@
             familiarity with various tools and software.
           </p>
         </div>
-        <h2 class="blockTitles">Education:</h2>
-        <div id="education">
-          <div class="smallBlock">
-            <div class="educationBlock">
-              <div class="educationDates">
-                1/18 - 7/23
-                <br />
-                Hato Rey, PR
+        <div id="aboutMe">
+          <div id="educationLarge">
+            <h2 class="blockTitles">Education:</h2>
+            <div id="education">
+              <div class="smallBlock">
+                <div class="educationBlock">
+                  <div class="educationDates">
+                    1/18 - 7/23
+                    <br />
+                    Hato Rey, PR
+                  </div>
+
+                  <div class="credentials">
+                    <b>Bachelor's Degree of Science in Computer Engineering</b>
+                    <br />
+                    <i>Polytechnic University of Puerto Rico</i> <br />
+                  </div>
+                </div>
+                <ul class="educationLists">
+                  <li>GPA: 3.3</li>
+
+                  <li><i> Cum Laude </i></li>
+                </ul>
               </div>
 
-              <div class="credentials">
-                <b>Bachelor's Degree of Science in Computer Engineering</b>
-                <br />
-                <i>Polytechnic University of Puerto Rico</i> <br />
+              <div class="smallBlock">
+                <div class="educationBlock">
+                  <div class="educationDates">
+                    8/06 - 6/18
+                    <br />
+                    San Juan, PR
+                  </div>
+
+                  <div class="credentials">
+                    <b>High School Diploma</b>
+                    <br />
+                    <i>Colegio Nuestra Se&ntilde;ora de la Altagracia</i>
+                    <br />
+                  </div>
+                </div>
+                <ul class="educationLists">
+                  <li>GPA: 4.0</li>
+                  <li>Valedictorian</li>
+                </ul>
               </div>
             </div>
-            <ul class="educationLists">
-              <li>GPA: 3.3</li>
-
-              <li><i> Cum Laude </i></li>
-            </ul>
           </div>
+          <div id="techStackLarge">
+            <h2 class="blockTitles">Tech Stack:</h2>
 
-          <div class="smallBlock">
-            <div class="educationBlock">
-              <div class="educationDates">
-                8/06 - 6/18
-                <br />
-                San Juan, PR
-              </div>
-
-              <div class="credentials">
-                <b>High School Diploma</b>
-                <br />
-                <i>Colegio Nuestra Se&ntilde;ora de la Altagracia</i>
-                <br />
-              </div>
-            </div>
-            <ul class="educationLists">
-              <li>GPA: 4.0</li>
-              <li>Valedictorian</li>
-            </ul>
-          </div>
-        </div>
-        <h2 class="blockTitles">Tech Stack:</h2>
-
-        <div id="techStack1">
-          <div class="smallBlock">
-            <h3 class="inBlockTitles">Software Development:</h3>
-            <!--
+            <div id="techStack1">
+              <div class="smallBlock">
+                <h3 class="inBlockTitles">Software Development:</h3>
+                <!--
           <button
             class="secondaryButtons"
             title="What is HTML?"
@@ -361,11 +367,12 @@
               alt="More Info Button"
             />
           </button>
-          --></div>
+          -->
+              </div>
 
-          <div class="smallBlock">
-            <h3 class="inBlockTitles">Data Analysis:</h3>
-            <!--
+              <div class="smallBlock">
+                <h3 class="inBlockTitles">Data Analysis:</h3>
+                <!--
           <button
             class="secondaryButtons"
             title="What is Visual Studio Code?"
@@ -541,12 +548,13 @@
               alt="More Info Button"
             />
           </button>
-          --></div>
-        </div>
-        <div id="techStack2">
-          <div class="smallBlock">
-            <h3 class="inBlockTitles">Hardware:</h3>
-            <!--
+          -->
+              </div>
+            </div>
+            <div id="techStack2">
+              <div class="smallBlock">
+                <h3 class="inBlockTitles">Hardware:</h3>
+                <!--
           <button
             class="secondaryButtons"
             title="What is Bootstrap?"
@@ -612,10 +620,13 @@
               alt="More Info Button"
             />
           </button>
-          --></div>
+          -->
+              </div>
 
-          <div class="smallBlock">
-            <h3 class="inBlockTitles">Project Management & Other Tools:</h3>
+              <div class="smallBlock">
+                <h3 class="inBlockTitles">Project Management & Other Tools:</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>

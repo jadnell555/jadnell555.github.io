@@ -334,7 +334,8 @@ section {
 }
 
 #intro {
-  text-align: left;
+  text-align: justify;
+  font-size: large;
 }
 
 #intro > h3 {
@@ -804,4 +805,48 @@ footer {
     height: 30px;
   }
   /*End Navigation Bar*/
+
+  /*Landing Section*/
+  #landing {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #landing1 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #landing2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 3;
+    align-items: center;
+  }
+  /*End Landing Section*/
+
+  /*About Me Section*/
+  #aboutMe {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #educationLarge {
+    flex: 2.5;
+  }
+
+  #techStackLarge {
+    flex: 3;
+  }
+
+  #education,
+  #techStack1,
+  #techStack2 {
+    flex-direction: column;
+    gap: 5px;
+  }
+  /*End About Me Section*/
 }
