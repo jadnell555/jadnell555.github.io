@@ -788,6 +788,7 @@ footer {
     top: 0;
     z-index: 1000;
     padding-top: 0.15rem;
+    position: fixed;
   }
 
   #navBarItemsLarge {
