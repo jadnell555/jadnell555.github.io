@@ -50,6 +50,7 @@ button {
   padding: 0.75rem 1rem;
   background: #1a7452;
   background: linear-gradient(180deg, #1a7452 55%, #347b56 100%);
+  cursor: pointer;
 }
 
 .secondaryButtons {
@@ -326,7 +327,7 @@ section {
   box-shadow: 2px 2px 3px #111812;
   transition: 0.2s ease-in;
   width: 95%;
-  max-width: 500px;
+  max-width: 350px;
   height: auto;
   aspect-ratio: 1/1;
   align-self: center;
@@ -730,6 +731,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 75%;
 }
 
 /*END SOCIAL MEDIA SECTION*/
@@ -895,6 +897,5 @@ footer {
     flex: 2.5;
     align-items: center;
   }
-
   /*End Projects Section*/
 }
