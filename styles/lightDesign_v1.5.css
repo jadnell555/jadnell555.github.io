@@ -446,6 +446,12 @@ img.projectPictures {
   padding-bottom: 2.5rem;
 }
 
+.projectContainer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*INDIVIDUAL PROJECTS*/
 /*
 .sourceCodeButton {
