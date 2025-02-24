@@ -31,11 +31,9 @@ body {
 /*Buttons*/
 button {
   transition: 0.2s ease-in;
-  margin: auto;
 }
 
 .primaryButtons {
-  float: right;
   padding: 0.5rem;
 }
 
@@ -58,12 +56,39 @@ button {
   border-color: #347b56;
   border-radius: 20px;
   background-color: transparent;
-  padding: 0.1rem 0.2rem;
-  margin: 0.25rem auto;
+  padding: 0.25rem;
   color: #347b56;
   text-align: center;
-  font-size: small;
 }
+
+button.secondaryButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.secondaryButtonText {
+  padding: 0.1rem;
+}
+
+#software-development,
+#data-analysis,
+#pm-and-others {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+#hardware {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
 /*End Buttons*/
 
 /* Wrappers */
@@ -751,9 +776,7 @@ footer {
 
 @media screen and (width >= 768px) and (width <= 1023px) {
   #landing,
-  #education,
-  #techStack1,
-  #techStack2 {
+  #education {
     flex-direction: row;
     gap: 10px;
   }
@@ -764,6 +787,17 @@ footer {
 
   #navBarItems {
     padding: 1rem 0;
+  }
+
+  #techStack1,
+  #techStack2 {
+    align-items: center;
+  }
+
+  #software-development,
+  #data-analysis,
+  #pm-and-others {
+    grid-template-columns: auto auto auto;
   }
 }
 
@@ -871,6 +905,12 @@ footer {
   #techStack2 {
     flex-direction: column;
     gap: 5px;
+  }
+
+  #software-development,
+  #data-analysis,
+  #pm-and-others {
+    grid-template-columns: auto auto auto;
   }
   /*End About Me Section*/
 
