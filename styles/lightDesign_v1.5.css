@@ -71,6 +71,7 @@ button.secondaryButtons {
 
 .secondaryButtonText {
   padding: 0.1rem;
+  font-weight: bold;
 }
 
 #software-development,
