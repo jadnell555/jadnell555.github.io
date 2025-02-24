@@ -101,7 +101,7 @@
         {
           "tech_id": 111,
           "tech_name": "VirtualBox",
-          "tech_type": "Software Development",
+          "tech_type": "PM and Others",
           "tech_description": "VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use.",
           "tech_source_url": "https://www.virtualbox.org/wiki/VirtualBox",
           "tech_icon": "assets/images/Tech Stack/virtualbox.svg"
