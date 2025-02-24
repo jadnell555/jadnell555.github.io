@@ -67,7 +67,7 @@ button.secondaryButtons {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 .secondaryButtonText {
