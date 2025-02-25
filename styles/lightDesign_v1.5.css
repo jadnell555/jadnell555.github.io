@@ -480,7 +480,6 @@ img.projectPictures {
 }
 
 /*INDIVIDUAL PROJECTS*/
-/*
 .sourceCodeButton {
   border-radius: 200px;
   box-shadow: 2px 2px 3px #111812;
@@ -539,9 +538,8 @@ div.col.projectType {
   padding: 0.2em;
 }
 
-
 #inProgress {
-  border-radius: 200px 0px 0px 200px; 
+  border-radius: 200px 0px 0px 200px;
   width: fit-content;
   min-width: 10em;
   color: #e3e1e3;
@@ -570,7 +568,7 @@ div.col.projectType {
 }
 
 #personal {
-  border-radius: 200px 0px 0px 200px; 
+  border-radius: 200px 0px 0px 200px;
 }
 
 #professional {
@@ -593,7 +591,7 @@ div.col.projectType {
 }
 */
 /* Image Slideshow */
-/*
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -609,7 +607,7 @@ div.col.projectType {
 }
 */
 /* Next & previous buttons */
-/*
+
 .prev,
 .next {
   cursor: pointer;
@@ -626,18 +624,16 @@ div.col.projectType {
   box-shadow: 2px 2px 3px #111812;
 }
 
-
 .next {
   right: 15%;
 }
 
-
 .prev {
   left: 15%;
 }
-*/
+
 /* The dots/indicators */
-/*
+
 .dot1,
 .dot2,
 .dot3,
@@ -677,7 +673,6 @@ div.col.projectType {
   transform: translateY(-2px);
   transition: ease 0.5s;
 }
-*/
 
 /* CONTACT SECTION */
 #contactForm {
