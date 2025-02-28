@@ -768,6 +768,7 @@ textarea {
   align-items: center;
   justify-content: space-evenly;
   max-width: 75%;
+  cursor: pointer;
 }
 
 /*END SOCIAL MEDIA SECTION*/

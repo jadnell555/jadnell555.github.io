@@ -24,7 +24,7 @@
           "tech_type": "Software Development",
           "tech_description": "HTML is the language in which most websites are written. HTML is used to create pages and make them functional. HTML stands for Hyper Text Markup Language.",
           "tech_source_url": "https://html.com/",
-          "tech_icon": "assets/images/Tech Stack/html.svg"
+          "tech_icon": "assets/images/techStack/html.svg"
         },
         {
           "tech_id": 102,
@@ -32,7 +32,7 @@
           "tech_type": "Software Development",
           "tech_description": "Cascading Style Sheets (CSS) is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents.",
           "tech_source_url": "https://www.w3.org/Style/CSS/Overview.en.html",
-          "tech_icon": "assets/images/Tech Stack/css.svg"
+          "tech_icon": "assets/images/techStack/css.svg"
         },
         {
           "tech_id": 103,
@@ -40,7 +40,7 @@
           "tech_type": "Software Development",
           "tech_description": "C++ is a cross-platform language that can be used to create high-performance applications.",
           "tech_source_url": "https://www.w3schools.com/cpp/cpp_intro.asp",
-          "tech_icon": "assets/images/Tech Stack/c++.svg"
+          "tech_icon": "assets/images/techStack/c++.svg"
         },
         {
           "tech_id": 104,
@@ -48,7 +48,7 @@
           "tech_type": "Software Development",
           "tech_description": "Dart is a client-optimized language for developing fast apps on any platform. Its goal is to offer the most productive programming language for multi-platform development, paired with a flexible execution runtime platform for app frameworks.",
           "tech_source_url": "https://dart.dev/overview",
-          "tech_icon": "assets/images/Tech Stack/dart.svg"
+          "tech_icon": "assets/images/techStack/dart.svg"
         },
         {
           "tech_id": 105,
@@ -56,7 +56,7 @@
           "tech_type": "Software Development",
           "tech_description": "JavaScript is a scripting or programming language that allows you to implement complex features on web pages like displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc.",
           "tech_source_url": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript",
-          "tech_icon": "assets/images/Tech Stack/javascript.svg"
+          "tech_icon": "assets/images/techStack/javascript.svg"
         },
         {
           "tech_id": 106,
@@ -64,7 +64,7 @@
           "tech_type": "Data Analysis",
           "tech_description": "MATLAB is a programming and numeric computing platform used by millions of engineers and scientists to analyze data, develop algorithms, and create models.",
           "tech_source_url": "https://www.mathworks.com/products/matlab.html",
-          "tech_icon": "assets/images/Tech Stack/matlab.svg"
+          "tech_icon": "assets/images/techStack/matlab.svg"
         },
         {
           "tech_id": 107,
@@ -72,7 +72,7 @@
           "tech_type": "Software Development",
           "tech_description": "Python is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very high level dynamic data types, and classes. Python combines remarkable power with very clear syntax.",
           "tech_source_url": "https://docs.python.org/3/faq/general.html#what-is-python",
-          "tech_icon": "assets/images/Tech Stack/python.svg"
+          "tech_icon": "assets/images/techStack/python.svg"
         },
         {
           "tech_id": 108,
@@ -80,7 +80,7 @@
           "tech_type": "Software Development",
           "tech_description": "Structured query language (SQL) is a programming language for storing and processing information in a relational database. A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values.",
           "tech_source_url": "https://aws.amazon.com/what-is/sql/",
-          "tech_icon": "assets/images/Tech Stack/sql.svg"
+          "tech_icon": "assets/images/techStack/sql.svg"
         },
         {
           "tech_id": 109,
@@ -88,7 +88,7 @@
           "tech_type": "Software Development",
           "tech_description": "Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control. It aims to provide just the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs, such as Visual Studio IDE.",
           "tech_source_url": "https://code.visualstudio.com/docs/supporting/faq",
-          "tech_icon": "assets/images/Tech Stack/visualStudioCode.svg"
+          "tech_icon": "assets/images/techStack/visualStudioCode.svg"
         },
         {
           "tech_id": 110,
@@ -96,7 +96,7 @@
           "tech_type": "Software Development",
           "tech_description": "The Visual Studio IDE is a creative launching pad that you can use to edit, debug, and build code, and then publish an app. Visual Studio includes compilers, code completion tools, graphical designers, and many more features to enhance the software development process.",
           "tech_source_url": "https://visualstudio.microsoft.com/#vs-section",
-          "tech_icon": "assets/images/Tech Stack/visualStudio.svg"
+          "tech_icon": "assets/images/techStack/visualStudio.svg"
         },
         {
           "tech_id": 111,
@@ -104,7 +104,7 @@
           "tech_type": "PM and Others",
           "tech_description": "VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use.",
           "tech_source_url": "https://www.virtualbox.org/wiki/VirtualBox",
-          "tech_icon": "assets/images/Tech Stack/virtualbox.svg"
+          "tech_icon": "assets/images/techStack/virtualbox.svg"
         },
         {
           "tech_id": 112,
@@ -112,7 +112,7 @@
           "tech_type": "Hardware",
           "tech_description": "Raspberry Pi is a micro computer that has all the features you expect from a regular computer: wireless internet connectivity, HDMI ports for your monitors, and USB ports for your accessories, along with ample processing power and RAM for all your day-to-day use.",
           "tech_source_url": "https://www.raspberrypi.com/for-home/",
-          "tech_icon": "assets/images/Tech Stack/raspberryPi.svg"
+          "tech_icon": "assets/images/techStack/raspberryPi.svg"
         },
         {
           "tech_id": 113,
@@ -120,7 +120,7 @@
           "tech_type": "Data Analysis",
           "tech_description": "Jupyter Notebook is a simplified computational notebook authoring application, and is a part of Project Jupyter. A computational notebook is a shareable document that combines computer code, plain language descriptions, data, rich visualizations like 3D models, charts, graphs and figures, and interactive controls.",
           "tech_source_url": "https://jupyter-notebook.readthedocs.io/en/stable/",
-          "tech_icon": "assets/images/Tech Stack/jupyter.svg"
+          "tech_icon": "assets/images/techStack/jupyter.svg"
         },
         {
           "tech_id": 114,
@@ -128,7 +128,7 @@
           "tech_type": "Software Development",
           "tech_description": "GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.",
           "tech_source_url": "https://docs.github.com/en/get-started/quickstart/hello-world",
-          "tech_icon": "assets/images/Tech Stack/github.svg"
+          "tech_icon": "assets/images/techStack/github.svg"
         },
         {
           "tech_id": 115,
@@ -136,7 +136,7 @@
           "tech_type": "Hardware",
           "tech_description": "Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs and turn it into an output. You can tell your board what to do by sending a set of instructions to the microcontroller on the board.",
           "tech_source_url": "https://www.arduino.cc/en/Guide/Introduction",
-          "tech_icon": "assets/images/Tech Stack/arduino.svg"
+          "tech_icon": "assets/images/techStack/arduino.svg"
         },
         {
           "tech_id": 116,
@@ -144,7 +144,7 @@
           "tech_type": "Software Development",
           "tech_description": "Android Studio is the official Integrated Development Environment (IDE) for Android app development. Based on the powerful code editor and developer tools from IntelliJ IDEA.",
           "tech_source_url": "https://developer.android.com/studio/intro",
-          "tech_icon": "assets/images/Tech Stack/androidStudio.svg"
+          "tech_icon": "assets/images/techStack/androidStudio.svg"
         },
         {
           "tech_id": 117,
@@ -152,7 +152,7 @@
           "tech_type": "Data Analysis",
           "tech_description": "Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights.",
           "tech_source_url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview",
-          "tech_icon": "assets/images/Tech Stack/powerBi.svg"
+          "tech_icon": "assets/images/techStack/powerBi.svg"
         },
         {
           "tech_id": 118,
@@ -160,7 +160,7 @@
           "tech_type": "Software Development",
           "tech_description": "Flutter is an open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase.",
           "tech_source_url": "https://flutter.dev/",
-          "tech_icon": "assets/images/Tech Stack/flutter.svg"
+          "tech_icon": "assets/images/techStack/flutter.svg"
         },
         {
           "tech_id": 119,
@@ -168,7 +168,7 @@
           "tech_type": "Software Development",
           "tech_description": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It's free and open source.",
           "tech_source_url": "https://www.djangoproject.com/",
-          "tech_icon": "assets/images/Tech Stack/django.svg"
+          "tech_icon": "assets/images/techStack/django.svg"
         },
         {
           "tech_id": 120,
@@ -176,7 +176,7 @@
           "tech_type": "Software Development",
           "tech_description": "Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites. Bootstrap 5 is the newest version of Bootstrap.",
           "tech_source_url": "https://www.w3schools.com/whatis/whatis_bootstrap.asp",
-          "tech_icon": "assets/images/Tech Stack/bootstrap.svg"
+          "tech_icon": "assets/images/techStack/bootstrap.svg"
         },
 
         {
@@ -185,7 +185,7 @@
           "tech_type": "PM and Others",
           "tech_description": "Notion is a single space where you can think, write and plan. Capture thoughts, manage projects, or even run an entire company.",
           "tech_source_url": "https://www.notion.com/help/guides/what-is-notion",
-          "tech_icon": "assets/images/Tech Stack/notion.svg"
+          "tech_icon": "assets/images/techStack/notion.svg"
         },
         {
           "tech_id": 122,
@@ -193,7 +193,7 @@
           "tech_type": "PM and Others",
           "tech_description": "Jira is an agile project management tool used by teams to plan, track, release and support world-class software with confidence. It is the single source of truth for your entire development lifecycle.",
           "tech_source_url": "https://www.atlassian.com/software/jira/guides/getting-started/introduction#what-is-jira-software",
-          "tech_icon": "assets/images/Tech Stack/jira.svg"
+          "tech_icon": "assets/images/techStack/jira.svg"
         },
         {
           "tech_id": 123,
@@ -201,7 +201,7 @@
           "tech_type": "PM and Others",
           "tech_description": "Microsoft 365 is a cloud-powered productivity platform. It provides apps like Microsoft Teams, Word, Excel, PowerPoint, OneDrive and Outlook.",
           "tech_source_url": "https://support.microsoft.com/en-us/office/what-is-microsoft-365-847caf12-2589-452c-8aca-1c009797678b",
-          "tech_icon": "assets/images/Tech Stack/m365.svg"
+          "tech_icon": "assets/images/techStack/m365.svg"
         },
         {
           "tech_id": 124,
@@ -209,7 +209,7 @@
           "tech_type": "PM and Others",
           "tech_description": "Adobe Premiere Rush is the free mobile and desktop video editing app for creativity on the go. Wherever you are, you can shoot, edit, and share high-quality videos.",
           "tech_source_url": "https://www.adobe.com/products/premiere-rush.html",
-          "tech_icon": "assets/images/Tech Stack/premiereRush.svg"
+          "tech_icon": "assets/images/techStack/premiereRush.svg"
         },
         {
           "tech_id": 125,
@@ -217,7 +217,7 @@
           "tech_type": "PM and Others",
           "tech_description": "Lucidchart is a visual workspace for diagramming, data visualization, and collaboration.",
           "tech_source_url": "https://help.lucid.co/hc/en-us/articles/11970952773652-Welcome-to-Lucidchart",
-          "tech_icon": "assets/images/Tech Stack/lucidchart.svg"
+          "tech_icon": "assets/images/techStack/lucidchart.svg"
         }
       ]
     }

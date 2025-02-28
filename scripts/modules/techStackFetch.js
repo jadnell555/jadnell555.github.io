@@ -68,7 +68,7 @@ function createToolButton(tool) {
 
   // Create info icon
   const infoIcon = document.createElement("img");
-  infoIcon.src = "assets/images/Icons/info.svg";
+  infoIcon.src = "assets/images/icons/info.svg";
   infoIcon.title = tool.tech_description;
   infoIcon.width = 25;
   infoIcon.height = 25;
