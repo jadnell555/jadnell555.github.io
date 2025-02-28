@@ -929,6 +929,11 @@ footer {
     position: fixed;
   }
 
+  .navBarItem:hover {
+    transform: translateY(-4px);
+    box-shadow: none;
+  }
+
   #navBarItemsLarge {
     display: flex;
     justify-content: center;
