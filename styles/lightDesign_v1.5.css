@@ -37,6 +37,11 @@ button {
   padding: 0.5rem;
 }
 
+.primaryButtons button:hover {
+  box-shadow: 0px 5px 10px #347b56;
+  transform: translateY(-4px);
+}
+
 .primaryButtons button {
   border: none;
   border-radius: 50px;
@@ -44,7 +49,6 @@ button {
   font-size: large;
   font-weight: bold;
   color: #f8f8ff;
-  margin: auto;
   padding: 0.75rem 1rem;
   background: #1a7452;
   background: linear-gradient(180deg, #1a7452 55%, #347b56 100%);
@@ -67,6 +71,11 @@ button.secondaryButtons {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+}
+
+button.secondaryButtons:hover {
+  box-shadow: 0px 2.5px 5px #347b56;
+  transform: translateY(-4px);
 }
 
 .secondaryButtonText {
@@ -148,6 +157,11 @@ button.secondaryButtons {
   align-items: center;
   flex: 0 0 auto;
   padding: 0 0.5rem;
+  transition: 0.2s ease-in;
+}
+
+#menu:hover {
+  transform: translateY(-4px);
 }
 
 #menuButton img,
@@ -174,6 +188,11 @@ button.secondaryButtons {
   align-items: center;
   justify-content: center;
   flex: 1;
+  transition: 0.2s ease-in;
+}
+
+#myName:hover {
+  transform: translateY(-4px);
 }
 
 .myName,
@@ -197,6 +216,10 @@ button.secondaryButtons {
 #themeChanger img {
   width: 40px;
   height: 40px;
+}
+
+#themeButton:hover {
+  transform: translateY(-4px);
 }
 
 #themeButton {
@@ -236,7 +259,14 @@ button.secondaryButtons {
   border-radius: 50px;
   box-shadow: 0px 2px 3px #111812;
   text-decoration: none;
+  transition: 0.2s ease-in;
 }
+
+.navBarItem:hover {
+  box-shadow: 0px 5px 10px #347b56;
+  transform: translateY(-4px);
+}
+
 /*End Navigation Bar*/
 
 /*Sections*/
@@ -492,47 +522,48 @@ img.projectPictures {
   padding: 0.25rem 0;
 }
 
-.sourceCodeButton {
-  border-radius: 200px;
-  box-shadow: 2px 2px 3px #111812;
-  padding: 0 0.5em;
-  margin: 0.5em auto;
-  border: none;
-  background-color: #111812;
-  transition: 0.2s ease-in;
-  color: #e3e1e3;
-  width: fit-content;
+.sourceVideo {
+  display: flex;
+  width: 100%;
+  padding: 1rem 0;
+  justify-content: space-evenly;
 }
 
-.sourceCodeButtonAlt {
+.sourceCodeButton {
   border-radius: 200px;
-  box-shadow: 2px 2px 3px #111812;
-  padding: 0 0.5em;
-  margin: 0.5em auto;
+  box-shadow: 1px 1px 1px #111812;
   border: none;
   background-color: #111812;
   transition: 0.2s ease-in;
-  color: #e3e1e3;
-  width: fit-content;
-  float: right;
+  color: #f8f8ff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.75rem 1rem;
+}
+
+.sourceCodeButton:hover {
+  box-shadow: 0px 5px 10px #111812;
+  transform: translateY(-4px);
 }
 
 .youtubeButton {
   border-radius: 200px;
-  box-shadow: 2px 2px 3px #111812;
+  box-shadow: 1px 1px 1px #111812;
   padding: 0 0.5em;
-  margin: 0.5em 0.5em;
+  min-width: 100px;
   border: none;
   background-color: #b2071d;
   transition: 0.2s ease-in;
-  color: #e3e1e3;
-  width: 125px;
-  height: 50px;
-  float: left;
+  color: #f8f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.75rem 1rem;
 }
 
 .youtubeButton:hover {
-  box-shadow: 0px 10px 15px #b2071d;
+  box-shadow: 0px 5px 10px #b2071d;
   transform: translateY(-4px);
 }
 
@@ -721,7 +752,7 @@ div.col.projectType {
   resize: none;
   width: 95%;
   font-size: 1em;
-  transition: 0.5s ease-in;
+  transition: 0.2s ease-in;
 }
 
 ::placeholder {
@@ -769,6 +800,11 @@ textarea {
   justify-content: space-evenly;
   max-width: 75%;
   cursor: pointer;
+}
+
+.socialMediaButton:hover {
+  box-shadow: 0px 5px 10px #f8f8ff;
+  transform: translateY(-4px);
 }
 
 /*END SOCIAL MEDIA SECTION*/
@@ -876,6 +912,7 @@ footer {
     width: 30px;
     height: 30px;
   }
+
   /*End Navigation Bar*/
 
   /*Landing Section*/
