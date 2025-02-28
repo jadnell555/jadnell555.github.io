@@ -11,11 +11,11 @@
     "techstack": {
       "schema": {
         "tech_id": "integer",
-        "tech_name": "varchar(25)",
+        "tech_name": "string",
         "tech_type": "tech_type",
-        "tech_description": "varchar(350)",
-        "tech_source_url": "varchar(100)",
-        "tech_icon": "varchar(100)"
+        "tech_description": "string",
+        "tech_source_url": "string",
+        "tech_icon": "string"
       },
       "data": [
         {
