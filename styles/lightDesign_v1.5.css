@@ -30,7 +30,7 @@ body {
 
 /*Buttons*/
 button {
-  transition: 0.2s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .primaryButtons {
@@ -40,6 +40,11 @@ button {
 .primaryButtons button:hover {
   box-shadow: 0px 5px 10px #347b56;
   transform: translateY(-4px);
+}
+
+.primaryButtons button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .primaryButtons button {
@@ -76,6 +81,11 @@ button.secondaryButtons {
 button.secondaryButtons:hover {
   box-shadow: 0px 2.5px 5px #347b56;
   transform: translateY(-4px);
+}
+
+button.secondaryButtons:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .secondaryButtonText {
@@ -157,11 +167,15 @@ button.secondaryButtons:hover {
   align-items: center;
   flex: 0 0 auto;
   padding: 0 0.5rem;
-  transition: 0.2s ease-in;
+  transition: 0.3s ease-in;
 }
 
 #menu:hover {
   transform: translateY(-4px);
+}
+
+#menu:active {
+  transform: translateY(2px); /* Move button down */
 }
 
 #menuButton img,
@@ -188,11 +202,15 @@ button.secondaryButtons:hover {
   align-items: center;
   justify-content: center;
   flex: 1;
-  transition: 0.2s ease-in;
+  transition: 0.3s ease-in;
 }
 
 #myName:hover {
   transform: translateY(-4px);
+}
+
+#myName:active {
+  transform: translateY(2px);
 }
 
 .myName,
@@ -220,6 +238,10 @@ button.secondaryButtons:hover {
 
 #themeButton:hover {
   transform: translateY(-4px);
+}
+
+#themeButton:active {
+  transform: translateY(2px);
 }
 
 #themeButton {
@@ -259,12 +281,17 @@ button.secondaryButtons:hover {
   border-radius: 50px;
   box-shadow: 0px 2px 3px #111812;
   text-decoration: none;
-  transition: 0.2s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .navBarItem:hover {
   box-shadow: 0px 5px 10px #347b56;
   transform: translateY(-4px);
+}
+
+.navBarItem:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /*End Navigation Bar*/
@@ -383,7 +410,7 @@ section {
 #mainPicture {
   border-radius: 100%;
   box-shadow: 2px 2px 3px #111812;
-  transition: 0.2s ease-in;
+  transition: 0.3s ease-in;
   width: 95%;
   max-width: 350px;
   height: auto;
@@ -534,7 +561,7 @@ img.projectPictures {
   box-shadow: 1px 1px 1px #111812;
   border: none;
   background-color: #111812;
-  transition: 0.2s ease-in;
+  transition: 0.3s ease-in;
   color: #f8f8ff;
   display: flex;
   justify-content: space-evenly;
@@ -547,6 +574,11 @@ img.projectPictures {
   transform: translateY(-4px);
 }
 
+.sourceCodeButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .youtubeButton {
   border-radius: 200px;
   box-shadow: 1px 1px 1px #111812;
@@ -554,7 +586,7 @@ img.projectPictures {
   min-width: 100px;
   border: none;
   background-color: #b2071d;
-  transition: 0.2s ease-in;
+  transition: 0.3s ease-in;
   color: #f8f8ff;
   display: flex;
   align-items: center;
@@ -565,6 +597,11 @@ img.projectPictures {
 .youtubeButton:hover {
   box-shadow: 0px 5px 10px #b2071d;
   transform: translateY(-4px);
+}
+
+.youtubeButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .projectType {
@@ -752,7 +789,7 @@ div.col.projectType {
   resize: none;
   width: 95%;
   font-size: 1em;
-  transition: 0.2s ease-in;
+  transition: 0.3s ease-in;
 }
 
 ::placeholder {
@@ -805,6 +842,11 @@ textarea {
 .socialMediaButton:hover {
   box-shadow: 0px 5px 10px #f8f8ff;
   transform: translateY(-4px);
+}
+
+.socialMediaButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /*END SOCIAL MEDIA SECTION*/
