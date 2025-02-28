@@ -1,5 +1,5 @@
 <!-- Jadnell H. Reyes Pérez -->
-<!-- February 25th, 2025 -->
+<!-- February 27th, 2025 -->
 <?xml version = "1.0"?>
 <!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
@@ -38,11 +38,15 @@
     <div id="newNavBar">
       <div id="navBarWrapper">
         <div id="menu">
-          <button id="menuButton" type="button">
+          <button
+            id="goBackButton"
+            type="button"
+            onclick="window.location.href='../../index.html#projectGoBack'"
+          >
             <img
-              src="assets/images/Icons/hamburgerMenu.svg"
-              title="Menu"
-              alt="Menu Button"
+              src="../../assets/images/Icons/goBack.svg"
+              title="Go Back"
+              alt="Go Back Button"
             />
           </button>
         </div>
@@ -65,12 +69,32 @@
         </div>
       </div>
     </div>
+    <div id="navBarItemsLarge">
+      <ul id="navBarItems" class="hide">
+        <li class="navBarItem">
+          <a class="navBarTitles" href="../../index.html#aboutMeSection">
+            ABOUT ME
+          </a>
+        </li>
+        <li class="navBarItem">
+          <a class="navBarTitles" href="../../index.html#projectGoBack">
+            PROJECTS
+          </a>
+        </li>
+        <li class="navBarItem">
+          <a class="navBarTitles" href="../../index.html#contactSection">
+            CONTACT
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <section id="depoProjectSection" class="animatedSection leftSlide">
       <div class="wrapper">
         <div class="HEADINGS">
           <h1>DEPO Web Application</h1>
         </div>
+        <br />
 
         <div class="projectDetailsTitle">Project Description:</div>
 
@@ -90,26 +114,37 @@
           </p>
         </div>
 
-        <div class="projectWrapper">
-          <div class="projectDetailsTitle">Type of Project:</div>
-          <div id="personal" class="projectType">Personal</div>
-          <div id="university" class="projectType uniActive">University</div>
-          <div id="professional" class="projectType">Professional</div>
-        </div>
+        <div class="typeStatus">
+          <div class="projectWrapper">
+            <div class="projectDetailsTitle">Type of Project:</div>
+            <div class="typeOfProject">
+              <div id="personal" class="projectType">Personal</div>
+              <div id="university" class="projectType uniActive">
+                University
+              </div>
+              <div id="professional" class="projectType">Professional</div>
+            </div>
+          </div>
 
-        <div class="projectWrapper">
-          <div class="projectDetailsTitle">Status:</div>
+          <div class="projectWrapper">
+            <div class="projectDetailsTitle">Status:</div>
+            <div class="projectStatus">
+              <div id="inProgress">In Progress</div>
 
-          <div id="inProgress">In Progress</div>
-
-          <div id="complete" style="background-color: #7ec384; color: #252525">
-            Complete
+              <div
+                id="complete"
+                style="background-color: #7ec384; color: #252525"
+              >
+                Complete
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="projectDetailsTitle">Technologies Implemented:</div>
 
         <div class="projectDetailsTitle">Images:</div>
+        <!--
         <div class="slideshow-container">
           <div class="mySlides1 fade">
             <img
@@ -168,7 +203,8 @@
             />
           </button>
         </div>
-
+-->
+        <!--
         <div id="imageDots1">
           <span class="dot1" onclick="currentSlide(1)"></span>
           <span class="dot1" onclick="currentSlide(2)"></span>
@@ -176,11 +212,12 @@
           <span class="dot1" onclick="currentSlide(4)"></span>
           <span class="dot1" onclick="currentSlide(5)"></span>
         </div>
+        -->
       </div>
     </section>
 
     <section id="socialMediaSection">
-      <div class="wrapper animatedSection">
+      <div class="animatedSection">
         <h3 id="socialMediaHeading">Social Media:</h3>
 
         <ul id="socialMediaItems">

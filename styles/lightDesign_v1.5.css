@@ -95,10 +95,9 @@ button.secondaryButtons {
 /* Wrappers */
 .wrapper {
   max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -151,12 +150,14 @@ button.secondaryButtons {
   padding: 0 0.5rem;
 }
 
-#menuButton img {
+#menuButton img,
+#goBackButton img {
   width: 50px;
   height: 50px;
 }
 
-#menuButton {
+#menuButton,
+#goBackButton {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -257,6 +258,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   font-size: 2rem;
   width: fit-content;
   margin: 0 auto;
@@ -480,6 +482,16 @@ img.projectPictures {
 }
 
 /*INDIVIDUAL PROJECTS*/
+.projectDetailsTitle,
+.typeOfProject,
+.projectStatus {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0;
+}
+
 .sourceCodeButton {
   border-radius: 200px;
   box-shadow: 2px 2px 3px #111812;
@@ -528,10 +540,11 @@ img.projectPictures {
   color: #e3e1e3;
   background-color: #111812;
   box-shadow: 2px 2px 3px #111812;
-  margin: 0.25em 0.1em;
-  padding: 0.25em;
   width: fit-content;
   transition: 0.3s ease;
+  padding: 0.2em 0.5em;
+  display: flex;
+  justify-content: center;
 }
 
 div.col.projectType {
@@ -541,25 +554,25 @@ div.col.projectType {
 #inProgress {
   border-radius: 200px 0px 0px 200px;
   width: fit-content;
-  min-width: 10em;
+  min-width: 7.5rem;
   color: #e3e1e3;
   background-color: #111812;
   box-shadow: 2px 2px 3px #111812;
-  margin: 0 0.25em;
   padding: 0.2em 0.5em;
-  float: right;
+  display: flex;
+  justify-content: center;
 }
 
 #complete {
   border-radius: 0px 200px 200px 0px;
   width: fit-content;
-  min-width: 10em;
+  min-width: 7.5rem;
   color: #e3e1e3;
   background-color: #111812;
   box-shadow: 2px 2px 3px #111812;
-  margin: 0 0.25em;
   padding: 0.2em 0.5em;
-  float: left;
+  display: flex;
+  justify-content: center;
 }
 
 .inProgressActive {
@@ -679,6 +692,7 @@ div.col.projectType {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .pageclip-form__submit::after {
@@ -752,7 +766,7 @@ textarea {
   border-radius: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   max-width: 75%;
 }
 
@@ -795,6 +809,12 @@ footer {
   #data-analysis,
   #pm-and-others {
     grid-template-columns: auto auto auto;
+  }
+
+  .typeStatus {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 0;
   }
 }
 
@@ -933,6 +953,12 @@ footer {
     flex-direction: column;
     flex: 2.5;
     align-items: center;
+  }
+
+  .typeStatus {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 0;
   }
   /*End Projects Section*/
 }
