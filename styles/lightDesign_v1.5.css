@@ -37,11 +37,6 @@ button {
   padding: 0.5rem;
 }
 
-.primaryButtons button:hover {
-  box-shadow: 0px 5px 10px #347b56;
-  transform: translateY(-4px);
-}
-
 .primaryButtons button:active {
   transform: translateY(2px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -76,11 +71,6 @@ button.secondaryButtons {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-}
-
-button.secondaryButtons:hover {
-  box-shadow: 0px 2.5px 5px #347b56;
-  transform: translateY(-4px);
 }
 
 button.secondaryButtons:active {
@@ -170,10 +160,6 @@ button.secondaryButtons:active {
   transition: 0.3s ease-in;
 }
 
-#menu:hover {
-  transform: translateY(-4px);
-}
-
 #menu:active {
   transform: translateY(2px); /* Move button down */
 }
@@ -205,10 +191,6 @@ button.secondaryButtons:active {
   transition: 0.3s ease-in;
 }
 
-#myName:hover {
-  transform: translateY(-4px);
-}
-
 #myName:active {
   transform: translateY(2px);
 }
@@ -234,10 +216,6 @@ button.secondaryButtons:active {
 #themeChanger img {
   width: 40px;
   height: 40px;
-}
-
-#themeButton:hover {
-  transform: translateY(-4px);
 }
 
 #themeButton:active {
@@ -282,11 +260,6 @@ button.secondaryButtons:active {
   box-shadow: 0px 2px 3px #111812;
   text-decoration: none;
   transition: 0.3s ease-in;
-}
-
-.navBarItem:hover {
-  box-shadow: 0px 5px 10px #347b56;
-  transform: translateY(-4px);
 }
 
 .navBarItem:active {
@@ -569,11 +542,6 @@ img.projectPictures {
   padding: 0.75rem 1rem;
 }
 
-.sourceCodeButton:hover {
-  box-shadow: 0px 5px 10px #111812;
-  transform: translateY(-4px);
-}
-
 .sourceCodeButton:active {
   transform: translateY(2px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -592,11 +560,6 @@ img.projectPictures {
   align-items: center;
   justify-content: space-evenly;
   padding: 0.75rem 1rem;
-}
-
-.youtubeButton:hover {
-  box-shadow: 0px 5px 10px #b2071d;
-  transform: translateY(-4px);
 }
 
 .youtubeButton:active {
@@ -670,56 +633,49 @@ div.col.projectType {
   background-color: #787ff6;
   color: #111812;
 }
-*/
-/* Image Slideshow */
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
+/* Image Slideshow */
 
 .projectImages {
   border-radius: 20px;
-  height: 300px;
   aspect-ratio: 3/2;
   box-shadow: 2px 2px 3px #111812;
   transition: 0.3s ease-in;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: none;
 }
-*/
+
 /* Next & previous buttons */
+.slideshow-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
 
 .prev,
 .next {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
   cursor: pointer;
-  position: absolute;
-  width: auto;
-  top: 42.5%;
-  margin: 0 0.1em;
-  color: #e3e1e3;
+  color: #f8f8ff;
   transition: 0.3s ease;
   border-radius: 20px;
   border: none;
   user-select: none;
-  background: -webkit-linear-gradient(top, #7bd5f5, #787ff6);
+  background: -webkit-linear-gradient(top, #347b56, #1a7452);
   box-shadow: 2px 2px 3px #111812;
 }
 
-.next {
-  right: 15%;
-}
-
-.prev {
-  left: 15%;
-}
-
 /* The dots/indicators */
-
-.dot1,
-.dot2,
-.dot3,
-.dot4,
-.dot5 {
+.dot1 {
   cursor: pointer;
   height: 10px;
   width: 10px;
@@ -729,13 +685,11 @@ div.col.projectType {
   display: inline-block;
   transition: background-color 0.3s ease;
   opacity: 75%;
+  padding: 0.1rem;
+  margin: 0.1rem;
 }
 
-#imageDots1,
-#imageDots2,
-#imageDots3,
-#imageDots4,
-#imageDots5 {
+#imageDots1 {
   position: relative;
   bottom: 4%;
   z-index: 10;
@@ -744,13 +698,9 @@ div.col.projectType {
 }
 
 .active,
-.dot1:hover,
-.dot2:hover,
-.dot3:hover,
-.dot4:hover,
-.dot5:hover {
-  background: -webkit-linear-gradient(top, #7bd5f5, #787ff6);
-  box-shadow: 0px 2px 5px #798ef6;
+.dot1:hover {
+  background: -webkit-linear-gradient(top, #347b56, #1a7452);
+  box-shadow: 0px 2px 5px #347b56;
   transform: translateY(-2px);
   transition: ease 0.5s;
 }
@@ -839,11 +789,6 @@ textarea {
   cursor: pointer;
 }
 
-.socialMediaButton:hover {
-  box-shadow: 0px 5px 10px #f8f8ff;
-  transform: translateY(-4px);
-}
-
 .socialMediaButton:active {
   transform: translateY(2px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -929,9 +874,46 @@ footer {
     position: fixed;
   }
 
-  .navBarItem:hover {
+  .primaryButtons button:hover {
+    box-shadow: 0px 5px 10px #347b56;
     transform: translateY(-4px);
+  }
+
+  button.secondaryButtons:hover {
+    box-shadow: 0px 2.5px 5px #347b56;
+    transform: translateY(-4px);
+  }
+
+  #menu:hover {
+    transform: translateY(-4px);
+  }
+
+  #myName:hover {
+    transform: translateY(-4px);
+  }
+
+  #themeButton:hover {
+    transform: translateY(-4px);
+  }
+
+  .navBarItem:hover {
     box-shadow: none;
+    transform: translateY(-4px);
+  }
+
+  .sourceCodeButton:hover {
+    box-shadow: 0px 5px 10px #111812;
+    transform: translateY(-4px);
+  }
+
+  .youtubeButton:hover {
+    box-shadow: 0px 5px 10px #b2071d;
+    transform: translateY(-4px);
+  }
+
+  .socialMediaButton:hover {
+    box-shadow: 0px 5px 10px #f8f8ff;
+    transform: translateY(-4px);
   }
 
   #navBarItemsLarge {
@@ -1021,11 +1003,11 @@ footer {
     flex-direction: row;
   }
 
-  .projectContainer:nth-child(4) {
+  .projectContainer:nth-child(3) {
     flex-direction: row-reverse;
   }
 
-  .projectContainer:nth-child(6) {
+  .projectContainer:nth-child(5) {
     flex-direction: row-reverse;
   }
 
