@@ -1,5 +1,4 @@
 // projectFetch.js - Main script to load and display project data
-
 // Fetch the projects data from JSON file
 async function fetchProjects() {
   try {
@@ -11,7 +10,6 @@ async function fetchProjects() {
       jsonPath = "../data/projects.json"; // When in the root directory
     }
 
-    console.log("Fetching projects from:", jsonPath);
     const response = await fetch(jsonPath);
 
     if (!response.ok) {
@@ -38,6 +36,117 @@ async function fetchProjects() {
     return [];
   }
 }
+
+// Fetch project technology relationships from projectsTech.json
+async function fetchProjectTech() {
+  try {
+    // Adjust path based on current page
+    let jsonPath = "";
+    if (window.location.pathname.includes("/pages/")) {
+      jsonPath = "../../data/projectsTech.json"; // When in the pages directory
+    } else {
+      jsonPath = "../data/projectsTech.json"; // When in the root directory
+    }
+
+    const response = await fetch(jsonPath);
+
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    const data = await response.json();
+
+    // Check if the data has the expected structure
+    if (data && data.project_tech && Array.isArray(data.project_tech.data)) {
+      return data.project_tech.data;
+    } else {
+      console.error("Invalid project tech data format:", data);
+      return [];
+    }
+  } catch (error) {
+    console.error("Error fetching project tech data:", error);
+    return [];
+  }
+}
+
+// Fetch technology details from techStack.json
+async function fetchTechStack() {
+  try {
+    // Adjust path based on current page
+    let jsonPath = "";
+    if (window.location.pathname.includes("/pages/")) {
+      jsonPath = "../../data/techStack.json"; // When in the pages directory
+    } else {
+      jsonPath = "../data/techStack.json"; // When in the root directory
+    }
+
+    const response = await fetch(jsonPath);
+
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    const data = await response.json();
+
+    // Check if the data has the expected structure
+    if (
+      data &&
+      data.table &&
+      data.table.techstack &&
+      Array.isArray(data.table.techstack.data)
+    ) {
+      return data.table.techstack.data;
+    } else {
+      console.error("Invalid tech stack data format:", data);
+      return [];
+    }
+  } catch (error) {
+    console.error("Error fetching tech stack data:", error);
+    return [];
+  }
+}
+
+// Create a button for each technology (reused from techStackFetch.js)
+function createToolButton(tool) {
+  const button = document.createElement("button");
+  button.className = "secondaryButtons";
+  button.title = `What is ${tool.tech_name}?`;
+  button.onclick = () => (window.location.href = tool.tech_source_url);
+
+  // Create icon
+  const icon = document.createElement("img");
+  icon.src = tool.tech_icon;
+  if (window.location.pathname.includes("/pages/")) {
+    // Adjust icon path if in pages directory
+    icon.src = "../../" + tool.tech_icon.replace(/^\//, "");
+  }
+  icon.title = `${tool.tech_name} Logo`;
+  icon.width = 25;
+  icon.height = 25;
+  icon.alt = `${tool.tech_name} Logo`;
+
+  // Create text node
+  const text = document.createElement("div");
+  const content = document.createTextNode(tool.tech_name);
+  text.appendChild(content);
+  text.className = "secondaryButtonText";
+
+  // Create info icon
+  const infoIcon = document.createElement("img");
+  infoIcon.src = window.location.pathname.includes("/pages/")
+    ? "../../assets/images/icons/info.svg"
+    : "assets/images/icons/info.svg";
+  infoIcon.title = tool.tech_description;
+  infoIcon.width = 25;
+  infoIcon.height = 25;
+  infoIcon.alt = "More Info Button";
+
+  // Append all elements to button
+  button.appendChild(icon);
+  button.appendChild(text);
+  button.appendChild(infoIcon);
+
+  return button;
+}
+
 // Populate the projects overview section on the main page
 function populateProjectsOverview(projects) {
   // Check if projects is defined and is an array
@@ -110,16 +219,8 @@ function populateProjectsOverview(projects) {
 
 // Handle the "More Details" button click
 function loadProjectDetails(projectId) {
-  console.log("Loading details for project ID:", projectId);
-
   // Convert projectId to string before storing (sessionStorage only stores strings)
   sessionStorage.setItem("selectedProjectId", projectId.toString());
-
-  // Log what was stored
-  console.log(
-    "Stored in sessionStorage:",
-    sessionStorage.getItem("selectedProjectId")
-  );
 
   // Navigate to the project detail page
   window.location.href = "../pages/projects/projectDetailsTemplate.html";
@@ -135,11 +236,44 @@ async function initMainPage() {
   }
 }
 
+// Load and display the tech stack for a specific project
+async function loadProjectTechStack(projectId) {
+  try {
+    const projectTechRelations = await fetchProjectTech();
+    const techStack = await fetchTechStack();
+
+    // Filter the tech IDs for this project
+    const projectTechIds = projectTechRelations
+      .filter((relation) => relation.project_id === projectId)
+      .map((relation) => relation.tech_id);
+
+    // Get full details for each tech ID
+    const projectTechnologies = techStack.filter((tech) =>
+      projectTechIds.includes(tech.tech_id)
+    );
+
+    // Find the tech stack container
+    const techStackContainer = document.getElementById("techStackContainer");
+    if (!techStackContainer) {
+      console.error("Tech stack container not found");
+      return;
+    }
+
+    techStackContainer.innerHTML = ""; // Clear existing content
+
+    projectTechnologies.forEach((tech) => {
+      const button = createToolButton(tech);
+      techStackContainer.appendChild(button);
+    });
+  } catch (error) {
+    console.error("Error loading project tech stack:", error);
+  }
+}
+
 // Populate the project details page using the template
 async function loadProjectDetailsPage() {
   try {
     const projectId = sessionStorage.getItem("selectedProjectId");
-    console.log("Retrieved from sessionStorage:", projectId);
 
     if (!projectId) {
       console.error("No project ID found in sessionStorage");
@@ -149,11 +283,8 @@ async function loadProjectDetailsPage() {
     }
 
     const projects = await fetchProjects();
-    console.log("All projects:", projects);
-    console.log("Looking for project with ID:", parseInt(projectId));
 
     const project = projects.find((p) => {
-      console.log("Comparing with project:", p.project_id, typeof p.project_id);
       return p.project_id === parseInt(projectId);
     });
 
@@ -233,6 +364,9 @@ async function loadProjectDetailsPage() {
         inProgress.style.color = "";
       }
     }
+
+    // Load and display tech stack for this project
+    await loadProjectTechStack(parseInt(projectId));
 
     // Create image slideshow if there are images
     if (project.project_images && Array.isArray(project.project_images)) {

@@ -85,7 +85,8 @@ button.secondaryButtons:active {
 
 #software-development,
 #data-analysis,
-#pm-and-others {
+#pm-and-others,
+#techStackContainer {
   display: grid;
   grid-template-columns: auto auto;
   gap: 0.5rem;
@@ -482,7 +483,7 @@ section {
 }
 /*END ABOUT ME SECTION*/
 
-/*PROJECTS SECTIONS*/
+/*PROJECTS SECTION*/
 img.projectPictures {
   aspect-ratio: initial;
   height: auto;
@@ -635,7 +636,6 @@ div.col.projectType {
 }
 
 /* Image Slideshow */
-
 .projectImages {
   border-radius: 20px;
   aspect-ratio: 3/2;
@@ -840,6 +840,10 @@ footer {
     width: 100%;
     padding: 0.5rem 0;
   }
+
+  #techStackContainer {
+    grid-template-columns: auto auto auto auto;
+  }
 }
 
 @media screen and (width >= 1024px) {
@@ -995,6 +999,10 @@ footer {
   #data-analysis,
   #pm-and-others {
     grid-template-columns: auto auto auto;
+  }
+
+  #techStackContainer {
+    grid-template-columns: auto auto auto auto auto auto;
   }
   /*End About Me Section*/
 
