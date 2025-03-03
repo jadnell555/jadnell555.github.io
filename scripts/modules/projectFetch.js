@@ -304,23 +304,48 @@ async function loadProjectDetailsPage() {
     }
 
     // Set source code button
-    const sourceCodeButton = document.querySelector(".sourceCodeButton");
-    if (sourceCodeButton && project.project_source_code) {
+    const sourceVideo = document.querySelector(".sourceVideo");
+    sourceVideo.innerHTML = "";
+    //const sourceCodeButton = document.querySelector(".sourceCodeButton");
+    if (project.project_source_code) {
+      const sourceCodeButton = document.createElement("button");
+      sourceCodeButton.title = "Source Code";
+      sourceCodeButton.className = "sourceCodeButton";
       sourceCodeButton.onclick = function () {
         window.location.href = project.project_source_code;
       };
-    } else if (sourceCodeButton) {
-      sourceCodeButton.style.display = "none";
+      sourceCodeButton.innerHTML = `
+          <img
+            src="../../assets/images/techStack/githubInverse.svg"
+            width="50px"
+            height="50px"
+            alt="GitHub Logo"
+          />
+          Source Code
+        `;
+
+      sourceVideo.appendChild(sourceCodeButton);
     }
 
     // Set YouTube button
-    const youtubeButton = document.querySelector(".youtubeButton");
-    if (youtubeButton && project.project_video_url) {
+    if (project.project_video_url) {
+      const youtubeButton = document.createElement("button");
+      youtubeButton.title = "Project Video";
+      youtubeButton.className = "youtubeButton";
       youtubeButton.onclick = function () {
         window.location.href = project.project_video_url;
       };
-    } else if (youtubeButton) {
-      youtubeButton.style.display = "none";
+      youtubeButton.innerHTML = `
+          <img
+            src="../../assets/images/socialMedia/youtube.svg"
+            width="45px"
+            height="40px"
+            alt="Youtube Logo"
+          />
+          Video
+        `;
+
+      sourceVideo.appendChild(youtubeButton);
     }
 
     // Set project description
