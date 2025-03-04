@@ -432,7 +432,7 @@ function createImageSlideshow(images) {
   // Add slides
   images.forEach((image, index) => {
     const slide = document.createElement("div");
-    slide.className = "mySlides1 fade";
+    slide.className = "mySlides fade";
 
     // Adjust image path based on current page location
     let imagePath = image;
@@ -475,13 +475,13 @@ function createImageSlideshow(images) {
   slideshowContainer.appendChild(nextButton);
 
   // Create dots for navigation
-  const dotsContainer = document.getElementById("imageDots1");
+  const dotsContainer = document.getElementById("imageDots");
   if (dotsContainer) {
     dotsContainer.innerHTML = "";
 
     images.forEach((_, index) => {
       const dot = document.createElement("span");
-      dot.className = "dot1";
+      dot.className = "dot";
       dot.onclick = function () {
         currentSlide(index + 1);
       };

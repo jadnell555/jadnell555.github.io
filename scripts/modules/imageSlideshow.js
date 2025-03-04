@@ -11,8 +11,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  const slides = document.getElementsByClassName("mySlides1");
-  const dots = document.getElementsByClassName("dot1");
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
 
   if (!slides.length) return;
 

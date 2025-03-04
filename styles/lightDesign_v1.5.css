@@ -676,7 +676,7 @@ div.col.projectType {
 }
 
 /* The dots/indicators */
-.dot1 {
+.dot {
   cursor: pointer;
   height: 10px;
   width: 10px;
@@ -690,7 +690,7 @@ div.col.projectType {
   margin: 0.1rem;
 }
 
-#imageDots1 {
+#imageDots {
   position: relative;
   bottom: 4%;
   z-index: 10;
@@ -699,7 +699,7 @@ div.col.projectType {
 }
 
 .active,
-.dot1:hover {
+.dot:hover {
   background: -webkit-linear-gradient(top, #347b56, #1a7452);
   box-shadow: 0px 2px 5px #347b56;
   transform: translateY(-2px);
