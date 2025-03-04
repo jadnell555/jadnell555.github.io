@@ -182,7 +182,6 @@ button.secondaryButtons:active {
 }
 
 /*My Name (Home "Button")*/
-
 #myName {
   display: flex;
   flex-direction: column;
@@ -580,7 +579,7 @@ img.projectPictures {
   justify-content: center;
 }
 
-div.col.projectType {
+.projectType {
   padding: 0.2em;
 }
 
@@ -715,6 +714,12 @@ div.col.projectType {
   width: 90%;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .pageclip-form__submit::after {
   border-color: #252525;
   border-left-color: #347b56;
@@ -728,7 +733,9 @@ div.col.projectType {
 
 #fullName {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .formButtons {
@@ -1038,4 +1045,8 @@ footer {
     padding: 0.5rem 0;
   }
   /*End Projects Section*/
+
+  #fullName {
+    width: 98%;
+  }
 }
