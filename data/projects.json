@@ -26,7 +26,7 @@
         {
           "project_id": 1,
           "project_name": "DEPO Web Application",
-          "project_thumbnail": "assets/images/projectPictures/DEPO.png",
+          "project_thumbnail": "assets/images/projectPictures/DEPO.webp",
           "project_overview": "As a Capstone Project my classmates and I developed DEPO, a web app used to  automate purchase reporting for Puerto Rico government entities. Minimized errors & sped data entry with automation. Focused on a user-friendly portal for ASG employees.",
           "project_description": "This web application served as my Capstone Project and was developed for the Office of Special Investigations of ASG (“Administración de Servicios Generales de Puerto Rico”), which requires exempt and governmental entities with delegation, to submit monthly reports of the purchases made. The Digital Exempt Procurement Oversight (DEPO) web application was developed to automate the audit process and expedite the workflow by providing government agencies with a user-friendly portal, minimizing errors, and speeding up data entry. This project focused on the user-side of the web app, as in, the side that ASG employees interact with. The client-side was handled by another team that was in close contact with ours to ensure compatibility. For security reasons, the source code of this project is not available.",
           "project_type": "University",
@@ -44,7 +44,7 @@
         {
           "project_id": 2,
           "project_name": "My Portfolio v0.8",
-          "project_thumbnail": "assets/images/projectPictures/MP.png",
+          "project_thumbnail": "assets/images/projectPictures/MP.webp",
           "project_overview": "Dive into my knowledge! Explore real-world projects I've worked in (personal and college ones) and the skills I've honed. Contact me through social media or a form. Built with free & user-friendly GitHub Pages. Evolving since July 2023.",
           "project_description": "My portfolio v0.8 is the first live implementation of my portfolio and it worked as a showcase of the knowledge I've acquired. It displays a collection of different projects I've worked on, ranging from personal to university projects. You can also find the list of technologies I have expertise on. Lastly, it includes contact information, such as: social media, a contact form and my Resumé. This portfolio was implemented using GitHub pages, a static site hosting service provided by GitHub. It was decided to use this service since it is free and because of it's ease-of-use and quick deployment. This project started development in July 2023. In 2024 the development seized. A new version is being worked on.",
           "project_type": "Personal",
@@ -62,7 +62,7 @@
         {
           "project_id": 3,
           "project_name": "Haresh Quiz Game",
-          "project_thumbnail": "assets/images/projectPictures/HQG.png",
+          "project_thumbnail": "assets/images/projectPictures/HQG.webp",
           "project_overview": "Test your knowledge with Haresh Quiz Game! A simple game developed for my Advanced Programming class using Python. Answer 20 questions to win. 3 lives, simple GUI,. It has 3 implementatios: using simple logic, using functions and using classes.",
           "project_description": "Haresh Quiz Game consists of 20 questions. You start with three lives and each time you answer a question incorrectly you lose one. If you lose all of your lives it's game over, on the contrary, if you answer every question without losing all of your lives, you win. This program was built using the \"graphics.py\" module from John Zelle's Python Programming: An Introduction to Computer Science book to generate a simple GUI (Graphical User Interface) and it can be found in the source code below. The project has three versions. Version A uses only conditional logic. Version B uses functions to reduce the code. Version C uses classes to reduce it even further.",
           "project_type": "University",
@@ -80,7 +80,7 @@
         {
           "project_id": 4,
           "project_name": "DC Motor Control",
-          "project_thumbnail": "assets/images/projectPictures/DCM.png",
+          "project_thumbnail": "assets/images/projectPictures/DCM.webp",
           "project_overview": "Harnessing an Arduino board, C++ & keyboard inputs, we built a system that commands a DC motor's speed! Watch it accelerate using pulse width modulation, then take the wheel through your keyboard.",
           "project_description": "The purpose of this project was to power a DC (Direct Current) motor and control it's motion using an Arduino board powered by a laptop and C++. The speed of the motor can be altered by manipulating it's driving voltage; higher voltage equals more speed. This project consisted of three parts. First, we had to connect the DC motor to the Arduino board and test it. Secondly, we had to generate code that would increase the motor's speed by 10% every 5 seconds using PWM (Pulse Width Modulation). Lastly, the DC motor had to be controlled with the keyboard's input using the serial port of the Arduino board.",
           "project_type": "University",
@@ -96,7 +96,7 @@
         {
           "project_id": 5,
           "project_name": "Step Motor Control",
-          "project_thumbnail": "assets/images/projectPictures/STM.png",
+          "project_thumbnail": "assets/images/projectPictures/STM.webp",
           "project_overview": "This project used an Arduino & C++ to command a 28BYJ-48 geared step motor. Control included clockwise/counter-clockwise rotation (continuous & by steps) and a stop function, all triggered by keyboard commands.",
           "project_description": "The purpose of this project was to control the motion of a Step motor using an Arduino board powered by a laptop and C++. The step motor used in this project was a 28BYJ-48 with Gear Reduction. After connecting the motor and ensuring it worked correctly, the objective was to generate code so that the motor would carry out the following functions: rotate clockwise and counterclockwise continuously, rotate a specific number of steps, for both clockwise and counterclockwise and stop. These five functions are triggered by entering it's respective command in the keyboard.",
           "project_type": "University",
