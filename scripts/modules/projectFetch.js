@@ -358,14 +358,22 @@ async function loadProjectDetailsPage() {
     const projectTypes = document.querySelectorAll(".projectType");
     if (projectTypes.length > 0) {
       projectTypes.forEach((type) => {
+        type.classList.remove("persActive");
         type.classList.remove("uniActive");
+        type.classList.remove("profActive");
       });
 
+      const projectType = project.project_type.toLowerCase();
+
       const activeType = document.getElementById(
-        project.project_type ? project.project_type.toLowerCase() : ""
+        project.project_type ? projectType : ""
       );
-      if (activeType) {
+      if (activeType && projectType == "university") {
         activeType.classList.add("uniActive");
+      } else if (activeType && projectType == "personal") {
+        activeType.classList.add("persActive");
+      } else if (activeType && projectType == "professional") {
+        activeType.classList.add("profActive");
       }
     }
 
@@ -378,15 +386,17 @@ async function loadProjectDetailsPage() {
         project.project_status &&
         project.project_status.toLowerCase() === "in progress"
       ) {
-        inProgress.style.backgroundColor = "#7ec384";
+        inProgress.style.backgroundColor = "#fbcc18";
         inProgress.style.color = "#252525";
         complete.style.backgroundColor = "";
         complete.style.color = "";
+        complete.style.boxShadow = "none";
       } else {
         complete.style.backgroundColor = "#7ec384";
         complete.style.color = "#252525";
         inProgress.style.backgroundColor = "";
         inProgress.style.color = "";
+        inProgress.style.boxShadow = "none";
       }
     }
 

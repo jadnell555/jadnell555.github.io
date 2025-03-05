@@ -519,6 +519,7 @@ img.projectPictures {
   align-items: center;
   justify-content: center;
   padding: 0.25rem 0;
+  gap: 0.25rem;
 }
 
 .sourceVideo {
@@ -571,16 +572,11 @@ img.projectPictures {
 .projectType {
   color: #e3e1e3;
   background-color: #111812;
-  box-shadow: 2px 2px 3px #111812;
   width: fit-content;
   transition: 0.3s ease;
   padding: 0.2em 0.5em;
   display: flex;
   justify-content: center;
-}
-
-.projectType {
-  padding: 0.2em;
 }
 
 #inProgress {
@@ -607,11 +603,6 @@ img.projectPictures {
   justify-content: center;
 }
 
-.inProgressActive {
-  background-color: #fbcc18;
-  color: #111812;
-}
-
 #personal {
   border-radius: 200px 0px 0px 200px;
 }
@@ -623,16 +614,19 @@ img.projectPictures {
 .persActive {
   background-color: #7bd5f5;
   color: #111812;
+  box-shadow: 2px 2px 3px #111812;
 }
 
 .uniActive {
   background-color: #79a9f5;
   color: #111812;
+  box-shadow: 2px 2px 3px #111812;
 }
 
 .profActive {
   background-color: #787ff6;
   color: #111812;
+  box-shadow: 2px 2px 3px #111812;
 }
 
 /* Image Slideshow */
