@@ -4,15 +4,16 @@
 
 ~ Description:
 */
+
 document.addEventListener("DOMContentLoaded", function () {
   loadTechStack();
+  //loadTechStack();
 });
 
 async function loadTechStack() {
   try {
     const response = await fetch("data/techStack.json");
     const data = await response.json();
-
     // Get unique tech types from the data
     const techTypes = [
       ...new Set(data.table.techstack.data.map((item) => item.tech_type)),
@@ -39,11 +40,48 @@ async function loadTechStack() {
         const button = createToolButton(tool);
         container.appendChild(button);
       });
+      //}
     });
   } catch (error) {
     console.error("Error loading tech stack:", error);
     console.error("Error details:", error.message);
   }
+}
+
+function createToolButtonDarkMode(tool) {
+  const button = document.createElement("button");
+  button.className = "secondaryButtons";
+  button.title = `What is ${tool.tech_name}?`;
+  button.onclick = () => (window.location.href = tool.tech_source_url);
+
+  // Create icon
+  const icon = document.createElement("img");
+  icon.src = tool.tech_icon;
+  icon.title = `${tool.tech_name} Logo`;
+  icon.width = 25;
+  icon.height = 25;
+  icon.alt = `${tool.tech_name} Logo`;
+
+  // Create text node
+  const text = document.createElement("div");
+  const content = document.createTextNode(tool.tech_name);
+  text.appendChild(content);
+  text.className = "secondaryButtonText";
+
+  // Create info icon
+  const infoIcon = document.createElement("img");
+  infoIcon.src = "assets/images/icons/infoDarkMode.svg";
+  infoIcon.title = "More Info";
+  infoIcon.width = 25;
+  infoIcon.height = 25;
+  infoIcon.alt = "More Info Button";
+
+  // Append all elements to button
+  button.appendChild(icon);
+  button.appendChild(text);
+  button.appendChild(infoIcon);
+
+  return button;
 }
 
 function createToolButton(tool) {
@@ -69,7 +107,7 @@ function createToolButton(tool) {
   // Create info icon
   const infoIcon = document.createElement("img");
   infoIcon.src = "assets/images/icons/info.svg";
-  infoIcon.title = tool.tech_description;
+  infoIcon.title = "More Info";
   infoIcon.width = 25;
   infoIcon.height = 25;
   infoIcon.alt = "More Info Button";

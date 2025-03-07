@@ -1,3 +1,32 @@
+/* Color Palette */
+:root {
+  /* Primary Colors */
+  --color-primary-light: #1a7452;
+  --color-primary-dark: #347b56;
+
+  /* Neutral Colors */
+  --color-background-light: #f8f8ff;
+  --color-background-medium: #eeeef5;
+  --color-background-dark: #111812;
+
+  /* Text Colors */
+  --color-text-light: #f8f8ff;
+  --color-text-dark: #111812;
+  --color-text-accent: #347b56;
+
+  /* Accent Colors */
+  --color-accent-yellow: #fbcc18;
+  --color-accent-blue-light: #7bd5f5;
+  --color-accent-blue-medium: #79a9f5;
+  --color-accent-blue-dark: #787ff6;
+
+  /* Action Colors */
+  --color-action-youtube: #b2071d;
+  --color-action-gray: #e3e1e3;
+
+  transition: all 0.3s ease;
+}
+
 /* GLOBAL DESIGN */
 * {
   margin: 0;
@@ -20,7 +49,7 @@
 }
 
 body {
-  background-color: #f8f8ff;
+  background-color: var(--color-background-light);
   min-height: 100vh;
   text-size-adjust: auto;
   margin: 0;
@@ -45,23 +74,27 @@ button {
 .primaryButtons button {
   border: none;
   border-radius: 50px;
-  box-shadow: 1px 1px 1px #347b56;
+  box-shadow: 1px 1px 1px var(--color-primary-dark);
   font-size: large;
   font-weight: bold;
-  color: #f8f8ff;
+  color: var(--color-text-light);
   padding: 0.75rem 1rem;
-  background: #1a7452;
-  background: linear-gradient(180deg, #1a7452 55%, #347b56 100%);
+  background: var(--color-primary-light);
+  background: linear-gradient(
+    180deg,
+    var(--color-primary-light) 55%,
+    var(--color-primary-dark) 100%
+  );
   cursor: pointer;
 }
 
 .secondaryButtons {
   border-style: solid;
-  border-color: #347b56;
+  border-color: var(--color-primary-dark);
   border-radius: 20px;
   background-color: transparent;
   padding: 0.25rem;
-  color: #347b56;
+  color: var(--color-primary-dark);
   text-align: center;
 }
 
@@ -144,9 +177,13 @@ button.secondaryButtons:active {
   width: 100%;
   height: 75px;
 
-  background: linear-gradient(40deg, #1a7452 44%, #347b56 100%);
+  background: linear-gradient(
+    40deg,
+    var(--color-primary-light) 44%,
+    var(--color-primary-dark) 100%
+  );
   border-radius: 0px 0px 20px 20px;
-  box-shadow: 0px 2px 3px #111812;
+  box-shadow: 0px 2px 3px var(--color-background-dark);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -198,7 +235,7 @@ button.secondaryButtons:active {
 .myName,
 .navBarTitles {
   text-decoration: none;
-  color: #f8f8ff;
+  color: var(--color-text-light);
   font-size: large;
   font-weight: bold;
   line-height: 1.2;
@@ -214,8 +251,8 @@ button.secondaryButtons:active {
 }
 
 #themeChanger img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 #themeButton:active {
@@ -255,9 +292,13 @@ button.secondaryButtons:active {
   flex-direction: row;
   justify-content: center;
   padding: 0.75rem 1rem;
-  background: linear-gradient(40deg, #1a7452 44%, #347b56 100%);
+  background: linear-gradient(
+    40deg,
+    var(--color-primary-light) 44%,
+    var(--color-primary-dark) 100%
+  );
   border-radius: 50px;
-  box-shadow: 0px 2px 3px #111812;
+  box-shadow: 0px 2px 3px var(--color-background-dark);
   text-decoration: none;
   transition: 0.3s ease-in;
 }
@@ -276,12 +317,12 @@ section {
 
 #landingSection,
 #projectsSection {
-  background-color: #f8f8ff;
+  background-color: var(--color-background-light);
 }
 
 #aboutMeSection,
 #contactSection {
-  background-color: #eeeef5;
+  background-color: var(--color-background-medium);
 }
 
 .HEADINGS {
@@ -292,12 +333,14 @@ section {
   font-size: 2rem;
   width: fit-content;
   margin: 0 auto;
-  border-bottom: 3px solid #347b56;
+  border-bottom: 3px solid var(--color-primary-dark);
+  color: var(--color-text-dark);
 }
 
 .headingsDescriptions {
   padding: 0.5rem;
   text-align: center;
+  color: var(--color-text-dark);
 }
 
 .animatedSection {
@@ -306,11 +349,11 @@ section {
 
 #landingSection .smallBlock,
 #projectsSection .smallBlock {
-  background-color: #eeeef5;
+  background-color: var(--color-background-medium);
 }
 
 #contactSection .smallBlock {
-  border: solid #347b56;
+  border: solid var(--color-primary-dark);
   background-color: transparent;
 }
 
@@ -321,7 +364,7 @@ section {
 }
 
 #socialMediaSection {
-  background-color: #111812;
+  background-color: #000000;
   border: none;
   padding: 1rem 0;
 }
@@ -382,7 +425,7 @@ section {
 /* LANDING SECTION */
 #mainPicture {
   border-radius: 100%;
-  box-shadow: 2px 2px 3px #111812;
+  box-shadow: 2px 2px 3px var(--color-background-dark);
   transition: 0.3s ease-in;
   width: 95%;
   max-width: 350px;
@@ -402,10 +445,11 @@ section {
 #intro {
   text-align: justify;
   font-size: large;
+  color: var(--color-text-dark);
 }
 
 #intro > h3 {
-  color: #347b56;
+  color: var(--color-primary-dark);
 }
 
 .smallBlock {
@@ -415,8 +459,9 @@ section {
   margin: 1rem 0;
   padding: 1rem;
   font-size: large;
-  background-color: #f8f8ff;
+  background-color: var(--color-background-light);
   text-align: justify;
+  color: var(--color-text-dark);
 }
 
 .smallBlock h5 {
@@ -437,13 +482,13 @@ section {
 .blockTitles {
   text-align: center;
   padding: 0.25rem;
-  color: #347b56;
+  color: var(--color-primary-dark);
 }
 
 .inBlockTitles {
   text-align: center;
   padding: 0.5rem;
-  color: #111812;
+  color: var(--color-text-dark);
 }
 
 .educationBlock {
@@ -477,8 +522,8 @@ section {
   padding: 0.1rem 0.5rem;
   border-radius: 20px;
   border-style: dashed;
-  color: #347b56;
-  border-color: #347b56;
+  color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
 }
 /*END ABOUT ME SECTION*/
 
@@ -493,7 +538,7 @@ img.projectPictures {
 }
 
 .projectTitle {
-  color: #347b56;
+  color: var(--color-primary-dark);
   text-align: left;
 }
 
@@ -520,6 +565,7 @@ img.projectPictures {
   justify-content: center;
   padding: 0.25rem 0;
   gap: 0.25rem;
+  color: var(--color-text-dark);
 }
 
 .sourceVideo {
@@ -531,9 +577,9 @@ img.projectPictures {
 
 .sourceCodeButton {
   border-radius: 200px;
-  box-shadow: 1px 1px 1px #111812;
+  box-shadow: 1px 1px 1px var(--color-background-dark);
   border: none;
-  background-color: #111812;
+  background-color: #000000;
   transition: 0.3s ease-in;
   color: #f8f8ff;
   display: flex;
@@ -550,11 +596,11 @@ img.projectPictures {
 
 .youtubeButton {
   border-radius: 200px;
-  box-shadow: 1px 1px 1px #111812;
+  box-shadow: 1px 1px 1px var(--color-background-dark);
   padding: 0 0.5em;
   min-width: 100px;
   border: none;
-  background-color: #b2071d;
+  background-color: var(--color-action-youtube);
   transition: 0.3s ease-in;
   color: #f8f8ff;
   display: flex;
@@ -570,8 +616,8 @@ img.projectPictures {
 }
 
 .projectType {
-  color: #e3e1e3;
-  background-color: #111812;
+  color: var(--color-action-gray);
+  background-color: var(--color-background-dark);
   width: fit-content;
   transition: 0.3s ease;
   padding: 0.2em 0.5em;
@@ -583,9 +629,9 @@ img.projectPictures {
   border-radius: 200px 0px 0px 200px;
   width: fit-content;
   min-width: 7.5rem;
-  color: #e3e1e3;
-  background-color: #111812;
-  box-shadow: 2px 2px 3px #111812;
+  color: var(--color-action-gray);
+  background-color: var(--color-background-dark);
+  box-shadow: 2px 2px 3px var(--color-background-dark);
   padding: 0.2em 0.5em;
   display: flex;
   justify-content: center;
@@ -595,9 +641,9 @@ img.projectPictures {
   border-radius: 0px 200px 200px 0px;
   width: fit-content;
   min-width: 7.5rem;
-  color: #e3e1e3;
-  background-color: #111812;
-  box-shadow: 2px 2px 3px #111812;
+  color: var(--color-action-gray);
+  background-color: var(--color-background-dark);
+  box-shadow: 2px 2px 3px var(--color-background-dark);
   padding: 0.2em 0.5em;
   display: flex;
   justify-content: center;
@@ -612,28 +658,28 @@ img.projectPictures {
 }
 
 .persActive {
-  background-color: #7bd5f5;
-  color: #111812;
-  box-shadow: 2px 2px 3px #111812;
+  background-color: var(--color-accent-blue-light);
+  color: var(--color-background-dark);
+  box-shadow: 2px 2px 3px var(--color-background-dark);
 }
 
 .uniActive {
-  background-color: #79a9f5;
-  color: #111812;
-  box-shadow: 2px 2px 3px #111812;
+  background-color: var(--color-accent-blue-medium);
+  color: var(--color-background-dark);
+  box-shadow: 2px 2px 3px var(--color-background-dark);
 }
 
 .profActive {
-  background-color: #787ff6;
-  color: #111812;
-  box-shadow: 2px 2px 3px #111812;
+  background-color: var(--color-accent-blue-dark);
+  color: var(--color-background-dark);
+  box-shadow: 2px 2px 3px var(--color-background-dark);
 }
 
 /* Image Slideshow */
 .projectImages {
   border-radius: 20px;
   aspect-ratio: 3/2;
-  box-shadow: 2px 2px 3px #111812;
+  box-shadow: 2px 2px 3px var(--color-background-dark);
   transition: 0.3s ease-in;
   width: 100%;
   max-width: 600px;
@@ -659,13 +705,17 @@ img.projectPictures {
   justify-content: center;
   height: fit-content;
   cursor: pointer;
-  color: #f8f8ff;
+  color: var(--color-text-light);
   transition: 0.3s ease;
   border-radius: 20px;
   border: none;
   user-select: none;
-  background: -webkit-linear-gradient(top, #347b56, #1a7452);
-  box-shadow: 2px 2px 3px #111812;
+  background: -webkit-linear-gradient(
+    top,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
+  box-shadow: 2px 2px 3px var(--color-background-dark);
 }
 
 /* The dots/indicators */
@@ -673,8 +723,8 @@ img.projectPictures {
   cursor: pointer;
   height: 10px;
   width: 10px;
-  background-color: #e3e1e3;
-  box-shadow: 2px 2px 3px #111812;
+  background-color: var(--color-action-gray);
+  box-shadow: 2px 2px 3px var(--color-background-dark);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.3s ease;
@@ -693,8 +743,12 @@ img.projectPictures {
 
 .active,
 .dot:hover {
-  background: -webkit-linear-gradient(top, #347b56, #1a7452);
-  box-shadow: 0px 2px 5px #347b56;
+  background: -webkit-linear-gradient(
+    top,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
+  box-shadow: 0px 2px 5px var(--color-primary-dark);
   transform: translateY(-2px);
   transition: ease 0.5s;
 }
@@ -715,12 +769,12 @@ form {
 }
 
 .pageclip-form__submit::after {
-  border-color: #252525;
-  border-left-color: #347b56;
+  border-color: var(--color-background-dark);
+  border-left-color: var(--color-primary-dark);
 }
 
 .pageclip-form__success {
-  background: #eeeef5;
+  background: var(--color-background-medium);
   width: 100%;
   border-radius: 20px;
 }
@@ -733,10 +787,10 @@ form {
 }
 
 .formButtons {
-  background: #f8f8ff;
+  background: var(--color-background-light);
   border: none;
   border-radius: 20px;
-  color: #111812;
+  color: var(--color-background-dark);
   padding: 0.75rem;
   margin: 0.5rem 0;
   resize: none;
@@ -748,13 +802,14 @@ form {
 ::placeholder {
   padding: 5px;
   margin: auto;
-  color: #347b56;
+  color: var(--color-primary-dark);
   font-size: 1em;
 }
 
 textarea {
   height: 150px;
 }
+
 /*END CONTACT SECTION*/
 
 /*SOCIAL MEDIA SECTION*/
@@ -802,7 +857,7 @@ textarea {
 /* FOOTER */
 footer {
   width: 100%;
-  background-color: #111812;
+  background-color: #000000;
   color: #f8f8ff;
   text-align: center;
   height: fit-content;
@@ -882,12 +937,12 @@ footer {
   }
 
   .primaryButtons button:hover {
-    box-shadow: 0px 5px 10px #347b56;
+    box-shadow: 0px 5px 10px var(--color-primary-dark);
     transform: translateY(-4px);
   }
 
   button.secondaryButtons:hover {
-    box-shadow: 0px 2.5px 5px #347b56;
+    box-shadow: 0px 2.5px 5px var(--color-primary-dark);
     transform: translateY(-4px);
   }
 
@@ -909,12 +964,12 @@ footer {
   }
 
   .sourceCodeButton:hover {
-    box-shadow: 0px 5px 10px #111812;
+    box-shadow: 0px 5px 10px var(--color-background-dark);
     transform: translateY(-4px);
   }
 
   .youtubeButton:hover {
-    box-shadow: 0px 5px 10px #b2071d;
+    box-shadow: 0px 5px 10px var(--color-action-youtube);
     transform: translateY(-4px);
   }
 
@@ -942,11 +997,6 @@ footer {
     background: transparent;
     border-radius: none;
     box-shadow: none;
-  }
-
-  #themeChanger img {
-    width: 30px;
-    height: 30px;
   }
 
   /*End Navigation Bar*/
