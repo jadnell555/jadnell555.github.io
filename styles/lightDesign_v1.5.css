@@ -791,7 +791,7 @@ form {
   background: var(--color-background-light);
   border: none;
   border-radius: 20px;
-  color: var(--color-background-dark);
+  color: var(--color-text-dark);
   padding: 0.75rem;
   margin: 0.5rem 0;
   resize: none;
