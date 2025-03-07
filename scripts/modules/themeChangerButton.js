@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const darkTheme = {
     /* Primary Colors */
     "--color-primary-light": "#fd8c69",
-    "--color-primary-dark": "#d12323",
+    "--color-primary-dark": "#FD6A69",
 
     /* Neutral Colors */
     "--color-background-light": "#212121",
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* Text Colors */
     "--color-text-light": "#111812",
     "--color-text-dark": "#f8f8ff",
-    "--color-text-accent": "#fd8c69",
+    "--color-text-accent": "#FD6A69",
 
     /* Accent Colors */
     "--color-accent-yellow": "#fbcc18",
