@@ -104,12 +104,18 @@ async function fetchTechStack() {
   }
 }
 
-// Create a button for each technology (reused from techStackFetch.js)
+// Create a button for each technology with theme support
 function createToolButton(tool) {
+  // Get current theme from localStorage
+  const currentTheme = localStorage.getItem("theme") || "light";
+
   const button = document.createElement("button");
   button.className = "secondaryButtons";
   button.title = `What is ${tool.tech_name}?`;
   button.onclick = () => (window.location.href = tool.tech_source_url);
+
+  // Add a data attribute to store the tool data for later theme updates
+  button.dataset.toolName = tool.tech_name;
 
   // Create icon
   const icon = document.createElement("img");
@@ -129,8 +135,9 @@ function createToolButton(tool) {
   text.appendChild(content);
   text.className = "secondaryButtonText";
 
-  // Create info icon
+  // Create light mode info icon
   const infoIcon = document.createElement("img");
+  infoIcon.className = "info-icon light-mode-icon";
   infoIcon.src = window.location.pathname.includes("/pages/")
     ? "../../assets/images/icons/info.svg"
     : "assets/images/icons/info.svg";
@@ -138,13 +145,74 @@ function createToolButton(tool) {
   infoIcon.width = 25;
   infoIcon.height = 25;
   infoIcon.alt = "More Info Button";
+  infoIcon.style.display = currentTheme === "dark" ? "none" : "block";
+
+  // Create dark mode info icon
+  const infoIconDarkMode = document.createElement("img");
+  infoIconDarkMode.className = "info-icon dark-mode-icon";
+  infoIconDarkMode.src = window.location.pathname.includes("/pages/")
+    ? "../../assets/images/icons/infoDarkMode.svg"
+    : "assets/images/icons/infoDarkMode.svg";
+  infoIconDarkMode.title = tool.tech_description;
+  infoIconDarkMode.width = 25;
+  infoIconDarkMode.height = 25;
+  infoIconDarkMode.alt = "More Info Button";
+  infoIconDarkMode.style.display = currentTheme === "dark" ? "block" : "none";
 
   // Append all elements to button
   button.appendChild(icon);
   button.appendChild(text);
   button.appendChild(infoIcon);
+  button.appendChild(infoIconDarkMode);
 
   return button;
+}
+
+// Function to update the theme of existing buttons
+function updateProjectTechButtonsForTheme(theme) {
+  const buttons = document.querySelectorAll(".secondaryButtons");
+
+  buttons.forEach((button) => {
+    const lightModeIcon = button.querySelector(".light-mode-icon");
+    const darkModeIcon = button.querySelector(".dark-mode-icon");
+
+    if (lightModeIcon && darkModeIcon) {
+      lightModeIcon.style.display = theme === "dark" ? "none" : "block";
+      darkModeIcon.style.display = theme === "dark" ? "block" : "none";
+    } else {
+      console.warn("Button missing light/dark icons:", button.dataset.toolName);
+    }
+  });
+
+  // Also update slideshow navigation buttons
+  updateSlideshowNavigationTheme(theme);
+}
+
+// Function to update slideshow navigation buttons for theme
+function updateSlideshowNavigationTheme(theme) {
+  // Update previous button icons
+  const prevButtons = document.querySelectorAll(".prev");
+  prevButtons.forEach((button) => {
+    const lightModeIcon = button.querySelector(".nav-light-mode-icon");
+    const darkModeIcon = button.querySelector(".nav-dark-mode-icon");
+
+    if (lightModeIcon && darkModeIcon) {
+      lightModeIcon.style.display = theme === "dark" ? "none" : "block";
+      darkModeIcon.style.display = theme === "dark" ? "block" : "none";
+    }
+  });
+
+  // Update next button icons
+  const nextButtons = document.querySelectorAll(".next");
+  nextButtons.forEach((button) => {
+    const lightModeIcon = button.querySelector(".nav-light-mode-icon");
+    const darkModeIcon = button.querySelector(".nav-dark-mode-icon");
+
+    if (lightModeIcon && darkModeIcon) {
+      lightModeIcon.style.display = theme === "dark" ? "none" : "block";
+      darkModeIcon.style.display = theme === "dark" ? "block" : "none";
+    }
+  });
 }
 
 // Populate the projects overview section on the main page
@@ -412,31 +480,47 @@ async function loadProjectDetailsPage() {
   }
 }
 
-// Create the image slideshow
+// Create the image slideshow with theme support
 function createImageSlideshow(images) {
   if (!images || images.length === 0) return;
 
   const slideshowContainer = document.querySelector(".slideshow-container");
   if (!slideshowContainer) return;
 
+  // Get current theme
+  const currentTheme = localStorage.getItem("theme") || "light";
+
   // Clear existing content
   slideshowContainer.innerHTML = "";
 
+  // Create Previous button with theme support
   const prevButton = document.createElement("button");
   prevButton.title = "Previous";
   prevButton.className = "prev";
   prevButton.onclick = function () {
     plusSlides(-1);
   };
-  prevButton.innerHTML = `
-      <img
-        src="../../assets/images/icons/prevImage.svg"
-        width="30px"
-        height="30px"
-        alt="Previous picture arrow button."
-      />
-    `;
 
+  // Light mode prev icon
+  const prevLightIcon = document.createElement("img");
+  prevLightIcon.className = "nav-light-mode-icon";
+  prevLightIcon.src = "../../assets/images/icons/prevImage.svg";
+  prevLightIcon.width = 30;
+  prevLightIcon.height = 30;
+  prevLightIcon.alt = "Previous picture arrow button.";
+  prevLightIcon.style.display = currentTheme === "dark" ? "none" : "block";
+
+  // Dark mode prev icon
+  const prevDarkIcon = document.createElement("img");
+  prevDarkIcon.className = "nav-dark-mode-icon";
+  prevDarkIcon.src = "../../assets/images/icons/prevImageDarkMode.svg";
+  prevDarkIcon.width = 30;
+  prevDarkIcon.height = 30;
+  prevDarkIcon.alt = "Previous picture arrow button (dark mode).";
+  prevDarkIcon.style.display = currentTheme === "dark" ? "block" : "none";
+
+  prevButton.appendChild(prevLightIcon);
+  prevButton.appendChild(prevDarkIcon);
   slideshowContainer.appendChild(prevButton);
 
   // Add slides
@@ -465,23 +549,34 @@ function createImageSlideshow(images) {
     slideshowContainer.appendChild(slide);
   });
 
-  // Add navigation buttons
-
+  // Create Next button with theme support
   const nextButton = document.createElement("button");
   nextButton.title = "Next";
   nextButton.className = "next";
   nextButton.onclick = function () {
     plusSlides(1);
   };
-  nextButton.innerHTML = `
-      <img
-        src="../../assets/images/icons/nextImage.svg"
-        width="30px"
-        height="30px"
-        alt="Next picture arrow button."
-      />
-    `;
 
+  // Light mode next icon
+  const nextLightIcon = document.createElement("img");
+  nextLightIcon.className = "nav-light-mode-icon";
+  nextLightIcon.src = "../../assets/images/icons/nextImage.svg";
+  nextLightIcon.width = 30;
+  nextLightIcon.height = 30;
+  nextLightIcon.alt = "Next picture arrow button.";
+  nextLightIcon.style.display = currentTheme === "dark" ? "none" : "block";
+
+  // Dark mode next icon
+  const nextDarkIcon = document.createElement("img");
+  nextDarkIcon.className = "nav-dark-mode-icon";
+  nextDarkIcon.src = "../../assets/images/icons/nextImageDarkMode.svg";
+  nextDarkIcon.width = 30;
+  nextDarkIcon.height = 30;
+  nextDarkIcon.alt = "Next picture arrow button (dark mode).";
+  nextDarkIcon.style.display = currentTheme === "dark" ? "block" : "none";
+
+  nextButton.appendChild(nextLightIcon);
+  nextButton.appendChild(nextDarkIcon);
   slideshowContainer.appendChild(nextButton);
 
   // Create dots for navigation
@@ -507,11 +602,25 @@ function createImageSlideshow(images) {
 document.addEventListener("DOMContentLoaded", function () {
   const currentPage = window.location.pathname;
 
+  // Get saved theme
+  const savedTheme = localStorage.getItem("theme") || "light";
+
   if (currentPage.includes("projectDetailsTemplate.html")) {
     loadProjectDetailsPage();
   } else {
     initMainPage();
   }
+
+  // Create a function that can be called when theme changes
+  window.updateProjectTechTheme = function (newTheme) {
+    updateProjectTechButtonsForTheme(newTheme);
+  };
+
+  // Listen for theme change events
+  window.addEventListener("themeChanged", function (event) {
+    const newTheme = event.detail.theme;
+    updateProjectTechButtonsForTheme(newTheme);
+  });
 });
 
 // Check for console errors and log them

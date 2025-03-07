@@ -7,7 +7,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   let savedTheme = localStorage.getItem("theme") || "light";
 
-  // Always try to initialize the tech stack - we'll add more logging to debug
   initializeTechStackUI(savedTheme);
 
   // Create a function that can be called when theme changes
@@ -27,9 +26,6 @@ let techStackUIData = null;
 
 async function initializeTechStackUI(savedTheme) {
   try {
-    // Log all potential container elements on the page for debugging
-    const allDivs = document.querySelectorAll("div[id]");
-
     // Only fetch the data if we haven't already
     if (!techStackUIData) {
       const response = await fetch("data/techStack.json");
@@ -113,11 +109,22 @@ function createTechStackButton(tool, theme) {
 
   // Create icon
   const icon = document.createElement("img");
+  icon.className = "light-mode-tech-icon";
   icon.src = tool.tech_icon;
   icon.title = `${tool.tech_name} Logo`;
   icon.width = 25;
   icon.height = 25;
   icon.alt = `${tool.tech_name} Logo`;
+  icon.style.display = theme === "dark" ? "none" : "block";
+
+  const iconDarkMode = document.createElement("img");
+  iconDarkMode.className = "dark-mode-tech-icon";
+  iconDarkMode.src = tool.tech_icon_dark;
+  iconDarkMode.title = `${tool.tech_name} Logo`;
+  iconDarkMode.width = 25;
+  iconDarkMode.height = 25;
+  iconDarkMode.alt = `${tool.tech_name} Logo`;
+  iconDarkMode.style.display = theme === "dark" ? "block" : "none";
 
   // Create text node
   const text = document.createElement("div");
@@ -146,6 +153,7 @@ function createTechStackButton(tool, theme) {
 
   // Append all elements to button
   button.appendChild(icon);
+  button.appendChild(iconDarkMode);
   button.appendChild(text);
   button.appendChild(infoIcon);
   button.appendChild(infoIconDarkMode);
@@ -160,10 +168,19 @@ function updateTechButtonsForTheme(theme) {
   buttons.forEach((button) => {
     const lightModeIcon = button.querySelector(".light-mode-icon");
     const darkModeIcon = button.querySelector(".dark-mode-icon");
+    const lightModeTechIcon = button.querySelector(".light-mode-tech-icon");
+    const darkModeTechIcon = button.querySelector(".dark-mode-tech-icon");
 
     if (lightModeIcon && darkModeIcon) {
       lightModeIcon.style.display = theme === "dark" ? "none" : "block";
       darkModeIcon.style.display = theme === "dark" ? "block" : "none";
+    } else {
+      console.warn("Button missing light/dark icons:", button.dataset.toolName);
+    }
+
+    if (lightModeTechIcon && darkModeTechIcon) {
+      lightModeTechIcon.style.display = theme === "dark" ? "none" : "block";
+      darkModeTechIcon.style.display = theme === "dark" ? "block" : "none";
     } else {
       console.warn("Button missing light/dark icons:", button.dataset.toolName);
     }
