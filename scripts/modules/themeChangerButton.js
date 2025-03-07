@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* Text Colors */
     "--color-text-light": "#111812",
     "--color-text-dark": "#f8f8ff",
-    "--color-text-accent": "#d12323",
+    "--color-text-accent": "#fd8c69",
 
     /* Accent Colors */
     "--color-accent-yellow": "#fbcc18",
