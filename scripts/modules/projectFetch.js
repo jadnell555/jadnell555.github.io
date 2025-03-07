@@ -124,10 +124,26 @@ function createToolButton(tool) {
     // Adjust icon path if in pages directory
     icon.src = "../../" + tool.tech_icon.replace(/^\//, "");
   }
+  icon.className = "light-mode-tech-icon";
   icon.title = `${tool.tech_name} Logo`;
   icon.width = 25;
   icon.height = 25;
   icon.alt = `${tool.tech_name} Logo`;
+  icon.style.display = currentTheme === "dark" ? "none" : "block";
+
+  // Create icon Dark Mode
+  const iconDarkMode = document.createElement("img");
+  iconDarkMode.src = tool.tech_icon_dark;
+  if (window.location.pathname.includes("/pages/")) {
+    // Adjust icon path if in pages directory
+    iconDarkMode.src = "../../" + tool.tech_icon_dark.replace(/^\//, "");
+  }
+  iconDarkMode.className = "dark-mode-tech-icon";
+  iconDarkMode.title = `${tool.tech_name} Logo`;
+  iconDarkMode.width = 25;
+  iconDarkMode.height = 25;
+  iconDarkMode.alt = `${tool.tech_name} Logo`;
+  iconDarkMode.style.display = currentTheme === "dark" ? "block" : "none";
 
   // Create text node
   const text = document.createElement("div");
@@ -161,6 +177,7 @@ function createToolButton(tool) {
 
   // Append all elements to button
   button.appendChild(icon);
+  button.appendChild(iconDarkMode);
   button.appendChild(text);
   button.appendChild(infoIcon);
   button.appendChild(infoIconDarkMode);
@@ -175,10 +192,19 @@ function updateProjectTechButtonsForTheme(theme) {
   buttons.forEach((button) => {
     const lightModeIcon = button.querySelector(".light-mode-icon");
     const darkModeIcon = button.querySelector(".dark-mode-icon");
+    const lightModeTechIcon = button.querySelector(".light-mode-tech-icon");
+    const darkModeTechIcon = button.querySelector(".dark-mode-tech-icon");
 
     if (lightModeIcon && darkModeIcon) {
       lightModeIcon.style.display = theme === "dark" ? "none" : "block";
       darkModeIcon.style.display = theme === "dark" ? "block" : "none";
+    } else {
+      console.warn("Button missing light/dark icons:", button.dataset.toolName);
+    }
+
+    if (lightModeTechIcon && darkModeTechIcon) {
+      lightModeTechIcon.style.display = theme === "dark" ? "none" : "block";
+      darkModeTechIcon.style.display = theme === "dark" ? "block" : "none";
     } else {
       console.warn("Button missing light/dark icons:", button.dataset.toolName);
     }
@@ -601,9 +627,6 @@ function createImageSlideshow(images) {
 // Initialize the page based on current URL
 document.addEventListener("DOMContentLoaded", function () {
   const currentPage = window.location.pathname;
-
-  // Get saved theme
-  const savedTheme = localStorage.getItem("theme") || "light";
 
   if (currentPage.includes("projectDetailsTemplate.html")) {
     loadProjectDetailsPage();
