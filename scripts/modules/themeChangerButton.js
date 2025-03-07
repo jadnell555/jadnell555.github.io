@@ -117,7 +117,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setThemeIcon(isDarkMode);
 
     // Return the current theme state
-
     return isDarkMode;
   }
 
@@ -126,14 +125,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Theme toggle event listener
   themeButton.addEventListener("click", () => {
-    window.dispatchEvent(
-      new CustomEvent("themeChanged", {
-        detail: { data: isDarkMode },
-      })
-    );
-
     // Toggle theme state
     isDarkMode = !isDarkMode;
+    const currentTheme = isDarkMode ? "dark" : "light";
+
+    window.dispatchEvent(
+      new CustomEvent("themeChanged", {
+        detail: { data: isDarkMode, theme: currentTheme },
+      })
+    );
 
     // Apply new theme
     applyTheme(isDarkMode ? darkTheme : lightTheme);
@@ -142,12 +142,16 @@ document.addEventListener("DOMContentLoaded", () => {
     setThemeIcon(isDarkMode);
 
     // Save theme preference
-    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+    localStorage.setItem("theme", currentTheme);
+
     // Update alt text for accessibility
     themeImage.alt = isDarkMode
       ? "Switch to Light Mode"
       : "Switch to Dark Mode";
 
-    //location.reload();
+    // Update tech stack buttons if the function exists
+    if (window.updateTechStackTheme) {
+      window.updateTechStackTheme(currentTheme);
+    }
   });
 });
