@@ -244,6 +244,15 @@
           "tech_source_url": "https://help.lucid.co/hc/en-us/articles/11970952773652-Welcome-to-Lucidchart",
           "tech_icon": "assets/images/techStack/lucidchart.svg",
           "tech_icon_dark": "assets/images/techStack/lucidchart.svg"
+        },
+        {
+          "tech_id": 126,
+          "tech_name": "JSON",
+          "tech_type": "Software Development",
+          "tech_description": "JSON (JavaScript Object Notation) is a lightweight data-interchange format",
+          "tech_source_url": "https://www.json.org/json-en.html",
+          "tech_icon": "assets/images/techStack/json.svg",
+          "tech_icon_dark": "assets/images/techStack/json.svg"
         }
       ]
     }

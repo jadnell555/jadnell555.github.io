@@ -1,4 +1,7 @@
-// Theme Switcher Script
+// Jadnell H. Reyes Perez
+// March 8th, 2025
+// Version: 1.5
+// Script that handles theme changing.
 document.addEventListener("DOMContentLoaded", () => {
   // Dark theme variables
   const darkTheme = {
@@ -18,9 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* Accent Colors */
     "--color-accent-yellow": "#fbcc18",
-    "--color-accent-blue-light": "#7bd5f5",
-    "--color-accent-blue-medium": "#79a9f5",
-    "--color-accent-blue-dark": "#787ff6",
+    "--color-accent-blue-light": "#fdd8c5",
+    "--color-accent-blue-medium": "#f9a885",
+    "--color-accent-blue-dark": "#f77a65",
 
     /* Action Colors */
     "--color-action-youtube": "#b2071d",

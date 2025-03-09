@@ -1,4 +1,8 @@
-// projectFetch.js - Main script to load and display project data
+// // Jadnell H. Reyes Perez
+// March 8th, 2025
+// Version: 1.5
+// Script that handles the load and display of the projects with theme awareness.
+
 // Fetch the projects data from JSON file
 async function fetchProjects() {
   try {
@@ -131,7 +135,7 @@ function createToolButton(tool) {
   icon.alt = `${tool.tech_name} Logo`;
   icon.style.display = currentTheme === "dark" ? "none" : "block";
 
-  // Create icon Dark Mode
+  // Create dark mode icon
   const iconDarkMode = document.createElement("img");
   iconDarkMode.src = tool.tech_icon_dark;
   if (window.location.pathname.includes("/pages/")) {
@@ -151,13 +155,13 @@ function createToolButton(tool) {
   text.appendChild(content);
   text.className = "secondaryButtonText";
 
-  // Create light mode info icon
+  // Create info icon
   const infoIcon = document.createElement("img");
   infoIcon.className = "info-icon light-mode-icon";
   infoIcon.src = window.location.pathname.includes("/pages/")
     ? "../../assets/images/icons/info.svg"
     : "assets/images/icons/info.svg";
-  infoIcon.title = tool.tech_description;
+  infoIcon.title = "More Info";
   infoIcon.width = 25;
   infoIcon.height = 25;
   infoIcon.alt = "More Info Button";
@@ -169,7 +173,7 @@ function createToolButton(tool) {
   infoIconDarkMode.src = window.location.pathname.includes("/pages/")
     ? "../../assets/images/icons/infoDarkMode.svg"
     : "assets/images/icons/infoDarkMode.svg";
-  infoIconDarkMode.title = tool.tech_description;
+  infoIconDarkMode.title = "More Info";
   infoIconDarkMode.width = 25;
   infoIconDarkMode.height = 25;
   infoIconDarkMode.alt = "More Info Button";
@@ -397,10 +401,11 @@ async function loadProjectDetailsPage() {
       projectHeading.textContent = project.project_name;
     }
 
-    // Set source code button
+    // Set source code button and youtube button container
     const sourceVideo = document.querySelector(".sourceVideo");
     sourceVideo.innerHTML = "";
-    //const sourceCodeButton = document.querySelector(".sourceCodeButton");
+
+    // Set source code button if available
     if (project.project_source_code) {
       const sourceCodeButton = document.createElement("button");
       sourceCodeButton.title = "Source Code";
@@ -421,7 +426,7 @@ async function loadProjectDetailsPage() {
       sourceVideo.appendChild(sourceCodeButton);
     }
 
-    // Set YouTube button
+    // Set YouTube button if available
     if (project.project_video_url) {
       const youtubeButton = document.createElement("button");
       youtubeButton.title = "Project Video";

@@ -1,20 +1,19 @@
-/*
-~ Jadnell H. Reyes Pérez
-~ 2/22/2025
+// Jadnell H. Reyes Perez
+// March 8th, 2025
+// Version: 1.5
+// Script that loads and displays tech stack buttons with theme awareness.
 
-~ Description: Script to load tech stack buttons with theme awareness
-*/
 document.addEventListener("DOMContentLoaded", function () {
   let savedTheme = localStorage.getItem("theme") || "light";
 
   initializeTechStackUI(savedTheme);
 
-  // Create a function that can be called when theme changes
+  // Function that can be called when theme changes
   window.updateTechStackTheme = function (newTheme) {
     updateTechButtonsForTheme(newTheme);
   };
 
-  // Listen for theme change events
+  // Event listener for theme change events
   window.addEventListener("themeChanged", function (event) {
     const newTheme = event.detail.theme;
     updateTechButtonsForTheme(newTheme);
@@ -117,6 +116,7 @@ function createTechStackButton(tool, theme) {
   icon.alt = `${tool.tech_name} Logo`;
   icon.style.display = theme === "dark" ? "none" : "block";
 
+  // Create dark mode icon
   const iconDarkMode = document.createElement("img");
   iconDarkMode.className = "dark-mode-tech-icon";
   iconDarkMode.src = tool.tech_icon_dark;
@@ -132,7 +132,7 @@ function createTechStackButton(tool, theme) {
   text.appendChild(content);
   text.className = "secondaryButtonText";
 
-  // Create info icon - both light and dark mode versions
+  // Create info icon
   const infoIcon = document.createElement("img");
   infoIcon.className = "info-icon light-mode-icon";
   infoIcon.src = "assets/images/icons/info.svg";
@@ -142,6 +142,7 @@ function createTechStackButton(tool, theme) {
   infoIcon.alt = "More Info Button";
   infoIcon.style.display = theme === "dark" ? "none" : "block";
 
+  // Crete dark mode info icon
   const infoIconDarkMode = document.createElement("img");
   infoIconDarkMode.className = "info-icon dark-mode-icon";
   infoIconDarkMode.src = "assets/images/icons/infoDarkMode.svg";

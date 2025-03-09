@@ -1,3 +1,10 @@
+/* 
+Jadnell H. Reyes Pérez 
+March 8th, 2025 
+Version: 1.5 
+Style Sheet
+*/
+
 /* Color Palette */
 :root {
   /* Primary Colors */
@@ -307,7 +314,6 @@ button.secondaryButtons:active {
   transform: translateY(2px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 /*End Navigation Bar*/
 
 /*Sections*/
@@ -468,7 +474,6 @@ section {
   font-size: larger;
   padding: 0 0 0.5rem 0;
 }
-
 /*END LANDING SECTION*/
 
 /*ABOUT ME SECTION*/
@@ -525,7 +530,6 @@ section {
   color: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
 }
-
 /*END ABOUT ME SECTION*/
 
 /*PROJECTS SECTION*/
@@ -688,7 +692,6 @@ img.projectPictures {
   border: none;
 }
 
-/* Next & previous buttons */
 .slideshow-container {
   display: flex;
   flex-direction: row;
@@ -697,6 +700,7 @@ img.projectPictures {
   width: 100%;
 }
 
+/* Next & previous buttons */
 .prev,
 .next {
   padding: 0.25rem;
@@ -719,7 +723,7 @@ img.projectPictures {
   box-shadow: 2px 2px 3px var(--color-background-dark);
 }
 
-/* The dots/indicators */
+/* Dot indicators */
 .dot {
   cursor: pointer;
   height: 10px;
@@ -851,7 +855,6 @@ textarea {
   transform: translateY(2px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 /*END SOCIAL MEDIA SECTION*/
 
 /* FOOTER */
@@ -866,8 +869,14 @@ footer {
 /*END FOOTER*/
 
 /* @MEDIA */
-
 @media screen and (width >= 768px) and (width <= 1023px) {
+  /* Navigation Bar */
+  #navBarItems {
+    padding: 1rem 0;
+  }
+  /* End Navigation Bar */
+
+  /* Landing & About Me Sections */
   #landing,
   #education {
     flex-direction: row;
@@ -876,10 +885,6 @@ footer {
 
   #landing2 > .smallBlock {
     width: 70%;
-  }
-
-  #navBarItems {
-    padding: 1rem 0;
   }
 
   #techStack1,
@@ -892,7 +897,9 @@ footer {
   #pm-and-others {
     grid-template-columns: auto auto auto;
   }
+  /* End Landing & About Me Sections */
 
+  /* Projects Section */
   .typeStatus {
     display: flex;
     width: 100%;
@@ -902,6 +909,7 @@ footer {
   #techStackContainer {
     grid-template-columns: auto auto auto auto;
   }
+  /* End Projects Section */
 }
 
 @media screen and (width >= 1024px) {
@@ -998,7 +1006,6 @@ footer {
     border-radius: none;
     box-shadow: none;
   }
-
   /*End Navigation Bar*/
 
   /*Landing Section*/
