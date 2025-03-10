@@ -744,6 +744,7 @@ img.projectPictures {
   z-index: 10;
   width: fit-content;
   margin: auto;
+  padding: 1rem;
 }
 
 .active,
