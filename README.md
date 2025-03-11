@@ -49,4 +49,4 @@ Feel free to reach out to me for collaborations or opportunities!
 
 ---
 
-© 2025 Jadnell H. Reyes Perez
+© 2025 Jadnell H. Reyes Pérez
