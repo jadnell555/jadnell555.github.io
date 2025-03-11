@@ -1,4 +1,4 @@
-// // Jadnell H. Reyes Perez
+// Jadnell H. Reyes Perez
 // March 8th, 2025
 // Version: 1.5
 // Script that handles the load and display of the projects with theme awareness.
