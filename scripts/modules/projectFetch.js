@@ -301,18 +301,6 @@ function populateProjectsOverview(projects) {
 
     projectsContainer.appendChild(projectElement);
   });
-
-  // Add the project anchor point after the first project
-  if (projectsContainer.children.length > 0) {
-    const anchorPoint = document.createElement("div");
-    anchorPoint.id = "projectGoBack";
-    projectsContainer.insertBefore(
-      anchorPoint,
-      projectsContainer.children.length > 1
-        ? projectsContainer.children[1]
-        : null
-    );
-  }
 }
 
 // Handle the "More Details" button click

@@ -688,7 +688,7 @@ img.projectPictures {
 /* Image Slideshow */
 .projectImages {
   border-radius: 20px;
-  aspect-ratio: 3/2;
+
   box-shadow: 2px 2px 3px var(--color-background-dark);
   transition: 0.3s ease-in;
   width: 100%;
@@ -1077,11 +1077,7 @@ footer {
     flex-direction: row;
   }
 
-  .projectContainer:nth-child(3) {
-    flex-direction: row-reverse;
-  }
-
-  .projectContainer:nth-child(5) {
+  .projectContainer:nth-child(even) {
     flex-direction: row-reverse;
   }
 

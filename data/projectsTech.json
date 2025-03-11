@@ -8,12 +8,22 @@
       { "project_id": 1, "tech_id": 101 },
       { "project_id": 1, "tech_id": 102 },
       { "project_id": 1, "tech_id": 105 },
-      { "project_id": 1, "tech_id": 107 },
-      { "project_id": 1, "tech_id": 108 },
       { "project_id": 1, "tech_id": 109 },
       { "project_id": 1, "tech_id": 114 },
-      { "project_id": 1, "tech_id": 119 },
+      { "project_id": 1, "tech_id": 121 },
+      { "project_id": 1, "tech_id": 122 },
       { "project_id": 1, "tech_id": 123 },
+      { "project_id": 1, "tech_id": 126 },
+
+      { "project_id": 3, "tech_id": 101 },
+      { "project_id": 3, "tech_id": 102 },
+      { "project_id": 3, "tech_id": 105 },
+      { "project_id": 3, "tech_id": 107 },
+      { "project_id": 3, "tech_id": 108 },
+      { "project_id": 3, "tech_id": 109 },
+      { "project_id": 3, "tech_id": 114 },
+      { "project_id": 3, "tech_id": 119 },
+      { "project_id": 3, "tech_id": 123 },
 
       { "project_id": 2, "tech_id": 101 },
       { "project_id": 2, "tech_id": 102 },
@@ -25,17 +35,17 @@
       { "project_id": 2, "tech_id": 121 },
       { "project_id": 2, "tech_id": 122 },
 
-      { "project_id": 3, "tech_id": 107 },
-      { "project_id": 3, "tech_id": 109 },
-      { "project_id": 3, "tech_id": 114 },
-
-      { "project_id": 4, "tech_id": 103 },
-      { "project_id": 4, "tech_id": 114 },
-      { "project_id": 4, "tech_id": 115 },
+      { "project_id": 6, "tech_id": 107 },
+      { "project_id": 6, "tech_id": 109 },
+      { "project_id": 6, "tech_id": 114 },
 
       { "project_id": 5, "tech_id": 103 },
       { "project_id": 5, "tech_id": 114 },
-      { "project_id": 5, "tech_id": 115 }
+      { "project_id": 5, "tech_id": 115 },
+
+      { "project_id": 4, "tech_id": 103 },
+      { "project_id": 4, "tech_id": 114 },
+      { "project_id": 4, "tech_id": 115 }
     ]
   }
 }

@@ -25,20 +25,26 @@
       "data": [
         {
           "project_id": 1,
-          "project_name": "DEPO Web Application",
-          "project_thumbnail": "assets/images/projectPictures/DEPO.webp",
-          "project_overview": "Developed DEPO, a collaborative Capstone Project and web application to streamline purchase reporting for Puerto Rico government and non-government entities. Our team prioritized automation to minimize errors and expedite data entry, creating an intuitive portal for ASG employees.",
-          "project_description": "DEPO, the Digital Exempt Procurement Oversight web application, was a collaborative Capstone Project designed to automate the audit process for purchase reports submitted by Puerto Rico government and non-government entities to the Office of Special Investigations of ASG (Administración de Servicios Generales de Puerto Rico). Our team developed a user-friendly portal to expedite the workflow for ASG employees, significantly reducing data entry errors and processing time. My specific contributions focused on the design, implementation and documentation of the ASG employee interface, ensuring an intuitive and efficient user experience. We worked closely with a parallel development team responsible for the government entity client-side, maintaining seamless compatibility. Due to security protocols, the source code for this project is not publicly available.",
-          "project_type": "University",
+          "project_name": "My Portfolio v1.5",
+          "project_thumbnail": "assets/images/projectPictures/MP1.5.webp",
+          "project_overview": "In version 1.5 [current] of my portfolio I redesigned and rebuilt the website with a focus on a mobile-first approach, improved user experience, and dynamic content loading. Implemented a responsive layout, full-page project details, and a persistent theme. Upgraded the visual design with a focus on simplicity and professionalism.",
+          "project_description": "This project involved a complete redesign and rebuild of my personal portfolio website, resulting in this version (1.5). The primary focus was to enhance the user experience by implementing a mobile-first approach, ensuring optimal responsiveness across all devices. Key features include a redesigned landing page with a 'Learn More' button, full-page project details for improved legibility, and a persistent theme for a consistent look and feel. To streamline development and improve maintainability, I replaced \"hard-coded\" information (tech stack, projects) with JSON files and implemented scripts for dynamic content loading. This allows for easier updates and additions in the future. The visual design was also revamped, with a focus on simplicity, improved contrast, and better dark mode support. Performance was optimized by updating image formats to .webp and refining the file hierarchy. Additionally, I removed the Bootstrap framework to reduce dependencies and have more control over the styling. The updated portfolio provides a more engaging and informative experience for visitors while showcasing my skills and projects effectively. ",
+          "project_type": "Personal",
           "project_status": "Completed",
-          "project_source_code": null,
-          "project_video_url": null,
+          "project_source_code": "https://github.com/jadnell555/jadnell555.github.io",
+          "project_video_url": "",
           "project_images": [
-            "assets/images/projectPictures/depo1.png",
-            "assets/images/projectPictures/depo2.png",
-            "assets/images/projectPictures/depo3.png",
-            "assets/images/projectPictures/depo4.png",
-            "assets/images/projectPictures/depo5.png"
+            "assets/images/projectPictures/v1.5_portfolio1.png",
+            "assets/images/projectPictures/v1.5_portfolio2.png",
+            "assets/images/projectPictures/v1.5_portfolio3.png",
+            "assets/images/projectPictures/v1.5_portfolio4.png",
+            "assets/images/projectPictures/v1.5_portfolio5.png",
+            "assets/images/projectPictures/v1.5_portfolio6.png",
+            "assets/images/projectPictures/v1.5_portfolio7.png",
+            "assets/images/projectPictures/v1.5_portfolio8.png",
+            "assets/images/projectPictures/v1.5_portfolio9.png",
+            "assets/images/projectPictures/v1.5_portfolio10.png",
+            "assets/images/projectPictures/v1.5_portfolio11.png"
           ]
         },
         {
@@ -61,24 +67,40 @@
         },
         {
           "project_id": 3,
-          "project_name": "Haresh Quiz Game",
-          "project_thumbnail": "assets/images/projectPictures/HQG.webp",
-          "project_overview": "Test your knowledge with the Haresh Quiz Game! Answer 20 questions, manage your three lives, and navigate a simple Python GUI. This project demonstrates my understanding of programming paradigms through three versions: conditional logic, functions, and classes.",
-          "project_description": "The Haresh Quiz Game is a Python-based project developed for my Advanced Programming course, designed to test users' knowledge through 20 multiple choice questions. Players begin with three lives, losing one for each incorrect answer. The game features a simple graphical user interface (GUI) created using the graphics.py module from John Zelle's 'Python Programming: An Introduction to Computer Science.' This project served as an exercise in implementing different programming paradigms through three distinct versions: Version A, utilizing only conditional logic; Version B, employing functions to enhance code modularity; and Version C, leveraging classes for object-oriented programming. Creating these versions allowed me to explore and compare the effectiveness of various coding approaches in Python.",
+          "project_name": "DEPO Web Application",
+          "project_thumbnail": "assets/images/projectPictures/DEPO.webp",
+          "project_overview": "Developed DEPO, a collaborative Capstone Project and web application to streamline purchase reporting for Puerto Rico government and non-government entities. Our team prioritized automation to minimize errors and expedite data entry, creating an intuitive portal for ASG employees.",
+          "project_description": "DEPO, the Digital Exempt Procurement Oversight web application, was a collaborative Capstone Project designed to automate the audit process for purchase reports submitted by Puerto Rico government and non-government entities to the Office of Special Investigations of ASG (Administración de Servicios Generales de Puerto Rico). Our team developed a user-friendly portal to expedite the workflow for ASG employees, significantly reducing data entry errors and processing time. My specific contributions focused on the design, implementation and documentation of the ASG employee interface, ensuring an intuitive and efficient user experience. We worked closely with a parallel development team responsible for the government entity client-side, maintaining seamless compatibility. Due to security protocols, the source code for this project is not publicly available.",
           "project_type": "University",
           "project_status": "Completed",
-          "project_source_code": "https://github.com/jadnell555/reyes_109739_project01_HareshQuizGame",
+          "project_source_code": null,
           "project_video_url": null,
           "project_images": [
-            "assets/images/projectPictures/hareshQuiz1.png",
-            "assets/images/projectPictures/hareshQuiz2.png",
-            "assets/images/projectPictures/hareshQuiz3.png",
-            "assets/images/projectPictures/hareshQuiz4.png",
-            "assets/images/projectPictures/hareshQuiz5.png"
+            "assets/images/projectPictures/depo1.png",
+            "assets/images/projectPictures/depo2.png",
+            "assets/images/projectPictures/depo3.png",
+            "assets/images/projectPictures/depo4.png",
+            "assets/images/projectPictures/depo5.png"
           ]
         },
         {
           "project_id": 4,
+          "project_name": "Step Motor Control",
+          "project_thumbnail": "assets/images/projectPictures/STM.webp",
+          "project_overview": "Engineered precise control of a 28BYJ-48 geared step motor using an Arduino and C++. Implemented keyboard-triggered commands for continuous and step-based rotation (clockwise/counterclockwise), as well as a stop function.",
+          "project_description": "This project focused on the development of a keyboard-controlled step motor system, utilizing an Arduino microcontroller and C++. A 28BYJ-48 geared step motor was selected for its precise rotational capabilities, enhanced by its gear reduction. The project involved connecting the motor to the Arduino and developing C++ code to implement a set of control functions. The implemented functions included: continuous clockwise and counterclockwise rotation, precise step-based rotation in both directions, and a stop command. These functions were triggered by specific keyboard inputs, enabling interactive control through the Arduino's serial interface.",
+          "project_type": "University",
+          "project_status": "Completed",
+          "project_source_code": "https://github.com/jadnell555/CollegeProjects/tree/main/Arduino/Microcomputer%20Interfacing%20Lab/Lab%206%20-%20Stepper%20Motor",
+          "project_video_url": "https://m.youtube.com/watch?v=WMJqQuGLzes&feature=youtu.be",
+          "project_images": [
+            "assets/images/projectPictures/stepperMotor1.png",
+            "assets/images/projectPictures/stepperMotor2.png",
+            "assets/images/projectPictures/stepperMotor3.png"
+          ]
+        },
+        {
+          "project_id": 5,
           "project_name": "DC Motor Control",
           "project_thumbnail": "assets/images/projectPictures/DCM.webp",
           "project_overview": "Implemented a DC motor control system powered by an Arduino, utilizing C++ and keyboard interactions. The project features automated speed adjustments through PWM and user-controlled speed manipulation via keyboard input.",
@@ -94,19 +116,21 @@
           ]
         },
         {
-          "project_id": 5,
-          "project_name": "Step Motor Control",
-          "project_thumbnail": "assets/images/projectPictures/STM.webp",
-          "project_overview": "Engineered precise control of a 28BYJ-48 geared step motor using an Arduino and C++. Implemented keyboard-triggered commands for continuous and step-based rotation (clockwise/counterclockwise), as well as a stop function.",
-          "project_description": "This project focused on the development of a keyboard-controlled step motor system, utilizing an Arduino microcontroller and C++. A 28BYJ-48 geared step motor was selected for its precise rotational capabilities, enhanced by its gear reduction. The project involved connecting the motor to the Arduino and developing C++ code to implement a set of control functions. The implemented functions included: continuous clockwise and counterclockwise rotation, precise step-based rotation in both directions, and a stop command. These functions were triggered by specific keyboard inputs, enabling interactive control through the Arduino's serial interface.",
+          "project_id": 6,
+          "project_name": "Haresh Quiz Game",
+          "project_thumbnail": "assets/images/projectPictures/HQG.webp",
+          "project_overview": "Test your knowledge with the Haresh Quiz Game! Answer 20 questions, manage your three lives, and navigate a simple Python GUI. This project demonstrates my understanding of programming paradigms through three versions: conditional logic, functions, and classes.",
+          "project_description": "The Haresh Quiz Game is a Python-based project developed for my Advanced Programming course, designed to test users' knowledge through 20 multiple choice questions. Players begin with three lives, losing one for each incorrect answer. The game features a simple graphical user interface (GUI) created using the graphics.py module from John Zelle's 'Python Programming: An Introduction to Computer Science.' This project served as an exercise in implementing different programming paradigms through three distinct versions: Version A, utilizing only conditional logic; Version B, employing functions to enhance code modularity; and Version C, leveraging classes for object-oriented programming. Creating these versions allowed me to explore and compare the effectiveness of various coding approaches in Python.",
           "project_type": "University",
           "project_status": "Completed",
-          "project_source_code": "https://github.com/jadnell555/CollegeProjects/tree/main/Arduino/Microcomputer%20Interfacing%20Lab/Lab%206%20-%20Stepper%20Motor",
-          "project_video_url": "https://m.youtube.com/watch?v=WMJqQuGLzes&feature=youtu.be",
+          "project_source_code": "https://github.com/jadnell555/reyes_109739_project01_HareshQuizGame",
+          "project_video_url": null,
           "project_images": [
-            "assets/images/projectPictures/stepperMotor1.png",
-            "assets/images/projectPictures/stepperMotor2.png",
-            "assets/images/projectPictures/stepperMotor3.png"
+            "assets/images/projectPictures/hareshQuiz1.png",
+            "assets/images/projectPictures/hareshQuiz2.png",
+            "assets/images/projectPictures/hareshQuiz3.png",
+            "assets/images/projectPictures/hareshQuiz4.png",
+            "assets/images/projectPictures/hareshQuiz5.png"
           ]
         }
       ]
