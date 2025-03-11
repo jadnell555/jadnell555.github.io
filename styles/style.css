@@ -573,6 +573,11 @@ img.projectPictures {
   color: var(--color-text-dark);
 }
 
+.projectDetailsTitle {
+  font-size: x-large;
+  padding: 0.75rem 0;
+}
+
 .sourceVideo {
   display: flex;
   width: 100%;
