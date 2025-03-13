@@ -930,6 +930,10 @@ footer {
     opacity: 0;
   }
 
+  #goBackButton:hover {
+    transform: translateY(-4px);
+  }
+
   #myName {
     align-items: baseline;
     padding: 0 1rem;
@@ -1012,6 +1016,7 @@ footer {
     border-radius: none;
     box-shadow: none;
   }
+
   /*End Navigation Bar*/
 
   /*Landing Section*/
