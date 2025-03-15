@@ -1,0 +1,224 @@
+<!-- Jadnell H. Reyes Pérez -->
+<!-- March 13th, 2025 -->
+<!-- Version: 1.5 -->
+<!-- Project Details Template -->
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Google Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet Link-->
+    <link
+      id="theme"
+      href="../../styles/style.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+
+    <!-- Webpage Icon Link -->
+    <link rel="icon" href="assets/images/pictures/me.ico" type="image/x-icon" />
+
+    <meta
+      name="description"
+      content="This webpage contains information about Jadnell Reyes, 
+    a Puerto Rican Computer Engineer. Specifically a project he worked on."
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Project Details - Jadnell Haresh's Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Navigation Bar-->
+    <div id="newNavBar">
+      <div id="navBarWrapper">
+        <div id="goBack">
+          <button
+            id="goBackButton"
+            type="button"
+            onclick="window.location.href='../../index.html#socialMediaSection'"
+          >
+            <img
+              src="../../assets/images/icons/goBack.svg"
+              title="Go Back"
+              alt="Go Back Button"
+            />
+          </button>
+        </div>
+
+        <div id="myName" style="align-items: center">
+          <a class="myName" title="Home" href="../../index.html"> JADNELL </a>
+
+          <a class="myName" title="Home" href="../../index.html"> HARESH </a>
+        </div>
+
+        <!-- Theme Changer Button -->
+        <div id="themeChanger">
+          <button id="themeButton" type="button">
+            <img
+              src="../../assets/images/icons/moon.svg"
+              title="Change Theme"
+              alt="Theme changing button"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--End Navigation Bar-->
+
+    <!-- PROJECT SECTION -->
+    <section class="animatedSection leftSlide">
+      <div class="wrapper">
+        <!-- Project Title -->
+        <div class="HEADINGS">
+          <h1>Project Title</h1>
+        </div>
+        <br />
+
+        <!-- Project Source Code & Youtube Link (When available) -->
+        <div class="sourceVideo"></div>
+
+        <!-- Project Description -->
+        <div class="projectDetailsTitle">Project Description:</div>
+
+        <div class="smallBlock">
+          <p class="projectDescription">
+            <!-- Description will be added dynamically -->
+          </p>
+        </div>
+
+        <!-- Project Type and Status -->
+        <div class="typeStatus">
+          <div class="projectWrapper">
+            <div class="projectDetailsTitle">Type of Project:</div>
+            <div class="typeOfProject">
+              <div id="personal" class="projectType">Personal</div>
+              <div id="university" class="projectType">University</div>
+              <div id="professional" class="projectType">Professional</div>
+            </div>
+          </div>
+
+          <div class="projectWrapper">
+            <div class="projectDetailsTitle">Status:</div>
+            <div class="projectStatus">
+              <div id="inProgress">In Progress</div>
+              <div id="complete">Completed</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Tech Stack -->
+        <div class="projectDetailsTitle">Technologies Implemented:</div>
+        <div id="techStackContainer"></div>
+        <!-- Tech stack will be added dynamically -->
+        <!-- Project Images -->
+        <div class="projectDetailsTitle">Images:</div>
+        <div class="slideshow-container">
+          <!-- Images will be added dynamically -->
+        </div>
+
+        <div id="imageDots">
+          <!-- Dots will be added dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL MEDIA SECTION -->
+    <section id="socialMediaSection">
+      <div class="animatedSection">
+        <h3 id="socialMediaHeading">Social Media:</h3>
+
+        <ul id="socialMediaItems">
+          <li class="socialMediaItem">
+            <button
+              class="socialMediaButton"
+              type="button"
+              onclick="window.location.href='https://www.instagram.com/j_dnll/';"
+            >
+              <img
+                src="../../assets/images/socialMedia/instagram.svg"
+                title="Instagram"
+                width="35px"
+                height="35px"
+                alt="Instagram Button"
+              />
+            </button>
+          </li>
+          <li class="socialMediaItem">
+            <button
+              class="socialMediaButton"
+              type="button"
+              onclick="window.location.href='https://www.x.com/jadnellReyes';"
+            >
+              <img
+                src="../../assets/images/socialMedia/x.svg"
+                title="X"
+                width="30px"
+                height="30px"
+                alt="X Button"
+              />
+            </button>
+          </li>
+          <li class="socialMediaItem">
+            <button
+              class="socialMediaButton"
+              type="button"
+              onclick="window.location.href='https://github.com/jadnell555';"
+            >
+              <img
+                src="../../assets/images/techStack/github.svg"
+                title="GitHub"
+                width="40px"
+                height="40px"
+                alt="GitHub Button"
+              />
+            </button>
+          </li>
+          <li class="socialMediaItem">
+            <button
+              class="socialMediaButton"
+              type="button"
+              onclick="window.location.href='www.linkedin.com/in/jadnellreyes';"
+            >
+              <img
+                src="../../assets/images/socialMedia/linkedin.svg"
+                title="LinkedIn"
+                width="35px"
+                height="35px"
+                alt="LinkedIn Button"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- END SOCIAL MEDIA SECTION -->
+    <footer>
+      <div class="wrapper animatedSection">
+        <p>
+          Copyright © 2025. All Rights Reserved. Created by Jadnell H. Reyes
+          P&eacute;rez
+        </p>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../../scripts/modules/themeChangerButton.js"></script>
+    <script src="../../scripts/modules/animationsOnScroll.js"></script>
+    <script src="../../scripts/modules/fullscreenImages.js"></script>
+    <script src="../../scripts/modules/imageSlideshow.js"></script>
+    <script src="../../scripts/modules/projectFetch.js"></script>
+  </body>
+</html>
