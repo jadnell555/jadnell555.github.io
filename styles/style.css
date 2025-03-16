@@ -573,7 +573,7 @@ img.projectPictures {
   color: var(--color-text-dark);
 }
 
-.smallBlock {
+#projectDescriptionBlock.smallBlock {
   background-color: var(--color-background-medium);
 }
 
