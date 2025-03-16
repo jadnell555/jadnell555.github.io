@@ -573,6 +573,10 @@ img.projectPictures {
   color: var(--color-text-dark);
 }
 
+.smallBlock {
+  background-color: var(--color-background-medium);
+}
+
 .projectDetailsTitle {
   font-size: x-large;
   padding: 0.75rem 0;
