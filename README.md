@@ -2,7 +2,7 @@
 
 ## 🚀 Overview
 
-Welcome to the repository for my personal portfolio website. This site showcases my skills, projects, and experience as a developer. Feel free to explore the code or visit the live site at [jadnell555.github.io](https://jadnellreyes.dev).
+Welcome to the repository for my personal portfolio website. This site showcases my skills, projects, and experience as a developer. Feel free to explore the code or visit the live site at [jadnellreyes.dev](https://jadnellreyes.dev).
 
 ## ✨ Features
 
