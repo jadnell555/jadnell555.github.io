@@ -954,7 +954,7 @@ footer {
     justify-content: center;
     top: 0;
     z-index: 1000;
-    padding-top: 0.15rem;
+    padding-top: 0rem;
     position: fixed;
   }
 
