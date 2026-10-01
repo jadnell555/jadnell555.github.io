@@ -132,7 +132,7 @@
           </div>
           <div id="landing2">
             <div id="intro">
-              <h1>Hello World! I'm Jadnell H. Reyes Pérez</h1>
+              <h1>I'm Jadnell H. Reyes Pérez</h1>
 
               <h3>Computer Engineer</h3>
             </div>
@@ -145,14 +145,38 @@
               hardware and other projects.
             </div>
 
-            <div class="primaryButtons">
-              <button
-                id="learnMore"
-                title="Learn More About Me"
-                onclick="window.location.href = '#aboutMeSection'"
-              >
-                Learn More:
-              </button>
+            <div id="landingButtons">
+              <div class="primaryButtons">
+                <button
+                  id="learnMore"
+                  title="Learn More About Me"
+                  onclick="window.location.href = '#aboutMeSection'"
+                >
+                  Learn More:
+                </button>
+              </div>
+
+              <div id="resumeButtonContainer">
+                <button
+                  id="resumeDownload"
+                  class="secondaryButtons"
+                  title="Download Resumé"
+                  onclick="
+                    window.location.href =
+                      'https://drive.google.com/file/d/1VEVgPbASENXzSpktXyu2pGL3rpLEZ-vS/view?usp=drive_link'
+                  "
+                >
+                  <div class="secondaryButtonText">Download Resumé</div>
+
+                  <img
+                    src="/assets/images/icons/documentDownload.svg"
+                    title="Resumé Download"
+                    width="30"
+                    height="30"
+                    alt="Resumé Download Button"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
