@@ -61,10 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeButton = document.getElementById("themeButton");
   const themeImage = themeButton.querySelector("img");
 
-  // Get resume download button
-  const resumeButton = document.getElementById("resumeButtonContainer");
-  const resumeDownloadIcon = resumeButton.querySelector("img");
-
   // Function to apply theme
   function applyTheme(themeObject) {
     Object.entries(themeObject).forEach(([property, value]) => {
@@ -82,34 +78,34 @@ document.addEventListener("DOMContentLoaded", () => {
         themeImage.style.width = "40px"; // Larger size for sun
         themeImage.style.height = "40px";
         goBackImage.src = "../../assets/images/icons/goBackDarkMode.svg";
-        resumeDownloadIcon.src =
-          "../../assets/images/icons/documentDownloadDarkMode.svg";
       } else {
         themeImage.src = "../../assets/images/icons/moon.svg";
         themeImage.style.width = "35px"; // Smaller size for moon
         themeImage.style.height = "35px";
         goBackImage.src = "../../assets/images/icons/goBack.svg";
-        resumeDownloadIcon.src =
-          "../../assets/images/icons/documentDownload.svg";
       }
     } else {
       const menuButton = document.getElementById("menuButton");
       const menuImage = menuButton.querySelector("img");
 
+      // Get resume download button
+      const resumeButton = document.getElementById("resumeButtonContainer");
+      const resumeDownloadIcon = resumeButton.querySelector("img");
+
       if (isDarkMode) {
+        resumeDownloadIcon.src =
+          "../../assets/images/icons/documentDownloadDarkMode.svg";
         themeImage.src = "assets/images/icons/sun.svg";
         themeImage.style.width = "40px"; // Larger size for sun
         themeImage.style.height = "40px";
         menuImage.src = "assets/images/icons/hamburgerMenuDarkMode.svg";
-        resumeDownloadIcon.src =
-          "../../assets/images/icons/documentDownloadDarkMode.svg";
       } else {
+        resumeDownloadIcon.src =
+          "../../assets/images/icons/documentDownload.svg";
         themeImage.src = "assets/images/icons/moon.svg";
         themeImage.style.width = "35px"; // Smaller size for moon
         themeImage.style.height = "35px";
         menuImage.src = "assets/images/icons/hamburgerMenu.svg";
-        resumeDownloadIcon.src =
-          "../../assets/images/icons/documentDownload.svg";
       }
     }
   }
