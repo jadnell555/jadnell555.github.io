@@ -12,6 +12,7 @@ Welcome to the repository for my personal portfolio website. This site showcases
 - **Tech Stack Display**: Visual representation of my technical skills
 - **Contact Form**: Direct access to my email inbox
 - **Contact Information**: Easy ways to connect with me
+- **Resumé Download Button**: Direct access to my Resumé in pdf format
 
 ## 🛠️ Tech Stack
 
